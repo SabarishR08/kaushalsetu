@@ -1,0 +1,75 @@
+{
+  "Survey & Sampling Methods": [
+    { "id": "ss_concepts", "name": "Official Statistics Concepts", "prereqs": [] },
+    { "id": "ss_frameworks", "name": "Indian Statistical System (NSO, CSO, NSSO)", "prereqs": ["ss_concepts"] },
+    { "id": "ss_survey_design", "name": "Survey Design", "prereqs": ["ss_concepts"] },
+    { "id": "ss_sampling_basics", "name": "Sampling Fundamentals", "prereqs": ["ss_survey_design"] },
+    { "id": "ss_sampling_stratified", "name": "Stratified & Multistage Sampling", "prereqs": ["ss_sampling_basics"] },
+    { "id": "ss_sampling_frames", "name": "Sampling Frames & Coverage", "prereqs": ["ss_sampling_basics"] },
+    { "id": "ss_weighting", "name": "Survey Weighting & Expansion Factors", "prereqs": ["ss_sampling_stratified"] },
+    { "id": "ss_nonresponse", "name": "Non-response & Imputation", "prereqs": ["ss_weighting"] },
+    { "id": "ss_questionnaire", "name": "Questionnaire Design", "prereqs": ["ss_survey_design"] },
+    { "id": "ss_field_ops", "name": "Field Operations & Supervision", "prereqs": ["ss_survey_design", "ss_frameworks"] },
+    { "id": "ss_quality_assurance", "name": "Survey Quality Assurance", "prereqs": ["ss_nonresponse", "ss_field_ops"] }
+  ],
+  "Data Collection & Processing": [
+    { "id": "dc_cspro", "name": "CSPro", "prereqs": ["ss_questionnaire"] },
+    { "id": "dc_cspro_logic", "name": "CSPro Logic & Edit Specifications", "prereqs": ["dc_cspro"] },
+    { "id": "dc_capi", "name": "CAPI / Computer-Assisted Interviewing", "prereqs": ["dc_cspro"] },
+    { "id": "dc_data_entry", "name": "Data Entry & Verification", "prereqs": ["dc_cspro"] },
+    { "id": "dc_cleaning", "name": "Data Cleaning & Validation", "prereqs": ["dc_data_entry"] },
+    { "id": "dc_edit_rules", "name": "Edit Rules & Consistency Checks", "prereqs": ["dc_cleaning"] },
+    { "id": "dc_spreadsheets", "name": "Spreadsheets for Field Data", "prereqs": [] },
+    { "id": "dc_sql", "name": "SQL for Statistical Data", "prereqs": ["dc_spreadsheets"] },
+    { "id": "dc_metadata", "name": "Statistical Metadata Management", "prereqs": ["dc_cleaning"] }
+  ],
+  "Statistical Methods": [
+    { "id": "sm_descriptive", "name": "Descriptive Statistics", "prereqs": [] },
+    { "id": "sm_probability", "name": "Probability & Distributions", "prereqs": ["sm_descriptive"] },
+    { "id": "sm_inference", "name": "Statistical Inference", "prereqs": ["sm_probability"] },
+    { "id": "sm_estimation", "name": "Estimation Theory", "prereqs": ["sm_inference", "ss_sampling_basics"] },
+    { "id": "sm_variance", "name": "Variance Estimation & Design Effects", "prereqs": ["sm_estimation"] },
+    { "id": "sm_hypothesis", "name": "Hypothesis Testing", "prereqs": ["sm_inference"] },
+    { "id": "sm_regression", "name": "Regression Analysis", "prereqs": ["sm_inference"] },
+    { "id": "sm_small_area", "name": "Small Area Estimation", "prereqs": ["sm_variance"] },
+    { "id": "sm_index_numbers", "name": "Index Numbers (CPI, WPI)", "prereqs": ["sm_descriptive"] },
+    { "id": "sm_seasonal", "name": "Seasonal Adjustment", "prereqs": ["sm_index_numbers"] },
+    { "id": "sm_time_series", "name": "Time Series Analysis", "prereqs": ["sm_regression"] }
+  ],
+  "Data Quality & Standards": [
+    { "id": "dq_frameworks", "name": "Statistical Quality Frameworks", "prereqs": ["ss_concepts"] },
+    { "id": "dq_errors", "name": "Total Survey Error", "prereqs": ["dq_frameworks", "ss_sampling_basics"] },
+    { "id": "dq_confidentiality", "name": "Confidentiality & Statistical Disclosure Control", "prereqs": ["dq_frameworks"] },
+    { "id": "dq_revision_policy", "name": "Revision & Error Correction Policy", "prereqs": ["dq_frameworks"] },
+    { "id": "dq_sdmx", "name": "SDMX Data & Metadata Standards", "prereqs": ["dc_metadata"] },
+    { "id": "dq_dissemination", "name": "Release & Dissemination Practices", "prereqs": ["dq_frameworks"] },
+    { "id": "dq_unfpa", "name": "UN Fundamental Principles of Official Statistics", "prereqs": ["ss_concepts"] },
+    { "id": "dq_quality_audit", "name": "Quality Audits & Peer Review", "prereqs": ["dq_errors"] }
+  ],
+  "Official Data Sources": [
+    { "id": "os_nss", "name": "NSS Rounds & Household Surveys", "prereqs": ["ss_frameworks"] },
+    { "id": "os_asi", "name": "Annual Survey of Industries", "prereqs": ["ss_frameworks"] },
+    { "id": "os_census", "name": "Census Operations", "prereqs": ["ss_frameworks", "ss_field_ops"] },
+    { "id": "os_price_stats", "name": "Price Statistics (CPI, WPI, IIP)", "prereqs": ["sm_index_numbers", "ss_frameworks"] },
+    { "id": "os_agri_stats", "name": "Agricultural Statistics", "prereqs": ["ss_frameworks"] },
+    { "id": "os_admin_data", "name": "Administrative Data & Records", "prereqs": ["ss_frameworks"] },
+    { "id": "os_big_data", "name": "Big Data & Alternative Data Sources", "prereqs": ["os_admin_data", "sm_regression"] },
+    { "id": "os_gva", "name": "National Accounts (SNA, GVA)", "prereqs": ["os_admin_data"] }
+  ],
+  "Digital Competency": [
+    { "id": "it_basics", "name": "Office & IT Fundamentals", "prereqs": [] },
+    { "id": "it_data_viz", "name": "Data Visualisation", "prereqs": ["it_basics", "sm_descriptive"] },
+    { "id": "it_python_basics", "name": "Python for Official Statistics", "prereqs": ["it_basics"] },
+    { "id": "it_python_stats", "name": "Statistical Computing with Python", "prereqs": ["it_python_basics", "sm_descriptive"] },
+    { "id": "it_r_stats", "name": "R for Official Statistics", "prereqs": ["it_basics", "sm_descriptive"] },
+    { "id": "it_dashboards", "name": "Statistical Dashboards & Reporting", "prereqs": ["it_data_viz"] },
+    { "id": "it_data_ethics", "name": "Data Ethics & Responsible AI", "prereqs": ["ss_concepts"] }
+  ],
+  "Communication & Governance": [
+    { "id": "cg_report_writing", "name": "Statistical Report Writing", "prereqs": ["it_data_viz"] },
+    { "id": "cg_policy_briefs", "name": "Policy Briefs & Data Storytelling", "prereqs": ["cg_report_writing"] },
+    { "id": "cg_user_engagement", "name": "User Engagement & Feedback", "prereqs": ["dq_dissemination"] },
+    { "id": "cg_project_mgmt", "name": "Statistical Project Management", "prereqs": ["ss_field_ops"] },
+    { "id": "cg_training_delivery", "name": "Training Design & Delivery", "prereqs": ["cg_report_writing"] }
+  ]
+}

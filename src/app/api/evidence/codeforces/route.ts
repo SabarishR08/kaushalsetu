@@ -1,0 +1,49 @@
+import { db } from "@/lib/db";
+import { apiError, handleApiError, json, readJson } from "@/lib/api-helpers";
+import { fetchCodeforcesStats, codeforcesClaims } from "@/lib/evidence/competitive";
+import { fuseEvidence, logEvidence } from "@/lib/evidence/fuse";
+import { checkRateLimit, rateLimitResponse } from "@/lib/rate-limit";
+
+export const dynamic = "force-dynamic";
+export const maxDuration = 30;
+
+interface Body {
+  learnerId: string;
+  handle: string;
+}
+
+export async function POST(request: Request) {
+  const rl = checkRateLimit(request, { limit: 30, windowMs: 60_000 });
+  if (!rl.success) return rateLimitResponse(rl);
+
+  try {
+    const body = await readJson<Body>(request);
+    const handle = (body.handle || "")
+      .trim()
+      .replace(/^@/, "")
+      .replace(/^(https?:\/\/)?(www\.)?codeforces\.com\/(profile\/)?/i, "")
+      .replace(/\/.*$/, "")
+      .trim();
+    if (!body.learnerId || !handle) return apiError("learnerId and handle are required");
+
+    const learner = await db.learner.findUnique({ where: { id: body.learnerId } });
+    if (!learner) return apiError("Learner not found", 404);
+
+    const stats = await fetchCodeforcesStats(handle);
+    const claims = codeforcesClaims(stats);
+
+    await logEvidence(
+      body.learnerId,
+      "codeforces",
+      stats.handle,
+      `Codeforces: ${stats.rank ?? "unrated"}${stats.maxRating ? `, peak rating ${stats.maxRating}` : ""}`,
+      claims,
+      `https://codeforces.com/profile/${stats.handle}`,
+    );
+    const updates = claims.length ? await fuseEvidence(body.learnerId, "codeforces", claims) : [];
+
+    return json({ stats, claims, assessmentUpdates: updates });
+  } catch (e) {
+    return handleApiError(e, "Codeforces ingestion failed");
+  }
+}

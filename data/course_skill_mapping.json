@@ -1,0 +1,134 @@
+{
+  "IGOT001": [
+    "ss_concepts",
+    "ss_frameworks"
+  ],
+  "IGOT002": [
+    "dq_unfpa"
+  ],
+  "IGOT003": [
+    "cg_project_mgmt"
+  ],
+  "IGOT004": [
+    "dq_frameworks",
+    "dq_quality_audit"
+  ],
+  "IGOT005": [
+    "dq_confidentiality"
+  ],
+  "IGOT006": [
+    "dq_sdmx",
+    "dc_metadata"
+  ],
+  "IGOT007": [
+    "it_data_ethics"
+  ],
+  "IGOT008": [
+    "cg_report_writing"
+  ],
+  "IGOT009": [
+    "it_data_viz",
+    "it_dashboards"
+  ],
+  "MOSPI010": [
+    "os_nss",
+    "ss_survey_design",
+    "ss_sampling_stratified"
+  ],
+  "MOSPI011": [
+    "ss_sampling_basics",
+    "ss_sampling_stratified",
+    "ss_sampling_frames"
+  ],
+  "MOSPI012": [
+    "dc_cspro",
+    "dc_cspro_logic",
+    "dc_data_entry"
+  ],
+  "MOSPI013": [
+    "sm_index_numbers",
+    "os_price_stats"
+  ],
+  "MOSPI014": [
+    "os_gva"
+  ],
+  "MOSPI015": [
+    "os_census",
+    "ss_field_ops"
+  ],
+  "GEN001": [
+    "sm_descriptive",
+    "sm_probability",
+    "sm_inference",
+    "sm_hypothesis"
+  ],
+  "GEN002": [
+    "sm_regression"
+  ],
+  "GEN003": [
+    "sm_time_series",
+    "sm_seasonal"
+  ],
+  "GEN004": [
+    "ss_weighting",
+    "sm_estimation",
+    "sm_variance"
+  ],
+  "GEN005": [
+    "dq_errors",
+    "ss_quality_assurance"
+  ],
+  "GEN006": [
+    "sm_small_area"
+  ],
+  "GEN007": [
+    "dc_sql"
+  ],
+  "GEN008": [
+    "dc_spreadsheets",
+    "it_basics"
+  ],
+  "GEN009": [
+    "it_python_basics",
+    "it_python_stats"
+  ],
+  "GEN010": [
+    "it_r_stats",
+    "it_python_stats"
+  ],
+  "GEN011": [
+    "os_admin_data"
+  ],
+  "GEN012": [
+    "os_big_data"
+  ],
+  "GEN013": [
+    "dc_capi",
+    "ss_field_ops"
+  ],
+  "GEN014": [
+    "ss_questionnaire"
+  ],
+  "GEN015": [
+    "cg_policy_briefs",
+    "cg_user_engagement"
+  ],
+  "GEN016": [
+    "ss_nonresponse"
+  ],
+  "MOSPI016": [
+    "dc_cleaning",
+    "dc_edit_rules"
+  ],
+  "MOSPI017": [
+    "dq_revision_policy",
+    "dq_dissemination"
+  ],
+  "GEN017": [
+    "os_asi",
+    "os_agri_stats"
+  ],
+  "GEN018": [
+    "cg_training_delivery"
+  ]
+}

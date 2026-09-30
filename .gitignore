@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+
+# Build output
+.next/
+out/
+*.tsbuildinfo
+
+# Environment
+.env
+.env.local
+.env.*.local
+.z-ai-config
+
+# Database
+db/*.db
+db/*.db-journal
+db/*.db-wal
+db/*.db-shm
+prisma/migrations/dev.db*
+
+# Logs
+dev.log
+server.log
+*.log
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Misc
+coverage/
+*.patch
+!.gitignore
+.vercel
+.env*
+.freebuff/
+supabase/.temp/
+
+# ML bundle zips (ml/make_bundle.py)
+dist/
+
+# Runtime encoder: 34 MB of quantized ONNX, installed from a training run
+# with `npm run ml:install-encoder`. The app degrades gracefully without it.
+data/ml/encoder/
+Trained_model/
+ml/trained/
+test-results/
+

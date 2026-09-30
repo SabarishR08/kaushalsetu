@@ -1,0 +1,245 @@
+{
+  "schema_version": "1.0",
+  "resources": [
+    {
+      "resource_id": "RES001",
+      "skill_ids": [
+        "ss_concepts",
+        "dq_unfpa"
+      ],
+      "resource_type": "reference",
+      "title": "UN Fundamental Principles of Official Statistics (full text)",
+      "url": "https://unstats.un.org/unsd/dnss/gp/fundprinciples.aspx",
+      "provider": "UN Statistics Division",
+      "cost_tier": "free",
+      "format": "reading",
+      "difficulty": "beginner",
+      "description_raw": "The ten principles governing official statistics, endorsed by the UN Statistical Commission."
+    },
+    {
+      "resource_id": "RES002",
+      "skill_ids": [
+        "ss_frameworks",
+        "os_nss"
+      ],
+      "resource_type": "reference",
+      "title": "MoSPI — National Statistical Office official portal",
+      "url": "https://mospi.gov.in/",
+      "provider": "MoSPI",
+      "cost_tier": "free",
+      "format": "reference",
+      "difficulty": "beginner",
+      "description_raw": "Acts, rules, survey results, methodology documents and release calendar for India's statistical system."
+    },
+    {
+      "resource_id": "RES003",
+      "skill_ids": [
+        "ss_sampling_basics",
+        "ss_sampling_stratified",
+        "ss_sampling_frames"
+      ],
+      "resource_type": "handbook",
+      "title": "Sampling slides & exercises (IIT Kharagpur NPTEL)",
+      "url": "https://nptel.ac.in/courses/111105090",
+      "provider": "NPTEL",
+      "cost_tier": "free",
+      "format": "video",
+      "difficulty": "intermediate",
+      "description_raw": "Full free video course on survey sampling: SRS, stratification, ratio and regression estimation."
+    },
+    {
+      "resource_id": "RES004",
+      "skill_ids": [
+        "sm_descriptive",
+        "sm_probability",
+        "sm_inference"
+      ],
+      "resource_type": "textbook",
+      "title": "OpenIntro Statistics (free textbook)",
+      "url": "https://www.openintro.org/book/os/",
+      "provider": "OpenIntro",
+      "cost_tier": "free",
+      "format": "reading",
+      "difficulty": "beginner",
+      "description_raw": "A complete first textbook in statistics with exercises, from descriptive summaries to inference."
+    },
+    {
+      "resource_id": "RES005",
+      "skill_ids": [
+        "dc_cspro",
+        "dc_cspro_logic"
+      ],
+      "resource_type": "tool_docs",
+      "title": "CSPro — Census and Survey Processing System (free download + docs)",
+      "url": "https://www.csprousers.org/",
+      "provider": "US Census Bureau",
+      "cost_tier": "free",
+      "format": "interactive",
+      "difficulty": "intermediate",
+      "description_raw": "The free tool used for census and survey data processing worldwide, with user forum and documentation."
+    },
+    {
+      "resource_id": "RES006",
+      "skill_ids": [
+        "dc_sql"
+      ],
+      "resource_type": "tutorial",
+      "title": "SQLBolt — interactive SQL tutorial",
+      "url": "https://sqlbolt.com/",
+      "provider": "SQLBolt",
+      "cost_tier": "free",
+      "format": "interactive",
+      "difficulty": "beginner",
+      "description_raw": "Learn SQL query basics interactively in the browser, no installation."
+    },
+    {
+      "resource_id": "RES007",
+      "skill_ids": [
+        "dc_spreadsheets",
+        "it_basics"
+      ],
+      "resource_type": "tutorial",
+      "title": "Excel for Data Analysis (GCFGlobal free course)",
+      "url": "https://edu.gcfglobal.org/en/excel/",
+      "provider": "GCFGlobal",
+      "cost_tier": "free",
+      "format": "interactive",
+      "difficulty": "beginner",
+      "description_raw": "Step-by-step free lessons on formulas, pivot tables and charting in spreadsheets."
+    },
+    {
+      "resource_id": "RES008",
+      "skill_ids": [
+        "dq_sdmx",
+        "dc_metadata"
+      ],
+      "resource_type": "reference",
+      "title": "SDMX — Standards for data and metadata exchange",
+      "url": "https://sdmx.org/",
+      "provider": "SDMX Global Community",
+      "cost_tier": "free",
+      "format": "reference",
+      "difficulty": "advanced",
+      "description_raw": "Official SDMX specification, guidelines and learning material for statistical data exchange."
+    },
+    {
+      "resource_id": "RES009",
+      "skill_ids": [
+        "it_python_basics",
+        "it_python_stats"
+      ],
+      "resource_type": "textbook",
+      "title": "Python Data Science Handbook (free online)",
+      "url": "https://jakevdp.github.io/PythonDataScienceHandbook/",
+      "provider": "Jake VanderPlas",
+      "cost_tier": "free",
+      "format": "reading",
+      "difficulty": "intermediate",
+      "description_raw": "Free full text covering NumPy, pandas and matplotlib — the core of Python-based statistical computing."
+    },
+    {
+      "resource_id": "RES010",
+      "skill_ids": [
+        "it_r_stats"
+      ],
+      "resource_type": "textbook",
+      "title": "R for Data Science (free online)",
+      "url": "https://r4ds.hadley.nz/",
+      "provider": "Hadley Wickham",
+      "cost_tier": "free",
+      "format": "reading",
+      "difficulty": "intermediate",
+      "description_raw": "The canonical free book for learning R workflows: import, tidy, transform, visualise, communicate."
+    },
+    {
+      "resource_id": "RES011",
+      "skill_ids": [
+        "sm_regression",
+        "sm_time_series"
+      ],
+      "resource_type": "textbook",
+      "title": "Forecasting: Principles and Practice (free online)",
+      "url": "https://otexts.com/fpp3/",
+      "provider": "Hyndman & Athanasopoulos",
+      "cost_tier": "free",
+      "format": "reading",
+      "difficulty": "advanced",
+      "description_raw": "Free comprehensive text on time-series forecasting, including decomposition and seasonal adjustment."
+    },
+    {
+      "resource_id": "RES012",
+      "skill_ids": [
+        "sm_index_numbers",
+        "os_price_stats"
+      ],
+      "resource_type": "manual",
+      "title": "Consumer Price Index Manual (ILO/IMF)",
+      "url": "https://www.ilo.org/publications/consumer-price-index-manual-theory-and-practice",
+      "provider": "ILO / IMF",
+      "cost_tier": "free",
+      "format": "reading",
+      "difficulty": "advanced",
+      "description_raw": "The international manual on CPI theory and compilation practice."
+    },
+    {
+      "resource_id": "RES013",
+      "skill_ids": [
+        "sm_variance",
+        "sm_estimation"
+      ],
+      "resource_type": "handbook",
+      "title": "Survey Methodology lecture notes (free)",
+      "url": "https://www.ssc.wisc.edu/~yfeng/409.htm",
+      "provider": "University course notes",
+      "cost_tier": "free",
+      "format": "reading",
+      "difficulty": "advanced",
+      "description_raw": "Graduate lecture notes covering variance estimation, design effects and complex survey analysis."
+    },
+    {
+      "resource_id": "RES014",
+      "skill_ids": [
+        "it_data_viz",
+        "cg_report_writing"
+      ],
+      "resource_type": "reference",
+      "title": "Data Visualization — practical chart-choice guidance",
+      "url": "https://www.data-to-viz.com/",
+      "provider": "data-to-viz.com",
+      "cost_tier": "free",
+      "format": "reference",
+      "difficulty": "beginner",
+      "description_raw": "From dataset shape to the right chart: a decision guide with caveats for each chart type."
+    },
+    {
+      "resource_id": "RES015",
+      "skill_ids": [
+        "dc_capi",
+        "dc_data_entry"
+      ],
+      "resource_type": "tool_docs",
+      "title": "SurveyCTO / CAPI design documentation (free tier)",
+      "url": "https://docs.surveycto.com/",
+      "provider": "SurveyCTO",
+      "cost_tier": "free",
+      "format": "reference",
+      "difficulty": "intermediate",
+      "description_raw": "Documentation for designing CAPI forms: constraints, skip logic and field monitoring."
+    },
+    {
+      "resource_id": "RES016",
+      "skill_ids": [
+        "dq_confidentiality",
+        "dq_errors"
+      ],
+      "resource_type": "handbook",
+      "title": "UNECE handbook on statistical disclosure control",
+      "url": "https://unece.org/statistics/publications",
+      "provider": "UNECE",
+      "cost_tier": "free",
+      "format": "reading",
+      "difficulty": "advanced",
+      "description_raw": "Manual on protecting microdata and tabular outputs from disclosure risk."
+    }
+  ]
+}

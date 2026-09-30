@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "programmes": [
+    {
+      "programme_id": "TPAC001",
+      "Title": "Advanced Sampling & Estimation Workshop",
+      "URL": "https://nssta.gov.in/tpac/TPAC001",
+      "Mode": "residential",
+      "DurationDays": 5,
+      "Eligibility": [
+        "Statistical Investigator",
+        "Survey Officer",
+        "Research Officer"
+      ],
+      "Skills": [
+        "ss_sampling_stratified",
+        "ss_weighting",
+        "sm_estimation",
+        "sm_variance"
+      ],
+      "Description": "Hands-on residential workshop on stratified multistage estimation, weighting and variance estimation for official surveys."
+    },
+    {
+      "programme_id": "TPAC002",
+      "Title": "CSPro Data Processing Bootcamp",
+      "URL": "https://nssta.gov.in/tpac/TPAC002",
+      "Mode": "residential",
+      "DurationDays": 10,
+      "Eligibility": [
+        "Data Processor",
+        "Statistical Investigator",
+        "Census Officer"
+      ],
+      "Skills": [
+        "dc_cspro",
+        "dc_cspro_logic",
+        "dc_data_entry",
+        "dc_edit_rules"
+      ],
+      "Description": "Intensive CSPro lab: dictionaries, entry applications, edit specifications and consistency checks used in Census/NSS operations."
+    },
+    {
+      "programme_id": "TPAC003",
+      "Title": "Price Statistics & Index Numbers Programme",
+      "URL": "https://nssta.gov.in/tpac/TPAC003",
+      "Mode": "hybrid",
+      "DurationDays": 5,
+      "Eligibility": [
+        "Economic Statistician",
+        "Research Officer"
+      ],
+      "Skills": [
+        "sm_index_numbers",
+        "os_price_stats",
+        "sm_seasonal"
+      ],
+      "Description": "CPI/WPI/IIP compilation practice: basket construction, weighting diagrams, collection nets and revision policy."
+    },
+    {
+      "programme_id": "TPAC004",
+      "Title": "Data Quality & SDMX Reporting Course",
+      "URL": "https://nssta.gov.in/tpac/TPAC004",
+      "Mode": "hybrid",
+      "DurationDays": 4,
+      "Eligibility": [
+        "Data Quality Officer",
+        "Dissemination Officer",
+        "Research Officer"
+      ],
+      "Skills": [
+        "dq_frameworks",
+        "dq_sdmx",
+        "dc_metadata",
+        "dq_quality_audit"
+      ],
+      "Description": "Quality frameworks, disclosure control and machine-readable reporting to international agencies."
+    },
+    {
+      "programme_id": "TPAC005",
+      "Title": "National Accounts Compilation Seminar",
+      "URL": "https://nssta.gov.in/tpac/TPAC005",
+      "Mode": "residential",
+      "DurationDays": 6,
+      "Eligibility": [
+        "Economic Statistician",
+        "Senior Research Officer"
+      ],
+      "Skills": [
+        "os_gva",
+        "os_admin_data"
+      ],
+      "Description": "SNA-based GVA/GDP compilation: source data, balancing and quarterly estimation practice."
+    },
+    {
+      "programme_id": "TPAC006",
+      "Title": "Statistical Report Writing & Data Storytelling",
+      "URL": "https://nssta.gov.in/tpac/TPAC006",
+      "Mode": "hybrid",
+      "DurationDays": 3,
+      "Eligibility": [
+        "Any designation"
+      ],
+      "Skills": [
+        "cg_report_writing",
+        "cg_policy_briefs",
+        "it_data_viz"
+      ],
+      "Description": "Turning official statistics into narratives and policy briefs that decision-makers act on."
+    },
+    {
+      "programme_id": "TPAC007",
+      "Title": "Census Operations & Field Supervision",
+      "URL": "https://nssta.gov.in/tpac/TPAC007",
+      "Mode": "residential",
+      "DurationDays": 5,
+      "Eligibility": [
+        "Census Officer",
+        "Field Supervisor",
+        "Statistical Investigator"
+      ],
+      "Skills": [
+        "os_census",
+        "ss_field_ops"
+      ],
+      "Description": "Enumeration planning, training cascades and real-time coverage monitoring for census-scale operations."
+    },
+    {
+      "programme_id": "TPAC008",
+      "Title": "Python & R for Official Statistics Lab",
+      "URL": "https://nssta.gov.in/tpac/TPAC008",
+      "Mode": "hybrid",
+      "DurationDays": 5,
+      "Eligibility": [
+        "Any designation"
+      ],
+      "Skills": [
+        "it_python_basics",
+        "it_python_stats",
+        "it_r_stats"
+      ],
+      "Description": "Reproducible statistical workflows: importing survey data, applying weights and generating reports."
+    }
+  ]
+}
