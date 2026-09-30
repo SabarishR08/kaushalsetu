@@ -65,6 +65,7 @@ export default async function DepartmentPage() {
   }));
   const zeroCount = ALL_DISTRICTS.filter((n) => !districtList.some((d) => d.district === n)).length;
   const topDistricts = districtList.filter((d) => d.postings >= 20).slice(0, 4);
+  const focus = alignment.focusComparison;
   const districtPivot: DistrictSkillRow[] = demand.overall.slice(0, 8).map((s) => {
     const row: DistrictSkillRow = { skill: name(s.skillId) };
     for (const d of topDistricts) {
@@ -291,6 +292,91 @@ export default async function DepartmentPage() {
           )}
         </CardContent>
       </Card>
+
+      {/* Per-district coverage & focus comparison */}
+      {alignment.districtCoverage?.length ? (
+        <Card className="mb-6">
+          <CardHeader className="pb-2">
+            <CardTitle className="text-base">District coverage &amp; what each city is missing</CardTitle>
+            <p className="text-xs text-muted-foreground">
+              Same catalog everywhere — differences come from local industry mix. Missing = top-demand skill (≥15% of the district&apos;s postings) taught by no program
+            </p>
+          </CardHeader>
+          <CardContent>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b text-left text-xs uppercase tracking-wide text-muted-foreground">
+                    <th className="py-2 pr-4">District</th>
+                    <th className="py-2 pr-4">Postings</th>
+                    <th className="py-2 pr-4">Coverage</th>
+                    <th className="py-2">Missing in-demand skills</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {alignment.districtCoverage.slice(0, 12).map((d) => (
+                    <tr key={d.district} className="border-b last:border-0">
+                      <td className="py-2 pr-4 font-medium">{d.district}</td>
+                      <td className="py-2 pr-4">{d.postings}</td>
+                      <td className={`py-2 pr-4 font-semibold ${coverageClass(d.coverage)}`}>{pct(d.coverage)}</td>
+                      <td className="py-2">
+                        {d.missingSkills.length ? (
+                          <div className="flex flex-wrap gap-1">
+                            {d.missingSkills.slice(0, 4).map((id) => (
+                              <Badge key={id} variant="destructive" className="text-[11px]">{name(id)}</Badge>
+                            ))}
+                          </div>
+                        ) : (
+                          <span className="text-xs text-muted-foreground">none in top 12</span>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            {focus && focus.rows.length ? (
+              <div className="mt-6 rounded-lg border p-4">
+                <p className="text-sm font-medium">
+                  Focus: {focus.districts[0]} ({pct(focus.coverages[0])} coverage) vs {focus.districts[1]} ({pct(focus.coverages[1])})
+                </p>
+                <p className="mt-0.5 text-xs text-muted-foreground">
+                  Divergent rows are the per-city story: the same catalog leaves different holes in different cities.
+                </p>
+                <div className="mt-3 overflow-x-auto">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="border-b text-left text-xs uppercase tracking-wide text-muted-foreground">
+                        <th className="py-1.5 pr-4">Skill</th>
+                        <th className="py-1.5 pr-4">{focus.districts[0]}</th>
+                        <th className="py-1.5 pr-4">Gap?</th>
+                        <th className="py-1.5 pr-4">{focus.districts[1]}</th>
+                        <th className="py-1.5">Gap?</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {focus.rows.map((r) => (
+                        <tr key={r.skillId} className="border-b last:border-0">
+                          <td className="py-1.5 pr-4 font-medium">{name(r.skillId)}</td>
+                          <td className="py-1.5 pr-4">{r.aDemand} ({pct(r.aShare)})</td>
+                          <td className="py-1.5 pr-4">
+                            {r.aMissing ? <Badge variant="destructive" className="text-[11px]">missing</Badge> : <span className="text-xs text-muted-foreground">—</span>}
+                          </td>
+                          <td className="py-1.5 pr-4">{r.bDemand} ({pct(r.bShare)})</td>
+                          <td className="py-1.5">
+                            {r.bMissing ? <Badge variant="destructive" className="text-[11px]">missing</Badge> : <span className="text-xs text-muted-foreground">—</span>}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            ) : null}
+          </CardContent>
+        </Card>
+      ) : null}
 
       {/* Recommendations */}
       <Card className="mb-6">

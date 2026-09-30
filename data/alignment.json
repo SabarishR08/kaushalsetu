@@ -1,6 +1,6 @@
 {
   "meta": {
-    "builtAt": "2026-09-30T13:54:47.576Z",
+    "builtAt": "2026-09-30T13:58:12.948Z",
     "demandSource": "real corpus merge: Naukri JSONL + sector CSV (data/jobs/raw)",
     "tagger": "keyword",
     "postings": 13511,
@@ -2186,6 +2186,614 @@
       "coverage": 1
     }
   ],
+  "districtCoverage": [
+    {
+      "district": "Mumbai",
+      "postings": 9178,
+      "topSkills": [
+        "biz_sales",
+        "dc_sql",
+        "biz_hr",
+        "cg_project_mgmt",
+        "cg_report_writing",
+        "mfg_production",
+        "it_python_basics",
+        "cg_training_delivery",
+        "sm_descriptive",
+        "biz_accounts",
+        "biz_supply_chain",
+        "cloud_aws"
+      ],
+      "coveredSkills": [
+        "dc_sql",
+        "cg_project_mgmt",
+        "cg_report_writing",
+        "it_python_basics",
+        "cg_training_delivery",
+        "sm_descriptive"
+      ],
+      "missingSkills": [
+        "biz_sales"
+      ],
+      "coverage": 0.529
+    },
+    {
+      "district": "Pune",
+      "postings": 6066,
+      "topSkills": [
+        "dc_sql",
+        "cg_project_mgmt",
+        "it_python_basics",
+        "cloud_aws",
+        "cg_report_writing",
+        "cloud_azure",
+        "sm_descriptive",
+        "mfg_production",
+        "aiml_ml",
+        "os_big_data",
+        "devops_docker",
+        "biz_sales"
+      ],
+      "coveredSkills": [
+        "dc_sql",
+        "cg_project_mgmt",
+        "it_python_basics",
+        "cg_report_writing",
+        "sm_descriptive",
+        "os_big_data"
+      ],
+      "missingSkills": [],
+      "coverage": 0.628
+    },
+    {
+      "district": "Thane",
+      "postings": 556,
+      "topSkills": [
+        "dc_sql",
+        "cg_project_mgmt",
+        "biz_hr",
+        "biz_sales",
+        "cg_report_writing",
+        "mfg_production",
+        "it_python_basics",
+        "cloud_azure",
+        "aiml_ml",
+        "sm_descriptive",
+        "biz_supply_chain",
+        "cloud_aws"
+      ],
+      "coveredSkills": [
+        "dc_sql",
+        "cg_project_mgmt",
+        "cg_report_writing",
+        "it_python_basics",
+        "sm_descriptive"
+      ],
+      "missingSkills": [
+        "biz_hr",
+        "biz_sales"
+      ],
+      "coverage": 0.529
+    },
+    {
+      "district": "Nagpur",
+      "postings": 164,
+      "topSkills": [
+        "dc_sql",
+        "biz_sales",
+        "cg_project_mgmt",
+        "it_python_basics",
+        "cg_report_writing",
+        "biz_hr",
+        "sm_descriptive",
+        "biz_accounts",
+        "biz_supply_chain",
+        "med_clinical",
+        "cloud_aws",
+        "os_big_data"
+      ],
+      "coveredSkills": [
+        "dc_sql",
+        "cg_project_mgmt",
+        "it_python_basics",
+        "cg_report_writing",
+        "sm_descriptive",
+        "os_big_data"
+      ],
+      "missingSkills": [
+        "biz_sales"
+      ],
+      "coverage": 0.558
+    },
+    {
+      "district": "Nashik",
+      "postings": 60,
+      "topSkills": [
+        "biz_sales",
+        "dc_sql",
+        "cg_project_mgmt",
+        "it_python_basics",
+        "biz_hr",
+        "cg_report_writing",
+        "biz_supply_chain",
+        "mfg_production",
+        "med_clinical",
+        "os_big_data",
+        "sm_descriptive",
+        "ss_quality_assurance"
+      ],
+      "coveredSkills": [
+        "dc_sql",
+        "cg_project_mgmt",
+        "it_python_basics",
+        "cg_report_writing",
+        "os_big_data",
+        "sm_descriptive",
+        "ss_quality_assurance"
+      ],
+      "missingSkills": [
+        "biz_sales"
+      ],
+      "coverage": 0.584
+    },
+    {
+      "district": "Chh. Sambhajinagar",
+      "postings": 40,
+      "topSkills": [
+        "mfg_production",
+        "biz_hr",
+        "cg_report_writing",
+        "biz_supply_chain",
+        "cg_project_mgmt",
+        "dc_sql",
+        "mfg_quality",
+        "ss_quality_assurance",
+        "biz_sales",
+        "it_python_basics",
+        "aiml_ml",
+        "devops_docker"
+      ],
+      "coveredSkills": [
+        "cg_report_writing",
+        "cg_project_mgmt",
+        "dc_sql",
+        "ss_quality_assurance",
+        "it_python_basics"
+      ],
+      "missingSkills": [
+        "mfg_production",
+        "biz_hr"
+      ],
+      "coverage": 0.348
+    },
+    {
+      "district": "Kolhapur",
+      "postings": 12,
+      "topSkills": [
+        "biz_hr",
+        "biz_sales",
+        "it_basics",
+        "dc_spreadsheets",
+        "dc_sql",
+        "med_clinical",
+        "biz_supply_chain",
+        "cg_project_mgmt",
+        "cloud_aws",
+        "cloud_azure",
+        "cloud_gcp",
+        "it_dashboards"
+      ],
+      "coveredSkills": [
+        "it_basics",
+        "dc_spreadsheets",
+        "dc_sql",
+        "cg_project_mgmt",
+        "it_dashboards"
+      ],
+      "missingSkills": [
+        "biz_hr",
+        "biz_sales",
+        "med_clinical"
+      ],
+      "coverage": 0.392
+    },
+    {
+      "district": "Palghar",
+      "postings": 7,
+      "topSkills": [
+        "biz_hr",
+        "biz_sales",
+        "biz_supply_chain",
+        "cg_report_writing",
+        "biz_accounts",
+        "cg_training_delivery",
+        "it_basics",
+        "mfg_production",
+        "mfg_quality"
+      ],
+      "coveredSkills": [
+        "cg_report_writing",
+        "cg_training_delivery",
+        "it_basics"
+      ],
+      "missingSkills": [
+        "biz_hr",
+        "biz_sales",
+        "biz_supply_chain"
+      ],
+      "coverage": 0.286
+    },
+    {
+      "district": "Ahmednagar",
+      "postings": 5,
+      "topSkills": [
+        "biz_hr",
+        "biz_sales",
+        "biz_accounts",
+        "biz_supply_chain",
+        "dq_quality_audit",
+        "mfg_production",
+        "mfg_quality",
+        "ss_sampling_basics"
+      ],
+      "coveredSkills": [
+        "dq_quality_audit",
+        "ss_sampling_basics"
+      ],
+      "missingSkills": [
+        "biz_hr",
+        "biz_sales",
+        "biz_accounts",
+        "biz_supply_chain",
+        "mfg_production",
+        "mfg_quality"
+      ],
+      "coverage": 0.2
+    },
+    {
+      "district": "Raigad",
+      "postings": 4,
+      "topSkills": [
+        "biz_hr",
+        "biz_sales",
+        "biz_supply_chain",
+        "dc_spreadsheets",
+        "it_python_basics"
+      ],
+      "coveredSkills": [
+        "dc_spreadsheets",
+        "it_python_basics"
+      ],
+      "missingSkills": [
+        "biz_hr",
+        "biz_sales",
+        "biz_supply_chain"
+      ],
+      "coverage": 0.222
+    },
+    {
+      "district": "Solapur",
+      "postings": 4,
+      "topSkills": [
+        "biz_hr",
+        "biz_supply_chain",
+        "cg_project_mgmt",
+        "eng_design"
+      ],
+      "coveredSkills": [
+        "cg_project_mgmt"
+      ],
+      "missingSkills": [
+        "biz_hr",
+        "biz_supply_chain",
+        "eng_design"
+      ],
+      "coverage": 0.25
+    },
+    {
+      "district": "Satara",
+      "postings": 3,
+      "topSkills": [
+        "biz_hr",
+        "biz_supply_chain",
+        "dc_spreadsheets"
+      ],
+      "coveredSkills": [
+        "dc_spreadsheets"
+      ],
+      "missingSkills": [
+        "biz_hr",
+        "biz_supply_chain"
+      ],
+      "coverage": 0.25
+    },
+    {
+      "district": "Yavatmal",
+      "postings": 3,
+      "topSkills": [
+        "biz_hr",
+        "biz_sales",
+        "biz_supply_chain",
+        "mfg_production"
+      ],
+      "coveredSkills": [],
+      "missingSkills": [
+        "biz_hr",
+        "biz_sales",
+        "biz_supply_chain",
+        "mfg_production"
+      ],
+      "coverage": 0
+    },
+    {
+      "district": "Sangli",
+      "postings": 2,
+      "topSkills": [
+        "biz_hr",
+        "biz_supply_chain",
+        "dc_sql",
+        "it_basics"
+      ],
+      "coveredSkills": [
+        "dc_sql",
+        "it_basics"
+      ],
+      "missingSkills": [
+        "biz_hr",
+        "biz_supply_chain"
+      ],
+      "coverage": 0.5
+    },
+    {
+      "district": "Nanded",
+      "postings": 2,
+      "topSkills": [
+        "biz_hr",
+        "biz_supply_chain",
+        "mfg_quality",
+        "ss_sampling_basics"
+      ],
+      "coveredSkills": [
+        "ss_sampling_basics"
+      ],
+      "missingSkills": [
+        "biz_hr",
+        "biz_supply_chain",
+        "mfg_quality"
+      ],
+      "coverage": 0.25
+    },
+    {
+      "district": "Amravati",
+      "postings": 2,
+      "topSkills": [
+        "biz_hr",
+        "biz_supply_chain",
+        "med_clinical",
+        "med_icd"
+      ],
+      "coveredSkills": [],
+      "missingSkills": [
+        "biz_hr",
+        "biz_supply_chain",
+        "med_clinical",
+        "med_icd"
+      ],
+      "coverage": 0
+    },
+    {
+      "district": "Jalgaon",
+      "postings": 2,
+      "topSkills": [
+        "biz_hr",
+        "biz_sales",
+        "biz_supply_chain"
+      ],
+      "coveredSkills": [],
+      "missingSkills": [
+        "biz_hr",
+        "biz_sales",
+        "biz_supply_chain"
+      ],
+      "coverage": 0
+    },
+    {
+      "district": "Akola",
+      "postings": 2,
+      "topSkills": [
+        "biz_sales",
+        "eng_design"
+      ],
+      "coveredSkills": [],
+      "missingSkills": [
+        "biz_sales",
+        "eng_design"
+      ],
+      "coverage": 0
+    },
+    {
+      "district": "Chandrapur",
+      "postings": 2,
+      "topSkills": [
+        "biz_hr",
+        "med_clinical",
+        "biz_sales",
+        "med_icd"
+      ],
+      "coveredSkills": [],
+      "missingSkills": [
+        "biz_hr",
+        "med_clinical",
+        "biz_sales",
+        "med_icd"
+      ],
+      "coverage": 0
+    },
+    {
+      "district": "Ratnagiri",
+      "postings": 1,
+      "topSkills": [
+        "dc_sql"
+      ],
+      "coveredSkills": [
+        "dc_sql"
+      ],
+      "missingSkills": [],
+      "coverage": 1
+    },
+    {
+      "district": "Latur",
+      "postings": 1,
+      "topSkills": [
+        "biz_sales"
+      ],
+      "coveredSkills": [],
+      "missingSkills": [
+        "biz_sales"
+      ],
+      "coverage": 0
+    },
+    {
+      "district": "Dhule",
+      "postings": 1,
+      "topSkills": [
+        "biz_hr",
+        "med_clinical",
+        "med_icd"
+      ],
+      "coveredSkills": [],
+      "missingSkills": [
+        "biz_hr",
+        "med_clinical",
+        "med_icd"
+      ],
+      "coverage": 0
+    },
+    {
+      "district": "Buldhana",
+      "postings": 1,
+      "topSkills": [
+        "biz_hr",
+        "med_clinical",
+        "med_icd"
+      ],
+      "coveredSkills": [],
+      "missingSkills": [
+        "biz_hr",
+        "med_clinical",
+        "med_icd"
+      ],
+      "coverage": 0
+    }
+  ],
+  "focusComparison": {
+    "districts": [
+      "Mumbai",
+      "Pune"
+    ],
+    "coverages": [
+      0.529,
+      0.628
+    ],
+    "missing": [
+      [
+        "biz_sales"
+      ],
+      []
+    ],
+    "rows": [
+      {
+        "skillId": "dc_sql",
+        "aDemand": 1905,
+        "aShare": 0.208,
+        "aMissing": false,
+        "bDemand": 1816,
+        "bShare": 0.299,
+        "bMissing": false
+      },
+      {
+        "skillId": "cg_project_mgmt",
+        "aDemand": 1292,
+        "aShare": 0.141,
+        "aMissing": false,
+        "bDemand": 1291,
+        "bShare": 0.213,
+        "bMissing": false
+      },
+      {
+        "skillId": "biz_sales",
+        "aDemand": 1908,
+        "aShare": 0.208,
+        "aMissing": true,
+        "bDemand": 489,
+        "bShare": 0.081,
+        "bMissing": false
+      },
+      {
+        "skillId": "it_python_basics",
+        "aDemand": 835,
+        "aShare": 0.091,
+        "aMissing": false,
+        "bDemand": 1112,
+        "bShare": 0.183,
+        "bMissing": false
+      },
+      {
+        "skillId": "cg_report_writing",
+        "aDemand": 1228,
+        "aShare": 0.134,
+        "aMissing": false,
+        "bDemand": 692,
+        "bShare": 0.114,
+        "bMissing": false
+      },
+      {
+        "skillId": "biz_hr",
+        "aDemand": 1328,
+        "aShare": 0.145,
+        "aMissing": false,
+        "bDemand": 469,
+        "bShare": 0.077,
+        "bMissing": false
+      },
+      {
+        "skillId": "mfg_production",
+        "aDemand": 1014,
+        "aShare": 0.11,
+        "aMissing": false,
+        "bDemand": 599,
+        "bShare": 0.099,
+        "bMissing": false
+      },
+      {
+        "skillId": "sm_descriptive",
+        "aDemand": 750,
+        "aShare": 0.082,
+        "aMissing": false,
+        "bDemand": 616,
+        "bShare": 0.102,
+        "bMissing": false
+      },
+      {
+        "skillId": "cloud_aws",
+        "aDemand": 544,
+        "aShare": 0.059,
+        "aMissing": false,
+        "bDemand": 719,
+        "bShare": 0.119,
+        "bMissing": false
+      },
+      {
+        "skillId": "cloud_azure",
+        "aDemand": 414,
+        "aShare": 0.045,
+        "aMissing": false,
+        "bDemand": 660,
+        "bShare": 0.109,
+        "bMissing": false
+      }
+    ]
+  },
   "uncoveredSkills": [
     {
       "skillId": "biz_sales",
@@ -3002,6 +3610,30 @@
       "sector": "Automobile / Auto Anciliary / Auto Components",
       "title": "Revise programs serving \"Automobile / Auto Anciliary / Auto Components\"",
       "detail": "Only 15% of top demand mass is covered. Missing: mfg_production, biz_sales, eng_design, biz_hr, mfg_quality, biz_supply_chain. Update existing curricula before adding new programs."
+    },
+    {
+      "type": "revise-program",
+      "district": "Mumbai",
+      "title": "Close skill gaps in Mumbai",
+      "detail": "9178 postings demand skills the catalog lacks (top: biz_sales). Coverage of Mumbai's top demand mass: 53%."
+    },
+    {
+      "type": "revise-program",
+      "district": "Thane",
+      "title": "Close skill gaps in Thane",
+      "detail": "556 postings demand skills the catalog lacks (top: biz_hr, biz_sales). Coverage of Thane's top demand mass: 53%."
+    },
+    {
+      "type": "revise-program",
+      "district": "Nagpur",
+      "title": "Close skill gaps in Nagpur",
+      "detail": "164 postings demand skills the catalog lacks (top: biz_sales). Coverage of Nagpur's top demand mass: 56%."
+    },
+    {
+      "type": "revise-program",
+      "district": "Nashik",
+      "title": "Close skill gaps in Nashik",
+      "detail": "60 postings demand skills the catalog lacks (top: biz_sales). Coverage of Nashik's top demand mass: 58%."
     }
   ]
 }

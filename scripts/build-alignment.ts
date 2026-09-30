@@ -34,6 +34,7 @@ interface DemandFile {
   meta: { source: string; tagger: string; postings: number };
   overall: DemandSkill[];
   sectors: { sector: string; postings: number; topSkills: DemandSkill[] }[];
+  districts: { district: string; postings: number; topSkills: DemandSkill[] }[];
 }
 
 interface AlignmentFile {
@@ -63,6 +64,24 @@ interface AlignmentFile {
     coveredSkills: string[];
     coverage: number;               // 0-1 of top-demand mass taught somewhere
   }[];
+  districtCoverage: {
+    district: string;
+    postings: number;
+    topSkills: string[];
+    coveredSkills: string[];
+    missingSkills: string[];        // top demanded (share >= GAP_SHARE) and untaught
+    coverage: number;               // 0-1 of the district's top-N demand mass
+  }[];
+  focusComparison: {
+    districts: [string, string];
+    coverages: [number, number];
+    missing: [string[], string[]];
+    rows: {
+      skillId: string;
+      aDemand: number; aShare: number; aMissing: boolean;
+      bDemand: number; bShare: number; bMissing: boolean;
+    }[];
+  } | null;
   uncoveredSkills: {
     skillId: string;
     demand: number;
@@ -70,7 +89,7 @@ interface AlignmentFile {
     sectors: string[];
     examplePostingIds: string[];
   }[];
-  recommendations: { type: "add-program" | "revise-program"; skillId?: string; sector?: string; courseId?: string; title: string; detail: string }[];
+  recommendations: { type: "add-program" | "revise-program"; skillId?: string; sector?: string; district?: string; courseId?: string; title: string; detail: string }[];
 }
 
 /** Demand mass considered "top" when scoring coverage. */
@@ -146,6 +165,65 @@ async function main(): Promise<void> {
     };
   }).sort((a, b) => a.coverage - b.coverage || b.postings - a.postings);
 
+  // Per-district coverage — the department deploys programs by district, so
+  // gaps must be local, not just state-wide. Same catalog everywhere; the
+  // differences come from each district's demand mix.
+  const districtCoverage = demand.districts
+    .filter((d) => d.district !== "Unattributed")
+    .map((d) => {
+      const top = d.topSkills.slice(0, TOP_N);
+      const covered = top.filter((s) => allProgramSkills.has(s.skillId));
+      const mass = top.reduce((a, s) => a + s.share, 0) || 1;
+      const coveredMass = covered.reduce((a, s) => a + s.share, 0);
+      return {
+        district: d.district,
+        postings: d.postings,
+        topSkills: top.map((s) => s.skillId),
+        coveredSkills: covered.map((s) => s.skillId),
+        missingSkills: top
+          .filter((s) => s.share >= GAP_SHARE && !allProgramSkills.has(s.skillId))
+          .map((s) => s.skillId),
+        coverage: Math.round((coveredMass / mass) * 1000) / 1000,
+      };
+    })
+    .sort((a, b) => b.postings - a.postings);
+
+  // Focus comparison: the two highest-volume districts (currently Pune and
+  // Mumbai). The catalog is identical, so every divergence in what's missing
+  // is attributable to local industry structure — the core per-city story.
+  let focusComparison: AlignmentFile["focusComparison"] = null;
+  const focusData = districtCoverage
+    .slice(0, 2)
+    .map((d) => demand.districts.find((x) => x.district === d.district))
+    .filter((d): d is NonNullable<typeof d> => Boolean(d));
+  if (focusData.length === 2) {
+    const [a, b] = focusData;
+    const aMap = new Map(a.topSkills.map((s) => [s.skillId, s]));
+    const bMap = new Map(b.topSkills.map((s) => [s.skillId, s]));
+    const aCov = districtCoverage.find((d) => d.district === a.district)!;
+    const bCov = districtCoverage.find((d) => d.district === b.district)!;
+    const unionIds = [
+      ...new Set([...a.topSkills.slice(0, TOP_N), ...b.topSkills.slice(0, TOP_N)].map((s) => s.skillId)),
+    ];
+    focusComparison = {
+      districts: [a.district, b.district],
+      coverages: [aCov.coverage, bCov.coverage],
+      missing: [aCov.missingSkills, bCov.missingSkills],
+      rows: unionIds
+        .map((skillId) => ({
+          skillId,
+          aDemand: aMap.get(skillId)?.demand ?? 0,
+          aShare: aMap.get(skillId)?.share ?? 0,
+          aMissing: (aMap.get(skillId)?.share ?? 0) >= GAP_SHARE && !allProgramSkills.has(skillId),
+          bDemand: bMap.get(skillId)?.demand ?? 0,
+          bShare: bMap.get(skillId)?.share ?? 0,
+          bMissing: (bMap.get(skillId)?.share ?? 0) >= GAP_SHARE && !allProgramSkills.has(skillId),
+        }))
+        .sort((x, y) => y.aShare + y.bShare - (x.aShare + x.bShare))
+        .slice(0, 10),
+    };
+  }
+
   // Skills in demand that no program teaches.
   const uncoveredSkills = demand.overall
     .filter((s) => demandIds.has(s.skillId) && !allProgramSkills.has(s.skillId) && s.demand >= 2)
@@ -179,6 +257,16 @@ async function main(): Promise<void> {
       detail: `Only ${Math.round(sec.coverage * 100)}% of top demand mass is covered. Missing: ${missing.slice(0, 6).join(", ")}. Update existing curricula before adding new programs.`,
     });
   }
+  // District-level actions for the high-volume districts only — that is where
+  // closing a gap moves the state number.
+  for (const d of districtCoverage.filter((x) => x.postings >= 20 && x.missingSkills.length > 0).slice(0, 4)) {
+    recommendations.push({
+      type: "revise-program",
+      district: d.district,
+      title: `Close skill gaps in ${d.district}`,
+      detail: `${d.postings} postings demand skills the catalog lacks (top: ${d.missingSkills.slice(0, 4).join(", ")}). Coverage of ${d.district}'s top demand mass: ${Math.round(d.coverage * 100)}%.`,
+    });
+  }
 
   const alignment: AlignmentFile = {
     meta: {
@@ -191,6 +279,8 @@ async function main(): Promise<void> {
     },
     programAlignment,
     sectorCoverage,
+    districtCoverage,
+    focusComparison,
     uncoveredSkills,
     recommendations,
   };
@@ -200,6 +290,11 @@ async function main(): Promise<void> {
   console.log(`[alignment] wrote ${out}`);
   console.log(`[alignment] uncovered in-demand skills: ${uncoveredSkills.slice(0, 8).map((s) => `${s.skillId}(${s.demand})`).join(", ") || "none"}`);
   console.log(`[alignment] weakest sector coverage: ${sectorCoverage.slice(0, 3).map((s) => `${s.sector} ${Math.round(s.coverage * 100)}%`).join(", ")}`);
+  if (focusComparison) {
+    const [a, b] = focusComparison.districts;
+    console.log(`[alignment] ${a} coverage ${Math.round(focusComparison.coverages[0] * 100)}% (missing: ${focusComparison.missing[0].slice(0, 4).join(", ") || "none"})`);
+    console.log(`[alignment] ${b} coverage ${Math.round(focusComparison.coverages[1] * 100)}% (missing: ${focusComparison.missing[1].slice(0, 4).join(", ") || "none"})`);
+  }
 }
 
 main().catch((e) => {

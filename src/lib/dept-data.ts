@@ -39,8 +39,30 @@ export interface AlignmentData {
     missingInBestSector: string[];
   }[];
   sectorCoverage: { sector: string; postings: number; topSkills: string[]; coveredSkills: string[]; coverage: number }[];
+  districtCoverage: {
+    district: string;
+    postings: number;
+    topSkills: string[];
+    coveredSkills: string[];
+    missingSkills: string[];
+    coverage: number;
+  }[];
+  focusComparison: {
+    districts: [string, string];
+    coverages: [number, number];
+    missing: [string[], string[]];
+    rows: {
+      skillId: string;
+      aDemand: number;
+      aShare: number;
+      aMissing: boolean;
+      bDemand: number;
+      bShare: number;
+      bMissing: boolean;
+    }[];
+  } | null;
   uncoveredSkills: { skillId: string; demand: number; share: number; sectors: string[]; examplePostingIds: string[] }[];
-  recommendations: { type: "add-program" | "revise-program"; skillId?: string; sector?: string; courseId?: string; title: string; detail: string }[];
+  recommendations: { type: "add-program" | "revise-program"; skillId?: string; sector?: string; district?: string; courseId?: string; title: string; detail: string }[];
 }
 
 async function readJson<T>(rel: string, fallback: T | null = null): Promise<T | null> {

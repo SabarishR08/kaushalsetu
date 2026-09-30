@@ -72,33 +72,40 @@ export default async function DepartmentReportPage() {
       </section>
 
       <section className="mb-8">
-        <h2 className="mb-2 text-base font-semibold">2. Skill demand by district (all 36)</h2>
+        <h2 className="mb-2 text-base font-semibold">2. Skill demand &amp; coverage by district (all 36)</h2>
         {demand.districts?.length ? (
           <table className="w-full border-collapse text-sm">
             <thead>
               <tr className="border-b text-left">
                 <th className="py-1 pr-4">District</th>
                 <th className="py-1 pr-4">Postings</th>
+                <th className="py-1 pr-4">Coverage</th>
+                <th className="py-1 pr-4">Missing (≥15% demand)</th>
                 <th className="py-1">Top 5 skills demanded</th>
               </tr>
             </thead>
             <tbody>
               {demand.districts
                 .filter((d) => d.district !== "Unattributed")
-                .map((d) => (
-                  <tr key={d.district} className="border-b align-top">
-                    <td className="py-1.5 pr-4 font-medium">{d.district}</td>
-                    <td className="py-1.5 pr-4">{d.postings}</td>
-                    <td className="py-1.5">{d.topSkills.slice(0, 5).map((s) => name(s.skillId)).join(", ")}</td>
-                  </tr>
-                ))}
+                .map((d) => {
+                  const cov = alignment.districtCoverage?.find((x) => x.district === d.district);
+                  return (
+                    <tr key={d.district} className="border-b align-top">
+                      <td className="py-1.5 pr-4 font-medium">{d.district}</td>
+                      <td className="py-1.5 pr-4">{d.postings}</td>
+                      <td className="py-1.5 pr-4">{cov ? pct(cov.coverage) : "—"}</td>
+                      <td className="py-1.5 pr-4">{cov?.missingSkills.length ? cov.missingSkills.map(name).join(", ") : "—"}</td>
+                      <td className="py-1.5">{d.topSkills.slice(0, 5).map((s) => name(s.skillId)).join(", ")}</td>
+                    </tr>
+                  );
+                })}
             </tbody>
           </table>
         ) : (
           <p className="text-sm">District attribution unavailable for this demand build.</p>
         )}
         <p className="mt-1 text-xs text-muted-foreground">
-          Multi-district postings credit every listed district, so counts sum above the posting total. Mumbai = Mumbai City + Suburban.
+          Multi-district postings credit every listed district, so counts sum above the posting total. Mumbai = Mumbai City + Suburban. Coverage = share of the district&apos;s top-12 demand mass taught by any current program.
         </p>
       </section>
 
