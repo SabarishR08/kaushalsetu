@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { PIPELINE_POSTINGS } from "@/lib/pipeline-meta";
 import { 
   Compass, 
   Building2, 
@@ -45,7 +46,7 @@ export function AppShell({
         <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
         <span>महाराष्ट्र शासन • Department of Skills, Employment, Entrepreneurship & Innovation (SIH26134)</span>
         <Badge variant="outline" className="border-orange-500/30 text-orange-300 text-[10px] py-0 px-1.5 h-4 ml-1">
-          1,000 Real Postings Active
+          {PIPELINE_POSTINGS.toLocaleString("en-IN")} Real Postings Active
         </Badge>
       </div>
 
@@ -154,7 +155,7 @@ export function AppShell({
           <div className="flex flex-wrap items-center justify-center gap-4 text-[11px]">
             <span className="inline-flex items-center gap-1 text-emerald-400">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
-              1,000 Real Naukri Postings
+              {PIPELINE_POSTINGS.toLocaleString("en-IN")} Real Naukri Postings
             </span>
             <span className="text-orange-400 font-mono">BGE-Large Recall@5: 94.2%</span>
             <Link href="https://github.com/SabarishR08/kaushalsetu" target="_blank" className="hover:text-white transition-colors underline">

@@ -370,7 +370,7 @@ async function runCleanWalkthrough() {
     console.log('[Walkthrough] 5/9: Live Postings Telemetry Feed');
     await page.waitForTimeout(600);
 
-    const searchInput = page.locator('input[placeholder*="Search 1,000 live postings"]').first();
+    const searchInput = page.locator('input[placeholder*="Search 13,511 live postings"], input[placeholder*="Search"]').first();
     if (await searchInput.isVisible()) {
       // Human typing search for "EV Battery"
       await typeQuery(searchInput, 'EV Battery');

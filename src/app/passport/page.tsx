@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { PIPELINE_POSTINGS } from "@/lib/pipeline-meta";
 import { AppShell } from "@/components/app/AppShell";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -261,7 +262,7 @@ export default function PassportPage() {
               <div className="pt-3 border-t border-white/5 space-y-2">
                 <Button asChild variant="outline" size="sm" className="w-full border-white/10 text-xs h-9 bg-black/40">
                   <Link href="/telemetry">
-                    Match with Active Vacancies (1,000)
+                    Match with Active Vacancies ({PIPELINE_POSTINGS.toLocaleString("en-IN")})
                   </Link>
                 </Button>
                 <Button asChild size="sm" className="w-full bg-orange-500 hover:bg-orange-600 text-white text-xs h-9">

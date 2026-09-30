@@ -98,7 +98,7 @@ async function main() {
       await page.screenshot({ path: out });
       console.log(`[capture] ${shot.note} -> ${shot.name}.png`);
       if (shot.closeAfter) {
-        await page.locator("button[aria-label='Close benchmark panel']").click();
+        await page.locator("button[aria-label='Close district intelligence panel']").click();
         await page.waitForTimeout(300);
       }
     } catch (e) {

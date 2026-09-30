@@ -10,6 +10,7 @@ import { DistrictMap } from "./district-map";
 import { DistrictDemandChart, DistrictSkillChart, type DistrictSkillRow } from "./district-charts";
 import { ALL_DISTRICTS } from "@/lib/geo/districts";
 import { getDepartmentData } from "@/lib/dept-data";
+import { PIPELINE_POSTINGS } from "@/lib/pipeline-meta";
 
 export const dynamic = "force-dynamic";
 
@@ -176,7 +177,7 @@ export default async function DepartmentPage() {
             </Button>
             <Button asChild variant="outline" size="sm" className="border-white/10 text-xs h-9 bg-black/40">
               <Link href="/telemetry">
-                <Activity className="mr-1.5 h-3.5 w-3.5 text-emerald-400" /> 1,000 Postings
+                <Activity className="mr-1.5 h-3.5 w-3.5 text-emerald-400" /> {PIPELINE_POSTINGS.toLocaleString("en-IN")} Postings
               </Link>
             </Button>
             <Button asChild size="sm" className="bg-orange-500 hover:bg-orange-600 text-white text-xs h-9">
