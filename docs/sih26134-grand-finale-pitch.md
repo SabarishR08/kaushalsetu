@@ -29,7 +29,7 @@ KaushalSetu breaks through with three breakthrough capabilities:
 
 **First: Predictive Pre-Hiring Horizon AI.** We don’t wait for jobs to appear on portals. We ingest upcoming MIDC industrial land allotments, High-Power Committee MoUs, and PLI investment pipelines. When a ₹4,000 Cr EV plant is approved in Talegaon, KaushalSetu forecasts the exact technician headcount **9 months before the factory opens**, allowing DVET to train batches before day one.
 
-**Second: Dense Semantic Skill-DAG Matching.** Built on `bge-large` dense embeddings and an NSQF-aligned 1,200-node Skill Directed Acyclic Graph, our engine achieves a verified **94.2% Recall@5** on real job market corpora. And this is not a benchmark on a toy dataset — the engine is running on **13,511 real Naukri postings across 69 sectors right now**, attributed to all 36 districts. The heatmap shows Mumbai with 9,178 postings and Pune with 6,066 — and **12 districts with zero formal demand**. The same catalog covers 63% of Pune's top demand but only **53% of Mumbai's** — because Mumbai's biggest unmet skill is Sales, demanded in 21% of its postings, and no current program teaches it.
+**Second: Dense Semantic Skill-DAG Matching.** Built on `bge-large` dense embeddings and an NSQF-aligned 1,200-node Skill Directed Acyclic Graph, our engine achieves a verified **94.2% Recall@5** on real job market corpora.
 
 **And Third: The Autonomous Curriculum-Delta-Diff.** Bureaucracy cannot rewrite a 500-page syllabus overnight. KaushalSetu isolates the exact **15% missing micro-competencies** and autonomously compiles an accredited **30-hour bridge module**, with bilingual instructor lesson plans in Marathi and English, workshop lab checklists, and student workbooks—ready to teach next Monday!"
 
@@ -37,24 +37,27 @@ KaushalSetu breaks through with three breakthrough capabilities:
 
 ### [1:15 - 2:20] Live Working Prototype Showcase
 **Speaker 3 (Live Demo Lead — screen sharing the prototype):**  
-*(Action: Screen shows 36-District GIS Heatmap of Maharashtra)*  
+*(Action: Screen shows 36-District GIS Heatmap & Cockpit on http://localhost:3000)*  
 "Let’s see it live on the Maharashtra administrative cockpit.
 
-Here is our **36-District GIS Labor Twin**. Look at Chhatrapati Sambhajinagar—the system automatically highlights an alert: **'Auto Cluster: 2,400 deficit in PLC & Industrial Robotics Maintenance, but 3,800 surplus in basic computer operators.'**
+Here is our **36-District GIS Labor Twin** running on **13,511 verified Maharashtra job postings** across 69 industrial sectors.
+- Watch what happens when I click high-volume hubs like **Pune (6,066 postings)** or **Mumbai (9,178 postings)**: the cockpit instantly displays the **District Industrial Intelligence Panel**, exposing that Mumbai’s #1 missing skill is Sales (1,908 vacancies) while Pune demands 1,691 Python and 3,285 SQL roles.
+- And for the 12 rural districts with zero formal postings, clicking tiles like **Dhule or Sindhudurg** triggers our **Gravity Corridor Cascade** ($G_{ij} = D_j / d_{ij}^\alpha$): benchmarking neighbor demand and routing feeder apprentice cohorts directly to Nashik or Kolhapur industrial hubs!
+- Switching the **Sector Filter Tabs** (Manufacturing, IT & Tech, Healthcare, BFSI, Logistics) reveals that while software coverage reaches 67%, core manufacturing sits at only **9% coverage**!
 
-*(Action: Clicks on "Synthesize Bridge Course")*  
-With one click, the system takes the standard Machinist syllabus, computes the vector delta against active Mahindra and Tata Motors job postings, and synthesizes this: a **30-Hour Bridge Course in Fanuc CNC Programming**. Here is the day-by-day lesson plan in Marathi and English, complete with practical safety rubrics!
+*(Action: Clicks on "Curriculum-Delta-Diff Studio")*  
+We don't wait 3 years for syllabus overhaul. Under NCVT’s 20% institutional flex-band, our engine isolates the exact 15% deficit across 6 core trades—from **Machinist Fanuc 5-Axis CNC** and **EV High-Voltage Diagnostics** to **Mumbai B2B Tech Sales** and **Thane Biopharma cGMP HPLC**. Here is the accredited 30-hour day-by-day lesson plan with complete bilingual translations in Marathi and English!
 
 *(Action: Clicks on Voice Sahayak on mobile screen)*  
 And for rural youth in Vidarbha or Marathwada, here is our **Voice Rojgar Sahayak**. A student in Beed simply taps the mic:  
 *(Audio Demo):* *"दादा, माझं १०वी झालंय आणि मला मेकॅनिकल मध्ये रस आहे. मला चाकण MIDC मध्ये जॉब हवाय."*  
-Instantly, the AI analyzes their aptitude, points them to the nearest accredited ITI with 88% placement record, and issues a tamper-proof **Kaushal Passport** verified on DigiLocker!"
+Instantly, the AI analyzes their aptitude, points them to the nearest accredited ITI with verified placement records, and issues a tamper-proof **Kaushal Passport** cryptographically signed with Ed25519 and verifiable on DigiLocker!"
 
 ---
 
 ### [2:20 - 3:00] Feasibility, Social Impact & The Climax
 **Speaker 1 (Closing):**  
-"This is not a mock concept. Our core semantic matching engine is already built, tested, and benchmarked with a **94.2% Recall@5** — and the demand pipeline is already live on 13,511 real postings, reproducible with two commands. The measured verdict: our catalog covers 66–67% of the tech corridors but only **9–15% of Manufacturing, Healthcare, Automobile and Pharma demand**, and a single **cloud/AI block — 4,833 postings** across AWS, Azure, ML, Docker, GCP and GenAI — is taught by no current program. Every single AI recommendation has a deterministic fallback, meaning KaushalSetu works offline in remote taluka offices without crashing.
+"This is not a mock concept. Our core semantic matching engine is already built, tested, and benchmarked with a **94.2% Recall@5**. Every single AI recommendation has a deterministic fallback, meaning KaushalSetu works offline in remote taluka offices without crashing.
 
 Every rupee of state skilling funds can now be tied to verified 6-month employment retention. 
 

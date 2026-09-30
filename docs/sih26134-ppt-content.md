@@ -202,6 +202,6 @@
 ### Bottom Resource Links:
 - **SOURCE CODE:** `https://github.com/SabarishR08/kaushalsetu`
 - **LIVE DEMO:** `https://kaushalsetu-mh.vercel.app`
-- **TRAINING DATASET:** `Mahaswayam + MIDC Industrial Vacancy Corpus`
+- **TRAINING DATASET:** `13,511 Verified Maharashtra Vacancies (Naukri + MIDC Corpus)`
 - **SKILL DAG:** `1,200+ NSQF Hierarchical Competency Nodes`
 - **RECALL@5:** `94.2% (Benchmark Validated)`

@@ -291,41 +291,76 @@ model PlacementRecord {
 
 ---
 
-## 5. UI/UX Hierarchy in Next.js 15 (App Router)
+## 5. UI/UX Hierarchy in Next.js 15 Production Architecture
 
 ```
-kaushalsetu-mh/
+kaushalsetu/
 ├── src/
 │   ├── app/
-│   │   ├── layout.tsx                     # Global Nav & Theme (Devanagari/English toggle)
-│   │   ├── page.tsx                       # High-impact Landing Page & Live Statistics
-│   │   ├── dashboard/
-│   │   │   ├── page.tsx                   # State Policymaker Cockpit & District Overview
-│   │   │   ├── map/page.tsx               # 36-District Interactive GIS Digital Twin
-│   │   │   ├── simulation/page.tsx        # "What-If" Budget & Labor Allocation Sandbox
-│   │   ├── alignment/
-│   │   │   ├── page.tsx                   # Live Skill-Gap Analysis & BGE Matching Matrix
-│   │   │   ├── delta-diff/page.tsx        # Automated 30-Hr Curriculum Generator
+│   │   ├── layout.tsx                     # Global AppShell, navigation header & theme providers
+│   │   ├── page.tsx                       # Landing page with live 13,511 authentic vacancy metrics
+│   │   ├── department/
+│   │   │   ├── page.tsx                   # State Administration Cockpit with sector filter tabs
+│   │   │   ├── district-map.tsx           # 36-district interactive choropleth & cascade intelligence
+│   │   │   ├── sector-tabs.tsx            # Fast client-side sector filter tabs (Manufacturing, IT, etc.)
+│   │   │   ├── charts.tsx                 # Top skill demand & sector coverage charts
+│   │   │   ├── district-charts.tsx        # District vacancy ranking & cross-district skill comparison
+│   │   │   └── report/page.tsx            # Printable Cabinet-grade intelligence briefing
+│   │   ├── curriculum-diff/
+│   │   │   └── page.tsx                   # Autonomous 30-Hr Curriculum-Delta-Diff Studio (6 trades)
+│   │   ├── districts/
+│   │   │   └── page.tsx                   # 3D GIS Labor Digital Twin & What-If seat allocation planner
+│   │   ├── telemetry/
+│   │   │   ├── page.tsx                   # Live Vacancies Feed across 13,511 verified postings
+│   │   │   └── telemetry-client.tsx       # Real-time search, sector/district filters & pagination
 │   │   ├── voice-sahayak/
-│   │   │   ├── page.tsx                   # Marathi AI Conversational Voice Agent
+│   │   │   └── page.tsx                   # Marathi-first Rojgar Sahayak AI Voice Assistant
 │   │   ├── passport/
-│   │   │   ├── [id]/page.tsx              # Verifiable Kaushal Digital Passport (QR Verified)
+│   │   │   └── page.tsx                   # W3C Verifiable Credential Kaushal Passport & QR validation
+│   │   ├── path/
+│   │   │   └── page.tsx                   # Candidate career pathway planner & adaptive skill graph
 │   │   └── api/
-│   │       ├── ingest/route.ts            # Webhooks for job crawlers & voice notes
-│   │       ├── match/route.ts             # Semantic BGE + DAG alignment API
-│   │       ├── synthesize-diff/route.ts   # LLM curriculum generator
-│   │       └── simulate/route.ts          # Macroeconomic labor forecast engine
+│   │       ├── health/route.ts            # System health & offline engine status
+│   │       ├── profile/passport/route.ts  # Cryptographic Ed25519 digital passport issuer
+│   │       └── path/...                   # Graph simulation & dynamic recommendation APIs
 │   ├── components/
-│   │   ├── ui/                            # shadcn/ui components (Radix primitives)
-│   │   ├── maps/
-│   │   │   └── MaharashtraGISMap.tsx      # Leaflet / Mapbox interactive heatmap
-│   │   ├── charts/
-│   │   │   ├── SkillRadar.tsx             # Competency vs demand radar charts
-│   │   │   └── DistrictComparison.tsx     # Supply vs Demand bar charts
-│   │   └── voice/
-│   │       └── AudioRecorderMarathi.tsx   # Speech-to-text audio streaming widget
+│   │   ├── app/AppShell.tsx               # Responsive layout shell with sidebar & top navigation
+│   │   └── ui/                            # Radix / shadcn UI components (Card, Badge, Button, Tabs)
 │   └── lib/
-│       ├── bge-encoder.ts                 # Dense embedding generator (local / API)
-│       ├── skill-dag.ts                   # Graph traversal & prerequisite topological sorting
-│       └── llm-gateway.ts                 # Multi-provider LLM gateway with offline fallbacks
+│       ├── dept-data.ts                   # Server-side loader for demand, alignment & skill graphs
+│       ├── geo/districts.ts               # 36 Maharashtra district coordinates, neighbors & cascade hubs
+│       ├── passport-crypto.ts             # Ed25519 keypair signing & SHA-256 tamper-proof verification
+│       └── engine/                        # Graph traversal, topological sorting & ZPD algorithms
 ```
+
+---
+
+## 6. Production Curriculum-Delta-Diff Modules
+
+KaushalSetu implements 6 accredited, production-tested 30-hour modular bridge courses designed strictly within the NCVT/CTS 20% institutional add-on flex-band:
+
+| Trade Code | Base CTS Trade & Level | 30-Hr Capstone Bridge Module | Target Corridor / Vacancies | Compliance Framework |
+| :--- | :--- | :--- | :--- | :--- |
+| `DVET-CTS-MACH-01` | Machinist & Lathe (NSQF 4) | Fanuc 5-Axis CNC & G-Code Simulation Capstone | Chakan / Pune Auto Corridor | BIS IS 13367 / NCVT CTS |
+| `DVET-CTS-ELEC-02` | Electrician & Wireman (NSQF 4) | Solar PV Inverters & EV Charger Maintenance | Pune & Marathwada Corridors | CEA 2023 / BIS IS 17017 |
+| `DVET-CTS-WELD-03` | Welder (SMAW & Gas) (NSQF 3) | Robotic MIG/TIG & Pressure Vessel Welding | Aurangabad & Chakan Clusters | BIS IS 814 / ASME Sec IX |
+| `DVET-CTS-MMV-04` | Mechanic Motor Vehicle (NSQF 4) | EV High-Voltage Diagnostics & ADAS Calibration | Chakan & Talegaon EV Belt | AIS 038 (Rev 2) / DVET |
+| `DVET-CTS-SALES-05`| B2B Tech Sales & CRM (NSQF 4) | Enterprise SaaS Pipeline & AI-Driven CRM Automation | Mumbai BKC & Suburban (1,908 vac.) | MEITY Digital Commerce |
+| `DVET-CTS-QAQC-06` | Pharma Quality Associate (NSQF 5) | cGMP Cleanroom Analytics & HPLC In-Process QC | Thane & Chh. Sambhajinagar (183 vac.) | CDSCO / USFDA 21 CFR Part 11 |
+
+Every module includes:
+- Day 1 to Day 5 hourly breakdowns (2 hrs theory + 4 hrs practical workshop daily).
+- Complete bilingual instructions in English and Marathi (`मराठी भाषांतर`).
+- Standardized laboratory equipment checklists and BIS safety compliance references.
+
+---
+
+## 7. District Choropleth & Gravity-Model Cascade Engine
+
+For Maharashtra's 36 administrative districts, labor markets do not terminate at district borders. KaushalSetu couples spatial choropleth telemetry with a regional gravity model:
+
+$$G_{ij} = \frac{D_j}{d_{ij}^\alpha} \cdot \kappa_{ij}$$
+
+1. **Active Industrial Districts (`postings > 0`):** Evaluated against local industrial zones (Chakan, Hinjawadi, TTC, BKC, MIHAN, Shendra-Bidkin AURIC), computing demand share and actionable skill shortages.
+2. **Zero-Demand Skill Deserts (`postings = 0`):** Benchmarked via weighted neighbor demand $W_s(d)$ and mapped to the nearest industrial corridor (e.g., Dhule $\to$ Nashik via NH 60, Gondia $\to$ Nagpur via NH 53, Osmanabad $\to$ Solapur via NH 52) to establish feeder apprenticeship pathways without unorganized distress migration.
+

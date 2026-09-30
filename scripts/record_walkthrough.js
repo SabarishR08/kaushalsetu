@@ -195,6 +195,21 @@ async function runCleanWalkthrough() {
     await smoothScroll(page, 550, 14, 30);
     await page.waitForTimeout(800);
 
+    // Sector filter tabs — click Healthcare so the demand chart visibly
+    // re-renders (Clinical Care, Medical Coding...) then return to ALL.
+    const hcTab = page.locator('[role=tab]', { hasText: 'Healthcare' }).first();
+    if (await hcTab.isVisible()) {
+      await hcTab.hover();
+      await page.waitForTimeout(400);
+      await hcTab.click();
+      await page.waitForTimeout(1100);
+      const backAll = page.locator('[role=tab]', { hasText: 'ALL' }).first();
+      if (await backAll.isVisible()) {
+        await backAll.click();
+        await page.waitForTimeout(500);
+      }
+    }
+
     // District-level choropleth heatmap (all 36 districts) + demand bars —
     // hover a couple of tiles so the counts read on camera.
     const mumbaiTile = page.locator('[title*="Mumbai:"]').first();

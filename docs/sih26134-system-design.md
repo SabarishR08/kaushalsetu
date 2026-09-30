@@ -201,6 +201,23 @@ To prevent generative AI hallucinations in technical vocational training (e.g., 
 1. **Safety Rulebook Grounding:** Spindle speeds, voltages, and chemical handling procedures must strictly conform to BIS (Bureau of Indian Standards) tables.
 2. **Deterministic Fallback:** If the LLM service is unavailable or produces ungrounded tokens, the system falls back to a pre-compiled repository of 450 verified industrial micro-modules curated by DVET subject-matter experts.
 
+### 5.2 Production Trade Implementations & Regulatory Flex-Band Compliance
+Under NCVT and DVET Craftsmen Training Scheme (CTS) regulations, up to **20% of instructional hours** (~30–40 hours) are legally reserved for "Employability, Green Skills & Cluster-Specific Electives" without requiring central syllabus board revision. KaushalSetu deploys 6 production-grade bridge courses within this framework:
+
+| Trade Code | Base CTS Trade & NSQF | 30-Hour Modular Bridge Course | Target Corridor / Vacancies | Standards & Compliance |
+| :--- | :--- | :--- | :--- | :--- |
+| `DVET-CTS-MACH-01` | Machinist & Lathe (NSQF 4) | Fanuc 5-Axis CNC & G-Code Simulation Capstone | Chakan / Pune Industrial Corridor | BIS IS 13367 / NCVT CTS |
+| `DVET-CTS-ELEC-02` | Electrician & Wireman (NSQF 4) | Solar PV Inverters & EV Charger Maintenance | Pune & Marathwada Corridors | CEA Regulations 2023 / BIS IS 17017 |
+| `DVET-CTS-WELD-03` | Welder (SMAW & Gas) (NSQF 3) | Robotic MIG/TIG & Pressure Vessel Welding | Aurangabad & Chakan Clusters | BIS IS 814 / ASME Section IX |
+| `DVET-CTS-MMV-04` | Mechanic Motor Vehicle (NSQF 4) | EV High-Voltage Diagnostics & ADAS Calibration | Chakan & Talegaon EV Belt | AIS 038 (Rev 2) / DVET CTS |
+| `DVET-CTS-SALES-05`| B2B Tech Sales & CRM (NSQF 4) | Enterprise SaaS Pipeline & AI-Driven CRM Automation | Mumbai BKC & Suburban (1,908 vac.) | MEITY Digital Commerce / DVET |
+| `DVET-CTS-QAQC-06` | Pharma Quality Associate (NSQF 5) | cGMP Cleanroom Analytics & HPLC In-Process QC | Thane & Chh. Sambhajinagar (183 vac.) | CDSCO / USFDA 21 CFR Part 11 |
+
+Every module delivers:
+- **5-Day Pedagogical Structure:** 10 hours of foundational theory + 20 hours of hands-on lab workshop simulation.
+- **Bilingual Availability:** Complete dual-language teacher guides and candidate workbooks in Marathi (`मराठी भाषांतर`) and English.
+- **Micro-Credential Issuance:** Automated issuance of cryptographic W3C Verifiable Credentials directly deposited into student DigiLocker accounts upon lab assessment completion.
+
 ---
 
 ## 6. Database & Storage Architecture
