@@ -122,6 +122,7 @@ async function loadJsonlDir(): Promise<Posting[]> {
   while (postings.length < 5000 && remaining > 0) {
     let keptThisRound = false;
     for (let fi = 0; fi < perFile.length && postings.length < 5000; fi++) {
+      const f = files[fi];
       const lines = perFile[fi];
       while (cursors[fi] < lines.length) {
         const i = cursors[fi]++;
@@ -241,22 +242,30 @@ function summarize(postings: Posting[], tags: { skillId: string; strength: numbe
 
 async function main(): Promise<void> {
   const rawDir = path.join(process.cwd(), "data", "jobs", "raw");
+  // Merge every available real corpus: JSONL (deep tech families) + CSV
+  // (sector-tagged breadth). The synthetic seed is the last-resort fallback so
+  // the pipeline always has something to chew on.
   let postings: Posting[] = [];
-  let source = "maharashtra_seed_v1";
+  const sources: string[] = [];
   try {
-    postings = await loadJsonlDir();
-    if (postings.length) source = "real Naukri JSONL corpus (data/jobs/raw)";
+    const jsonl = await loadJsonlDir();
+    if (jsonl.length) {
+      postings = postings.concat(jsonl);
+      sources.push("Naukri JSONL");
+    }
+  } catch (e) {
+    console.warn(`[demand] jsonl load failed: ${e instanceof Error ? e.message : String(e)}`);
+  }
+  try {
+    const csv = await loadRawCsv();
+    if (csv.length) {
+      postings = postings.concat(csv);
+      sources.push("sector CSV");
+    }
   } catch {
     // no raw dir — fall through
   }
-  if (!postings.length) {
-    try {
-      postings = await loadRawCsv();
-      if (postings.length) source = "data/jobs/raw CSV corpus";
-    } catch {
-      // no raw dir — fall through to seed
-    }
-  }
+  let source = sources.length ? `real corpus merge: ${sources.join(" + ")} (data/jobs/raw)` : "maharashtra_seed_v1";
   if (!postings.length) postings = await loadSeed();
 
   console.log(`[demand] ${postings.length} postings from ${source}`);

@@ -49,3 +49,7 @@ Trained_model/
 ml/trained/
 test-results/
 
+
+# Full Naukri JSONL corpora stay local; samples are committed
+data/jobs/raw/*.jsonl
+!data/jobs/raw/*.sample.jsonl

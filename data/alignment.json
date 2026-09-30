@@ -1,26 +1,13 @@
 {
   "meta": {
-    "builtAt": "2026-09-30T12:28:05.813Z",
-    "demandSource": "data/jobs/raw CSV corpus",
+    "builtAt": "2026-09-30T12:39:59.632Z",
+    "demandSource": "real corpus merge: Naukri JSONL + sector CSV (data/jobs/raw)",
     "tagger": "keyword",
-    "postings": 1000,
+    "postings": 6000,
     "programs": 35,
     "minDemandShare": 0.15
   },
   "programAlignment": [
-    {
-      "courseId": "IGOT008",
-      "title": "Statistical Report Writing for Officials",
-      "category": "Communication",
-      "skills": [
-        "cg_report_writing"
-      ],
-      "alignment": 0.04,
-      "bestSector": "Manufacturing & Auto",
-      "bestSectorRelevance": 0.074,
-      "sectorDemand": 27,
-      "missingInBestSector": []
-    },
     {
       "courseId": "GEN007",
       "title": "SQL for Data-Driven Departments",
@@ -28,24 +15,18 @@
       "skills": [
         "dc_sql"
       ],
-      "alignment": 0.037,
-      "bestSector": "IT & Software",
-      "bestSectorRelevance": 0.05,
-      "sectorDemand": 727,
-      "missingInBestSector": []
-    },
-    {
-      "courseId": "GEN018",
-      "title": "Training of Trainers for Statistical Fieldwork",
-      "category": "Communication",
-      "skills": [
-        "cg_training_delivery"
-      ],
-      "alignment": 0.027,
-      "bestSector": "BFSI",
-      "bestSectorRelevance": 0.15,
-      "sectorDemand": 133,
-      "missingInBestSector": []
+      "alignment": 0.353,
+      "bestSector": "Data Science & AI",
+      "bestSectorRelevance": 0.432,
+      "sectorDemand": 2500,
+      "missingInBestSector": [
+        "it_python_basics",
+        "sm_descriptive",
+        "aiml_ml",
+        "os_big_data",
+        "cloud_azure",
+        "cg_project_mgmt"
+      ]
     },
     {
       "courseId": "IGOT003",
@@ -54,21 +35,128 @@
       "skills": [
         "cg_project_mgmt"
       ],
-      "alignment": 0.024,
-      "bestSector": "IT & Software",
-      "bestSectorRelevance": 0.033,
-      "sectorDemand": 727,
-      "missingInBestSector": []
+      "alignment": 0.235,
+      "bestSector": "Software Engineering",
+      "bestSectorRelevance": 0.353,
+      "sectorDemand": 2500,
+      "missingInBestSector": [
+        "dc_sql"
+      ]
     },
     {
-      "courseId": "IGOT004",
-      "title": "Data Quality Assurance for Government Datasets",
+      "courseId": "GEN009",
+      "title": "Python for Government Data Work",
+      "category": "Digital Competency",
+      "skills": [
+        "it_python_basics",
+        "it_python_stats"
+      ],
+      "alignment": 0.234,
+      "bestSector": "Data Science & AI",
+      "bestSectorRelevance": 0.409,
+      "sectorDemand": 2500,
+      "missingInBestSector": [
+        "dc_sql",
+        "sm_descriptive",
+        "aiml_ml",
+        "os_big_data",
+        "cloud_azure",
+        "cg_project_mgmt"
+      ]
+    },
+    {
+      "courseId": "GEN001",
+      "title": "Statistics: Descriptive to Inference",
+      "category": "Statistical Methods",
+      "skills": [
+        "sm_descriptive",
+        "sm_probability",
+        "sm_inference",
+        "sm_hypothesis"
+      ],
+      "alignment": 0.141,
+      "bestSector": "Data Science & AI",
+      "bestSectorRelevance": 0.29,
+      "sectorDemand": 2500,
+      "missingInBestSector": [
+        "dc_sql",
+        "it_python_basics",
+        "aiml_ml",
+        "os_big_data",
+        "cloud_azure",
+        "cg_project_mgmt"
+      ]
+    },
+    {
+      "courseId": "IGOT008",
+      "title": "Statistical Report Writing for Officials",
+      "category": "Communication",
+      "skills": [
+        "cg_report_writing"
+      ],
+      "alignment": 0.114,
+      "bestSector": "Data Science & AI",
+      "bestSectorRelevance": 0.13,
+      "sectorDemand": 2500,
+      "missingInBestSector": [
+        "dc_sql",
+        "it_python_basics",
+        "sm_descriptive",
+        "aiml_ml",
+        "os_big_data",
+        "cloud_azure"
+      ]
+    },
+    {
+      "courseId": "GEN012",
+      "title": "Big Data & Alternative Data for Statistics",
+      "category": "Official Statistics",
+      "skills": [
+        "os_big_data"
+      ],
+      "alignment": 0.108,
+      "bestSector": "Data Science & AI",
+      "bestSectorRelevance": 0.228,
+      "sectorDemand": 2500,
+      "missingInBestSector": [
+        "dc_sql",
+        "it_python_basics",
+        "sm_descriptive",
+        "aiml_ml",
+        "cloud_azure",
+        "cg_project_mgmt"
+      ]
+    },
+    {
+      "courseId": "IGOT009",
+      "title": "Effective Data Visualisation for Public Reports",
+      "category": "Communication",
+      "skills": [
+        "it_data_viz",
+        "it_dashboards"
+      ],
+      "alignment": 0.09,
+      "bestSector": "Data Science & AI",
+      "bestSectorRelevance": 0.198,
+      "sectorDemand": 2500,
+      "missingInBestSector": [
+        "dc_sql",
+        "it_python_basics",
+        "sm_descriptive",
+        "aiml_ml",
+        "os_big_data",
+        "cloud_azure"
+      ]
+    },
+    {
+      "courseId": "GEN005",
+      "title": "Total Survey Error in Official Statistics",
       "category": "Data Quality",
       "skills": [
-        "dq_frameworks",
-        "dq_quality_audit"
+        "dq_errors",
+        "ss_quality_assurance"
       ],
-      "alignment": 0.022,
+      "alignment": 0.038,
       "bestSector": "Logistics & Supply Chain",
       "bestSectorRelevance": 0.111,
       "sectorDemand": 9,
@@ -82,131 +170,17 @@
         "dc_spreadsheets",
         "it_basics"
       ],
-      "alignment": 0.02,
-      "bestSector": "BFSI",
-      "bestSectorRelevance": 0.031,
-      "sectorDemand": 133,
+      "alignment": 0.036,
+      "bestSector": "Data Science & AI",
+      "bestSectorRelevance": 0.069,
+      "sectorDemand": 2500,
       "missingInBestSector": [
-        "cg_training_delivery"
-      ]
-    },
-    {
-      "courseId": "GEN001",
-      "title": "Statistics: Descriptive to Inference",
-      "category": "Statistical Methods",
-      "skills": [
-        "sm_descriptive",
-        "sm_probability",
-        "sm_inference",
-        "sm_hypothesis"
-      ],
-      "alignment": 0.015,
-      "bestSector": "IT & Software",
-      "bestSectorRelevance": 0.02,
-      "sectorDemand": 727,
-      "missingInBestSector": []
-    },
-    {
-      "courseId": "GEN005",
-      "title": "Total Survey Error in Official Statistics",
-      "category": "Data Quality",
-      "skills": [
-        "dq_errors",
-        "ss_quality_assurance"
-      ],
-      "alignment": 0.015,
-      "bestSector": "Logistics & Supply Chain",
-      "bestSectorRelevance": 0.111,
-      "sectorDemand": 9,
-      "missingInBestSector": []
-    },
-    {
-      "courseId": "GEN003",
-      "title": "Time Series & Seasonal Adjustment",
-      "category": "Statistical Methods",
-      "skills": [
-        "sm_time_series",
-        "sm_seasonal"
-      ],
-      "alignment": 0.008,
-      "bestSector": "Logistics & Supply Chain",
-      "bestSectorRelevance": 0.111,
-      "sectorDemand": 9,
-      "missingInBestSector": []
-    },
-    {
-      "courseId": "IGOT009",
-      "title": "Effective Data Visualisation for Public Reports",
-      "category": "Communication",
-      "skills": [
-        "it_data_viz",
-        "it_dashboards"
-      ],
-      "alignment": 0.007,
-      "bestSector": "IT & Software",
-      "bestSectorRelevance": 0.01,
-      "sectorDemand": 727,
-      "missingInBestSector": []
-    },
-    {
-      "courseId": "GEN009",
-      "title": "Python for Government Data Work",
-      "category": "Digital Competency",
-      "skills": [
+        "dc_sql",
         "it_python_basics",
-        "it_python_stats"
-      ],
-      "alignment": 0.006,
-      "bestSector": "IT & Software",
-      "bestSectorRelevance": 0.008,
-      "sectorDemand": 727,
-      "missingInBestSector": []
-    },
-    {
-      "courseId": "GEN012",
-      "title": "Big Data & Alternative Data for Statistics",
-      "category": "Official Statistics",
-      "skills": [
-        "os_big_data"
-      ],
-      "alignment": 0.005,
-      "bestSector": "IT & Software",
-      "bestSectorRelevance": 0.007,
-      "sectorDemand": 727,
-      "missingInBestSector": []
-    },
-    {
-      "courseId": "MOSPI011",
-      "title": "Sampling Methods for Official Surveys",
-      "category": "Survey & Sampling",
-      "skills": [
-        "ss_sampling_basics",
-        "ss_sampling_stratified",
-        "ss_sampling_frames"
-      ],
-      "alignment": 0.004,
-      "bestSector": "BFSI",
-      "bestSectorRelevance": 0.008,
-      "sectorDemand": 133,
-      "missingInBestSector": [
-        "cg_training_delivery"
-      ]
-    },
-    {
-      "courseId": "MOSPI012",
-      "title": "CSPro: Census & Survey Processing",
-      "category": "Data Collection",
-      "skills": [
-        "dc_cspro",
-        "dc_cspro_logic",
-        "dc_data_entry"
-      ],
-      "alignment": 0.004,
-      "bestSector": "BFSI",
-      "bestSectorRelevance": 0.015,
-      "sectorDemand": 133,
-      "missingInBestSector": [
-        "cg_training_delivery"
+        "sm_descriptive",
+        "aiml_ml",
+        "os_big_data",
+        "cloud_azure"
       ]
     },
     {
@@ -216,24 +190,31 @@
       "skills": [
         "sm_regression"
       ],
-      "alignment": 0.003,
-      "bestSector": "IT & Software",
-      "bestSectorRelevance": 0.004,
-      "sectorDemand": 727,
-      "missingInBestSector": []
+      "alignment": 0.019,
+      "bestSector": "Data Science & AI",
+      "bestSectorRelevance": 0.034,
+      "sectorDemand": 2500,
+      "missingInBestSector": [
+        "dc_sql",
+        "it_python_basics",
+        "sm_descriptive",
+        "aiml_ml",
+        "os_big_data",
+        "cloud_azure"
+      ]
     },
     {
-      "courseId": "GEN013",
-      "title": "CAPI Field Operations & Device Management",
-      "category": "Data Collection",
+      "courseId": "GEN003",
+      "title": "Time Series & Seasonal Adjustment",
+      "category": "Statistical Methods",
       "skills": [
-        "dc_capi",
-        "ss_field_ops"
+        "sm_time_series",
+        "sm_seasonal"
       ],
-      "alignment": 0.002,
-      "bestSector": "Services & Miscellaneous",
-      "bestSectorRelevance": 0.01,
-      "sectorDemand": 101,
+      "alignment": 0.017,
+      "bestSector": "Logistics & Supply Chain",
+      "bestSectorRelevance": 0.111,
+      "sectorDemand": 9,
       "missingInBestSector": []
     },
     {
@@ -244,25 +225,39 @@
         "cg_policy_briefs",
         "cg_user_engagement"
       ],
-      "alignment": 0.002,
-      "bestSector": "IT & Software",
-      "bestSectorRelevance": 0.003,
-      "sectorDemand": 727,
-      "missingInBestSector": []
+      "alignment": 0.017,
+      "bestSector": "Data Science & AI",
+      "bestSectorRelevance": 0.028,
+      "sectorDemand": 2500,
+      "missingInBestSector": [
+        "dc_sql",
+        "it_python_basics",
+        "sm_descriptive",
+        "aiml_ml",
+        "os_big_data",
+        "cloud_azure"
+      ]
     },
     {
-      "courseId": "MOSPI015",
-      "title": "Census Operations Management",
-      "category": "Official Statistics",
+      "courseId": "GEN010",
+      "title": "R for Official Statistics",
+      "category": "Digital Competency",
       "skills": [
-        "os_census",
-        "ss_field_ops"
+        "it_r_stats",
+        "it_python_stats"
       ],
-      "alignment": 0.002,
-      "bestSector": "Services & Miscellaneous",
-      "bestSectorRelevance": 0.01,
-      "sectorDemand": 101,
-      "missingInBestSector": []
+      "alignment": 0.015,
+      "bestSector": "Data Science & AI",
+      "bestSectorRelevance": 0.034,
+      "sectorDemand": 2500,
+      "missingInBestSector": [
+        "dc_sql",
+        "it_python_basics",
+        "sm_descriptive",
+        "aiml_ml",
+        "os_big_data",
+        "cloud_azure"
+      ]
     },
     {
       "courseId": "MOSPI016",
@@ -272,11 +267,189 @@
         "dc_cleaning",
         "dc_edit_rules"
       ],
-      "alignment": 0.001,
-      "bestSector": "IT & Software",
-      "bestSectorRelevance": 0.001,
-      "sectorDemand": 727,
+      "alignment": 0.014,
+      "bestSector": "Data Science & AI",
+      "bestSectorRelevance": 0.03,
+      "sectorDemand": 2500,
+      "missingInBestSector": [
+        "dc_sql",
+        "it_python_basics",
+        "sm_descriptive",
+        "aiml_ml",
+        "os_big_data",
+        "cloud_azure"
+      ]
+    },
+    {
+      "courseId": "IGOT004",
+      "title": "Data Quality Assurance for Government Datasets",
+      "category": "Data Quality",
+      "skills": [
+        "dq_frameworks",
+        "dq_quality_audit"
+      ],
+      "alignment": 0.012,
+      "bestSector": "Logistics & Supply Chain",
+      "bestSectorRelevance": 0.111,
+      "sectorDemand": 9,
       "missingInBestSector": []
+    },
+    {
+      "courseId": "IGOT006",
+      "title": "SDMX for Data Producers",
+      "category": "Data Quality",
+      "skills": [
+        "dq_sdmx",
+        "dc_metadata"
+      ],
+      "alignment": 0.01,
+      "bestSector": "Data Science & AI",
+      "bestSectorRelevance": 0.022,
+      "sectorDemand": 2500,
+      "missingInBestSector": [
+        "dc_sql",
+        "it_python_basics",
+        "sm_descriptive",
+        "aiml_ml",
+        "os_big_data",
+        "cloud_azure"
+      ]
+    },
+    {
+      "courseId": "IGOT005",
+      "title": "Confidentiality & Statistical Disclosure Control",
+      "category": "Data Quality",
+      "skills": [
+        "dq_confidentiality"
+      ],
+      "alignment": 0.007,
+      "bestSector": "Data Science & AI",
+      "bestSectorRelevance": 0.01,
+      "sectorDemand": 2500,
+      "missingInBestSector": [
+        "dc_sql",
+        "it_python_basics",
+        "sm_descriptive",
+        "aiml_ml",
+        "os_big_data",
+        "cloud_azure"
+      ]
+    },
+    {
+      "courseId": "GEN018",
+      "title": "Training of Trainers for Statistical Fieldwork",
+      "category": "Communication",
+      "skills": [
+        "cg_training_delivery"
+      ],
+      "alignment": 0.005,
+      "bestSector": "BFSI",
+      "bestSectorRelevance": 0.15,
+      "sectorDemand": 133,
+      "missingInBestSector": []
+    },
+    {
+      "courseId": "MOSPI012",
+      "title": "CSPro: Census & Survey Processing",
+      "category": "Data Collection",
+      "skills": [
+        "dc_cspro",
+        "dc_cspro_logic",
+        "dc_data_entry"
+      ],
+      "alignment": 0.002,
+      "bestSector": "BFSI",
+      "bestSectorRelevance": 0.015,
+      "sectorDemand": 133,
+      "missingInBestSector": [
+        "cg_training_delivery"
+      ]
+    },
+    {
+      "courseId": "GEN013",
+      "title": "CAPI Field Operations & Device Management",
+      "category": "Data Collection",
+      "skills": [
+        "dc_capi",
+        "ss_field_ops"
+      ],
+      "alignment": 0.001,
+      "bestSector": "Services & Miscellaneous",
+      "bestSectorRelevance": 0.01,
+      "sectorDemand": 101,
+      "missingInBestSector": []
+    },
+    {
+      "courseId": "IGOT007",
+      "title": "Ethics in Data-Driven Governance",
+      "category": "Governance",
+      "skills": [
+        "it_data_ethics"
+      ],
+      "alignment": 0.001,
+      "bestSector": "Data Science & AI",
+      "bestSectorRelevance": 0.001,
+      "sectorDemand": 2500,
+      "missingInBestSector": [
+        "dc_sql",
+        "it_python_basics",
+        "sm_descriptive",
+        "aiml_ml",
+        "os_big_data",
+        "cloud_azure"
+      ]
+    },
+    {
+      "courseId": "MOSPI011",
+      "title": "Sampling Methods for Official Surveys",
+      "category": "Survey & Sampling",
+      "skills": [
+        "ss_sampling_basics",
+        "ss_sampling_stratified",
+        "ss_sampling_frames"
+      ],
+      "alignment": 0.001,
+      "bestSector": "BFSI",
+      "bestSectorRelevance": 0.008,
+      "sectorDemand": 133,
+      "missingInBestSector": [
+        "cg_training_delivery"
+      ]
+    },
+    {
+      "courseId": "MOSPI015",
+      "title": "Census Operations Management",
+      "category": "Official Statistics",
+      "skills": [
+        "os_census",
+        "ss_field_ops"
+      ],
+      "alignment": 0.001,
+      "bestSector": "Services & Miscellaneous",
+      "bestSectorRelevance": 0.01,
+      "sectorDemand": 101,
+      "missingInBestSector": []
+    },
+    {
+      "courseId": "MOSPI017",
+      "title": "Dissemination, Revisions & Release Practices",
+      "category": "Data Quality",
+      "skills": [
+        "dq_revision_policy",
+        "dq_dissemination"
+      ],
+      "alignment": 0.001,
+      "bestSector": "Data Science & AI",
+      "bestSectorRelevance": 0.002,
+      "sectorDemand": 2500,
+      "missingInBestSector": [
+        "dc_sql",
+        "it_python_basics",
+        "sm_descriptive",
+        "aiml_ml",
+        "os_big_data",
+        "cloud_azure"
+      ]
     },
     {
       "courseId": "GEN004",
@@ -299,20 +472,6 @@
       "category": "Statistical Methods",
       "skills": [
         "sm_small_area"
-      ],
-      "alignment": 0,
-      "bestSector": "—",
-      "bestSectorRelevance": 0,
-      "sectorDemand": 0,
-      "missingInBestSector": []
-    },
-    {
-      "courseId": "GEN010",
-      "title": "R for Official Statistics",
-      "category": "Digital Competency",
-      "skills": [
-        "it_r_stats",
-        "it_python_stats"
       ],
       "alignment": 0,
       "bestSector": "—",
@@ -401,46 +560,6 @@
       "missingInBestSector": []
     },
     {
-      "courseId": "IGOT005",
-      "title": "Confidentiality & Statistical Disclosure Control",
-      "category": "Data Quality",
-      "skills": [
-        "dq_confidentiality"
-      ],
-      "alignment": 0,
-      "bestSector": "—",
-      "bestSectorRelevance": 0,
-      "sectorDemand": 0,
-      "missingInBestSector": []
-    },
-    {
-      "courseId": "IGOT006",
-      "title": "SDMX for Data Producers",
-      "category": "Data Quality",
-      "skills": [
-        "dq_sdmx",
-        "dc_metadata"
-      ],
-      "alignment": 0,
-      "bestSector": "—",
-      "bestSectorRelevance": 0,
-      "sectorDemand": 0,
-      "missingInBestSector": []
-    },
-    {
-      "courseId": "IGOT007",
-      "title": "Ethics in Data-Driven Governance",
-      "category": "Governance",
-      "skills": [
-        "it_data_ethics"
-      ],
-      "alignment": 0,
-      "bestSector": "—",
-      "bestSectorRelevance": 0,
-      "sectorDemand": 0,
-      "missingInBestSector": []
-    },
-    {
       "courseId": "MOSPI010",
       "title": "Understanding NSS Rounds & Survey Methodology",
       "category": "Official Statistics",
@@ -450,10 +569,13 @@
         "ss_sampling_stratified"
       ],
       "alignment": 0,
-      "bestSector": "—",
-      "bestSectorRelevance": 0,
-      "sectorDemand": 0,
-      "missingInBestSector": []
+      "bestSector": "Software Engineering",
+      "bestSectorRelevance": 0.001,
+      "sectorDemand": 2500,
+      "missingInBestSector": [
+        "dc_sql",
+        "cg_project_mgmt"
+      ]
     },
     {
       "courseId": "MOSPI013",
@@ -481,20 +603,6 @@
       "bestSectorRelevance": 0,
       "sectorDemand": 0,
       "missingInBestSector": []
-    },
-    {
-      "courseId": "MOSPI017",
-      "title": "Dissemination, Revisions & Release Practices",
-      "category": "Data Quality",
-      "skills": [
-        "dq_revision_policy",
-        "dq_dissemination"
-      ],
-      "alignment": 0,
-      "bestSector": "—",
-      "bestSectorRelevance": 0,
-      "sectorDemand": 0,
-      "missingInBestSector": []
     }
   ],
   "sectorCoverage": [
@@ -511,6 +619,63 @@
       "topSkills": [],
       "coveredSkills": [],
       "coverage": 0
+    },
+    {
+      "sector": "Data Science & AI",
+      "postings": 2500,
+      "topSkills": [
+        "dc_sql",
+        "it_python_basics",
+        "sm_descriptive",
+        "aiml_ml",
+        "os_big_data",
+        "cloud_azure",
+        "cg_project_mgmt",
+        "cloud_aws",
+        "cg_report_writing",
+        "it_dashboards",
+        "cloud_gcp",
+        "it_data_viz"
+      ],
+      "coveredSkills": [
+        "dc_sql",
+        "it_python_basics",
+        "sm_descriptive",
+        "os_big_data",
+        "cg_project_mgmt",
+        "cg_report_writing",
+        "it_dashboards",
+        "it_data_viz"
+      ],
+      "coverage": 0.706
+    },
+    {
+      "sector": "Software Engineering",
+      "postings": 2500,
+      "topSkills": [
+        "dc_sql",
+        "cg_project_mgmt",
+        "it_python_basics",
+        "devops_docker",
+        "cloud_aws",
+        "cg_report_writing",
+        "cloud_azure",
+        "ss_quality_assurance",
+        "cloud_gcp",
+        "sm_descriptive",
+        "aiml_ml",
+        "os_big_data"
+      ],
+      "coveredSkills": [
+        "dc_sql",
+        "cg_project_mgmt",
+        "it_python_basics",
+        "cg_report_writing",
+        "ss_quality_assurance",
+        "sm_descriptive",
+        "os_big_data"
+      ],
+      "coverage": 0.72
     },
     {
       "sector": "Manufacturing & Auto",
@@ -538,10 +703,10 @@
         "sm_descriptive",
         "dq_quality_audit",
         "it_basics",
+        "os_big_data",
         "cg_training_delivery",
         "it_python_basics",
-        "dc_spreadsheets",
-        "it_dashboards"
+        "dc_spreadsheets"
       ],
       "coveredSkills": [
         "dc_sql",
@@ -551,12 +716,12 @@
         "sm_descriptive",
         "dq_quality_audit",
         "it_basics",
+        "os_big_data",
         "cg_training_delivery",
         "it_python_basics",
-        "dc_spreadsheets",
-        "it_dashboards"
+        "dc_spreadsheets"
       ],
-      "coverage": 0.907
+      "coverage": 0.909
     },
     {
       "sector": "BFSI",
@@ -631,67 +796,266 @@
   ],
   "uncoveredSkills": [
     {
-      "skillId": "med_icd",
-      "demand": 17,
-      "share": 0.017,
+      "skillId": "cloud_aws",
+      "demand": 850,
+      "share": 0.142,
       "sectors": [
+        "Data Science & AI",
+        "Software Engineering",
+        "IT & Software"
+      ],
+      "examplePostingIds": [
+        "nk-231224500732",
+        "nk-231224500385",
+        "nk-221224002224"
+      ]
+    },
+    {
+      "skillId": "cloud_azure",
+      "demand": 732,
+      "share": 0.122,
+      "sectors": [
+        "Data Science & AI",
+        "Software Engineering",
+        "IT & Software"
+      ],
+      "examplePostingIds": [
+        "nk-231224902246",
+        "nk-201224015240",
+        "nk-131224911892"
+      ]
+    },
+    {
+      "skillId": "aiml_ml",
+      "demand": 707,
+      "share": 0.118,
+      "sectors": [
+        "Data Science & AI",
+        "Software Engineering",
+        "IT & Software"
+      ],
+      "examplePostingIds": [
+        "nk-181224502708",
+        "nk-211224008589",
+        "nk-221224002224"
+      ]
+    },
+    {
+      "skillId": "devops_docker",
+      "demand": 563,
+      "share": 0.094,
+      "sectors": [
+        "Data Science & AI",
+        "Software Engineering",
+        "IT & Software"
+      ],
+      "examplePostingIds": [
+        "nk-111224502204",
+        "nk-111224502998",
+        "nk-101224924660"
+      ]
+    },
+    {
+      "skillId": "cloud_gcp",
+      "demand": 383,
+      "share": 0.064,
+      "sectors": [
+        "Data Science & AI",
+        "Software Engineering",
+        "IT & Software"
+      ],
+      "examplePostingIds": [
+        "nk-201224015240",
+        "nk-211024011963",
+        "nk-101224003789"
+      ]
+    },
+    {
+      "skillId": "aiml_dl",
+      "demand": 189,
+      "share": 0.032,
+      "sectors": [
+        "Data Science & AI",
+        "Software Engineering"
+      ],
+      "examplePostingIds": [
+        "nk-010421006391",
+        "nk-211224008589",
+        "nk-221224002224"
+      ]
+    },
+    {
+      "skillId": "aiml_nlp",
+      "demand": 175,
+      "share": 0.029,
+      "sectors": [
+        "Data Science & AI",
+        "Software Engineering"
+      ],
+      "examplePostingIds": [
+        "nk-010421006391",
+        "nk-211224008589",
+        "nk-231224000653"
+      ]
+    },
+    {
+      "skillId": "aiml_genai",
+      "demand": 95,
+      "share": 0.016,
+      "sectors": [
+        "Data Science & AI",
+        "Software Engineering"
+      ],
+      "examplePostingIds": [
+        "nk-211224008589",
+        "nk-201224504862",
+        "nk-171224915222"
+      ]
+    },
+    {
+      "skillId": "aiml_cv",
+      "demand": 78,
+      "share": 0.013,
+      "sectors": [
+        "Data Science & AI",
+        "Software Engineering"
+      ],
+      "examplePostingIds": [
+        "nk-201224500897",
+        "nk-111224502998",
+        "nk-161224502069"
+      ]
+    },
+    {
+      "skillId": "med_icd",
+      "demand": 19,
+      "share": 0.003,
+      "sectors": [
+        "Data Science & AI",
         "IT & Software",
         "BFSI"
       ],
       "examplePostingIds": [
-        "maharashtra_-14",
-        "maharashtra_-34",
-        "maharashtra_-97"
-      ]
-    },
-    {
-      "skillId": "mfg_cnc",
-      "demand": 5,
-      "share": 0.005,
-      "sectors": [
-        "IT & Software"
-      ],
-      "examplePostingIds": [
-        "maharashtra_-187",
-        "maharashtra_-348",
-        "maharashtra_-363"
+        "nk-150923501533",
+        "nk-160524008633",
+        "maharashtra_-14"
       ]
     },
     {
       "skillId": "mfg_plc",
-      "demand": 2,
-      "share": 0.002,
+      "demand": 15,
+      "share": 0.003,
       "sectors": [
+        "Data Science & AI",
+        "Software Engineering",
         "IT & Software",
         "Manufacturing & Auto"
       ],
       "examplePostingIds": [
-        "maharashtra_-195",
-        "maharashtra_-679"
+        "nk-280423500312",
+        "nk-171224016319",
+        "nk-250924507396"
+      ]
+    },
+    {
+      "skillId": "mfg_cnc",
+      "demand": 6,
+      "share": 0.001,
+      "sectors": [
+        "Software Engineering",
+        "IT & Software"
+      ],
+      "examplePostingIds": [
+        "nk-130123004494",
+        "maharashtra_-187",
+        "maharashtra_-348"
+      ]
+    },
+    {
+      "skillId": "agri_drone",
+      "demand": 4,
+      "share": 0.001,
+      "sectors": [
+        "Data Science & AI",
+        "Software Engineering"
+      ],
+      "examplePostingIds": [
+        "nk-250123502703",
+        "nk-131224913352",
+        "nk-131224913681"
+      ]
+    },
+    {
+      "skillId": "civ_bim",
+      "demand": 3,
+      "share": 0.001,
+      "sectors": [
+        "Data Science & AI",
+        "Software Engineering"
+      ],
+      "examplePostingIds": [
+        "nk-051124502592",
+        "nk-030724500395",
+        "nk-051224016739"
       ]
     }
   ],
   "recommendations": [
     {
       "type": "add-program",
-      "skillId": "med_icd",
-      "sector": "IT & Software",
-      "title": "Add content for \"med_icd\"",
-      "detail": "17 posting(s) demand this skill (notably in IT & Software, BFSI) but no current program teaches it. Prioritise a module or bridge course."
+      "skillId": "cloud_aws",
+      "sector": "Data Science & AI",
+      "title": "Add content for \"cloud_aws\"",
+      "detail": "850 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
     },
     {
       "type": "add-program",
-      "skillId": "mfg_cnc",
-      "sector": "IT & Software",
-      "title": "Add content for \"mfg_cnc\"",
-      "detail": "5 posting(s) demand this skill (notably in IT & Software) but no current program teaches it. Prioritise a module or bridge course."
+      "skillId": "cloud_azure",
+      "sector": "Data Science & AI",
+      "title": "Add content for \"cloud_azure\"",
+      "detail": "732 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
     },
     {
       "type": "add-program",
-      "skillId": "mfg_plc",
-      "sector": "IT & Software",
-      "title": "Add content for \"mfg_plc\"",
-      "detail": "2 posting(s) demand this skill (notably in IT & Software, Manufacturing & Auto) but no current program teaches it. Prioritise a module or bridge course."
+      "skillId": "aiml_ml",
+      "sector": "Data Science & AI",
+      "title": "Add content for \"aiml_ml\"",
+      "detail": "707 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
+    },
+    {
+      "type": "add-program",
+      "skillId": "devops_docker",
+      "sector": "Data Science & AI",
+      "title": "Add content for \"devops_docker\"",
+      "detail": "563 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
+    },
+    {
+      "type": "add-program",
+      "skillId": "cloud_gcp",
+      "sector": "Data Science & AI",
+      "title": "Add content for \"cloud_gcp\"",
+      "detail": "383 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
+    },
+    {
+      "type": "add-program",
+      "skillId": "aiml_dl",
+      "sector": "Data Science & AI",
+      "title": "Add content for \"aiml_dl\"",
+      "detail": "189 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
+    },
+    {
+      "type": "add-program",
+      "skillId": "aiml_nlp",
+      "sector": "Data Science & AI",
+      "title": "Add content for \"aiml_nlp\"",
+      "detail": "175 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
+    },
+    {
+      "type": "add-program",
+      "skillId": "aiml_genai",
+      "sector": "Data Science & AI",
+      "title": "Add content for \"aiml_genai\"",
+      "detail": "95 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
     },
     {
       "type": "revise-program",

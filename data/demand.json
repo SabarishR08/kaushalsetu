@@ -1,329 +1,1449 @@
 {
   "meta": {
-    "builtAt": "2026-09-30T12:36:57.496Z",
-    "source": "data/jobs/raw CSV corpus",
+    "builtAt": "2026-09-30T12:39:58.970Z",
+    "source": "real corpus merge: Naukri JSONL + sector CSV (data/jobs/raw)",
     "tagger": "keyword",
-    "postings": 1000,
-    "sectors": 7
+    "postings": 6000,
+    "sectors": 9
   },
   "overall": [
     {
-      "skillId": "cg_report_writing",
-      "demand": 40,
-      "share": 0.04,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "maharashtra_-61",
-        "maharashtra_-105",
-        "maharashtra_-151"
-      ]
-    },
-    {
       "skillId": "dc_sql",
-      "demand": 37,
-      "share": 0.037,
+      "demand": 2115,
+      "share": 0.353,
       "avgStrength": 3,
       "examplePostingIds": [
-        "maharashtra_-2",
-        "maharashtra_-7",
-        "maharashtra_-120"
-      ]
-    },
-    {
-      "skillId": "cg_training_delivery",
-      "demand": 27,
-      "share": 0.027,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "maharashtra_-9",
-        "maharashtra_-16",
-        "maharashtra_-25"
+        "nk-231224500732",
+        "nk-231224500385",
+        "nk-201224505002"
       ]
     },
     {
       "skillId": "cg_project_mgmt",
-      "demand": 24,
-      "share": 0.024,
+      "demand": 1407,
+      "share": 0.235,
       "avgStrength": 3,
       "examplePostingIds": [
-        "maharashtra_-53",
-        "maharashtra_-74",
-        "maharashtra_-107"
-      ]
-    },
-    {
-      "skillId": "dq_quality_audit",
-      "demand": 22,
-      "share": 0.022,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "maharashtra_-52",
-        "maharashtra_-78",
-        "maharashtra_-96"
-      ]
-    },
-    {
-      "skillId": "med_icd",
-      "demand": 17,
-      "share": 0.017,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "maharashtra_-14",
-        "maharashtra_-34",
-        "maharashtra_-97"
-      ]
-    },
-    {
-      "skillId": "ss_quality_assurance",
-      "demand": 15,
-      "share": 0.015,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "maharashtra_-52",
-        "maharashtra_-54",
-        "maharashtra_-304"
-      ]
-    },
-    {
-      "skillId": "it_basics",
-      "demand": 13,
-      "share": 0.013,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "maharashtra_-18",
-        "maharashtra_-24",
-        "maharashtra_-511"
-      ]
-    },
-    {
-      "skillId": "sm_descriptive",
-      "demand": 11,
-      "share": 0.011,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "maharashtra_-81",
-        "maharashtra_-100",
-        "maharashtra_-167"
-      ]
-    },
-    {
-      "skillId": "os_big_data",
-      "demand": 8,
-      "share": 0.008,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "maharashtra_-13",
-        "maharashtra_-167",
-        "maharashtra_-204"
-      ]
-    },
-    {
-      "skillId": "sm_time_series",
-      "demand": 8,
-      "share": 0.008,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "maharashtra_-413",
-        "maharashtra_-487",
-        "maharashtra_-546"
-      ]
-    },
-    {
-      "skillId": "dc_spreadsheets",
-      "demand": 7,
-      "share": 0.007,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "maharashtra_-385",
-        "maharashtra_-788",
-        "maharashtra_-860"
+        "nk-221224001677",
+        "nk-181224500595",
+        "nk-171224504250"
       ]
     },
     {
       "skillId": "it_python_basics",
-      "demand": 6,
-      "share": 0.006,
+      "demand": 1321,
+      "share": 0.22,
       "avgStrength": 3,
       "examplePostingIds": [
-        "maharashtra_-2",
-        "maharashtra_-4",
-        "maharashtra_-94"
-      ]
-    },
-    {
-      "skillId": "it_dashboards",
-      "demand": 5,
-      "share": 0.005,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "maharashtra_-181",
-        "maharashtra_-228",
-        "maharashtra_-246"
-      ]
-    },
-    {
-      "skillId": "mfg_cnc",
-      "demand": 5,
-      "share": 0.005,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "maharashtra_-187",
-        "maharashtra_-348",
-        "maharashtra_-363"
-      ]
-    },
-    {
-      "skillId": "dc_data_entry",
-      "demand": 4,
-      "share": 0.004,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "maharashtra_-18",
-        "maharashtra_-537",
-        "maharashtra_-570"
-      ]
-    },
-    {
-      "skillId": "ss_sampling_basics",
-      "demand": 4,
-      "share": 0.004,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "maharashtra_-304",
-        "maharashtra_-351",
-        "maharashtra_-421"
-      ]
-    },
-    {
-      "skillId": "sm_regression",
-      "demand": 3,
-      "share": 0.003,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "maharashtra_-585",
-        "maharashtra_-857",
-        "maharashtra_-882"
-      ]
-    },
-    {
-      "skillId": "cg_user_engagement",
-      "demand": 2,
-      "share": 0.002,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "maharashtra_-381",
-        "maharashtra_-443"
+        "nk-231224902246",
+        "nk-211224008589",
+        "nk-221224002224"
       ]
     },
     {
       "skillId": "cloud_aws",
-      "demand": 2,
-      "share": 0.002,
+      "demand": 850,
+      "share": 0.142,
       "avgStrength": 3,
       "examplePostingIds": [
-        "maharashtra_-627",
-        "maharashtra_-761"
+        "nk-231224500732",
+        "nk-231224500385",
+        "nk-221224002224"
+      ]
+    },
+    {
+      "skillId": "sm_descriptive",
+      "demand": 810,
+      "share": 0.135,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-231224902246",
+        "nk-181224502708",
+        "nk-191224916209"
       ]
     },
     {
       "skillId": "cloud_azure",
-      "demand": 2,
-      "share": 0.002,
+      "demand": 732,
+      "share": 0.122,
       "avgStrength": 3,
       "examplePostingIds": [
-        "maharashtra_-544",
-        "maharashtra_-849"
-      ]
-    },
-    {
-      "skillId": "devops_docker",
-      "demand": 2,
-      "share": 0.002,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "maharashtra_-369",
-        "maharashtra_-984"
-      ]
-    },
-    {
-      "skillId": "it_data_viz",
-      "demand": 2,
-      "share": 0.002,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "maharashtra_-630",
-        "maharashtra_-734"
-      ]
-    },
-    {
-      "skillId": "mfg_plc",
-      "demand": 2,
-      "share": 0.002,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "maharashtra_-195",
-        "maharashtra_-679"
-      ]
-    },
-    {
-      "skillId": "sm_hypothesis",
-      "demand": 2,
-      "share": 0.002,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "maharashtra_-857",
-        "maharashtra_-882"
-      ]
-    },
-    {
-      "skillId": "sm_probability",
-      "demand": 2,
-      "share": 0.002,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "maharashtra_-857",
-        "maharashtra_-882"
-      ]
-    },
-    {
-      "skillId": "ss_field_ops",
-      "demand": 2,
-      "share": 0.002,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "maharashtra_-688",
-        "maharashtra_-787"
+        "nk-231224902246",
+        "nk-201224015240",
+        "nk-131224911892"
       ]
     },
     {
       "skillId": "aiml_ml",
-      "demand": 1,
-      "share": 0.001,
+      "demand": 707,
+      "share": 0.118,
       "avgStrength": 3,
       "examplePostingIds": [
-        "maharashtra_-167"
+        "nk-181224502708",
+        "nk-211224008589",
+        "nk-221224002224"
+      ]
+    },
+    {
+      "skillId": "cg_report_writing",
+      "demand": 686,
+      "share": 0.114,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-231224500732",
+        "nk-231224500385",
+        "nk-111224502204"
+      ]
+    },
+    {
+      "skillId": "os_big_data",
+      "demand": 649,
+      "share": 0.108,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-171224915222",
+        "nk-201224006799",
+        "nk-211024011963"
+      ]
+    },
+    {
+      "skillId": "devops_docker",
+      "demand": 563,
+      "share": 0.094,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-111224502204",
+        "nk-111224502998",
+        "nk-101224924660"
       ]
     },
     {
       "skillId": "cloud_gcp",
-      "demand": 1,
-      "share": 0.001,
+      "demand": 383,
+      "share": 0.064,
       "avgStrength": 3,
       "examplePostingIds": [
-        "maharashtra_-627"
+        "nk-201224015240",
+        "nk-211024011963",
+        "nk-101224003789"
+      ]
+    },
+    {
+      "skillId": "it_dashboards",
+      "demand": 326,
+      "share": 0.054,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-191224916209",
+        "nk-051224008574",
+        "nk-201224006799"
+      ]
+    },
+    {
+      "skillId": "ss_quality_assurance",
+      "demand": 228,
+      "share": 0.038,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-171224503447",
+        "nk-041224501290",
+        "nk-061124502921"
+      ]
+    },
+    {
+      "skillId": "it_data_viz",
+      "demand": 213,
+      "share": 0.036,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-171224915222",
+        "nk-231224500680",
+        "nk-171224503932"
+      ]
+    },
+    {
+      "skillId": "aiml_dl",
+      "demand": 189,
+      "share": 0.032,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-010421006391",
+        "nk-211224008589",
+        "nk-221224002224"
+      ]
+    },
+    {
+      "skillId": "aiml_nlp",
+      "demand": 175,
+      "share": 0.029,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-010421006391",
+        "nk-211224008589",
+        "nk-231224000653"
+      ]
+    },
+    {
+      "skillId": "dc_spreadsheets",
+      "demand": 158,
+      "share": 0.026,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-211024011963",
+        "nk-281124919450",
+        "nk-041023500183"
+      ]
+    },
+    {
+      "skillId": "sm_regression",
+      "demand": 116,
+      "share": 0.019,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-191224916486",
+        "nk-121224500504",
+        "nk-131224911892"
+      ]
+    },
+    {
+      "skillId": "cg_user_engagement",
+      "demand": 103,
+      "share": 0.017,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-051224008574",
+        "nk-211024011963",
+        "nk-091224913055"
+      ]
+    },
+    {
+      "skillId": "sm_time_series",
+      "demand": 102,
+      "share": 0.017,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-231224500680",
+        "nk-201224006799",
+        "nk-121224500504"
+      ]
+    },
+    {
+      "skillId": "aiml_genai",
+      "demand": 95,
+      "share": 0.016,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-211224008589",
+        "nk-201224504862",
+        "nk-171224915222"
+      ]
+    },
+    {
+      "skillId": "it_python_stats",
+      "demand": 86,
+      "share": 0.014,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-231224902246",
+        "nk-201224006799",
+        "nk-171224009612"
+      ]
+    },
+    {
+      "skillId": "aiml_cv",
+      "demand": 78,
+      "share": 0.013,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-201224500897",
+        "nk-111224502998",
+        "nk-161224502069"
+      ]
+    },
+    {
+      "skillId": "dq_quality_audit",
+      "demand": 70,
+      "share": 0.012,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-100924500764",
+        "nk-241024502839",
+        "nk-031024501934"
       ]
     },
     {
       "skillId": "dc_cleaning",
-      "demand": 1,
+      "demand": 65,
+      "share": 0.011,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-231024019509",
+        "nk-300524501258",
+        "nk-281124904142"
+      ]
+    },
+    {
+      "skillId": "dc_metadata",
+      "demand": 62,
+      "share": 0.01,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-010323500468",
+        "nk-111124500727",
+        "nk-101224501433"
+      ]
+    },
+    {
+      "skillId": "it_basics",
+      "demand": 60,
+      "share": 0.01,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-030423501907",
+        "nk-051124502337",
+        "nk-201224500237"
+      ]
+    },
+    {
+      "skillId": "dq_confidentiality",
+      "demand": 43,
+      "share": 0.007,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-111224502204",
+        "nk-031024501978",
+        "nk-121224500382"
+      ]
+    },
+    {
+      "skillId": "cg_training_delivery",
+      "demand": 31,
+      "share": 0.005,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-201224501425",
+        "nk-061224903968",
+        "nk-151019500690"
+      ]
+    },
+    {
+      "skillId": "sm_hypothesis",
+      "demand": 21,
+      "share": 0.004,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-121224500504",
+        "nk-211024011963",
+        "nk-121224504379"
+      ]
+    },
+    {
+      "skillId": "med_icd",
+      "demand": 19,
+      "share": 0.003,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-150923501533",
+        "nk-160524008633",
+        "maharashtra_-14"
+      ]
+    },
+    {
+      "skillId": "dc_edit_rules",
+      "demand": 16,
+      "share": 0.003,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-301024500031",
+        "nk-041224006015",
+        "nk-091224503384"
+      ]
+    },
+    {
+      "skillId": "mfg_plc",
+      "demand": 15,
+      "share": 0.003,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-280423500312",
+        "nk-171224016319",
+        "nk-250924507396"
+      ]
+    },
+    {
+      "skillId": "dc_data_entry",
+      "demand": 11,
+      "share": 0.002,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-101224501433",
+        "nk-220724502522",
+        "nk-220724501751"
+      ]
+    },
+    {
+      "skillId": "ss_field_ops",
+      "demand": 8,
       "share": 0.001,
       "avgStrength": 3,
       "examplePostingIds": [
-        "maharashtra_-255"
+        "nk-041224504773",
+        "nk-041224504652",
+        "nk-081223500253"
+      ]
+    },
+    {
+      "skillId": "sm_probability",
+      "demand": 7,
+      "share": 0.001,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-051124502615",
+        "nk-280824012388",
+        "nk-100424500911"
+      ]
+    },
+    {
+      "skillId": "mfg_cnc",
+      "demand": 6,
+      "share": 0.001,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-130123004494",
+        "maharashtra_-187",
+        "maharashtra_-348"
+      ]
+    },
+    {
+      "skillId": "dq_dissemination",
+      "demand": 5,
+      "share": 0.001,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-181224500749",
+        "nk-050224500663",
+        "nk-010319501401"
+      ]
+    },
+    {
+      "skillId": "it_data_ethics",
+      "demand": 5,
+      "share": 0.001,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-021224502136",
+        "nk-141024501889",
+        "nk-230924502311"
+      ]
+    },
+    {
+      "skillId": "it_r_stats",
+      "demand": 5,
+      "share": 0.001,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-251124008562",
+        "nk-211124502113",
+        "nk-031224005454"
+      ]
+    },
+    {
+      "skillId": "ss_sampling_basics",
+      "demand": 5,
+      "share": 0.001,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-211124505631",
+        "maharashtra_-304",
+        "maharashtra_-351"
+      ]
+    },
+    {
+      "skillId": "agri_drone",
+      "demand": 4,
+      "share": 0.001,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-250123502703",
+        "nk-131224913352",
+        "nk-131224913681"
+      ]
+    },
+    {
+      "skillId": "sm_inference",
+      "demand": 4,
+      "share": 0.001,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-290623500367",
+        "nk-291223501127",
+        "nk-170624502783"
+      ]
+    },
+    {
+      "skillId": "civ_bim",
+      "demand": 3,
+      "share": 0.001,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-051124502592",
+        "nk-030724500395",
+        "nk-051224016739"
+      ]
+    },
+    {
+      "skillId": "ss_sampling_stratified",
+      "demand": 2,
+      "share": 0,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-021224502136",
+        "nk-141024501889"
+      ]
+    },
+    {
+      "skillId": "dq_revision_policy",
+      "demand": 1,
+      "share": 0,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-061224504201"
+      ]
+    },
+    {
+      "skillId": "os_census",
+      "demand": 1,
+      "share": 0,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-300724502059"
+      ]
+    },
+    {
+      "skillId": "sm_estimation",
+      "demand": 1,
+      "share": 0,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-250124500340"
       ]
     }
   ],
   "sectors": [
+    {
+      "sector": "Data Science & AI",
+      "postings": 2500,
+      "topSkills": [
+        {
+          "skillId": "dc_sql",
+          "demand": 1080,
+          "share": 0.432,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-171224503932",
+            "nk-201224006799",
+            "nk-171224503068"
+          ]
+        },
+        {
+          "skillId": "it_python_basics",
+          "demand": 942,
+          "share": 0.377,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231224902246",
+            "nk-211224008589",
+            "nk-221224002224"
+          ]
+        },
+        {
+          "skillId": "sm_descriptive",
+          "demand": 695,
+          "share": 0.278,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231224902246",
+            "nk-181224502708",
+            "nk-191224916209"
+          ]
+        },
+        {
+          "skillId": "aiml_ml",
+          "demand": 619,
+          "share": 0.248,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-181224502708",
+            "nk-211224008589",
+            "nk-221224002224"
+          ]
+        },
+        {
+          "skillId": "os_big_data",
+          "demand": 569,
+          "share": 0.228,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-171224915222",
+            "nk-201224006799",
+            "nk-211024011963"
+          ]
+        },
+        {
+          "skillId": "cloud_azure",
+          "demand": 522,
+          "share": 0.209,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231224902246",
+            "nk-201224015240",
+            "nk-131224911892"
+          ]
+        },
+        {
+          "skillId": "cg_project_mgmt",
+          "demand": 500,
+          "share": 0.2,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-121224500504",
+            "nk-201224005911",
+            "nk-261124922233"
+          ]
+        },
+        {
+          "skillId": "cloud_aws",
+          "demand": 497,
+          "share": 0.199,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-221224002224",
+            "nk-201224504862",
+            "nk-201224015240"
+          ]
+        },
+        {
+          "skillId": "cg_report_writing",
+          "demand": 324,
+          "share": 0.13,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-211024011963",
+            "nk-231124003607",
+            "nk-281124919450"
+          ]
+        },
+        {
+          "skillId": "it_dashboards",
+          "demand": 295,
+          "share": 0.118,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-191224916209",
+            "nk-201224006799",
+            "nk-171224500028"
+          ]
+        },
+        {
+          "skillId": "cloud_gcp",
+          "demand": 277,
+          "share": 0.111,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-201224015240",
+            "nk-211024011963",
+            "nk-101224003789"
+          ]
+        },
+        {
+          "skillId": "it_data_viz",
+          "demand": 200,
+          "share": 0.08,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-171224915222",
+            "nk-231224500680",
+            "nk-171224503932"
+          ]
+        },
+        {
+          "skillId": "devops_docker",
+          "demand": 195,
+          "share": 0.078,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-111224502998",
+            "nk-270924502434",
+            "nk-051224502801"
+          ]
+        },
+        {
+          "skillId": "aiml_dl",
+          "demand": 180,
+          "share": 0.072,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-010421006391",
+            "nk-211224008589",
+            "nk-221224002224"
+          ]
+        },
+        {
+          "skillId": "aiml_nlp",
+          "demand": 162,
+          "share": 0.065,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-010421006391",
+            "nk-211224008589",
+            "nk-231224000653"
+          ]
+        },
+        {
+          "skillId": "dc_spreadsheets",
+          "demand": 129,
+          "share": 0.052,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-211024011963",
+            "nk-281124919450",
+            "nk-181219501949"
+          ]
+        },
+        {
+          "skillId": "ss_quality_assurance",
+          "demand": 93,
+          "share": 0.037,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-061124502921",
+            "nk-101224501433",
+            "nk-141124502816"
+          ]
+        },
+        {
+          "skillId": "sm_time_series",
+          "demand": 90,
+          "share": 0.036,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231224500680",
+            "nk-201224006799",
+            "nk-121224500504"
+          ]
+        },
+        {
+          "skillId": "sm_regression",
+          "demand": 85,
+          "share": 0.034,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-191224916486",
+            "nk-121224500504",
+            "nk-131224911892"
+          ]
+        },
+        {
+          "skillId": "aiml_genai",
+          "demand": 81,
+          "share": 0.032,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-211224008589",
+            "nk-201224504862",
+            "nk-171224915222"
+          ]
+        },
+        {
+          "skillId": "it_python_stats",
+          "demand": 79,
+          "share": 0.032,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231224902246",
+            "nk-201224006799",
+            "nk-171224009612"
+          ]
+        },
+        {
+          "skillId": "cg_user_engagement",
+          "demand": 71,
+          "share": 0.028,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-211024011963",
+            "nk-091224913055",
+            "nk-211124502113"
+          ]
+        },
+        {
+          "skillId": "aiml_cv",
+          "demand": 62,
+          "share": 0.025,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-201224500897",
+            "nk-111224502998",
+            "nk-161224502069"
+          ]
+        },
+        {
+          "skillId": "dc_cleaning",
+          "demand": 60,
+          "share": 0.024,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231024019509",
+            "nk-281124904142",
+            "nk-101224501433"
+          ]
+        },
+        {
+          "skillId": "dc_metadata",
+          "demand": 54,
+          "share": 0.022,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-101224501433",
+            "nk-061224504735",
+            "nk-101224920167"
+          ]
+        },
+        {
+          "skillId": "it_basics",
+          "demand": 42,
+          "share": 0.017,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-030423501907",
+            "nk-051124502337",
+            "nk-201224500237"
+          ]
+        },
+        {
+          "skillId": "dq_quality_audit",
+          "demand": 31,
+          "share": 0.012,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-100924500764",
+            "nk-241024502839",
+            "nk-031024501934"
+          ]
+        },
+        {
+          "skillId": "dq_confidentiality",
+          "demand": 24,
+          "share": 0.01,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-031024501978",
+            "nk-121224500382",
+            "nk-021224503330"
+          ]
+        },
+        {
+          "skillId": "sm_hypothesis",
+          "demand": 19,
+          "share": 0.008,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-121224500504",
+            "nk-211024011963",
+            "nk-121224504379"
+          ]
+        },
+        {
+          "skillId": "dc_edit_rules",
+          "demand": 15,
+          "share": 0.006,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-301024500031",
+            "nk-041224006015",
+            "nk-091224503384"
+          ]
+        },
+        {
+          "skillId": "dc_data_entry",
+          "demand": 6,
+          "share": 0.002,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-101224501433",
+            "nk-220724502522",
+            "nk-220724501751"
+          ]
+        },
+        {
+          "skillId": "dq_dissemination",
+          "demand": 5,
+          "share": 0.002,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-181224500749",
+            "nk-050224500663",
+            "nk-010319501401"
+          ]
+        },
+        {
+          "skillId": "it_r_stats",
+          "demand": 5,
+          "share": 0.002,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-251124008562",
+            "nk-211124502113",
+            "nk-031224005454"
+          ]
+        },
+        {
+          "skillId": "sm_probability",
+          "demand": 5,
+          "share": 0.002,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-051124502615",
+            "nk-280824012388",
+            "nk-100424500911"
+          ]
+        },
+        {
+          "skillId": "sm_inference",
+          "demand": 4,
+          "share": 0.002,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-290623500367",
+            "nk-291223501127",
+            "nk-170624502783"
+          ]
+        },
+        {
+          "skillId": "it_data_ethics",
+          "demand": 3,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-230924502311",
+            "nk-131224919632",
+            "nk-111224908882"
+          ]
+        },
+        {
+          "skillId": "mfg_plc",
+          "demand": 3,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-121124500509",
+            "nk-011024500845",
+            "nk-071024503615"
+          ]
+        },
+        {
+          "skillId": "ss_field_ops",
+          "demand": 3,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-041224504773",
+            "nk-041224504652",
+            "nk-150724501253"
+          ]
+        },
+        {
+          "skillId": "civ_bim",
+          "demand": 2,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-030724500395",
+            "nk-051224016739"
+          ]
+        },
+        {
+          "skillId": "med_icd",
+          "demand": 2,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-150923501533",
+            "nk-160524008633"
+          ]
+        },
+        {
+          "skillId": "agri_drone",
+          "demand": 1,
+          "share": 0,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-171224502322"
+          ]
+        },
+        {
+          "skillId": "cg_training_delivery",
+          "demand": 1,
+          "share": 0,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-181224003732"
+          ]
+        },
+        {
+          "skillId": "os_census",
+          "demand": 1,
+          "share": 0,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-300724502059"
+          ]
+        },
+        {
+          "skillId": "sm_estimation",
+          "demand": 1,
+          "share": 0,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-250124500340"
+          ]
+        },
+        {
+          "skillId": "ss_sampling_basics",
+          "demand": 1,
+          "share": 0,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-211124505631"
+          ]
+        }
+      ],
+      "uncoveredSkills": []
+    },
+    {
+      "sector": "Software Engineering",
+      "postings": 2500,
+      "topSkills": [
+        {
+          "skillId": "dc_sql",
+          "demand": 998,
+          "share": 0.399,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231224500732",
+            "nk-231224500385",
+            "nk-201224505002"
+          ]
+        },
+        {
+          "skillId": "cg_project_mgmt",
+          "demand": 883,
+          "share": 0.353,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-221224001677",
+            "nk-181224500595",
+            "nk-171224504250"
+          ]
+        },
+        {
+          "skillId": "it_python_basics",
+          "demand": 373,
+          "share": 0.149,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-171224503020",
+            "nk-101224924660",
+            "nk-141224906327"
+          ]
+        },
+        {
+          "skillId": "devops_docker",
+          "demand": 366,
+          "share": 0.146,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-111224502204",
+            "nk-101224924660",
+            "nk-181224505466"
+          ]
+        },
+        {
+          "skillId": "cloud_aws",
+          "demand": 351,
+          "share": 0.14,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231224500732",
+            "nk-231224500385",
+            "nk-171224504250"
+          ]
+        },
+        {
+          "skillId": "cg_report_writing",
+          "demand": 322,
+          "share": 0.129,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231224500732",
+            "nk-231224500385",
+            "nk-111224502204"
+          ]
+        },
+        {
+          "skillId": "cloud_azure",
+          "demand": 208,
+          "share": 0.083,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-171224501235",
+            "nk-191224503322",
+            "nk-170124007705"
+          ]
+        },
+        {
+          "skillId": "ss_quality_assurance",
+          "demand": 120,
+          "share": 0.048,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-171224503447",
+            "nk-041224501290",
+            "nk-291024501388"
+          ]
+        },
+        {
+          "skillId": "cloud_gcp",
+          "demand": 105,
+          "share": 0.042,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-090924501338",
+            "nk-180624502779",
+            "nk-271124907324"
+          ]
+        },
+        {
+          "skillId": "sm_descriptive",
+          "demand": 104,
+          "share": 0.042,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-021224007126",
+            "nk-191224503322",
+            "nk-161224504074"
+          ]
+        },
+        {
+          "skillId": "aiml_ml",
+          "demand": 87,
+          "share": 0.035,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-131224003203",
+            "nk-100524500130",
+            "nk-010323500468"
+          ]
+        },
+        {
+          "skillId": "os_big_data",
+          "demand": 72,
+          "share": 0.029,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-010323500468",
+            "nk-250924505722",
+            "nk-211124506383"
+          ]
+        },
+        {
+          "skillId": "cg_user_engagement",
+          "demand": 30,
+          "share": 0.012,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-051224008574",
+            "nk-271124500891",
+            "nk-041024501624"
+          ]
+        },
+        {
+          "skillId": "sm_regression",
+          "demand": 28,
+          "share": 0.011,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-211124501732",
+            "nk-300524501258",
+            "nk-071124500920"
+          ]
+        },
+        {
+          "skillId": "it_dashboards",
+          "demand": 26,
+          "share": 0.01,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-051224008574",
+            "nk-031224504252",
+            "nk-291024501091"
+          ]
+        },
+        {
+          "skillId": "dc_spreadsheets",
+          "demand": 22,
+          "share": 0.009,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-041023500183",
+            "nk-190422500713",
+            "nk-081022500085"
+          ]
+        },
+        {
+          "skillId": "dq_confidentiality",
+          "demand": 19,
+          "share": 0.008,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-111224502204",
+            "nk-260924502388",
+            "nk-131224501090"
+          ]
+        },
+        {
+          "skillId": "dq_quality_audit",
+          "demand": 17,
+          "share": 0.007,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-241024501932",
+            "nk-051124504267",
+            "nk-061224504831"
+          ]
+        },
+        {
+          "skillId": "aiml_cv",
+          "demand": 16,
+          "share": 0.006,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-220923500835",
+            "nk-051124504694",
+            "nk-051124504692"
+          ]
+        },
+        {
+          "skillId": "aiml_genai",
+          "demand": 14,
+          "share": 0.006,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-121224501231",
+            "nk-121224500377",
+            "nk-121224500240"
+          ]
+        },
+        {
+          "skillId": "aiml_nlp",
+          "demand": 13,
+          "share": 0.005,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-261219501454",
+            "nk-121224501231",
+            "nk-121224500377"
+          ]
+        },
+        {
+          "skillId": "it_data_viz",
+          "demand": 11,
+          "share": 0.004,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-191224503322",
+            "nk-031024501304",
+            "nk-070823501129"
+          ]
+        },
+        {
+          "skillId": "mfg_plc",
+          "demand": 10,
+          "share": 0.004,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-280423500312",
+            "nk-171224016319",
+            "nk-250924507396"
+          ]
+        },
+        {
+          "skillId": "aiml_dl",
+          "demand": 9,
+          "share": 0.004,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-051124502581",
+            "nk-121124504111",
+            "nk-071024502444"
+          ]
+        },
+        {
+          "skillId": "dc_metadata",
+          "demand": 8,
+          "share": 0.003,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-010323500468",
+            "nk-111124500727",
+            "nk-041024501888"
+          ]
+        },
+        {
+          "skillId": "it_python_stats",
+          "demand": 7,
+          "share": 0.003,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-051124502581",
+            "nk-071024502444",
+            "nk-051124502611"
+          ]
+        },
+        {
+          "skillId": "it_basics",
+          "demand": 5,
+          "share": 0.002,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-080819501441",
+            "nk-071024501098",
+            "nk-221124020793"
+          ]
+        },
+        {
+          "skillId": "dc_cleaning",
+          "demand": 4,
+          "share": 0.002,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-300524501258",
+            "nk-271124009394",
+            "nk-191224912258"
+          ]
+        },
+        {
+          "skillId": "sm_time_series",
+          "demand": 4,
+          "share": 0.002,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-191124505687",
+            "nk-190924501907",
+            "nk-071024501098"
+          ]
+        },
+        {
+          "skillId": "agri_drone",
+          "demand": 3,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-250123502703",
+            "nk-131224913352",
+            "nk-131224913681"
+          ]
+        },
+        {
+          "skillId": "cg_training_delivery",
+          "demand": 3,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-201224501425",
+            "nk-061224903968",
+            "nk-151019500690"
+          ]
+        },
+        {
+          "skillId": "ss_field_ops",
+          "demand": 3,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-081223500253",
+            "nk-180724500371",
+            "nk-200924501939"
+          ]
+        },
+        {
+          "skillId": "it_data_ethics",
+          "demand": 2,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-021224502136",
+            "nk-141024501889"
+          ]
+        },
+        {
+          "skillId": "ss_sampling_stratified",
+          "demand": 2,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-021224502136",
+            "nk-141024501889"
+          ]
+        },
+        {
+          "skillId": "civ_bim",
+          "demand": 1,
+          "share": 0,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-051124502592"
+          ]
+        },
+        {
+          "skillId": "dc_data_entry",
+          "demand": 1,
+          "share": 0,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-041224504340"
+          ]
+        },
+        {
+          "skillId": "dc_edit_rules",
+          "demand": 1,
+          "share": 0,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-221124503023"
+          ]
+        },
+        {
+          "skillId": "dq_revision_policy",
+          "demand": 1,
+          "share": 0,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-061224504201"
+          ]
+        },
+        {
+          "skillId": "mfg_cnc",
+          "demand": 1,
+          "share": 0,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-130123004494"
+          ]
+        }
+      ],
+      "uncoveredSkills": []
+    },
     {
       "sector": "IT & Software",
       "postings": 727,
@@ -923,763 +2043,2501 @@
     }
   ],
   "audit": {
-    "maharashtra_-1": [],
-    "maharashtra_-2": [
-      "mysql",
+    "nk-010421006391": [
+      "deep learning",
+      "natural language processing"
+    ],
+    "nk-221224001677": [
+      "agile"
+    ],
+    "nk-231224902246": [
+      "analytics",
+      "python",
+      "numpy",
+      "azure"
+    ],
+    "nk-231224500732": [
+      "sql",
+      "reporting",
+      "aws"
+    ],
+    "nk-181224502708": [
+      "analytics",
+      "machine learning"
+    ],
+    "nk-231224500385": [
+      "sql",
+      "reporting",
+      "aws"
+    ],
+    "nk-211224008589": [
+      "python",
+      "machine learning",
+      "deep learning",
+      "nlp",
+      "genai"
+    ],
+    "nk-201224505002": [
+      "mysql"
+    ],
+    "nk-221224002224": [
+      "python",
+      "machine learning",
+      "tensorflow",
+      "aws"
+    ],
+    "nk-201224917103": [],
+    "nk-201224504862": [
+      "python",
+      "machine learning",
+      "tensorflow",
+      "generative ai",
+      "aws"
+    ],
+    "nk-201224905078": [],
+    "nk-191224916209": [
+      "analytics",
+      "python",
+      "tableau"
+    ],
+    "nk-201224904033": [],
+    "nk-171224915222": [
+      "analytics",
+      "hadoop",
+      "data visualization",
+      "python",
+      "prompt engineering"
+    ],
+    "nk-171224503020": [
+      "database",
       "python"
     ],
-    "maharashtra_-3": [],
-    "maharashtra_-4": [
-      "python"
+    "nk-201224500897": [
+      "machine learning",
+      "computer vision"
     ],
-    "maharashtra_-5": [],
-    "maharashtra_-6": [],
-    "maharashtra_-7": [
-      "sql"
+    "nk-111224502204": [
+      "postgresql",
+      "confidentiality",
+      "documentation",
+      "ci cd"
     ],
-    "maharashtra_-8": [],
-    "maharashtra_-9": [
-      "teaching"
+    "nk-231224500680": [
+      "forecasting",
+      "data visualization",
+      "python",
+      "machine learning"
     ],
-    "maharashtra_-10": [],
-    "maharashtra_-11": [],
-    "maharashtra_-12": [],
-    "maharashtra_-13": [
-      "big data"
+    "nk-181224501254": [
+      "reporting"
     ],
-    "maharashtra_-14": [
-      "medical coding"
+    "nk-111224502998": [
+      "python",
+      "machine learning",
+      "deep learning",
+      "computer vision",
+      "kubernetes"
     ],
-    "maharashtra_-15": [],
-    "maharashtra_-16": [
-      "teaching"
+    "nk-181224500465": [
+      "sql",
+      "reporting"
     ],
-    "maharashtra_-17": [],
-    "maharashtra_-18": [
-      "data entry",
-      "typing"
+    "nk-231224000653": [
+      "python",
+      "ml algorithms",
+      "nlp"
     ],
-    "maharashtra_-19": [],
-    "maharashtra_-20": [],
-    "maharashtra_-21": [],
-    "maharashtra_-22": [],
-    "maharashtra_-23": [],
-    "maharashtra_-24": [
-      "basic computer"
+    "nk-051224008574": [
+      "sql",
+      "tableau",
+      "client interaction"
     ],
-    "maharashtra_-25": [
-      "teaching"
+    "nk-171224503932": [
+      "sql",
+      "data visualization",
+      "python",
+      "machine learning",
+      "nlp"
     ],
-    "maharashtra_-26": [
-      "teaching"
+    "nk-181224502559": [],
+    "nk-191224916486": [
+      "regression",
+      "python",
+      "machine learning",
+      "deep learning",
+      "nlp",
+      "llm"
     ],
-    "maharashtra_-27": [],
-    "maharashtra_-28": [],
-    "maharashtra_-29": [],
-    "maharashtra_-30": [],
-    "maharashtra_-31": [],
-    "maharashtra_-32": [],
-    "maharashtra_-33": [],
-    "maharashtra_-34": [
-      "medical coding"
+    "nk-101224924660": [
+      "python",
+      "kubernetes"
     ],
-    "maharashtra_-35": [],
-    "maharashtra_-36": [],
-    "maharashtra_-37": [],
-    "maharashtra_-38": [],
-    "maharashtra_-39": [],
-    "maharashtra_-40": [],
-    "maharashtra_-41": [],
-    "maharashtra_-42": [],
-    "maharashtra_-43": [],
-    "maharashtra_-44": [],
-    "maharashtra_-45": [],
-    "maharashtra_-46": [],
-    "maharashtra_-47": [],
-    "maharashtra_-48": [],
-    "maharashtra_-49": [],
-    "maharashtra_-50": [],
-    "maharashtra_-51": [],
-    "maharashtra_-52": [
-      "quality assurance",
-      "auditing"
+    "nk-201224007030": [
+      "analytics",
+      "data visualization",
+      "machine learning",
+      "deep learning",
+      "generative ai"
     ],
-    "maharashtra_-53": [
-      "project management"
+    "nk-181224500597": [],
+    "nk-201224006799": [
+      "sql",
+      "analytics",
+      "time series",
+      "spark",
+      "data visualization",
+      "python",
+      "numpy",
+      "power bi",
+      "machine learning",
+      "deep learning",
+      "generative ai"
     ],
-    "maharashtra_-54": [
-      "quality assurance"
+    "nk-181224500595": [
+      "agile"
     ],
-    "maharashtra_-55": [],
-    "maharashtra_-56": [],
-    "maharashtra_-57": [],
-    "maharashtra_-58": [],
-    "maharashtra_-59": [],
-    "maharashtra_-60": [],
-    "maharashtra_-61": [
+    "nk-171224503068": [
+      "sql",
+      "analytics",
+      "data visualization",
+      "machine learning"
+    ],
+    "nk-171224504250": [
+      "agile",
+      "aws"
+    ],
+    "nk-171224500028": [
+      "sql",
+      "powerbi"
+    ],
+    "nk-101224502232": [
+      "sql",
       "documentation"
     ],
-    "maharashtra_-62": [],
-    "maharashtra_-63": [],
-    "maharashtra_-64": [],
-    "maharashtra_-65": [],
-    "maharashtra_-66": [],
-    "maharashtra_-67": [],
-    "maharashtra_-68": [],
-    "maharashtra_-69": [],
-    "maharashtra_-70": [],
-    "maharashtra_-71": [],
-    "maharashtra_-72": [],
-    "maharashtra_-73": [],
-    "maharashtra_-74": [
-      "program management"
+    "nk-161224502622": [
+      "sql",
+      "analytics",
+      "data visualization",
+      "machine learning"
     ],
-    "maharashtra_-75": [],
-    "maharashtra_-76": [],
-    "maharashtra_-77": [],
-    "maharashtra_-78": [
-      "audit"
+    "nk-131224003203": [
+      "machine learning"
     ],
-    "maharashtra_-79": [],
-    "maharashtra_-80": [],
-    "maharashtra_-81": [
-      "analytics"
+    "nk-161224502621": [
+      "sql",
+      "analytics",
+      "data visualization",
+      "machine learning"
     ],
-    "maharashtra_-82": [],
-    "maharashtra_-83": [],
-    "maharashtra_-84": [],
-    "maharashtra_-85": [],
-    "maharashtra_-86": [],
-    "maharashtra_-87": [],
-    "maharashtra_-88": [],
-    "maharashtra_-89": [],
-    "maharashtra_-90": [],
-    "maharashtra_-91": [],
-    "maharashtra_-92": [],
-    "maharashtra_-93": [],
-    "maharashtra_-94": [
-      "python"
+    "nk-191224500979": [
+      "sql",
+      "documentation"
     ],
-    "maharashtra_-95": [],
-    "maharashtra_-96": [
-      "audit"
+    "nk-161224502069": [
+      "natural language processing",
+      "computer vision"
     ],
-    "maharashtra_-97": [
-      "medical coding"
+    "nk-181224505466": [
+      "agile",
+      "ci cd"
     ],
-    "maharashtra_-98": [],
-    "maharashtra_-99": [],
-    "maharashtra_-100": [
-      "analytics"
+    "nk-101224011445": [
+      "python",
+      "llm"
     ],
-    "maharashtra_-101": [],
-    "maharashtra_-102": [],
-    "maharashtra_-103": [],
-    "maharashtra_-104": [],
-    "maharashtra_-105": [
-      "reporting"
+    "nk-181224502040": [
+      "documentation"
     ],
-    "maharashtra_-106": [],
-    "maharashtra_-107": [
+    "nk-201224015240": [
+      "python",
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "llm",
+      "aws",
+      "azure",
+      "gcp"
+    ],
+    "nk-171224502303": [
+      "agile"
+    ],
+    "nk-121224500504": [
+      "analytics",
+      "hypothesis testing",
+      "regression",
+      "time series",
+      "project management",
+      "machine learning"
+    ],
+    "nk-181224503399": [
+      "postgresql",
+      "documentation"
+    ],
+    "nk-131224911892": [
+      "sql",
+      "analytics",
+      "regression",
+      "python",
+      "machine learning",
+      "llm",
+      "aws",
+      "azure"
+    ],
+    "nk-161224502063": [
+      "agile",
+      "aws"
+    ],
+    "nk-201224005911": [
       "project management"
     ],
-    "maharashtra_-108": [
-      "medical coding"
+    "nk-171224501235": [
+      "sql",
+      "documentation",
+      "azure"
     ],
-    "maharashtra_-109": [],
-    "maharashtra_-110": [],
-    "maharashtra_-111": [],
-    "maharashtra_-112": [],
-    "maharashtra_-113": [],
-    "maharashtra_-114": [],
-    "maharashtra_-115": [],
-    "maharashtra_-116": [
+    "nk-171224009612": [
+      "sql",
+      "analytics",
+      "python",
+      "jupyter",
+      "machine learning",
+      "aws"
+    ],
+    "nk-181224502724": [
       "project management"
     ],
-    "maharashtra_-117": [],
-    "maharashtra_-118": [],
-    "maharashtra_-119": [],
-    "maharashtra_-120": [
-      "database"
+    "nk-201224501272": [
+      "python",
+      "machine learning",
+      "deep learning"
     ],
-    "maharashtra_-121": [],
-    "maharashtra_-122": [
-      "medical coding"
+    "nk-141224906327": [
+      "python",
+      "project management"
     ],
-    "maharashtra_-123": [],
-    "maharashtra_-124": [
-      "teaching"
+    "nk-191224011649": [
+      "python",
+      "machine learning",
+      "deep learning",
+      "genai"
     ],
-    "maharashtra_-125": [
-      "medical coding"
+    "nk-111224501758": [],
+    "nk-181224010607": [
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "aws",
+      "azure"
     ],
-    "maharashtra_-126": [],
-    "maharashtra_-127": [],
-    "maharashtra_-128": [],
-    "maharashtra_-129": [],
-    "maharashtra_-130": [],
-    "maharashtra_-131": [],
-    "maharashtra_-132": [
-      "audit"
+    "nk-101224925251": [
+      "python",
+      "project management"
     ],
-    "maharashtra_-133": [],
-    "maharashtra_-134": [],
-    "maharashtra_-135": [],
-    "maharashtra_-136": [],
-    "maharashtra_-137": [
-      "medical coding"
+    "nk-081224001771": [
+      "analytics",
+      "python",
+      "pandas",
+      "machine learning",
+      "tensorflow"
     ],
-    "maharashtra_-138": [],
-    "maharashtra_-139": [],
-    "maharashtra_-140": [],
-    "maharashtra_-141": [],
-    "maharashtra_-142": [],
-    "maharashtra_-143": [],
-    "maharashtra_-144": [],
-    "maharashtra_-145": [],
-    "maharashtra_-146": [],
-    "maharashtra_-147": [],
-    "maharashtra_-148": [],
-    "maharashtra_-149": [],
-    "maharashtra_-150": [],
-    "maharashtra_-151": [
-      "reporting"
+    "nk-121224500512": [
+      "postgresql",
+      "agile"
     ],
-    "maharashtra_-152": [],
-    "maharashtra_-153": [
-      "audit"
+    "nk-121224020321": [
+      "python",
+      "machine learning",
+      "deep learning",
+      "computer vision",
+      "genai"
     ],
-    "maharashtra_-154": [],
-    "maharashtra_-155": [],
-    "maharashtra_-156": [],
-    "maharashtra_-157": [],
-    "maharashtra_-158": [
-      "teaching"
+    "nk-021224007126": [
+      "analytics",
+      "agile",
+      "aws"
     ],
-    "maharashtra_-159": [],
-    "maharashtra_-160": [],
-    "maharashtra_-161": [
+    "nk-050924016488": [
+      "analytics",
+      "python",
+      "machine learning",
+      "deep learning",
+      "natural language processing"
+    ],
+    "nk-171224503447": [
+      "quality assurance",
+      "sql",
+      "agile"
+    ],
+    "nk-211024011963": [
+      "excel",
+      "sql",
+      "analytics",
+      "hypothesis testing",
+      "regression",
+      "forecast",
+      "big data",
+      "data visualization",
+      "python",
+      "power bi",
+      "documentation",
+      "stakeholder",
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "generative ai",
+      "aws",
+      "azure",
+      "gcp"
+    ],
+    "nk-201224502569": [
+      "sql",
+      "agile"
+    ],
+    "nk-121224504379": [
+      "hypothesis testing",
+      "regression",
+      "time series",
+      "python",
+      "machine learning",
+      "natural language processing"
+    ],
+    "nk-171224007766": [
+      "agile"
+    ],
+    "nk-131224013693": [
+      "python",
+      "powerbi",
+      "machine learning",
+      "deep learning",
+      "natural language processing"
+    ],
+    "nk-091224013367": [
       "sql"
     ],
-    "maharashtra_-162": [
-      "medical coding"
+    "nk-040324005788": [
+      "sql",
+      "analytics",
+      "time series",
+      "spark",
+      "data visualization",
+      "python",
+      "machine learning",
+      "deep learning",
+      "llm"
     ],
-    "maharashtra_-163": [],
-    "maharashtra_-164": [],
-    "maharashtra_-165": [],
-    "maharashtra_-166": [],
-    "maharashtra_-167": [
+    "nk-201224504172": [],
+    "nk-091224913055": [
+      "python",
+      "stakeholder",
+      "machine learning",
+      "deep learning",
+      "natural language processing"
+    ],
+    "nk-201224502124": [],
+    "nk-061224903980": [
+      "sql",
+      "analytics",
+      "data visualization",
+      "python",
+      "tableau",
+      "machine learning"
+    ],
+    "nk-201224501491": [
+      "mysql",
+      "agile"
+    ],
+    "nk-111124011120": [
+      "python",
+      "deep learning",
+      "natural language processing",
+      "llm"
+    ],
+    "nk-191224503322": [
+      "database",
+      "analytics",
+      "data visualization",
+      "agile",
+      "azure",
+      "docker"
+    ],
+    "nk-121224014311": [
+      "sql",
+      "analytics",
+      "time series",
+      "python",
+      "machine learning"
+    ],
+    "nk-191224501262": [
+      "sql",
+      "jenkins"
+    ],
+    "nk-121224014172": [
+      "sql",
+      "analytics",
+      "time series",
+      "python",
+      "machine learning"
+    ],
+    "nk-161224504074": [
+      "analytics"
+    ],
+    "nk-101224003789": [
+      "analytics",
+      "machine learning",
+      "gcp"
+    ],
+    "nk-091224503403": [
+      "agile"
+    ],
+    "nk-101224503703": [
+      "data visualization",
+      "machine learning"
+    ],
+    "nk-170124007705": [
+      "sql",
+      "azure"
+    ],
+    "nk-101224006262": [
+      "analytics",
+      "python",
+      "llm",
+      "gcp"
+    ],
+    "nk-131224504023": [
+      "agile",
+      "ci cd"
+    ],
+    "nk-111224916769": [
+      "sql",
+      "analytics",
+      "hadoop",
+      "python",
+      "machine learning",
+      "deep learning",
+      "natural language processing"
+    ],
+    "nk-121224502801": [
+      "sql",
+      "agile",
+      "aws",
+      "azure",
+      "jenkins"
+    ],
+    "nk-111224916766": [
+      "web scraping",
+      "python",
+      "machine learning",
+      "deep learning",
+      "natural language processing"
+    ],
+    "nk-111224502264": [
+      "sql",
+      "documentation"
+    ],
+    "nk-111224022108": [
+      "python",
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "llm"
+    ],
+    "nk-101224503341": [
+      "sql",
+      "agile"
+    ],
+    "nk-161023501056": [
+      "sql",
+      "python",
+      "deep learning",
+      "natural language processing"
+    ],
+    "nk-091224500149": [
+      "sql",
+      "reporting",
+      "agile"
+    ],
+    "nk-031024008647": [
+      "python",
+      "machine learning",
+      "deep learning"
+    ],
+    "nk-100524500130": [
+      "machine learning"
+    ],
+    "nk-201224004491": [
+      "analytics",
+      "regression",
+      "python",
+      "machine learning"
+    ],
+    "nk-111224013291": [],
+    "nk-091224905479": [
+      "data visualization",
+      "pandas",
+      "machine learning",
+      "pytorch",
+      "gcp"
+    ],
+    "nk-141024502187": [],
+    "nk-281124015026": [
+      "sql",
+      "analytics",
+      "python"
+    ],
+    "nk-121224507043": [
+      "sql",
+      "reporting"
+    ],
+    "nk-030724500606": [
+      "nlp"
+    ],
+    "nk-121224504257": [],
+    "nk-011124500329": [
+      "python",
+      "natural language processing",
+      "image processing"
+    ],
+    "nk-121224503554": [
+      "scrum"
+    ],
+    "nk-100924500764": [
+      "analytics",
+      "audit",
+      "python",
+      "jupyter",
+      "tableau",
+      "natural language processing"
+    ],
+    "nk-111224504143": [
+      "agile"
+    ],
+    "nk-071024500739": [
+      "python",
+      "pandas",
+      "machine learning",
+      "deep learning",
+      "natural language processing"
+    ],
+    "nk-101224502158": [
+      "mysql"
+    ],
+    "nk-061224502088": [
+      "data visualization",
+      "machine learning"
+    ],
+    "nk-111224504380": [
+      "mysql"
+    ],
+    "nk-051224504516": [
+      "postgresql",
+      "python",
+      "pandas",
+      "machine learning"
+    ],
+    "nk-061224906939": [
+      "sql",
+      "documentation",
+      "project management"
+    ],
+    "nk-010824500670": [
+      "machine learning",
+      "nlp"
+    ],
+    "nk-061224903992": [
+      "sql",
+      "project management"
+    ],
+    "nk-081022500059": [
+      "sql",
+      "analytics",
+      "python"
+    ],
+    "nk-100524500106": [],
+    "nk-281124919101": [
+      "sql",
+      "python",
+      "tableau",
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "aws",
+      "azure"
+    ],
+    "nk-271124500891": [
+      "stakeholder",
+      "aws",
+      "ci cd"
+    ],
+    "nk-031224500914": [
+      "sql",
+      "python",
+      "machine learning"
+    ],
+    "nk-271124500815": [
+      "agile"
+    ],
+    "nk-020924502592": [
+      "regression",
+      "machine learning",
+      "natural language processing"
+    ],
+    "nk-250924508423": [
+      "analytics",
+      "python"
+    ],
+    "nk-270924502434": [
+      "machine learning",
+      "docker"
+    ],
+    "nk-190424500473": [],
+    "nk-271124005062": [
+      "regression",
+      "python",
+      "machine learning",
+      "natural language processing"
+    ],
+    "nk-100323500973": [
+      "documentation"
+    ],
+    "nk-051224502801": [
+      "sql",
+      "time series",
+      "spark",
+      "python",
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "aws",
+      "ci cd"
+    ],
+    "nk-061224501048": [
+      "sql",
+      "agile"
+    ],
+    "nk-041224907236": [
+      "python",
+      "power bi",
+      "machine learning",
+      "tensorflow"
+    ],
+    "nk-031224500930": [],
+    "nk-301024500031": [
+      "quality checks",
+      "analytics",
+      "data visualization",
+      "python"
+    ],
+    "nk-300824502306": [
+      "aws"
+    ],
+    "nk-261124922233": [
+      "sql",
+      "web scraping",
+      "python",
+      "agile",
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "genai"
+    ],
+    "nk-051224504130": [
+      "postgresql"
+    ],
+    "nk-251024501038": [],
+    "nk-010323500468": [
+      "sql",
+      "metadata",
+      "analytics",
+      "big data",
+      "python",
+      "reporting",
+      "machine learning"
+    ],
+    "nk-231124003607": [
+      "sql",
+      "regression",
+      "python",
+      "tableau",
+      "reporting",
+      "genai"
+    ],
+    "nk-281124014884": [
+      "python"
+    ],
+    "nk-061224911566": [
+      "analytics",
+      "python",
+      "machine learning",
+      "deep learning",
+      "natural language processing"
+    ],
+    "nk-041224017613": [
+      "sql"
+    ],
+    "nk-021224013217": [
+      "big data",
+      "python",
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "image processing"
+    ],
+    "nk-291124021613": [],
+    "nk-161024500826": [
+      "sql",
+      "analytics",
+      "machine learning",
+      "natural language processing",
+      "genai",
+      "gcp"
+    ],
+    "nk-191124505687": [
+      "forecasting",
+      "reporting"
+    ],
+    "nk-120321500863": [
+      "sql",
+      "analytics",
+      "python",
+      "tableau",
+      "machine learning",
+      "deep learning",
+      "natural language processing"
+    ],
+    "nk-191124505686": [
+      "project management"
+    ],
+    "nk-151024501992": [
+      "machine learning",
+      "computer vision"
+    ],
+    "nk-191124505659": [
+      "python"
+    ],
+    "nk-281124919450": [
+      "excel",
+      "time series",
+      "python",
+      "reporting"
+    ],
+    "nk-201224014012": [],
+    "nk-261124010031": [
+      "python",
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "gcp"
+    ],
+    "nk-181224015695": [
+      "sql"
+    ],
+    "nk-120424500038": [
+      "deep learning",
+      "text mining",
+      "computer vision"
+    ],
+    "nk-270618500396": [],
+    "nk-200324501186": [
+      "python"
+    ],
+    "nk-211024503114": [
+      "sql"
+    ],
+    "nk-121224016032": [
+      "sql",
+      "big data",
+      "data visualization",
+      "python",
+      "power bi",
+      "machine learning",
+      "pytorch"
+    ],
+    "nk-210824503971": [
+      "sql",
+      "azure"
+    ],
+    "nk-120924010200": [
+      "python",
+      "agile",
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "generative ai",
+      "azure",
+      "gcp"
+    ],
+    "nk-210824503970": [
+      "azure"
+    ],
+    "nk-261124504702": [
+      "sql",
+      "python",
+      "project management",
+      "machine learning",
+      "generative ai",
+      "gcp"
+    ],
+    "nk-041224501290": [
+      "quality assurance",
+      "agile"
+    ],
+    "nk-221124014526": [
+      "sql",
+      "hadoop",
+      "tableau",
+      "machine learning"
+    ],
+    "nk-291018500688": [
+      "sql"
+    ],
+    "nk-201124012519": [
+      "sql",
+      "time series",
+      "python",
+      "agile",
+      "machine learning",
+      "deep learning",
+      "computer vision"
+    ],
+    "nk-200524502073": [
+      "sql"
+    ],
+    "nk-141124502647": [
+      "analytics",
+      "regression",
+      "time series"
+    ],
+    "nk-190923500416": [],
+    "nk-110624006158": [
+      "python",
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "genai"
+    ],
+    "nk-100823501824": [
+      "sql"
+    ],
+    "nk-081124501757": [
+      "analytics",
+      "forecast",
+      "spark",
+      "data visualization",
+      "python",
+      "pandas",
+      "power bi",
+      "machine learning",
+      "deep learning",
+      "aws",
+      "azure",
+      "google cloud"
+    ],
+    "nk-090924501338": [
+      "python",
+      "aws",
+      "gcp"
+    ],
+    "nk-061224500467": [],
+    "nk-180624502779": [
+      "gcp"
+    ],
+    "nk-051224500311": [
+      "sql",
+      "analytics",
+      "big data",
+      "python",
+      "pandas",
+      "agile",
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "computer vision",
+      "aws"
+    ],
+    "nk-051224504518": [
+      "sql",
+      "analytics"
+    ],
+    "nk-021224008504": [
+      "data visualization",
+      "power bi",
+      "machine learning"
+    ],
+    "nk-051219501709": [
+      "sql"
+    ],
+    "nk-261124016459": [
+      "python",
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "computer vision",
+      "generative ai"
+    ],
+    "nk-041023500183": [
+      "excel",
+      "reporting"
+    ],
+    "nk-090824500291": [
+      "analytics",
+      "looker",
+      "aws"
+    ],
+    "nk-271124907324": [
+      "aws",
+      "azure",
+      "gcp"
+    ],
+    "nk-081024501568": [
       "analytics",
       "big data",
       "machine learning"
     ],
-    "maharashtra_-168": [],
-    "maharashtra_-169": [],
-    "maharashtra_-170": [],
-    "maharashtra_-171": [],
-    "maharashtra_-172": [],
-    "maharashtra_-173": [],
-    "maharashtra_-174": [],
-    "maharashtra_-175": [],
-    "maharashtra_-176": [],
-    "maharashtra_-177": [],
-    "maharashtra_-178": [],
-    "maharashtra_-179": [],
-    "maharashtra_-180": [],
-    "maharashtra_-181": [
+    "nk-211222501679": [
+      "mysql"
+    ],
+    "nk-060624502116": [
+      "analytics",
+      "python",
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "image processing"
+    ],
+    "nk-211222501676": [
+      "mysql"
+    ],
+    "nk-011123500925": [
       "sql",
-      "tableau"
+      "analytics",
+      "python",
+      "machine learning",
+      "computer vision"
     ],
-    "maharashtra_-182": [],
-    "maharashtra_-183": [],
-    "maharashtra_-184": [
-      "documentation"
+    "nk-190422500713": [
+      "excel",
+      "reporting"
     ],
-    "maharashtra_-185": [],
-    "maharashtra_-186": [],
-    "maharashtra_-187": [
+    "nk-300424501229": [
+      "mysql",
+      "report writing"
+    ],
+    "nk-081022500085": [
+      "excel"
+    ],
+    "nk-271124911177": [
+      "sql",
+      "analytics",
+      "data visualization",
+      "power bi"
+    ],
+    "nk-110722500709": [],
+    "nk-250823502074": [
+      "machine learning"
+    ],
+    "nk-110722501013": [
+      "sql",
+      "agile"
+    ],
+    "nk-250823500648": [
+      "hypothesis testing",
+      "predictive modeling",
+      "nlp"
+    ],
+    "nk-110722500571": [
+      "database"
+    ],
+    "nk-250823500644": [
+      "forecasting",
+      "python",
+      "agile",
+      "machine learning",
+      "computer vision"
+    ],
+    "nk-091224006267": [],
+    "nk-230823502746": [
+      "data visualization",
+      "machine learning"
+    ],
+    "nk-041224501660": [
+      "agile",
+      "jenkins"
+    ],
+    "nk-181219501949": [
+      "excel",
+      "sql",
+      "analytics",
+      "regression",
+      "time series",
+      "spark",
+      "python",
+      "tableau",
+      "agile",
+      "machine learning",
+      "deep learning"
+    ],
+    "nk-211124507097": [
       "database",
-      "cmm"
+      "python"
     ],
-    "maharashtra_-188": [],
-    "maharashtra_-189": [],
-    "maharashtra_-190": [],
-    "maharashtra_-191": [],
-    "maharashtra_-192": [],
-    "maharashtra_-193": [],
-    "maharashtra_-194": [
-      "sql"
+    "nk-181024503060": [
+      "analytics",
+      "python",
+      "numpy",
+      "machine learning"
     ],
-    "maharashtra_-195": [
-      "plc"
-    ],
-    "maharashtra_-196": [],
-    "maharashtra_-197": [],
-    "maharashtra_-198": [],
-    "maharashtra_-199": [],
-    "maharashtra_-200": [],
-    "maharashtra_-201": [],
-    "maharashtra_-202": [],
-    "maharashtra_-203": [],
-    "maharashtra_-204": [
-      "big data"
-    ],
-    "maharashtra_-205": [
-      "database"
-    ],
-    "maharashtra_-206": [],
-    "maharashtra_-207": [],
-    "maharashtra_-208": [],
-    "maharashtra_-209": [],
-    "maharashtra_-210": [],
-    "maharashtra_-211": [],
-    "maharashtra_-212": [],
-    "maharashtra_-213": [],
-    "maharashtra_-214": [],
-    "maharashtra_-215": [],
-    "maharashtra_-216": [],
-    "maharashtra_-217": [],
-    "maharashtra_-218": [],
-    "maharashtra_-219": [],
-    "maharashtra_-220": [],
-    "maharashtra_-221": [
-      "teaching"
-    ],
-    "maharashtra_-222": [],
-    "maharashtra_-223": [],
-    "maharashtra_-224": [],
-    "maharashtra_-225": [],
-    "maharashtra_-226": [],
-    "maharashtra_-227": [],
-    "maharashtra_-228": [
-      "sql",
-      "hadoop",
-      "tableau"
-    ],
-    "maharashtra_-229": [],
-    "maharashtra_-230": [],
-    "maharashtra_-231": [],
-    "maharashtra_-232": [
-      "sql"
-    ],
-    "maharashtra_-233": [],
-    "maharashtra_-234": [],
-    "maharashtra_-235": [],
-    "maharashtra_-236": [],
-    "maharashtra_-237": [],
-    "maharashtra_-238": [],
-    "maharashtra_-239": [],
-    "maharashtra_-240": [
-      "sql",
-      "documentation"
-    ],
-    "maharashtra_-241": [],
-    "maharashtra_-242": [],
-    "maharashtra_-243": [],
-    "maharashtra_-244": [],
-    "maharashtra_-245": [],
-    "maharashtra_-246": [
-      "sql",
-      "hadoop",
-      "tableau"
-    ],
-    "maharashtra_-247": [
-      "analytics"
-    ],
-    "maharashtra_-248": [],
-    "maharashtra_-249": [],
-    "maharashtra_-250": [],
-    "maharashtra_-251": [],
-    "maharashtra_-252": [],
-    "maharashtra_-253": [
-      "teaching"
-    ],
-    "maharashtra_-254": [
-      "database"
-    ],
-    "maharashtra_-255": [
-      "data validation",
-      "sql"
-    ],
-    "maharashtra_-256": [],
-    "maharashtra_-257": [],
-    "maharashtra_-258": [],
-    "maharashtra_-259": [],
-    "maharashtra_-260": [],
-    "maharashtra_-261": [],
-    "maharashtra_-262": [],
-    "maharashtra_-263": [],
-    "maharashtra_-264": [],
-    "maharashtra_-265": [],
-    "maharashtra_-266": [],
-    "maharashtra_-267": [],
-    "maharashtra_-268": [],
-    "maharashtra_-269": [
-      "project management"
-    ],
-    "maharashtra_-270": [],
-    "maharashtra_-271": [],
-    "maharashtra_-272": [],
-    "maharashtra_-273": [],
-    "maharashtra_-274": [],
-    "maharashtra_-275": [],
-    "maharashtra_-276": [],
-    "maharashtra_-277": [],
-    "maharashtra_-278": [],
-    "maharashtra_-279": [],
-    "maharashtra_-280": [],
-    "maharashtra_-281": [],
-    "maharashtra_-282": [],
-    "maharashtra_-283": [],
-    "maharashtra_-284": [
-      "database"
-    ],
-    "maharashtra_-285": [],
-    "maharashtra_-286": [],
-    "maharashtra_-287": [],
-    "maharashtra_-288": [],
-    "maharashtra_-289": [],
-    "maharashtra_-290": [],
-    "maharashtra_-291": [],
-    "maharashtra_-292": [
+    "nk-191124503584": [
       "reporting"
     ],
-    "maharashtra_-293": [],
-    "maharashtra_-294": [],
-    "maharashtra_-295": [],
-    "maharashtra_-296": [],
-    "maharashtra_-297": [],
-    "maharashtra_-298": [],
-    "maharashtra_-299": [],
-    "maharashtra_-300": [],
-    "maharashtra_-301": [
-      "audit"
+    "nk-180924501387": [
+      "python",
+      "tensorflow",
+      "nlp",
+      "computer vision"
     ],
-    "maharashtra_-302": [
-      "documentation"
+    "nk-191124503580": [
+      "sql",
+      "python",
+      "agile",
+      "aws"
     ],
-    "maharashtra_-303": [],
-    "maharashtra_-304": [
-      "sampling",
-      "quality assurance"
+    "nk-180723501863": [
+      "data visualization",
+      "machine learning"
     ],
-    "maharashtra_-305": [],
-    "maharashtra_-306": [],
-    "maharashtra_-307": [],
-    "maharashtra_-308": [],
-    "maharashtra_-309": [
-      "analytics"
+    "nk-191124503569": [],
+    "nk-180624501013": [
+      "big data",
+      "python",
+      "machine learning",
+      "tensorflow",
+      "aws"
     ],
-    "maharashtra_-310": [],
-    "maharashtra_-311": [],
-    "maharashtra_-312": [],
-    "maharashtra_-313": [
-      "project management"
+    "nk-131124505564": [
+      "python"
     ],
-    "maharashtra_-314": [],
-    "maharashtra_-315": [],
-    "maharashtra_-316": [],
-    "maharashtra_-317": [],
-    "maharashtra_-318": [],
-    "maharashtra_-319": [],
-    "maharashtra_-320": [],
-    "maharashtra_-321": [],
-    "maharashtra_-322": [],
-    "maharashtra_-323": [],
-    "maharashtra_-324": [],
-    "maharashtra_-325": [],
-    "maharashtra_-326": [],
-    "maharashtra_-327": [],
-    "maharashtra_-328": [],
-    "maharashtra_-329": [
-      "medical coding"
-    ],
-    "maharashtra_-330": [],
-    "maharashtra_-331": [],
-    "maharashtra_-332": [
-      "project management"
-    ],
-    "maharashtra_-333": [],
-    "maharashtra_-334": [
-      "quality assurance"
-    ],
-    "maharashtra_-335": [],
-    "maharashtra_-336": [
-      "sql"
-    ],
-    "maharashtra_-337": [],
-    "maharashtra_-338": [],
-    "maharashtra_-339": [],
-    "maharashtra_-340": [
-      "sql"
-    ],
-    "maharashtra_-341": [],
-    "maharashtra_-342": [],
-    "maharashtra_-343": [],
-    "maharashtra_-344": [],
-    "maharashtra_-345": [],
-    "maharashtra_-346": [],
-    "maharashtra_-347": [
-      "teaching"
-    ],
-    "maharashtra_-348": [
-      "cmm"
-    ],
-    "maharashtra_-349": [],
-    "maharashtra_-350": [
-      "documentation",
-      "teaching"
-    ],
-    "maharashtra_-351": [
-      "sampling",
-      "quality assurance"
-    ],
-    "maharashtra_-352": [],
-    "maharashtra_-353": [
-      "project management"
-    ],
-    "maharashtra_-354": [],
-    "maharashtra_-355": [],
-    "maharashtra_-356": [],
-    "maharashtra_-357": [],
-    "maharashtra_-358": [],
-    "maharashtra_-359": [],
-    "maharashtra_-360": [],
-    "maharashtra_-361": [],
-    "maharashtra_-362": [],
-    "maharashtra_-363": [
-      "cmm"
-    ],
-    "maharashtra_-364": [
+    "nk-171024500906": [
+      "sql",
+      "analytics",
+      "python",
+      "powerbi",
       "reporting"
     ],
-    "maharashtra_-365": [],
-    "maharashtra_-366": [
-      "quality assurance"
+    "nk-051224503334": [
+      "sql",
+      "reporting",
+      "agile",
+      "machine learning",
+      "aws"
     ],
-    "maharashtra_-367": [
-      "medical coding"
+    "nk-150324501826": [
+      "regression",
+      "big data",
+      "machine learning",
+      "aws",
+      "gcp"
     ],
-    "maharashtra_-368": [
-      "sql"
+    "nk-221124009573": [
+      "agile"
     ],
-    "maharashtra_-369": [
+    "nk-131219500724": [
+      "machine learning",
+      "nlp",
+      "aws",
+      "azure",
+      "gcp"
+    ],
+    "nk-021224501786": [],
+    "nk-130824500438": [
+      "data visualization",
+      "machine learning"
+    ],
+    "nk-271124910646": [
+      "sql",
       "python",
       "jenkins"
     ],
-    "maharashtra_-370": [
+    "nk-120924501414": [
+      "python",
+      "machine learning",
+      "pytorch",
+      "aws",
+      "azure"
+    ],
+    "nk-250219502336": [
+      "excel",
+      "sql"
+    ],
+    "nk-120924501409": [
+      "python",
+      "machine learning",
+      "pytorch"
+    ],
+    "nk-190219501110": [
+      "sql"
+    ],
+    "nk-110724502488": [
+      "analytics",
+      "data visualization",
+      "python",
+      "project management",
+      "machine learning"
+    ],
+    "nk-170924502804": [],
+    "nk-100424500910": [],
+    "nk-131124500564": [],
+    "nk-090920501386": [
+      "mysql",
+      "analytics",
+      "spark",
+      "machine learning"
+    ],
+    "nk-130420500738": [],
+    "nk-090724502958": [
+      "regression",
+      "machine learning"
+    ],
+    "nk-120624502603": [
+      "sql",
+      "agile",
+      "aws"
+    ],
+    "nk-080324500922": [
+      "python",
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "computer vision"
+    ],
+    "nk-101220500747": [
       "reporting"
     ],
-    "maharashtra_-371": [],
-    "maharashtra_-372": [
-      "database"
+    "nk-070324500482": [
+      "python",
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "computer vision"
     ],
-    "maharashtra_-373": [],
-    "maharashtra_-374": [],
-    "maharashtra_-375": [],
-    "maharashtra_-376": [],
-    "maharashtra_-377": [],
-    "maharashtra_-378": [],
-    "maharashtra_-379": [
-      "medical coding"
+    "nk-051224917433": [],
+    "nk-061124502921": [
+      "quality assurance",
+      "machine learning",
+      "gcp"
     ],
-    "maharashtra_-380": [],
-    "maharashtra_-381": [
+    "nk-040924021020": [
+      "sql"
+    ],
+    "nk-051124502615": [
+      "probability",
+      "machine learning",
+      "image processing"
+    ],
+    "nk-031224922021": [
+      "python",
+      "project management"
+    ],
+    "nk-051124502448": [
+      "big data",
+      "data visualization",
+      "machine learning"
+    ],
+    "nk-031224921500": [],
+    "nk-050624500453": [
+      "data visualization",
+      "machine learning"
+    ],
+    "nk-031024501304": [
+      "data visualization",
+      "agile",
+      "machine learning"
+    ],
+    "nk-050220502272": [
+      "time series",
+      "machine learning"
+    ],
+    "nk-261124922429": [
+      "database",
+      "agile",
+      "kubernetes"
+    ],
+    "nk-020823500701": [
+      "data visualization",
+      "machine learning"
+    ],
+    "nk-260924500617": [
+      "ci cd"
+    ],
+    "nk-010523501679": [
+      "sql",
+      "regression",
+      "spark",
+      "python",
       "documentation",
-      "client interaction"
+      "agile",
+      "machine learning"
     ],
-    "maharashtra_-382": [],
-    "maharashtra_-383": [],
-    "maharashtra_-384": [],
-    "maharashtra_-385": [
-      "excel"
+    "nk-251124501999": [],
+    "nk-030423501907": [
+      "excel",
+      "analytics",
+      "ms office",
+      "machine learning",
+      "aws",
+      "azure",
+      "google cloud"
     ],
-    "maharashtra_-386": [],
-    "maharashtra_-387": [],
-    "maharashtra_-388": [],
-    "maharashtra_-389": [],
-    "maharashtra_-390": [
+    "nk-251124011078": [
+      "azure"
+    ],
+    "nk-170924504021": [
+      "python",
+      "pandas",
+      "agile",
+      "machine learning",
+      "deep learning",
+      "computer vision",
+      "generative ai",
+      "azure",
+      "ci cd"
+    ],
+    "nk-191124501596": [
+      "database",
+      "python"
+    ],
+    "nk-220824502515": [
+      "analytics",
+      "forecasting",
+      "data visualization",
+      "machine learning"
+    ],
+    "nk-121124504789": [
+      "python"
+    ],
+    "nk-251124009512": [
+      "python",
+      "power bi",
+      "reporting",
+      "azure"
+    ],
+    "nk-060824501835": [
+      "sql"
+    ],
+    "nk-190924008582": [
+      "python",
+      "machine learning",
+      "natural language processing",
+      "azure"
+    ],
+    "nk-031224503081": [
+      "sql",
+      "documentation",
+      "agile"
+    ],
+    "nk-051224004382": [
+      "sql",
+      "analytics",
+      "python",
+      "machine learning",
+      "aws",
+      "azure",
+      "gcp"
+    ],
+    "nk-031024501309": [
+      "sql",
+      "python",
+      "agile"
+    ],
+    "nk-291118600700": [
+      "sql",
+      "analytics",
+      "big data",
+      "python",
+      "machine learning"
+    ],
+    "nk-230724502284": [
+      "agile"
+    ],
+    "nk-041224010224": [
+      "sql",
+      "analytics",
+      "python",
+      "machine learning",
+      "aws"
+    ],
+    "nk-170715504669": [
+      "excel",
+      "sql"
+    ],
+    "nk-301024505432": [
+      "agile",
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "computer vision"
+    ],
+    "nk-050924501156": [],
+    "nk-031224014547": [
+      "forecasting",
+      "python",
+      "natural language processing",
+      "generative ai",
+      "aws",
+      "azure",
+      "docker"
+    ],
+    "nk-030216500449": [
+      "sql"
+    ],
+    "nk-281124500127": [
+      "regression",
+      "machine learning"
+    ],
+    "nk-291024501388": [
+      "quality assurance"
+    ],
+    "nk-271124015075": [
+      "excel",
+      "sql",
+      "analytics",
+      "machine learning",
+      "deep learning"
+    ],
+    "nk-271124910645": [
+      "aws"
+    ],
+    "nk-261124003759": [
+      "sql",
+      "python",
+      "power bi"
+    ],
+    "nk-111124500727": [
+      "database",
+      "metadata",
+      "agile"
+    ],
+    "nk-250924503692": [
+      "sql",
+      "python",
+      "machine learning"
+    ],
+    "nk-031224003654": [
+      "sql",
+      "azure"
+    ],
+    "nk-181024503849": [
+      "analytics",
+      "big data",
+      "pandas",
+      "machine learning",
+      "gcp"
+    ],
+    "nk-250924505722": [
+      "spark",
+      "python",
+      "docker"
+    ],
+    "nk-181024503844": [
+      "analytics",
+      "big data",
+      "pandas",
+      "machine learning",
+      "gcp"
+    ],
+    "nk-181024501734": [
+      "database",
+      "documentation",
+      "project management"
+    ],
+    "nk-031224506617": [],
+    "nk-161024010145": [
+      "sql",
+      "azure",
+      "docker"
+    ],
+    "nk-170523501110": [
+      "analytics",
+      "forecasting",
+      "natural language processing",
+      "computer vision"
+    ],
+    "nk-160724500256": [],
+    "nk-300424501377": [
+      "python",
+      "pandas",
+      "machine learning",
+      "tensorflow"
+    ],
+    "nk-121224010074": [
+      "postgresql",
+      "aws",
+      "azure"
+    ],
+    "nk-280824012388": [
+      "postgresql",
+      "probability",
+      "python",
+      "pandas",
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "llm",
+      "aws",
+      "azure",
+      "google cloud"
+    ],
+    "nk-250821501437": [
       "sql",
       "documentation"
     ],
-    "maharashtra_-391": [],
-    "maharashtra_-392": [
-      "sql"
+    "nk-111024501177": [
+      "sql",
+      "machine learning",
+      "gcp"
     ],
-    "maharashtra_-393": [
-      "audit"
-    ],
-    "maharashtra_-394": [
-      "medical coding"
-    ],
-    "maharashtra_-395": [],
-    "maharashtra_-396": [],
-    "maharashtra_-397": [],
-    "maharashtra_-398": [
-      "documentation"
-    ],
-    "maharashtra_-399": [],
-    "maharashtra_-400": [],
-    "maharashtra_-401": [],
-    "maharashtra_-402": [
-      "medical coding"
-    ],
-    "maharashtra_-403": [],
-    "maharashtra_-404": [],
-    "maharashtra_-405": [],
-    "maharashtra_-406": [],
-    "maharashtra_-407": [],
-    "maharashtra_-408": [],
-    "maharashtra_-409": [],
-    "maharashtra_-410": [
-      "medical coding"
-    ],
-    "maharashtra_-411": [],
-    "maharashtra_-412": [],
-    "maharashtra_-413": [
-      "forecast"
-    ],
-    "maharashtra_-414": [],
-    "maharashtra_-415": [],
-    "maharashtra_-416": [],
-    "maharashtra_-417": [],
-    "maharashtra_-418": [
-      "medical coding"
-    ],
-    "maharashtra_-419": [],
-    "maharashtra_-420": [],
-    "maharashtra_-421": [
-      "sampling",
+    "nk-210920500226": [
       "quality assurance"
     ],
-    "maharashtra_-422": [],
-    "maharashtra_-423": [],
-    "maharashtra_-424": [],
-    "maharashtra_-425": [
+    "nk-091024500693": [
+      "regression",
+      "machine learning",
+      "deep learning"
+    ],
+    "nk-110924501959": [],
+    "nk-051124502337": [
+      "trend analysis",
+      "ms office",
+      "data visualization"
+    ],
+    "nk-061224010461": [
       "sql"
     ],
-    "maharashtra_-426": [],
-    "maharashtra_-427": [],
-    "maharashtra_-428": [],
-    "maharashtra_-429": [
+    "nk-041224504873": [
+      "sql",
+      "analytics",
+      "data visualization",
+      "python",
+      "reporting",
+      "agile",
+      "machine learning",
+      "llm",
+      "azure"
+    ],
+    "nk-050923500700": [
+      "quality assurance",
+      "database",
+      "python",
+      "agile",
+      "aws",
+      "azure",
+      "gcp"
+    ],
+    "nk-041224504773": [
+      "field work",
+      "sql",
+      "analytics",
+      "python",
+      "agile",
+      "machine learning"
+    ],
+    "nk-211124501732": [
+      "regression",
+      "python",
+      "agile",
+      "machine learning",
+      "azure"
+    ],
+    "nk-041224504652": [
+      "field work",
+      "sql",
+      "analytics",
+      "python",
+      "agile",
+      "machine learning"
+    ],
+    "nk-161024502445": [
+      "project management"
+    ],
+    "nk-310523501659": [
+      "project management",
+      "machine learning"
+    ],
+    "nk-071124500918": [
+      "sql",
+      "agile",
+      "azure",
+      "kubernetes"
+    ],
+    "nk-301124002539": [
+      "spark",
+      "python",
+      "pandas",
+      "power bi",
+      "tensorflow"
+    ],
+    "nk-131224008320": [
+      "sql"
+    ],
+    "nk-300924503125": [
+      "machine learning",
+      "deep learning",
+      "computer vision"
+    ],
+    "nk-061124022955": [
+      "python"
+    ],
+    "nk-300420500171": [
+      "big data",
+      "python",
+      "pandas",
+      "machine learning"
+    ],
+    "nk-271124500707": [],
+    "nk-291124919539": [
+      "sql",
+      "python",
+      "azure"
+    ],
+    "nk-081124501880": [],
+    "nk-290623500367": [
+      "statistical inference",
+      "data visualization",
+      "python",
+      "power bi",
+      "machine learning"
+    ],
+    "nk-081124500656": [],
+    "nk-280723500525": [
+      "hypothesis testing",
+      "python",
+      "machine learning"
+    ],
+    "nk-050824502624": [
+      "aws",
+      "azure",
+      "gcp",
+      "kubernetes"
+    ],
+    "nk-270924500301": [
+      "analytics",
+      "machine learning"
+    ],
+    "nk-261124502668": [
+      "python",
+      "documentation"
+    ],
+    "nk-260723501488": [
+      "analytics",
+      "project management",
+      "predictive modeling",
+      "aws",
+      "azure",
+      "gcp"
+    ],
+    "nk-221124506484": [
+      "mysql"
+    ],
+    "nk-260624502765": [
+      "regression",
+      "time series",
+      "python",
+      "gcp",
+      "docker"
+    ],
+    "nk-290324501310": [
+      "quality assurance",
+      "database",
+      "documentation"
+    ],
+    "nk-260623501770": [
+      "data visualization",
+      "python"
+    ],
+    "nk-270623500595": [
+      "quality assurance",
+      "sql",
+      "python",
+      "documentation",
+      "agile"
+    ],
+    "nk-251124501364": [
+      "analytics"
+    ],
+    "nk-260324501091": [
+      "sql",
+      "documentation"
+    ],
+    "nk-250924500698": [
+      "sql",
+      "machine learning",
+      "computer vision"
+    ],
+    "nk-251124500377": [
+      "sql",
       "reporting"
     ],
-    "maharashtra_-430": [
-      "medical coding"
+    "nk-241024502839": [
+      "auditing",
+      "machine learning",
+      "deep learning",
+      "computer vision"
     ],
-    "maharashtra_-431": [
-      "audit"
+    "nk-250724501046": [
+      "mysql",
+      "python",
+      "aws",
+      "azure",
+      "gcp",
+      "docker"
     ],
-    "maharashtra_-432": [
-      "medical coding"
+    "nk-231019500517": [
+      "regression",
+      "data visualisation",
+      "numpy"
     ],
-    "maharashtra_-433": [],
-    "maharashtra_-434": [
+    "nk-211124506383": [
+      "quality assurance",
+      "spark"
+    ],
+    "nk-220524501237": [
+      "data visualization",
+      "machine learning"
+    ],
+    "nk-171215501074": [],
+    "nk-191124502182": [
+      "project management"
+    ],
+    "nk-151223501521": [
+      "mysql",
+      "aws",
+      "azure",
+      "gcp",
+      "docker"
+    ],
+    "nk-181223502989": [
+      "sql",
+      "spark",
+      "machine learning",
+      "tensorflow"
+    ],
+    "nk-141124505351": [
+      "mysql",
+      "analytics",
+      "python"
+    ],
+    "nk-170624502294": [
+      "data visualization",
+      "machine learning"
+    ],
+    "nk-141124505350": [
+      "analytics",
+      "python"
+    ],
+    "nk-170124500604": [
+      "machine learning",
+      "computer vision"
+    ],
+    "nk-090924502584": [
+      "quality assurance",
+      "sql",
+      "python"
+    ],
+    "nk-160922502456": [
+      "machine learning",
+      "computer vision"
+    ],
+    "nk-090424501028": [
+      "mysql"
+    ],
+    "nk-160622502437": [
+      "database"
+    ],
+    "nk-070823501129": [
+      "mysql",
+      "chart",
+      "python",
+      "documentation",
+      "machine learning",
+      "amazon web services"
+    ],
+    "nk-160522501368": [
+      "machine learning",
+      "deep learning"
+    ],
+    "nk-061124502261": [
+      "python",
+      "aws",
+      "azure",
+      "gcp"
+    ],
+    "nk-150622500890": [
+      "data visualization",
+      "python",
+      "numpy",
+      "machine learning",
+      "tensorflow",
+      "natural language processing"
+    ],
+    "nk-060723500131": [],
+    "nk-141022503150": [
+      "sql",
+      "machine learning"
+    ],
+    "nk-051124502581": [
+      "python",
+      "pandas",
+      "machine learning",
+      "deep learning"
+    ],
+    "nk-131022502399": [],
+    "nk-050724500931": [
+      "excel",
+      "agile"
+    ],
+    "nk-130824502293": [
+      "analytics",
+      "data visualization",
+      "python",
+      "machine learning",
+      "natural language processing"
+    ],
+    "nk-031224504252": [
+      "database",
+      "power bi",
+      "documentation",
+      "aws",
+      "azure",
+      "google cloud",
+      "docker"
+    ],
+    "nk-121124503314": [
+      "analytics",
+      "machine learning",
+      "azure"
+    ],
+    "nk-251124500539": [
+      "sql",
+      "agile",
+      "jenkins"
+    ],
+    "nk-120724501394": [
+      "analytics",
+      "data visualization",
+      "python",
+      "machine learning",
+      "natural language processing"
+    ],
+    "nk-251124500491": [
+      "docker"
+    ],
+    "nk-100523503101": [
+      "data visualization",
+      "machine learning"
+    ],
+    "nk-251124500457": [
       "hadoop"
     ],
-    "maharashtra_-435": [],
-    "maharashtra_-436": [],
-    "maharashtra_-437": [],
-    "maharashtra_-438": [],
-    "maharashtra_-439": [],
-    "maharashtra_-440": [
-      "dashboard"
+    "nk-091024500774": [
+      "data visualization",
+      "agile",
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "gcp"
     ],
-    "maharashtra_-441": [],
-    "maharashtra_-442": [],
-    "maharashtra_-443": [
-      "stakeholder"
+    "nk-251124500351": [
+      "agile"
     ],
-    "maharashtra_-444": [],
-    "maharashtra_-445": [],
-    "maharashtra_-446": [],
-    "maharashtra_-447": [],
-    "maharashtra_-448": [],
-    "maharashtra_-449": [
-      "teaching"
+    "nk-090824502806": [
+      "data visualization",
+      "python",
+      "machine learning"
     ],
-    "maharashtra_-450": [],
-    "maharashtra_-451": [],
-    "maharashtra_-452": [],
-    "maharashtra_-453": [],
-    "maharashtra_-454": [
-      "reporting"
+    "nk-141024500516": [],
+    "nk-090824501330": [
+      "sql",
+      "analytics",
+      "big data",
+      "data visualisation",
+      "python",
+      "tableau",
+      "deep learning"
     ],
-    "maharashtra_-455": [
+    "nk-121124504111": [
+      "sql",
+      "python",
+      "pytorch",
+      "azure",
+      "docker"
+    ],
+    "nk-090221500139": [
+      "analytics"
+    ],
+    "nk-121124502266": [
+      "sql",
+      "analytics"
+    ],
+    "nk-081222502026": [
+      "analytics",
+      "python",
+      "pandas",
+      "machine learning",
+      "deep learning",
+      "computer vision",
+      "aws",
+      "gcp"
+    ],
+    "nk-100924501102": [
+      "agile",
+      "machine learning",
+      "aws",
+      "azure",
+      "google cloud"
+    ],
+    "nk-081024501035": [
+      "sql",
+      "forecasting",
+      "machine learning"
+    ],
+    "nk-051124502592": [
+      "bim"
+    ],
+    "nk-050722500997": [
+      "machine learning"
+    ],
+    "nk-310823501226": [
       "sql"
     ],
-    "maharashtra_-456": [
-      "quality assurance"
-    ],
-    "maharashtra_-457": [
-      "audit",
-      "teaching"
-    ],
-    "maharashtra_-458": [],
-    "maharashtra_-459": [],
-    "maharashtra_-460": [],
-    "maharashtra_-461": [],
-    "maharashtra_-462": [],
-    "maharashtra_-463": [],
-    "maharashtra_-464": [],
-    "maharashtra_-465": [],
-    "maharashtra_-466": [
-      "audit",
-      "documentation"
-    ],
-    "maharashtra_-467": [],
-    "maharashtra_-468": [],
-    "maharashtra_-469": [],
-    "maharashtra_-470": [
-      "reporting"
-    ],
-    "maharashtra_-471": [],
-    "maharashtra_-472": [],
-    "maharashtra_-473": [],
-    "maharashtra_-474": [
+    "nk-050624500828": [
+      "sql",
       "analytics",
-      "reporting",
-      "project management"
+      "python",
+      "machine learning"
     ],
-    "maharashtra_-475": [],
-    "maharashtra_-476": [],
-    "maharashtra_-477": [],
-    "maharashtra_-478": [
-      "cnc"
+    "nk-310820501277": [
+      "agile"
     ],
-    "maharashtra_-479": [],
-    "maharashtra_-480": [],
-    "maharashtra_-481": [],
-    "maharashtra_-482": [
-      "project management"
+    "nk-050424502874": [
+      "sql",
+      "analytics",
+      "big data",
+      "data visualization",
+      "python",
+      "machine learning"
     ],
-    "maharashtra_-483": [
+    "nk-211223500686": [],
+    "nk-050424502037": [
+      "analytics",
+      "big data",
+      "power bi",
+      "agile",
+      "machine learning",
+      "azure",
+      "google cloud"
+    ],
+    "nk-170719500860": [
+      "database"
+    ],
+    "nk-031224503565": [
+      "hypothesis testing",
+      "power bi",
+      "machine learning"
+    ],
+    "nk-090924502601": [
+      "quality assurance",
       "documentation"
     ],
-    "maharashtra_-484": [],
-    "maharashtra_-485": [],
-    "maharashtra_-486": [],
-    "maharashtra_-487": [
-      "forecast"
+    "nk-030420500926": [
+      "excel",
+      "mysql",
+      "python",
+      "predictive modeling"
     ],
-    "maharashtra_-488": [],
-    "maharashtra_-489": [],
-    "maharashtra_-490": [
+    "nk-090924502600": [
+      "quality assurance",
+      "documentation"
+    ],
+    "nk-220221501627": [
+      "machine learning"
+    ],
+    "nk-090924502598": [
+      "quality assurance",
+      "documentation"
+    ],
+    "nk-190523501229": [
+      "regression",
+      "big data",
+      "python",
+      "machine learning",
+      "tensorflow",
+      "nlp"
+    ],
+    "nk-090924502596": [
+      "quality assurance",
+      "documentation",
+      "agile"
+    ],
+    "nk-180321500188": [
+      "regression",
+      "time series",
+      "machine learning"
+    ],
+    "nk-090924502595": [
+      "quality assurance",
+      "documentation"
+    ],
+    "nk-071224005578": [
+      "sql",
+      "regression",
+      "python"
+    ],
+    "nk-090924502593": [
+      "quality assurance",
+      "documentation"
+    ],
+    "nk-210721500482": [
+      "big data",
+      "python",
+      "machine learning"
+    ],
+    "nk-090924502591": [
+      "quality assurance",
+      "database"
+    ],
+    "nk-160123501084": [
+      "sql",
+      "analytics",
+      "python"
+    ],
+    "nk-090924502590": [
+      "quality assurance",
+      "documentation"
+    ],
+    "nk-021224003369": [
+      "machine learning"
+    ],
+    "nk-090924502586": [
+      "quality assurance",
+      "documentation"
+    ],
+    "nk-251124008562": [
+      "pandas",
+      "r statistical",
+      "machine learning"
+    ],
+    "nk-090924502582": [
       "quality assurance"
     ],
-    "maharashtra_-491": [],
-    "maharashtra_-492": [],
-    "maharashtra_-493": [],
-    "maharashtra_-494": [],
-    "maharashtra_-495": [
-      "teaching"
+    "nk-261124501821": [],
+    "nk-090924502008": [
+      "sql"
     ],
-    "maharashtra_-496": [
+    "nk-101224913636": [
+      "sql",
+      "time series",
+      "python",
+      "jupyter",
+      "documentation",
+      "agile",
+      "machine learning",
+      "natural language processing",
+      "aws",
+      "azure",
+      "ci cd"
+    ],
+    "nk-090424501029": [
+      "quality assurance",
+      "database",
+      "analytics",
+      "big data",
+      "documentation"
+    ],
+    "nk-131224921143": [
+      "time series",
+      "python",
+      "machine learning",
+      "natural language processing",
+      "aws",
+      "azure",
+      "kubernetes"
+    ],
+    "nk-081223500253": [
+      "field work",
+      "sql",
+      "python",
+      "documentation",
+      "jenkins"
+    ],
+    "nk-201224504640": [
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "generative ai",
+      "aws"
+    ],
+    "nk-081024501504": [
       "project management"
     ],
-    "maharashtra_-497": [],
-    "maharashtra_-498": [],
-    "maharashtra_-499": [],
-    "maharashtra_-500": []
+    "nk-231224902263": [
+      "data visualization",
+      "python",
+      "power bi"
+    ],
+    "nk-261219501454": [
+      "sql",
+      "python",
+      "machine learning",
+      "nlp"
+    ],
+    "nk-201224010051": [
+      "sql",
+      "analytics",
+      "regression",
+      "reporting",
+      "machine learning",
+      "deep learning",
+      "azure"
+    ],
+    "nk-220923500835": [
+      "python",
+      "agile",
+      "computer vision"
+    ],
+    "nk-101224502591": [
+      "sql",
+      "machine learning",
+      "deep learning",
+      "aws",
+      "gcp"
+    ],
+    "nk-180724500507": [],
+    "nk-111224503907": [],
+    "nk-281124918112": [
+      "sql",
+      "python"
+    ],
+    "nk-101224504116": [
+      "machine learning",
+      "natural language processing",
+      "gcp"
+    ],
+    "nk-281124918294": [
+      "documentation",
+      "agile",
+      "aws",
+      "ci cd"
+    ],
+    "nk-131224912929": [
+      "sql",
+      "analytics",
+      "python",
+      "machine learning"
+    ],
+    "nk-281124917355": [
+      "agile",
+      "aws",
+      "ci cd"
+    ],
+    "nk-091224502928": [
+      "sql",
+      "analytics",
+      "regression",
+      "forecasting",
+      "big data",
+      "python",
+      "machine learning"
+    ],
+    "nk-250123502703": [
+      "mysql",
+      "drone",
+      "aws",
+      "azure",
+      "docker"
+    ],
+    "nk-171224920667": [
+      "analytics",
+      "python",
+      "machine learning",
+      "natural language processing",
+      "genai",
+      "aws",
+      "azure"
+    ],
+    "nk-070722501264": [
+      "agile"
+    ],
+    "nk-031224503168": [
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "aws"
+    ],
+    "nk-280524501053": [
+      "sql",
+      "documentation"
+    ],
+    "nk-250124500340": [
+      "sql",
+      "point estimation",
+      "agile"
+    ],
+    "nk-300421500602": [
+      "sql"
+    ],
+    "nk-080824502947": [
+      "sql",
+      "data visualization",
+      "agile",
+      "machine learning",
+      "deep learning"
+    ],
+    "nk-310521500309": [
+      "sql",
+      "python",
+      "ci cd"
+    ],
+    "nk-031224503074": [
+      "mysql",
+      "analytics",
+      "data visualization",
+      "python",
+      "machine learning"
+    ],
+    "nk-301024510910": [
+      "sql",
+      "agile"
+    ],
+    "nk-181224503311": [
+      "sql",
+      "spark",
+      "python",
+      "agile",
+      "machine learning",
+      "tensorflow",
+      "aws",
+      "azure"
+    ],
+    "nk-200824500585": [
+      "kubernetes"
+    ],
+    "nk-221124503376": [
+      "sql",
+      "spark",
+      "python",
+      "project management",
+      "machine learning",
+      "generative ai",
+      "aws",
+      "azure",
+      "gcp"
+    ],
+    "nk-131124504443": [
+      "database"
+    ],
+    "nk-031224502331": [
+      "python",
+      "machine learning",
+      "deep learning",
+      "natural language processing"
+    ],
+    "nk-101024500488": [
+      "kubernetes"
+    ],
+    "nk-211124502113": [
+      "database",
+      "analytics",
+      "big data",
+      "python",
+      "r programming",
+      "documentation",
+      "stakeholder",
+      "machine learning",
+      "natural language processing"
+    ],
+    "nk-090824502681": [
+      "analytics",
+      "big data",
+      "reporting",
+      "agile",
+      "machine learning",
+      "aws",
+      "azure",
+      "gcp"
+    ],
+    "nk-101224502629": [
+      "sql",
+      "python",
+      "machine learning"
+    ],
+    "nk-041224018073": [
+      "sql"
+    ],
+    "nk-191224009238": [
+      "natural language processing",
+      "ci cd"
+    ],
+    "nk-041224012016": [],
+    "nk-231024019509": [
+      "data validation",
+      "sql",
+      "python",
+      "ml algorithms",
+      "tensorflow"
+    ],
+    "nk-031224003588": [
+      "aws",
+      "docker"
+    ],
+    "nk-201224916952": [
+      "python",
+      "pandas",
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "computer vision"
+    ],
+    "nk-021224500831": [
+      "sql",
+      "documentation"
+    ],
+    "nk-171224502127": [
+      "python",
+      "machine learning"
+    ],
+    "nk-021224001046": [],
+    "nk-171224019668": [
+      "sql",
+      "analytics",
+      "time series",
+      "spark",
+      "data visualization",
+      "python",
+      "pandas",
+      "powerbi",
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "aws",
+      "azure"
+    ],
+    "nk-011024502529": [
+      "documentation"
+    ],
+    "nk-260824500755": [
+      "regression",
+      "big data",
+      "python",
+      "jupyter",
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "computer vision",
+      "generative ai",
+      "azure",
+      "docker"
+    ],
+    "nk-010717506222": [
+      "mysql"
+    ],
+    "nk-191124505612": [
+      "analytics",
+      "data visualization",
+      "tableau",
+      "program management",
+      "aws"
+    ],
+    "nk-010717506219": [
+      "mysql"
+    ],
+    "nk-191124505611": [
+      "sql",
+      "analytics"
+    ],
+    "nk-010717506217": [
+      "mysql"
+    ],
+    "nk-051224504303": [
+      "sql",
+      "analytics",
+      "regression",
+      "big data",
+      "python",
+      "machine learning",
+      "deep learning",
+      "computer vision",
+      "docker"
+    ],
+    "nk-300724502655": [
+      "sql",
+      "analytics",
+      "docker"
+    ],
+    "nk-050923500298": [
+      "powerbi",
+      "project management"
+    ],
+    "nk-231024500995": [],
+    "nk-031224503329": [
+      "scrum",
+      "machine learning",
+      "natural language processing",
+      "generative ai",
+      "aws"
+    ],
+    "nk-201124502630": [
+      "sql"
+    ],
+    "nk-121224506088": [
+      "sql",
+      "python",
+      "project management",
+      "machine learning"
+    ],
+    "nk-111124500179": [],
+    "nk-061224914482": [
+      "time series",
+      "big data",
+      "python",
+      "machine learning",
+      "deep learning"
+    ],
+    "nk-041224919513": [],
+    "nk-091224915241": [
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "azure",
+      "gcp"
+    ],
+    "nk-041224501283": [
+      "sql",
+      "agile",
+      "azure"
+    ],
+    "nk-281124915249": [
+      "numpy",
+      "tableau",
+      "machine learning"
+    ],
+    "nk-031224007880": [
+      "analytics",
+      "aws"
+    ],
+    "nk-060924500463": [
+      "sql",
+      "ml algorithms",
+      "genai",
+      "aws",
+      "azure"
+    ],
+    "nk-221124505924": [],
+    "nk-110423500268": [
+      "forecasting",
+      "machine learning",
+      "deep learning",
+      "text mining"
+    ],
+    "nk-190924501907": [
+      "sql",
+      "forecasting"
+    ],
+    "nk-101224912199": [
+      "analytics",
+      "predictive modeling"
+    ],
+    "nk-120824502191": [
+      "quality assurance",
+      "database",
+      "agile"
+    ],
+    "nk-121124502807": [
+      "data visualization",
+      "reporting",
+      "machine learning"
+    ],
+    "nk-041224504080": [],
+    "nk-250924503043": [
+      "python",
+      "reporting",
+      "machine learning",
+      "deep learning",
+      "computer vision",
+      "aws",
+      "azure",
+      "gcp"
+    ],
+    "nk-041024501624": [
+      "quality assurance",
+      "documentation",
+      "stakeholder",
+      "agile",
+      "ci cd"
+    ],
+    "nk-231224500563": [
+      "analytics",
+      "forecasting",
+      "python",
+      "pandas",
+      "agile",
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "computer vision",
+      "azure"
+    ],
+    "nk-041024501606": [
+      "quality assurance",
+      "documentation",
+      "agile"
+    ],
+    "nk-101224004585": [
+      "analytics",
+      "regression",
+      "predictive modeling"
+    ],
+    "nk-031224018957": [
+      "ci cd"
+    ],
+    "nk-060624502147": [
+      "analytics",
+      "python",
+      "machine learning",
+      "deep learning",
+      "natural language processing"
+    ],
+    "nk-021224501749": [
+      "sql",
+      "documentation",
+      "aws"
+    ],
+    "nk-311022501849": [
+      "analytics",
+      "regression",
+      "forecasting",
+      "python",
+      "deep learning"
+    ],
+    "nk-010724500489": [],
+    "nk-291223501127": [
+      "statistical inference",
+      "machine learning",
+      "gcp"
+    ],
+    "nk-301018501356": [],
+    "nk-261124018598": [
+      "data visualization",
+      "python",
+      "agile",
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "generative ai",
+      "aws",
+      "azure",
+      "gcp"
+    ],
+    "nk-300919500305": [
+      "sql"
+    ]
   }
 }
