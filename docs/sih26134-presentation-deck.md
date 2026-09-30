@@ -38,10 +38,14 @@
      - Industry tech stacks (EV battery diagnostics, 5-axis CNC, solar microgrids, drone piloting) mutate every 6–9 months.
   2. 📍 **Geographic & Cluster Asymmetry:**
      - A single syllabus taught uniformly across 418 ITIs. A welding syllabus in Chakan (EV laser welding) cannot be identical to Gadchiroli (rural agro-equipment maintenance).
+     - **Measured in our prototype:** Mumbai + Pune hold ~89% of 13,511 real postings; **12 of 36 districts show zero formal demand** — the map proves the asymmetry.
   3. 🌫️ **Informal Sector Blindspot & Zero Feedback:**
      - 75%+ MSME hiring happens through local contractors and informal networks never captured by LinkedIn or Naukri.
      - Zero telemetry on whether graduates stay employed or experience actual wage growth.
 * **The Killer Stat Callout:** *"₹1,200+ Crores spent annually on state skilling, yet 54% of employers retrain new hires at their own expense."*
+* **Real-Demand Evidence Block (from our live pipeline, slide 3 chart source):**
+  - 13,511 real Naukri postings, 69 sectors, tagged on our skill graph.
+  - Top demanded skills: SQL (3,270), Project Management (2,258), **Sales (2,107 — taught by no current program)**, Python (1,684), HR (1,517), Production (1,371), AWS (1,046).
 
 ---
 
@@ -80,24 +84,28 @@
 * **Engine Proof & Benchmarks:**
   - Dense embeddings using `bge-large-en-v1.5` mapped against a 1,200-node hierarchical Skill DAG.
   - **Measured Metric:** **Recall@5 of 94.2%** (validated against real-world job posting corpus).
+  - **Live validation:** the same engine currently tags **13,511 real Maharashtra postings** and scores the catalog against them — coverage **Mumbai 53% vs Pune 63%**.
 * **The "Curriculum-Delta-Diff" Feature (Judges' Favorite):**
   - Government boards cannot rewrite entire curricula overnight.
-  - Our engine computes the exact delta:
-    - *Example (Machinist Trade):* Existing syllabus covers 85% of standard lathe operations. The missing 15% is *“G-Code Simulation on Siemens 828D Controls”*.
-    - The LLM pipeline autonomously outputs:
-      1. A modular **30-hour weekend bridge course**.
-      2. Bilingual ITI Instructor lesson plan (Marathi + English).
-      3. Practical workshop test rubrics.
+  - Our engine computes the exact delta — and the measured gaps are real, not illustrative:
+    - *Mumbai:* Sales demanded by **21% of all Mumbai postings (1,908)** yet taught by zero current programs → a 30-hour **Retail & B2B Sales bridge module**.
+    - *Chhatrapati Sambhajinagar:* **Production & Manufacturing Operations** is the top unmet skill → a 30-hour **Modern Plant Operations bridge**.
+    - *State-wide (tech corridors):* AWS (1,046), Azure (921), ML (898), Docker/K8s (606) → a **Cloud & AI Fundamentals micro-credential**.
+    - *Classic trade example (Machinist):* syllabus covers 85% of lathe operations; the missing 15% is *"G-Code Simulation on Siemens 828D Controls"*.
+  - The LLM pipeline autonomously outputs:
+    1. A modular **30-hour weekend bridge course**.
+    2. Bilingual ITI Instructor lesson plan (Marathi + English).
+    3. Practical workshop test rubrics.
 
 ---
 
 ### SLIDE 6: Spatial Intelligence — 36-District GIS Labor Digital Twin
 * **Header:** **Hyperlocal Governance: Eliminating "Over-Skilling" and "Skill Deserts"**
 * **Interactive Dashboard Showcase (Include Screenshot / Mockup):**
-  - Real-time district heatmap of Maharashtra (Pune, Chhatrapati Sambhajinagar, Nagpur, Nashik, Solapur, etc.).
+  - Real-time district heatmap of Maharashtra — **already live in the prototype**: 36 tiles, zero-demand districts rendered as dashed "skill desert" tiles.
+  - **Measured district distribution (13,511 postings):** Mumbai 9,178 · Pune 6,066 · Thane 556 · Nagpur 164 · Nashik 60 · Chhatrapati Sambhajinagar 40 — and **12 districts at zero**, including all of Gadchiroli, Sindhudurg and Nandurbar.
+  - **Per-district coverage scoring:** same catalog, different holes — Mumbai 53% (Sales unmet), Pune 63% (tech demand covered), Chhatrapati Sambhajinagar 34% (Production unmet), Kolhapur 39% (Clinical Care unmet).
   - **Supply vs. Demand Pinning:** Maps 418 Govt ITIs, 550+ Private ITIs against active industry vacancy clusters.
-  - **Automated Anomaly Detection:**
-    - 🚨 *Warning Alert:* *"Nashik cluster has 4,200 surplus Basic Office Assistants, but a 1,800 deficit in CNC Tool Maintenance Technicians."*
   - **"What-If" Policy Simulation Cockpit:**
     - Allows the Principal Secretary to simulate: *"If we reallocate ₹25 Cr to Green Hydrogen and Drone Skilling in Vidarbha, what is the projected 6-month placement rate and wage uplift?"*
 
@@ -120,10 +128,11 @@
 * **Header:** **Why We Win: Production-Ready Foundation, Not Just a Concept**
 * **Feasibility Evidence:**
   - Core vector matching and graph traversal engine already built and tested (**94.2% Recall@5** on our previous hackathon build).
-  - SIH adaptation is structured into high-velocity modules:
-    - Day 1: Ingest Mahaswayam, DVET syllabus, and MIDC cluster directory.
-    - Day 2: Deploy BGE embedding pipeline + 36-district GIS dashboard.
-    - Day 3: Curriculum-Delta-Diff generator + Marathi voice agent.
+  - **The demand side is not a plan — it is running:** three real Naukri corpora ingested (13,511 Maharashtra postings, 69 sectors), 36-district attribution, per-district coverage scoring, and a department dashboard with recommendations — reproducible via `npm run sih:demand && npm run sih:alignment`.
+  - Remaining SIH adaptation is structured into high-velocity modules:
+    - Day 1: Mahaswayam + DVET syllabus ingestion (corpus loaders are generic — new portals are file drops).
+    - Day 2: MIDC CapEx pre-hiring radar + Marathi voice agent.
+    - Day 3: Curriculum-Delta-Diff generator targeting the measured gaps.
 * **Architecture Robustness:**
   - Deterministic fallbacks guarantee zero runtime crashes even during offline evaluation.
 * **6-Month State Scale-Up Roadmap:**
@@ -140,4 +149,4 @@
   - 🎯 **94.2% Precision Matching:** Eliminating unemployable youth and talent scarcity.
   - 💰 **100% Taxpayer Accountability:** Every rupee of skilling budget tied to measurable employment ROI.
 * **Closing Quote:** *"KaushalSetu does not just observe the job market—it engineers the talent pipeline to power Maharashtra's industrial future."*
-* **Call to Action:** *"Explore the Live Prototype: [github.com/SabarishR08/kaushalsetu-mh](https://github.com/SabarishR08/kaushalsetu-mh)"*
+* **Call to Action:** *"Explore the Live Prototype: [github.com/SabarishR08/kaushalsetu](https://github.com/SabarishR08/kaushalsetu)"*

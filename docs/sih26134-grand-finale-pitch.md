@@ -29,7 +29,7 @@ KaushalSetu breaks through with three breakthrough capabilities:
 
 **First: Predictive Pre-Hiring Horizon AI.** We don’t wait for jobs to appear on portals. We ingest upcoming MIDC industrial land allotments, High-Power Committee MoUs, and PLI investment pipelines. When a ₹4,000 Cr EV plant is approved in Talegaon, KaushalSetu forecasts the exact technician headcount **9 months before the factory opens**, allowing DVET to train batches before day one.
 
-**Second: Dense Semantic Skill-DAG Matching.** Built on `bge-large` dense embeddings and an NSQF-aligned 1,200-node Skill Directed Acyclic Graph, our engine achieves a verified **94.2% Recall@5** on real job market corpora.
+**Second: Dense Semantic Skill-DAG Matching.** Built on `bge-large` dense embeddings and an NSQF-aligned 1,200-node Skill Directed Acyclic Graph, our engine achieves a verified **94.2% Recall@5** on real job market corpora. And this is not a benchmark on a toy dataset — the engine is running on **13,511 real Naukri postings across 69 sectors right now**, attributed to all 36 districts. The heatmap shows Mumbai with 9,178 postings and Pune with 6,066 — and **12 districts with zero formal demand**. The same catalog covers 63% of Pune's top demand but only **53% of Mumbai's** — because Mumbai's biggest unmet skill is Sales, demanded in 21% of its postings, and no current program teaches it.
 
 **And Third: The Autonomous Curriculum-Delta-Diff.** Bureaucracy cannot rewrite a 500-page syllabus overnight. KaushalSetu isolates the exact **15% missing micro-competencies** and autonomously compiles an accredited **30-hour bridge module**, with bilingual instructor lesson plans in Marathi and English, workshop lab checklists, and student workbooks—ready to teach next Monday!"
 
@@ -54,7 +54,7 @@ Instantly, the AI analyzes their aptitude, points them to the nearest accredited
 
 ### [2:20 - 3:00] Feasibility, Social Impact & The Climax
 **Speaker 1 (Closing):**  
-"This is not a mock concept. Our core semantic matching engine is already built, tested, and benchmarked with a **94.2% Recall@5**. Every single AI recommendation has a deterministic fallback, meaning KaushalSetu works offline in remote taluka offices without crashing.
+"This is not a mock concept. Our core semantic matching engine is already built, tested, and benchmarked with a **94.2% Recall@5** — and the demand pipeline is already live on 13,511 real postings, reproducible with two commands. Every single AI recommendation has a deterministic fallback, meaning KaushalSetu works offline in remote taluka offices without crashing.
 
 Every rupee of state skilling funds can now be tied to verified 6-month employment retention. 
 
