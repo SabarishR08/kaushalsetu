@@ -32,6 +32,14 @@ const SHOTS = [
     note: '36-district choropleth with skill deserts',
   },
   {
+    name: 'slide3-desert-benchmark',
+    clickSelector: "button[title^='Sindhudurg:']",
+    selector: 'text=District-level demand heatmap',
+    scrollOffset: 120,
+    closeAfter: true,
+    note: 'Zero-demand Sindhudurg selected with neighbor benchmark panel',
+  },
+  {
     name: 'slide3-coverage-focus',
     selector: 'text=District coverage',
     scrollOffset: -30,
@@ -42,6 +50,12 @@ const SHOTS = [
     selector: 'text=Sector-wise gap detection',
     scrollOffset: -30,
     note: 'Sector-wise gap detection table',
+  },
+  {
+    name: 'slide3-district-actions',
+    selector: 'text=District-specific actions',
+    scrollOffset: -30,
+    note: 'District-specific actions ranked by actionable postings',
   },
 ];
 
@@ -66,6 +80,10 @@ async function main() {
 
   for (const shot of SHOTS) {
     try {
+      if (shot.clickSelector) {
+        await page.locator(shot.clickSelector).click();
+        await page.waitForTimeout(500);
+      }
       if (shot.selector) {
         const el = page.locator(shot.selector).first();
         await el.scrollIntoViewIfNeeded();
@@ -79,6 +97,10 @@ async function main() {
       const out = path.join(CONFIG.outDir, `${shot.name}.png`);
       await page.screenshot({ path: out });
       console.log(`[capture] ${shot.note} -> ${shot.name}.png`);
+      if (shot.closeAfter) {
+        await page.locator("button[aria-label='Close benchmark panel']").click();
+        await page.waitForTimeout(300);
+      }
     } catch (e) {
       console.warn(`[capture] FAILED ${shot.name}: ${e.message}`);
     }

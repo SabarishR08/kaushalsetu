@@ -107,8 +107,10 @@
 * **Interactive Dashboard Showcase (Include Screenshot / Mockup):**
   - Real-time district heatmap of Maharashtra — **already live in the prototype**: 36 tiles, zero-demand districts rendered as dashed "skill desert" tiles.
   - **Measured district distribution (13,511 postings):** Mumbai 9,178 · Pune 6,066 · Thane 556 · Nagpur 164 · Nashik 60 · Chhatrapati Sambhajinagar 40 — and **12 districts at zero**, including all of Gadchiroli, Sindhudurg and Nandurbar.
+  - **Interactive skill-desert benchmark (live demo moment):** click any zero-demand tile — the panel aggregates what its real neighbors demand, weighted by volume and skill rank. *Demo script: "Gadchiroli has no formal postings — but its neighbor Chandrapur hires for HR and Clinical Care, so here is the shortlist we would train for."*
+  - **District-specific actions, ranked by actionable postings:** Mumbai ~1,908 (Sales), Thane ~183 (HR 99 + Sales 84), Nagpur ~39 (Sales 23%), Chhatrapati Sambhajinagar ~27 (Production).
   - **Per-district coverage scoring:** same catalog, different holes — Mumbai 53% (Sales unmet), Pune 63% (tech demand covered), Chhatrapati Sambhajinagar 34% (Production unmet), Kolhapur 39% (Clinical Care unmet).
-  - 📸 *Slide images ready:* `docs/deck/slide3-district-heatmap.png` and `docs/deck/slide3-coverage-focus.png`.
+  - 📸 *Slide images ready:* `docs/deck/slide3-district-heatmap.png`, `slide3-desert-benchmark.png` (Sindhudurg selected with neighbor panel), `slide3-coverage-focus.png`, and `slide3-district-actions.png`.
   - **Supply vs. Demand Pinning:** Maps 418 Govt ITIs, 550+ Private ITIs against active industry vacancy clusters.
   - **"What-If" Policy Simulation Cockpit:**
     - Allows the Principal Secretary to simulate: *"If we reallocate ₹25 Cr to Green Hydrogen and Drone Skilling in Vidarbha, what is the projected 6-month placement rate and wage uplift?"*
