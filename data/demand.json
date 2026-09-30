@@ -1,0 +1,3000 @@
+{
+  "meta": {
+    "builtAt": "2026-09-30T12:08:47.629Z",
+    "source": "maharashtra_seed_v1",
+    "tagger": "keyword",
+    "postings": 102,
+    "sectors": 11
+  },
+  "overall": [
+    {
+      "skillId": "cg_report_writing",
+      "demand": 73,
+      "share": 0.716,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "IT001",
+        "IT002",
+        "IT004"
+      ]
+    },
+    {
+      "skillId": "dc_data_entry",
+      "demand": 29,
+      "share": 0.284,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "IT009",
+        "IT017",
+        "BK001"
+      ]
+    },
+    {
+      "skillId": "dq_quality_audit",
+      "demand": 27,
+      "share": 0.265,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "IT005",
+        "BK003",
+        "BK005"
+      ]
+    },
+    {
+      "skillId": "dc_spreadsheets",
+      "demand": 22,
+      "share": 0.216,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "IT001",
+        "IT004",
+        "IT007"
+      ]
+    },
+    {
+      "skillId": "cg_user_engagement",
+      "demand": 18,
+      "share": 0.176,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "IT004",
+        "IT011",
+        "IT015"
+      ]
+    },
+    {
+      "skillId": "it_basics",
+      "demand": 16,
+      "share": 0.157,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "IT002",
+        "IT014",
+        "IT017"
+      ]
+    },
+    {
+      "skillId": "dc_sql",
+      "demand": 15,
+      "share": 0.147,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "IT001",
+        "IT003",
+        "IT008"
+      ]
+    },
+    {
+      "skillId": "sm_time_series",
+      "demand": 14,
+      "share": 0.137,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "IT006",
+        "IT015",
+        "BK007"
+      ]
+    },
+    {
+      "skillId": "dc_cleaning",
+      "demand": 13,
+      "share": 0.127,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "IT003",
+        "IT010",
+        "IT016"
+      ]
+    },
+    {
+      "skillId": "dc_edit_rules",
+      "demand": 12,
+      "share": 0.118,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "BK008",
+        "MF001",
+        "MF002"
+      ]
+    },
+    {
+      "skillId": "os_admin_data",
+      "demand": 11,
+      "share": 0.108,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "BK001",
+        "BK006",
+        "TX003"
+      ]
+    },
+    {
+      "skillId": "cg_training_delivery",
+      "demand": 10,
+      "share": 0.098,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "MF003",
+        "TX001",
+        "AG003"
+      ]
+    },
+    {
+      "skillId": "sm_descriptive",
+      "demand": 10,
+      "share": 0.098,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "IT002",
+        "IT004",
+        "IT013"
+      ]
+    },
+    {
+      "skillId": "ss_field_ops",
+      "demand": 10,
+      "share": 0.098,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "IT010",
+        "MF006",
+        "AG001"
+      ]
+    },
+    {
+      "skillId": "cg_project_mgmt",
+      "demand": 6,
+      "share": 0.059,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "IT002",
+        "IT005",
+        "IT008"
+      ]
+    },
+    {
+      "skillId": "dq_confidentiality",
+      "demand": 6,
+      "share": 0.059,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "IT008",
+        "IT012",
+        "BK003"
+      ]
+    },
+    {
+      "skillId": "it_dashboards",
+      "demand": 6,
+      "share": 0.059,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "IT001",
+        "IT011",
+        "IT013"
+      ]
+    },
+    {
+      "skillId": "it_python_basics",
+      "demand": 6,
+      "share": 0.059,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "IT003",
+        "IT014",
+        "IT016"
+      ]
+    },
+    {
+      "skillId": "sm_hypothesis",
+      "demand": 6,
+      "share": 0.059,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "IT013",
+        "IT018",
+        "BK004"
+      ]
+    },
+    {
+      "skillId": "it_data_viz",
+      "demand": 5,
+      "share": 0.049,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "IT007",
+        "IT010",
+        "IT011"
+      ]
+    },
+    {
+      "skillId": "os_big_data",
+      "demand": 5,
+      "share": 0.049,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "IT003",
+        "IT010",
+        "IT016"
+      ]
+    },
+    {
+      "skillId": "it_python_stats",
+      "demand": 4,
+      "share": 0.039,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "IT006",
+        "BK009",
+        "PH006"
+      ]
+    },
+    {
+      "skillId": "sm_regression",
+      "demand": 4,
+      "share": 0.039,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "IT006",
+        "IT018",
+        "BK004"
+      ]
+    },
+    {
+      "skillId": "ss_quality_assurance",
+      "demand": 4,
+      "share": 0.039,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "MF003",
+        "TX003",
+        "PH003"
+      ]
+    },
+    {
+      "skillId": "dq_revision_policy",
+      "demand": 2,
+      "share": 0.02,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "BK003",
+        "PH007"
+      ]
+    },
+    {
+      "skillId": "med_icd",
+      "demand": 2,
+      "share": 0.02,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "PH003",
+        "PH004"
+      ]
+    },
+    {
+      "skillId": "mfg_cnc",
+      "demand": 2,
+      "share": 0.02,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "MF001",
+        "MF002"
+      ]
+    },
+    {
+      "skillId": "mfg_plc",
+      "demand": 2,
+      "share": 0.02,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "MF004",
+        "MF012"
+      ]
+    },
+    {
+      "skillId": "os_gva",
+      "demand": 2,
+      "share": 0.02,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "BK007",
+        "GO006"
+      ]
+    },
+    {
+      "skillId": "os_price_stats",
+      "demand": 2,
+      "share": 0.02,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "GO001",
+        "GO008"
+      ]
+    },
+    {
+      "skillId": "sm_index_numbers",
+      "demand": 2,
+      "share": 0.02,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "BK007",
+        "GO008"
+      ]
+    },
+    {
+      "skillId": "sm_probability",
+      "demand": 2,
+      "share": 0.02,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "IT018",
+        "BK009"
+      ]
+    },
+    {
+      "skillId": "ss_questionnaire",
+      "demand": 2,
+      "share": 0.02,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "GO001",
+        "RT005"
+      ]
+    },
+    {
+      "skillId": "ss_sampling_basics",
+      "demand": 2,
+      "share": 0.02,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "GO001",
+        "GO007"
+      ]
+    },
+    {
+      "skillId": "surv_total_station",
+      "demand": 2,
+      "share": 0.02,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "CN001",
+        "CN004"
+      ]
+    },
+    {
+      "skillId": "agri_drone",
+      "demand": 1,
+      "share": 0.01,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "AG006"
+      ]
+    },
+    {
+      "skillId": "civ_bim",
+      "demand": 1,
+      "share": 0.01,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "CN007"
+      ]
+    },
+    {
+      "skillId": "dc_capi",
+      "demand": 1,
+      "share": 0.01,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "GO004"
+      ]
+    },
+    {
+      "skillId": "dc_cspro",
+      "demand": 1,
+      "share": 0.01,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "GO001"
+      ]
+    },
+    {
+      "skillId": "dc_metadata",
+      "demand": 1,
+      "share": 0.01,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "GO010"
+      ]
+    },
+    {
+      "skillId": "dq_dissemination",
+      "demand": 1,
+      "share": 0.01,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "GO003"
+      ]
+    },
+    {
+      "skillId": "it_r_stats",
+      "demand": 1,
+      "share": 0.01,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "BK009"
+      ]
+    },
+    {
+      "skillId": "os_agri_stats",
+      "demand": 1,
+      "share": 0.01,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "AG001"
+      ]
+    },
+    {
+      "skillId": "os_census",
+      "demand": 1,
+      "share": 0.01,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "GO004"
+      ]
+    },
+    {
+      "skillId": "os_nss",
+      "demand": 1,
+      "share": 0.01,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "PH006"
+      ]
+    },
+    {
+      "skillId": "sm_variance",
+      "demand": 1,
+      "share": 0.01,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "GO007"
+      ]
+    },
+    {
+      "skillId": "ss_frameworks",
+      "demand": 1,
+      "share": 0.01,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "GO003"
+      ]
+    },
+    {
+      "skillId": "ss_nonresponse",
+      "demand": 1,
+      "share": 0.01,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "GO004"
+      ]
+    },
+    {
+      "skillId": "ss_sampling_stratified",
+      "demand": 1,
+      "share": 0.01,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "GO001"
+      ]
+    },
+    {
+      "skillId": "ss_survey_design",
+      "demand": 1,
+      "share": 0.01,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "GO007"
+      ]
+    },
+    {
+      "skillId": "ss_weighting",
+      "demand": 1,
+      "share": 0.01,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "GO007"
+      ]
+    }
+  ],
+  "sectors": [
+    {
+      "sector": "IT & Software",
+      "postings": 18,
+      "topSkills": [
+        {
+          "skillId": "cg_report_writing",
+          "demand": 13,
+          "share": 0.722,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "IT001",
+            "IT002",
+            "IT004"
+          ]
+        },
+        {
+          "skillId": "dc_sql",
+          "demand": 9,
+          "share": 0.5,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "IT001",
+            "IT003",
+            "IT008"
+          ]
+        },
+        {
+          "skillId": "dc_spreadsheets",
+          "demand": 5,
+          "share": 0.278,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "IT001",
+            "IT004",
+            "IT007"
+          ]
+        },
+        {
+          "skillId": "cg_project_mgmt",
+          "demand": 4,
+          "share": 0.222,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "IT002",
+            "IT005",
+            "IT008"
+          ]
+        },
+        {
+          "skillId": "cg_user_engagement",
+          "demand": 3,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "IT004",
+            "IT011",
+            "IT015"
+          ]
+        },
+        {
+          "skillId": "dc_cleaning",
+          "demand": 3,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "IT003",
+            "IT010",
+            "IT016"
+          ]
+        },
+        {
+          "skillId": "it_basics",
+          "demand": 3,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "IT002",
+            "IT014",
+            "IT017"
+          ]
+        },
+        {
+          "skillId": "it_dashboards",
+          "demand": 3,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "IT001",
+            "IT011",
+            "IT013"
+          ]
+        },
+        {
+          "skillId": "it_data_viz",
+          "demand": 3,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "IT007",
+            "IT010",
+            "IT011"
+          ]
+        },
+        {
+          "skillId": "it_python_basics",
+          "demand": 3,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "IT003",
+            "IT014",
+            "IT016"
+          ]
+        },
+        {
+          "skillId": "os_big_data",
+          "demand": 3,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "IT003",
+            "IT010",
+            "IT016"
+          ]
+        },
+        {
+          "skillId": "sm_descriptive",
+          "demand": 3,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "IT002",
+            "IT004",
+            "IT013"
+          ]
+        },
+        {
+          "skillId": "dc_data_entry",
+          "demand": 2,
+          "share": 0.111,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "IT009",
+            "IT017"
+          ]
+        },
+        {
+          "skillId": "dq_confidentiality",
+          "demand": 2,
+          "share": 0.111,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "IT008",
+            "IT012"
+          ]
+        },
+        {
+          "skillId": "sm_hypothesis",
+          "demand": 2,
+          "share": 0.111,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "IT013",
+            "IT018"
+          ]
+        },
+        {
+          "skillId": "sm_regression",
+          "demand": 2,
+          "share": 0.111,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "IT006",
+            "IT018"
+          ]
+        },
+        {
+          "skillId": "sm_time_series",
+          "demand": 2,
+          "share": 0.111,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "IT006",
+            "IT015"
+          ]
+        },
+        {
+          "skillId": "dq_quality_audit",
+          "demand": 1,
+          "share": 0.056,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "IT005"
+          ]
+        },
+        {
+          "skillId": "it_python_stats",
+          "demand": 1,
+          "share": 0.056,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "IT006"
+          ]
+        },
+        {
+          "skillId": "sm_probability",
+          "demand": 1,
+          "share": 0.056,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "IT018"
+          ]
+        },
+        {
+          "skillId": "ss_field_ops",
+          "demand": 1,
+          "share": 0.056,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "IT010"
+          ]
+        }
+      ],
+      "uncoveredSkills": []
+    },
+    {
+      "sector": "Manufacturing & Auto",
+      "postings": 14,
+      "topSkills": [
+        {
+          "skillId": "cg_report_writing",
+          "demand": 10,
+          "share": 0.714,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "MF004",
+            "MF005",
+            "MF006"
+          ]
+        },
+        {
+          "skillId": "dq_quality_audit",
+          "demand": 7,
+          "share": 0.5,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "MF002",
+            "MF004",
+            "MF006"
+          ]
+        },
+        {
+          "skillId": "dc_data_entry",
+          "demand": 3,
+          "share": 0.214,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "MF007",
+            "MF011",
+            "MF013"
+          ]
+        },
+        {
+          "skillId": "dc_edit_rules",
+          "demand": 3,
+          "share": 0.214,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "MF001",
+            "MF002",
+            "MF006"
+          ]
+        },
+        {
+          "skillId": "dc_spreadsheets",
+          "demand": 3,
+          "share": 0.214,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "MF003",
+            "MF005",
+            "MF013"
+          ]
+        },
+        {
+          "skillId": "it_basics",
+          "demand": 3,
+          "share": 0.214,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "MF003",
+            "MF007",
+            "MF012"
+          ]
+        },
+        {
+          "skillId": "cg_user_engagement",
+          "demand": 2,
+          "share": 0.143,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "MF005",
+            "MF010"
+          ]
+        },
+        {
+          "skillId": "mfg_cnc",
+          "demand": 2,
+          "share": 0.143,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "MF001",
+            "MF002"
+          ]
+        },
+        {
+          "skillId": "mfg_plc",
+          "demand": 2,
+          "share": 0.143,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "MF004",
+            "MF012"
+          ]
+        },
+        {
+          "skillId": "sm_time_series",
+          "demand": 2,
+          "share": 0.143,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "MF005",
+            "MF008"
+          ]
+        },
+        {
+          "skillId": "cg_project_mgmt",
+          "demand": 1,
+          "share": 0.071,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "MF010"
+          ]
+        },
+        {
+          "skillId": "cg_training_delivery",
+          "demand": 1,
+          "share": 0.071,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "MF003"
+          ]
+        },
+        {
+          "skillId": "dc_cleaning",
+          "demand": 1,
+          "share": 0.071,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "MF008"
+          ]
+        },
+        {
+          "skillId": "dc_sql",
+          "demand": 1,
+          "share": 0.071,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "MF008"
+          ]
+        },
+        {
+          "skillId": "ss_field_ops",
+          "demand": 1,
+          "share": 0.071,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "MF006"
+          ]
+        },
+        {
+          "skillId": "ss_quality_assurance",
+          "demand": 1,
+          "share": 0.071,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "MF003"
+          ]
+        }
+      ],
+      "uncoveredSkills": []
+    },
+    {
+      "sector": "Agri & Food Processing",
+      "postings": 10,
+      "topSkills": [
+        {
+          "skillId": "cg_report_writing",
+          "demand": 6,
+          "share": 0.6,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "AG003",
+            "AG004",
+            "AG005"
+          ]
+        },
+        {
+          "skillId": "dc_data_entry",
+          "demand": 4,
+          "share": 0.4,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "AG004",
+            "AG007",
+            "AG008"
+          ]
+        },
+        {
+          "skillId": "dc_spreadsheets",
+          "demand": 3,
+          "share": 0.3,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "AG002",
+            "AG003",
+            "AG009"
+          ]
+        },
+        {
+          "skillId": "os_admin_data",
+          "demand": 3,
+          "share": 0.3,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "AG003",
+            "AG007",
+            "AG008"
+          ]
+        },
+        {
+          "skillId": "ss_field_ops",
+          "demand": 3,
+          "share": 0.3,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "AG001",
+            "AG006",
+            "AG008"
+          ]
+        },
+        {
+          "skillId": "dc_edit_rules",
+          "demand": 2,
+          "share": 0.2,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "AG004",
+            "AG007"
+          ]
+        },
+        {
+          "skillId": "dq_quality_audit",
+          "demand": 2,
+          "share": 0.2,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "AG004",
+            "AG009"
+          ]
+        },
+        {
+          "skillId": "sm_time_series",
+          "demand": 2,
+          "share": 0.2,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "AG002",
+            "AG010"
+          ]
+        },
+        {
+          "skillId": "agri_drone",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "AG006"
+          ]
+        },
+        {
+          "skillId": "cg_training_delivery",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "AG003"
+          ]
+        },
+        {
+          "skillId": "cg_user_engagement",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "AG003"
+          ]
+        },
+        {
+          "skillId": "dc_cleaning",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "AG006"
+          ]
+        },
+        {
+          "skillId": "os_agri_stats",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "AG001"
+          ]
+        },
+        {
+          "skillId": "os_big_data",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "AG006"
+          ]
+        },
+        {
+          "skillId": "sm_descriptive",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "AG010"
+          ]
+        }
+      ],
+      "uncoveredSkills": []
+    },
+    {
+      "sector": "BFSI",
+      "postings": 10,
+      "topSkills": [
+        {
+          "skillId": "cg_report_writing",
+          "demand": 6,
+          "share": 0.6,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "BK003",
+            "BK005",
+            "BK006"
+          ]
+        },
+        {
+          "skillId": "dc_data_entry",
+          "demand": 4,
+          "share": 0.4,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "BK001",
+            "BK002",
+            "BK006"
+          ]
+        },
+        {
+          "skillId": "dc_spreadsheets",
+          "demand": 3,
+          "share": 0.3,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "BK001",
+            "BK006",
+            "BK008"
+          ]
+        },
+        {
+          "skillId": "dq_quality_audit",
+          "demand": 3,
+          "share": 0.3,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "BK003",
+            "BK005",
+            "BK010"
+          ]
+        },
+        {
+          "skillId": "dc_sql",
+          "demand": 2,
+          "share": 0.2,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "BK004",
+            "BK008"
+          ]
+        },
+        {
+          "skillId": "dq_confidentiality",
+          "demand": 2,
+          "share": 0.2,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "BK003",
+            "BK010"
+          ]
+        },
+        {
+          "skillId": "os_admin_data",
+          "demand": 2,
+          "share": 0.2,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "BK001",
+            "BK006"
+          ]
+        },
+        {
+          "skillId": "sm_descriptive",
+          "demand": 2,
+          "share": 0.2,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "BK004",
+            "BK005"
+          ]
+        },
+        {
+          "skillId": "sm_hypothesis",
+          "demand": 2,
+          "share": 0.2,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "BK004",
+            "BK009"
+          ]
+        },
+        {
+          "skillId": "sm_time_series",
+          "demand": 2,
+          "share": 0.2,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "BK007",
+            "BK009"
+          ]
+        },
+        {
+          "skillId": "cg_user_engagement",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "BK006"
+          ]
+        },
+        {
+          "skillId": "dc_cleaning",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "BK005"
+          ]
+        },
+        {
+          "skillId": "dc_edit_rules",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "BK008"
+          ]
+        },
+        {
+          "skillId": "dq_revision_policy",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "BK003"
+          ]
+        },
+        {
+          "skillId": "it_basics",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "BK002"
+          ]
+        },
+        {
+          "skillId": "it_dashboards",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "BK004"
+          ]
+        },
+        {
+          "skillId": "it_python_stats",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "BK009"
+          ]
+        },
+        {
+          "skillId": "it_r_stats",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "BK009"
+          ]
+        },
+        {
+          "skillId": "os_gva",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "BK007"
+          ]
+        },
+        {
+          "skillId": "sm_index_numbers",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "BK007"
+          ]
+        },
+        {
+          "skillId": "sm_probability",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "BK009"
+          ]
+        },
+        {
+          "skillId": "sm_regression",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "BK004"
+          ]
+        }
+      ],
+      "uncoveredSkills": []
+    },
+    {
+      "sector": "Government & Statistics",
+      "postings": 10,
+      "topSkills": [
+        {
+          "skillId": "cg_report_writing",
+          "demand": 5,
+          "share": 0.5,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO002",
+            "GO005",
+            "GO006"
+          ]
+        },
+        {
+          "skillId": "dc_data_entry",
+          "demand": 2,
+          "share": 0.2,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO001",
+            "GO005"
+          ]
+        },
+        {
+          "skillId": "dq_quality_audit",
+          "demand": 2,
+          "share": 0.2,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO005",
+            "GO010"
+          ]
+        },
+        {
+          "skillId": "os_price_stats",
+          "demand": 2,
+          "share": 0.2,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO001",
+            "GO008"
+          ]
+        },
+        {
+          "skillId": "sm_time_series",
+          "demand": 2,
+          "share": 0.2,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO003",
+            "GO006"
+          ]
+        },
+        {
+          "skillId": "ss_field_ops",
+          "demand": 2,
+          "share": 0.2,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO001",
+            "GO004"
+          ]
+        },
+        {
+          "skillId": "ss_sampling_basics",
+          "demand": 2,
+          "share": 0.2,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO001",
+            "GO007"
+          ]
+        },
+        {
+          "skillId": "cg_training_delivery",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO009"
+          ]
+        },
+        {
+          "skillId": "cg_user_engagement",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO009"
+          ]
+        },
+        {
+          "skillId": "dc_capi",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO004"
+          ]
+        },
+        {
+          "skillId": "dc_cleaning",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO008"
+          ]
+        },
+        {
+          "skillId": "dc_cspro",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO001"
+          ]
+        },
+        {
+          "skillId": "dc_metadata",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO010"
+          ]
+        },
+        {
+          "skillId": "dc_spreadsheets",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO002"
+          ]
+        },
+        {
+          "skillId": "dc_sql",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO005"
+          ]
+        },
+        {
+          "skillId": "dq_confidentiality",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO010"
+          ]
+        },
+        {
+          "skillId": "dq_dissemination",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO003"
+          ]
+        },
+        {
+          "skillId": "it_basics",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO009"
+          ]
+        },
+        {
+          "skillId": "it_python_basics",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO003"
+          ]
+        },
+        {
+          "skillId": "it_python_stats",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO003"
+          ]
+        },
+        {
+          "skillId": "os_admin_data",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO002"
+          ]
+        },
+        {
+          "skillId": "os_big_data",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO003"
+          ]
+        },
+        {
+          "skillId": "os_census",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO004"
+          ]
+        },
+        {
+          "skillId": "os_gva",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO006"
+          ]
+        },
+        {
+          "skillId": "sm_index_numbers",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO008"
+          ]
+        },
+        {
+          "skillId": "sm_regression",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO003"
+          ]
+        },
+        {
+          "skillId": "sm_variance",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO007"
+          ]
+        },
+        {
+          "skillId": "ss_frameworks",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO003"
+          ]
+        },
+        {
+          "skillId": "ss_nonresponse",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO004"
+          ]
+        },
+        {
+          "skillId": "ss_quality_assurance",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO007"
+          ]
+        },
+        {
+          "skillId": "ss_questionnaire",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO001"
+          ]
+        },
+        {
+          "skillId": "ss_sampling_stratified",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO001"
+          ]
+        },
+        {
+          "skillId": "ss_survey_design",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO007"
+          ]
+        },
+        {
+          "skillId": "ss_weighting",
+          "demand": 1,
+          "share": 0.1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "GO007"
+          ]
+        }
+      ],
+      "uncoveredSkills": []
+    },
+    {
+      "sector": "Construction & Infrastructure",
+      "postings": 8,
+      "topSkills": [
+        {
+          "skillId": "cg_report_writing",
+          "demand": 8,
+          "share": 1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "CN001",
+            "CN002",
+            "CN003"
+          ]
+        },
+        {
+          "skillId": "cg_user_engagement",
+          "demand": 3,
+          "share": 0.375,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "CN002",
+            "CN003",
+            "CN007"
+          ]
+        },
+        {
+          "skillId": "dc_data_entry",
+          "demand": 2,
+          "share": 0.25,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "CN006",
+            "CN008"
+          ]
+        },
+        {
+          "skillId": "dc_edit_rules",
+          "demand": 2,
+          "share": 0.25,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "CN001",
+            "CN008"
+          ]
+        },
+        {
+          "skillId": "dc_spreadsheets",
+          "demand": 2,
+          "share": 0.25,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "CN003",
+            "CN006"
+          ]
+        },
+        {
+          "skillId": "dq_quality_audit",
+          "demand": 2,
+          "share": 0.25,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "CN003",
+            "CN005"
+          ]
+        },
+        {
+          "skillId": "it_basics",
+          "demand": 2,
+          "share": 0.25,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "CN001",
+            "CN007"
+          ]
+        },
+        {
+          "skillId": "ss_field_ops",
+          "demand": 2,
+          "share": 0.25,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "CN001",
+            "CN004"
+          ]
+        },
+        {
+          "skillId": "surv_total_station",
+          "demand": 2,
+          "share": 0.25,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "CN001",
+            "CN004"
+          ]
+        },
+        {
+          "skillId": "cg_project_mgmt",
+          "demand": 1,
+          "share": 0.125,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "CN002"
+          ]
+        },
+        {
+          "skillId": "cg_training_delivery",
+          "demand": 1,
+          "share": 0.125,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "CN005"
+          ]
+        },
+        {
+          "skillId": "civ_bim",
+          "demand": 1,
+          "share": 0.125,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "CN007"
+          ]
+        },
+        {
+          "skillId": "dc_cleaning",
+          "demand": 1,
+          "share": 0.125,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "CN004"
+          ]
+        },
+        {
+          "skillId": "os_admin_data",
+          "demand": 1,
+          "share": 0.125,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "CN003"
+          ]
+        }
+      ],
+      "uncoveredSkills": []
+    },
+    {
+      "sector": "Pharma & Healthcare",
+      "postings": 8,
+      "topSkills": [
+        {
+          "skillId": "cg_report_writing",
+          "demand": 5,
+          "share": 0.625,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "PH001",
+            "PH002",
+            "PH003"
+          ]
+        },
+        {
+          "skillId": "dc_data_entry",
+          "demand": 4,
+          "share": 0.5,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "PH001",
+            "PH004",
+            "PH005"
+          ]
+        },
+        {
+          "skillId": "dq_quality_audit",
+          "demand": 4,
+          "share": 0.5,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "PH001",
+            "PH002",
+            "PH003"
+          ]
+        },
+        {
+          "skillId": "it_dashboards",
+          "demand": 2,
+          "share": 0.25,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "PH006",
+            "PH008"
+          ]
+        },
+        {
+          "skillId": "med_icd",
+          "demand": 2,
+          "share": 0.25,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "PH003",
+            "PH004"
+          ]
+        },
+        {
+          "skillId": "cg_training_delivery",
+          "demand": 1,
+          "share": 0.125,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "PH003"
+          ]
+        },
+        {
+          "skillId": "cg_user_engagement",
+          "demand": 1,
+          "share": 0.125,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "PH008"
+          ]
+        },
+        {
+          "skillId": "dc_cleaning",
+          "demand": 1,
+          "share": 0.125,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "PH002"
+          ]
+        },
+        {
+          "skillId": "dc_edit_rules",
+          "demand": 1,
+          "share": 0.125,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "PH005"
+          ]
+        },
+        {
+          "skillId": "dc_sql",
+          "demand": 1,
+          "share": 0.125,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "PH002"
+          ]
+        },
+        {
+          "skillId": "dq_confidentiality",
+          "demand": 1,
+          "share": 0.125,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "PH004"
+          ]
+        },
+        {
+          "skillId": "dq_revision_policy",
+          "demand": 1,
+          "share": 0.125,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "PH007"
+          ]
+        },
+        {
+          "skillId": "it_basics",
+          "demand": 1,
+          "share": 0.125,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "PH008"
+          ]
+        },
+        {
+          "skillId": "it_python_basics",
+          "demand": 1,
+          "share": 0.125,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "PH006"
+          ]
+        },
+        {
+          "skillId": "it_python_stats",
+          "demand": 1,
+          "share": 0.125,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "PH006"
+          ]
+        },
+        {
+          "skillId": "os_admin_data",
+          "demand": 1,
+          "share": 0.125,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "PH007"
+          ]
+        },
+        {
+          "skillId": "os_nss",
+          "demand": 1,
+          "share": 0.125,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "PH006"
+          ]
+        },
+        {
+          "skillId": "sm_hypothesis",
+          "demand": 1,
+          "share": 0.125,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "PH006"
+          ]
+        },
+        {
+          "skillId": "ss_quality_assurance",
+          "demand": 1,
+          "share": 0.125,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "PH003"
+          ]
+        }
+      ],
+      "uncoveredSkills": []
+    },
+    {
+      "sector": "Education & Skilling",
+      "postings": 6,
+      "topSkills": [
+        {
+          "skillId": "cg_report_writing",
+          "demand": 5,
+          "share": 0.833,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "ED002",
+            "ED003",
+            "ED004"
+          ]
+        },
+        {
+          "skillId": "cg_training_delivery",
+          "demand": 4,
+          "share": 0.667,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "ED001",
+            "ED002",
+            "ED004"
+          ]
+        },
+        {
+          "skillId": "cg_user_engagement",
+          "demand": 2,
+          "share": 0.333,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "ED002",
+            "ED005"
+          ]
+        },
+        {
+          "skillId": "dc_data_entry",
+          "demand": 2,
+          "share": 0.333,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "ED001",
+            "ED004"
+          ]
+        },
+        {
+          "skillId": "dc_cleaning",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "ED003"
+          ]
+        },
+        {
+          "skillId": "dc_edit_rules",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "ED001"
+          ]
+        },
+        {
+          "skillId": "dc_spreadsheets",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "ED005"
+          ]
+        },
+        {
+          "skillId": "dq_quality_audit",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "ED003"
+          ]
+        },
+        {
+          "skillId": "it_basics",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "ED004"
+          ]
+        }
+      ],
+      "uncoveredSkills": []
+    },
+    {
+      "sector": "Logistics & Warehousing",
+      "postings": 6,
+      "topSkills": [
+        {
+          "skillId": "cg_report_writing",
+          "demand": 6,
+          "share": 1,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "LG001",
+            "LG002",
+            "LG003"
+          ]
+        },
+        {
+          "skillId": "dc_data_entry",
+          "demand": 2,
+          "share": 0.333,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "LG002",
+            "LG004"
+          ]
+        },
+        {
+          "skillId": "dq_quality_audit",
+          "demand": 2,
+          "share": 0.333,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "LG004",
+            "LG006"
+          ]
+        },
+        {
+          "skillId": "sm_descriptive",
+          "demand": 2,
+          "share": 0.333,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "LG001",
+            "LG003"
+          ]
+        },
+        {
+          "skillId": "cg_user_engagement",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "LG005"
+          ]
+        },
+        {
+          "skillId": "dc_cleaning",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "LG003"
+          ]
+        },
+        {
+          "skillId": "dc_spreadsheets",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "LG002"
+          ]
+        },
+        {
+          "skillId": "dc_sql",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "LG001"
+          ]
+        },
+        {
+          "skillId": "it_basics",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "LG005"
+          ]
+        },
+        {
+          "skillId": "it_python_basics",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "LG003"
+          ]
+        },
+        {
+          "skillId": "os_admin_data",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "LG004"
+          ]
+        },
+        {
+          "skillId": "sm_time_series",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "LG001"
+          ]
+        }
+      ],
+      "uncoveredSkills": []
+    },
+    {
+      "sector": "Retail & FMCG",
+      "postings": 6,
+      "topSkills": [
+        {
+          "skillId": "cg_report_writing",
+          "demand": 5,
+          "share": 0.833,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "RT001",
+            "RT002",
+            "RT003"
+          ]
+        },
+        {
+          "skillId": "cg_user_engagement",
+          "demand": 2,
+          "share": 0.333,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "RT002",
+            "RT003"
+          ]
+        },
+        {
+          "skillId": "dc_data_entry",
+          "demand": 2,
+          "share": 0.333,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "RT003",
+            "RT006"
+          ]
+        },
+        {
+          "skillId": "dc_spreadsheets",
+          "demand": 2,
+          "share": 0.333,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "RT002",
+            "RT004"
+          ]
+        },
+        {
+          "skillId": "sm_descriptive",
+          "demand": 2,
+          "share": 0.333,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "RT001",
+            "RT005"
+          ]
+        },
+        {
+          "skillId": "sm_time_series",
+          "demand": 2,
+          "share": 0.333,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "RT002",
+            "RT004"
+          ]
+        },
+        {
+          "skillId": "dc_cleaning",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "RT005"
+          ]
+        },
+        {
+          "skillId": "dc_edit_rules",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "RT006"
+          ]
+        },
+        {
+          "skillId": "it_basics",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "RT003"
+          ]
+        },
+        {
+          "skillId": "it_data_viz",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "RT004"
+          ]
+        },
+        {
+          "skillId": "sm_hypothesis",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "RT001"
+          ]
+        },
+        {
+          "skillId": "ss_field_ops",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "RT004"
+          ]
+        },
+        {
+          "skillId": "ss_questionnaire",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "RT005"
+          ]
+        }
+      ],
+      "uncoveredSkills": []
+    },
+    {
+      "sector": "Textile & Apparel",
+      "postings": 6,
+      "topSkills": [
+        {
+          "skillId": "cg_report_writing",
+          "demand": 4,
+          "share": 0.667,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "TX002",
+            "TX003",
+            "TX005"
+          ]
+        },
+        {
+          "skillId": "dq_quality_audit",
+          "demand": 3,
+          "share": 0.5,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "TX001",
+            "TX005",
+            "TX006"
+          ]
+        },
+        {
+          "skillId": "dc_data_entry",
+          "demand": 2,
+          "share": 0.333,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "TX001",
+            "TX006"
+          ]
+        },
+        {
+          "skillId": "it_basics",
+          "demand": 2,
+          "share": 0.333,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "TX004",
+            "TX006"
+          ]
+        },
+        {
+          "skillId": "os_admin_data",
+          "demand": 2,
+          "share": 0.333,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "TX003",
+            "TX006"
+          ]
+        },
+        {
+          "skillId": "cg_training_delivery",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "TX001"
+          ]
+        },
+        {
+          "skillId": "cg_user_engagement",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "TX002"
+          ]
+        },
+        {
+          "skillId": "dc_cleaning",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "TX005"
+          ]
+        },
+        {
+          "skillId": "dc_edit_rules",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "TX001"
+          ]
+        },
+        {
+          "skillId": "dc_spreadsheets",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "TX002"
+          ]
+        },
+        {
+          "skillId": "it_data_viz",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "TX004"
+          ]
+        },
+        {
+          "skillId": "sm_time_series",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "TX004"
+          ]
+        },
+        {
+          "skillId": "ss_quality_assurance",
+          "demand": 1,
+          "share": 0.167,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "TX003"
+          ]
+        }
+      ],
+      "uncoveredSkills": []
+    }
+  ],
+  "audit": {
+    "IT001": [
+      "excel",
+      "sql",
+      "power bi",
+      "reporting"
+    ],
+    "IT002": [
+      "analytics",
+      "computer literacy",
+      "documentation",
+      "agile"
+    ],
+    "IT003": [
+      "data cleaning",
+      "sql",
+      "big data",
+      "python"
+    ],
+    "IT004": [
+      "excel",
+      "descriptive analytics",
+      "documentation",
+      "stakeholder"
+    ],
+    "IT005": [
+      "audit",
+      "reporting",
+      "project management"
+    ],
+    "IT006": [
+      "regression",
+      "time series",
+      "pandas"
+    ],
+    "IT007": [
+      "excel",
+      "data visualisation",
+      "report writing"
+    ],
+    "IT008": [
+      "mysql",
+      "data protection",
+      "documentation",
+      "scrum"
+    ],
+    "IT009": [
+      "data entry",
+      "excel",
+      "sql",
+      "reporting"
+    ],
+    "IT010": [
+      "field survey",
+      "data cleaning",
+      "satellite data",
+      "chart"
+    ],
+    "IT011": [
+      "data visualisation",
+      "tableau",
+      "feedback management"
+    ],
+    "IT012": [
+      "data protection",
+      "documentation"
+    ],
+    "IT013": [
+      "sql",
+      "descriptive statistics",
+      "hypothesis testing",
+      "power bi",
+      "reporting"
+    ],
+    "IT014": [
+      "sql",
+      "computer literacy",
+      "python",
+      "documentation",
+      "agile"
+    ],
+    "IT015": [
+      "excel",
+      "sql",
+      "time series",
+      "reporting",
+      "stakeholder"
+    ],
+    "IT016": [
+      "data cleaning",
+      "sql",
+      "big data",
+      "python"
+    ],
+    "IT017": [
+      "data entry",
+      "ms office",
+      "reporting"
+    ],
+    "IT018": [
+      "sql",
+      "probability",
+      "hypothesis testing",
+      "regression",
+      "reporting"
+    ],
+    "BK001": [
+      "data entry",
+      "excel",
+      "administrative records"
+    ],
+    "BK002": [
+      "data entry",
+      "ms office"
+    ],
+    "BK003": [
+      "confidentiality",
+      "error correction",
+      "audit",
+      "reporting"
+    ],
+    "BK004": [
+      "sql",
+      "analytics",
+      "hypothesis testing",
+      "regression",
+      "power bi"
+    ],
+    "BK005": [
+      "data validation",
+      "analytics",
+      "audit",
+      "documentation"
+    ],
+    "BK006": [
+      "data entry",
+      "excel",
+      "administrative records",
+      "reporting",
+      "feedback management"
+    ],
+    "BK007": [
+      "cpi",
+      "time series",
+      "gdp",
+      "report writing"
+    ],
+    "BK008": [
+      "quality checks",
+      "excel",
+      "sql",
+      "reporting"
+    ],
+    "BK009": [
+      "probability",
+      "hypothesis testing",
+      "time series",
+      "statistical computing",
+      "r programming"
+    ],
+    "BK010": [
+      "data entry",
+      "confidentiality",
+      "audit",
+      "documentation"
+    ],
+    "MF001": [
+      "quality checks",
+      "cnc"
+    ],
+    "MF002": [
+      "quality checks",
+      "audit",
+      "cmm"
+    ],
+    "MF003": [
+      "quality assurance",
+      "excel",
+      "ms office",
+      "training delivery"
+    ],
+    "MF004": [
+      "audit",
+      "documentation",
+      "plc"
+    ],
+    "MF005": [
+      "excel",
+      "forecasting",
+      "reporting",
+      "stakeholder"
+    ],
+    "MF006": [
+      "field work",
+      "quality checks",
+      "audit",
+      "documentation"
+    ],
+    "MF007": [
+      "data entry",
+      "computer literacy",
+      "reporting"
+    ],
+    "MF008": [
+      "data cleaning",
+      "sql",
+      "trend analysis"
+    ],
+    "MF009": [
+      "quality audit",
+      "documentation"
+    ],
+    "MF010": [
+      "documentation",
+      "client interaction",
+      "project management"
+    ],
+    "MF011": [
+      "data entry",
+      "audit",
+      "report preparation"
+    ],
+    "MF012": [
+      "ms office",
+      "documentation",
+      "teach pendant"
+    ],
+    "MF013": [
+      "data entry",
+      "excel",
+      "audit",
+      "annual report"
+    ],
+    "MF014": [
+      "audit",
+      "documentation"
+    ],
+    "TX001": [
+      "data entry",
+      "quality checks",
+      "audit",
+      "training delivery"
+    ],
+    "TX002": [
+      "excel",
+      "reporting",
+      "client interaction"
+    ],
+    "TX003": [
+      "quality assurance",
+      "administrative records",
+      "reporting"
+    ],
+    "TX004": [
+      "trend analysis",
+      "computer literacy",
+      "infographic"
+    ],
+    "TX005": [
+      "data validation",
+      "audit",
+      "reporting"
+    ],
+    "TX006": [
+      "data entry",
+      "audit",
+      "administrative records",
+      "ms office",
+      "documentation"
+    ],
+    "AG001": [
+      "field survey",
+      "agricultural statistics"
+    ],
+    "AG002": [
+      "excel",
+      "forecasting"
+    ],
+    "AG003": [
+      "excel",
+      "administrative data",
+      "annual report",
+      "stakeholder",
+      "training delivery"
+    ],
+    "AG004": [
+      "data entry",
+      "quality checks",
+      "audit",
+      "documentation"
+    ],
+    "AG005": [
+      "reporting"
+    ],
+    "AG006": [
+      "field survey",
+      "data cleaning",
+      "satellite data",
+      "drone"
+    ],
+    "AG007": [
+      "data entry",
+      "quality checks",
+      "administrative records",
+      "reporting"
+    ],
+    "AG008": [
+      "field investigation",
+      "data entry",
+      "revenue records",
+      "reporting"
+    ],
+    "AG009": [
+      "data entry",
+      "excel",
+      "audit",
+      "reporting"
+    ],
+    "AG010": [
+      "descriptive analytics",
+      "trend analysis"
+    ],
+    "PH001": [
+      "data entry",
+      "audit",
+      "documentation"
+    ],
+    "PH002": [
+      "data cleaning",
+      "sql",
+      "audit",
+      "reporting"
+    ],
+    "PH003": [
+      "quality assurance",
+      "audit",
+      "reporting",
+      "training delivery",
+      "nabh"
+    ],
+    "PH004": [
+      "data entry",
+      "confidentiality",
+      "icd"
+    ],
+    "PH005": [
+      "data entry",
+      "quality checks",
+      "audit",
+      "documentation"
+    ],
+    "PH006": [
+      "hypothesis testing",
+      "nfhs",
+      "python",
+      "pandas",
+      "tableau"
+    ],
+    "PH007": [
+      "error correction",
+      "administrative records",
+      "reporting"
+    ],
+    "PH008": [
+      "data entry",
+      "ms office",
+      "dashboard",
+      "feedback management"
+    ],
+    "CN001": [
+      "field work",
+      "quality checks",
+      "ms office",
+      "reporting",
+      "total station"
+    ],
+    "CN002": [
+      "reporting",
+      "stakeholder",
+      "project management"
+    ],
+    "CN003": [
+      "excel",
+      "audit",
+      "administrative records",
+      "documentation",
+      "client interaction"
+    ],
+    "CN004": [
+      "field survey",
+      "data cleaning",
+      "documentation",
+      "total station"
+    ],
+    "CN005": [
+      "audit",
+      "reporting",
+      "training delivery"
+    ],
+    "CN006": [
+      "data verification",
+      "excel",
+      "reporting"
+    ],
+    "CN007": [
+      "computer literacy",
+      "documentation",
+      "feedback management",
+      "bim"
+    ],
+    "CN008": [
+      "data entry",
+      "quality checks",
+      "reporting"
+    ],
+    "GO001": [
+      "sampling",
+      "stratified",
+      "questionnaire",
+      "field survey",
+      "cspro",
+      "data entry",
+      "price statistics"
+    ],
+    "GO002": [
+      "excel",
+      "administrative data",
+      "report writing"
+    ],
+    "GO003": [
+      "mospi",
+      "regression",
+      "time series",
+      "dissemination",
+      "big data",
+      "python",
+      "statistical computing"
+    ],
+    "GO004": [
+      "non response",
+      "field operations",
+      "capi",
+      "census"
+    ],
+    "GO005": [
+      "data entry",
+      "sql",
+      "audit",
+      "reporting"
+    ],
+    "GO006": [
+      "time series",
+      "national accounts",
+      "report writing"
+    ],
+    "GO007": [
+      "survey design",
+      "sampling",
+      "weighting",
+      "quality assurance",
+      "variance estimation"
+    ],
+    "GO008": [
+      "data validation",
+      "index number",
+      "price statistics",
+      "reporting"
+    ],
+    "GO009": [
+      "ms office",
+      "feedback management",
+      "training design"
+    ],
+    "GO010": [
+      "metadata",
+      "confidentiality",
+      "audit",
+      "documentation"
+    ],
+    "RT001": [
+      "descriptive analytics",
+      "hypothesis testing",
+      "reporting"
+    ],
+    "RT002": [
+      "excel",
+      "time series",
+      "reporting",
+      "stakeholder"
+    ],
+    "RT003": [
+      "data entry",
+      "computer literacy",
+      "reporting",
+      "feedback management"
+    ],
+    "RT004": [
+      "field visits",
+      "excel",
+      "trend analysis",
+      "infographic",
+      "reporting"
+    ],
+    "RT005": [
+      "questionnaire",
+      "data cleaning",
+      "descriptive statistics",
+      "report writing"
+    ],
+    "RT006": [
+      "data entry",
+      "quality checks"
+    ],
+    "LG001": [
+      "sql",
+      "analytics",
+      "trend analysis",
+      "reporting"
+    ],
+    "LG002": [
+      "data entry",
+      "excel",
+      "reporting"
+    ],
+    "LG003": [
+      "data cleaning",
+      "analytics",
+      "python",
+      "reporting"
+    ],
+    "LG004": [
+      "data entry",
+      "audit",
+      "administrative records",
+      "documentation"
+    ],
+    "LG005": [
+      "ms office",
+      "reporting",
+      "feedback management"
+    ],
+    "LG006": [
+      "audit",
+      "documentation"
+    ],
+    "ED001": [
+      "data entry",
+      "quality checks",
+      "training delivery"
+    ],
+    "ED002": [
+      "reporting",
+      "stakeholder",
+      "training design"
+    ],
+    "ED003": [
+      "data validation",
+      "quality audit",
+      "reporting"
+    ],
+    "ED004": [
+      "data entry",
+      "computer literacy",
+      "reporting",
+      "training delivery"
+    ],
+    "ED005": [
+      "excel",
+      "reporting",
+      "stakeholder"
+    ],
+    "ED006": [
+      "report writing",
+      "training design"
+    ]
+  }
+}

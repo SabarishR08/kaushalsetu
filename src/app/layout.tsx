@@ -15,15 +15,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "StatSetu — Capacity building for Official Statistics",
+  title: "KaushalSetu — Skilling Alignment for Maharashtra",
   description:
-    "An AI-enabled learning platform for India's Official Statistical System: competency gap identification, personalized training recommendations via iGOT Karmayogi, and quiz/MCQ generation from uploaded learning materials.",
-  keywords: ["learning path", "AI tutor", "skill graph", "personalized learning", "roadmap", "evidence-based"],
-  authors: [{ name: "StatSetu" }],
+    "Closed-loop skilling alignment for Government of Maharashtra (SIH26134): job-market demand signal, skill-gap detection against training programs, and program recommendations. Built on the PathFinder evidence pipeline.",
+  keywords: ["skilling", "skill gap", "job market demand", "Maharashtra", "SIH26134", "KaushalSetu"],
+  authors: [{ name: "KaushalSetu" }],
   openGraph: {
-    title: "StatSetu — Capacity building for Official Statistics",
-    description: "Competency gaps identified, personalized paths planned on a statistics skill graph, learning verified with grounded MCQs.",
-    siteName: "StatSetu",
+    title: "KaushalSetu — Skilling Alignment for Maharashtra",
+    description: "Demand signal → gap detection → program recommendation for the state's skilling ecosystem.",
+    siteName: "KaushalSetu",
     type: "website",
   },
 };

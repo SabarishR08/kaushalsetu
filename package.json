@@ -10,6 +10,8 @@
     "start": "next start",
     "lint": "eslint .",
     "convert-courses": "tsx scripts/convert-courses.ts",
+    "sih:demand": "tsx scripts/build-demand.ts",
+    "sih:alignment": "tsx scripts/build-alignment.ts",
     "db:push": "prisma db push --accept-data-loss",
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",
@@ -122,6 +124,7 @@
     "eslint-config-next": "^16.1.1",
     "jsdom": "^29.1.1",
     "magicast": "^0.3.5",
+    "tsx": "^4.23.15",
     "vitest": "^4.1.11"
   }
 }

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Script from "next/script";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Compass, Github, BrainCircuit, Activity, BookOpen, Layers } from "lucide-react";
 
 export default function LandingPage() {
@@ -25,16 +26,16 @@ export default function LandingPage() {
               <Compass className="h-4.5 w-4.5 text-primary" />
             </span>
             <span className="font-semibold tracking-tight text-lg text-primary">
-              StatSetu
+              KaushalSetu
             </span>
           </div>
           <div className="flex items-center gap-4">
-            <Link href="/dashboard" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
-              Dashboard
+            <Link href="/department" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+              Department Dashboard
             </Link>
             <Button asChild size="sm" className="glow-primary rounded-full px-5">
-              <Link href="/onboarding">
-                Get Started
+              <Link href="/department">
+                View Dashboard
               </Link>
             </Button>
           </div>
@@ -49,19 +50,24 @@ export default function LandingPage() {
           </div>
           
           <h1 className="text-5xl sm:text-7xl font-bold tracking-tight leading-[1.05] text-gradient">
-            StatSetu
+            KaushalSetu
           </h1>
           <p className="text-lg sm:text-xl font-medium text-primary/90 -mt-2">
-            Powered by Nexus, Your Evidence-Based AI Learning Coach
+            Closed-Loop Skilling Alignment for Maharashtra (SIH26134)
           </p>
           <p className="mt-2 text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            An evidence-based learning system that audits your code and resume, calibrates your skills, and synthesizes a mathematically optimal prerequisite roadmap.
+            The demand signal from real job postings, the gap against current training programs, and the recommendations that close it — on one evidence pipeline built for the Department of Skills, Employment, Entrepreneurship & Innovation.
           </p>
+          <div className="flex flex-wrap items-center justify-center gap-2 mt-1">
+            <Badge variant="outline" className="text-xs">Demand sensing</Badge>
+            <Badge variant="outline" className="text-xs">Gap detection</Badge>
+            <Badge variant="outline" className="text-xs">Program recommendation</Badge>
+          </div>
           
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
             <Button asChild size="lg" className="glow-button rounded-full px-8 py-6 w-full sm:w-auto">
-              <Link href="/onboarding" className="text-lg">
-                Begin Your Journey <ArrowRight className="ml-2 h-5 w-5" />
+              <Link href="/department" className="text-lg">
+                Open Department Dashboard <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
           </div>
@@ -103,7 +109,7 @@ export default function LandingPage() {
 
       <footer className="border-t border-white/5 py-8 mt-auto relative z-10 bg-black/40">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
-          <span>StatSetu — for India's Official Statistical System</span>
+          <span>KaushalSetu — Skilling Alignment for Maharashtra · SIH26134</span>
           <div className="flex gap-4">
             <span className="hover:text-primary transition-colors cursor-default">Experimental Build</span>
             <span className="hover:text-primary transition-colors cursor-default">Nexus Engine</span>

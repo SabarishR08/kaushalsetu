@@ -1,0 +1,299 @@
+import Link from "next/link";
+import { AlertTriangle, ArrowLeft, CheckCircle2, FileText, GraduationCap, Lightbulb, Target } from "lucide-react";
+
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { DemandChart, SectorCoverageChart } from "./charts";
+import { getDepartmentData } from "@/lib/dept-data";
+
+export const dynamic = "force-dynamic";
+
+const pct = (x: number) => `${Math.round(x * 100)}%`;
+
+function coverageClass(c: number): string {
+  if (c >= 0.8) return "text-green-500";
+  if (c < 0.5) return "text-red-500";
+  return "text-amber-500";
+}
+
+export default async function DepartmentPage() {
+  const { demand, alignment, skillNames } = await getDepartmentData();
+
+  if (!demand || !alignment) {
+    return (
+      <div className="mx-auto max-w-3xl px-4 py-16">
+        <Card>
+          <CardHeader>
+            <CardTitle>Department dashboard needs its data build</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-3 text-sm text-muted-foreground">
+            <p>
+              Run <code className="rounded bg-muted px-1 py-0.5">npm run sih:demand</code> then{" "}
+              <code className="rounded bg-muted px-1 py-0.5">npm run sih:alignment</code> to generate{" "}
+              <code className="rounded bg-muted px-1 py-0.5">data/demand.json</code> and{" "}
+              <code className="rounded bg-muted px-1 py-0.5">data/alignment.json</code>.
+            </p>
+            <p>Drop a real jobs corpus (Kaggle CSV) into <code>data/jobs/raw/</code> and re-run to refresh the demand signal on live data.</p>
+            <Button asChild variant="outline" size="sm">
+              <Link href="/"><ArrowLeft className="mr-2 h-4 w-4" /> Back home</Link>
+            </Button>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
+
+  const name = (id: string) => skillNames[id] ?? id;
+  const topDemand = demand.overall.slice(0, 10);
+  const weakest = [...alignment.sectorCoverage].sort((a, b) => a.coverage - b.coverage).slice(0, 5);
+
+  return (
+    <div className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6">
+      {/* Header */}
+      <div className="mb-6 flex flex-wrap items-start justify-between gap-4">
+        <div>
+          <h1 className="text-2xl font-bold tracking-tight">Department Dashboard — Skilling Alignment</h1>
+          <p className="text-sm text-muted-foreground">
+            Demand signal → gap detection → program recommendations · SIH26134 · Government of Maharashtra
+          </p>
+        </div>
+        <div className="flex gap-2">
+          <Button asChild variant="ghost" size="sm">
+            <Link href="/"><ArrowLeft className="mr-2 h-4 w-4" /> Home</Link>
+          </Button>
+          <Button asChild variant="outline" size="sm">
+            <Link href="/department/report"><FileText className="mr-2 h-4 w-4" /> Printable report</Link>
+          </Button>
+        </div>
+      </div>
+
+      {/* KPI row */}
+      <div className="mb-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <Card>
+          <CardHeader className="pb-2">
+            <CardTitle className="text-sm font-medium">Postings analysed</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="text-3xl font-bold">{demand.meta.postings}</div>
+            <p className="text-xs text-muted-foreground">
+              {demand.meta.tagger} tagger · {demand.meta.sectors} sectors
+            </p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader className="pb-2">
+            <CardTitle className="text-sm font-medium">Programs in catalog</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="text-3xl font-bold">{alignment.meta.programs}</div>
+            <p className="text-xs text-muted-foreground">course/program supply tagged on the same skill graph</p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader className="pb-2">
+            <CardTitle className="text-sm font-medium">Uncovered in-demand skills</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="text-3xl font-bold text-red-500">{alignment.uncoveredSkills.length}</div>
+            <p className="text-xs text-muted-foreground">demanded in postings, taught by no program</p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader className="pb-2">
+            <CardTitle className="text-sm font-medium">Weakest sector coverage</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className={`text-3xl font-bold ${coverageClass(weakest[0]?.coverage ?? 1)}`}>
+              {weakest[0] ? pct(weakest[0].coverage) : "—"}
+            </div>
+            <p className="text-xs text-muted-foreground">{weakest[0]?.sector ?? "—"}</p>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Charts */}
+      <div className="mb-6 grid gap-4 lg:grid-cols-2">
+        <Card>
+          <CardHeader className="pb-2">
+            <CardTitle className="text-base">Top skill demand (all sectors)</CardTitle>
+          </CardHeader>
+          <CardContent className="h-80">
+            <DemandChart
+              data={topDemand.map((s) => ({ name: name(s.skillId), demand: s.demand }))}
+            />
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader className="pb-2">
+            <CardTitle className="text-base">Coverage of top demand mass by sector</CardTitle>
+          </CardHeader>
+          <CardContent className="h-80">
+            <SectorCoverageChart
+              data={[...alignment.sectorCoverage]
+                .sort((a, b) => b.postings - a.postings)
+                .map((s) => ({ name: s.sector, coverage: Math.round(s.coverage * 100) }))}
+            />
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Sector coverage table */}
+      <Card className="mb-6">
+        <CardHeader className="pb-2">
+          <CardTitle className="text-base">Sector-wise gap detection</CardTitle>
+          <p className="text-xs text-muted-foreground">
+            Coverage = share of the sector&apos;s top-12 demand mass taught by at least one current program
+          </p>
+        </CardHeader>
+        <CardContent>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b text-left text-xs uppercase tracking-wide text-muted-foreground">
+                  <th className="py-2 pr-4">Sector</th>
+                  <th className="py-2 pr-4">Postings</th>
+                  <th className="py-2 pr-4">Coverage</th>
+                  <th className="py-2 pr-4">In-demand skills taught</th>
+                  <th className="py-2">In-demand skills missing</th>
+                </tr>
+              </thead>
+              <tbody>
+                {alignment.sectorCoverage.map((s) => {
+                  const missing = s.topSkills.filter((id) => !s.coveredSkills.includes(id));
+                  return (
+                    <tr key={s.sector} className="border-b last:border-0 align-top">
+                      <td className="py-2 pr-4 font-medium">{s.sector}</td>
+                      <td className="py-2 pr-4">{s.postings}</td>
+                      <td className={`py-2 pr-4 font-semibold ${coverageClass(s.coverage)}`}>{pct(s.coverage)}</td>
+                      <td className="py-2 pr-4">
+                        <div className="flex flex-wrap gap-1">
+                          {s.coveredSkills.slice(0, 6).map((id) => (
+                            <Badge key={id} variant="secondary" className="text-[11px]">{name(id)}</Badge>
+                          ))}
+                        </div>
+                      </td>
+                      <td className="py-2">
+                        <div className="flex flex-wrap gap-1">
+                          {missing.length ? (
+                            missing.slice(0, 6).map((id) => (
+                              <Badge key={id} variant="destructive" className="text-[11px]">{name(id)}</Badge>
+                            ))
+                          ) : (
+                            <span className="text-xs text-muted-foreground">none in top 12</span>
+                          )}
+                        </div>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Uncovered skills */}
+      <Card className="mb-6">
+        <CardHeader className="pb-2">
+          <CardTitle className="text-base">Uncovered in-demand skills</CardTitle>
+          <p className="text-xs text-muted-foreground">Appearing in postings but absent from every current program</p>
+        </CardHeader>
+        <CardContent>
+          {alignment.uncoveredSkills.length ? (
+            <div className="flex flex-wrap gap-2">
+              {alignment.uncoveredSkills.map((g) => (
+                <Badge key={g.skillId} variant="destructive" className="text-xs">
+                  {name(g.skillId)} · {g.demand} posting{g.demand === 1 ? "" : "s"}
+                </Badge>
+              ))}
+            </div>
+          ) : (
+            <p className="flex items-center gap-2 text-sm text-muted-foreground">
+              <CheckCircle2 className="h-4 w-4 text-green-500" /> Every in-demand skill is taught somewhere in the catalog.
+            </p>
+          )}
+        </CardContent>
+      </Card>
+
+      {/* Recommendations */}
+      <Card className="mb-6">
+        <CardHeader className="pb-2">
+          <CardTitle className="text-base">Recommendations</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-3">
+          {alignment.recommendations.length ? (
+            alignment.recommendations.map((r, i) => (
+              <div key={i} className="flex gap-3 rounded-lg border p-3">
+                {r.type === "add-program" ? (
+                  <Lightbulb className="mt-0.5 h-5 w-5 shrink-0 text-amber-500" />
+                ) : (
+                  <Target className="mt-0.5 h-5 w-5 shrink-0 text-sky-500" />
+                )}
+                <div>
+                  <p className="text-sm font-medium">{r.title}</p>
+                  <p className="text-sm text-muted-foreground">{r.detail}</p>
+                </div>
+              </div>
+            ))
+          ) : (
+            <p className="text-sm text-muted-foreground">No critical gaps detected with the current demand signal.</p>
+          )}
+        </CardContent>
+      </Card>
+
+      {/* Best-aligned programs */}
+      <Card className="mb-6">
+        <CardHeader className="pb-2">
+          <CardTitle className="text-base">Most market-aligned programs</CardTitle>
+          <p className="text-xs text-muted-foreground">Share of overall in-demand skill mass each program covers</p>
+        </CardHeader>
+        <CardContent>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b text-left text-xs uppercase tracking-wide text-muted-foreground">
+                  <th className="py-2 pr-4">Program</th>
+                  <th className="py-2 pr-4">Alignment</th>
+                  <th className="py-2 pr-4">Best-fit sector</th>
+                  <th className="py-2">Skills taught</th>
+                </tr>
+              </thead>
+              <tbody>
+                {alignment.programAlignment.slice(0, 10).map((p) => (
+                  <tr key={p.courseId} className="border-b last:border-0 align-top">
+                    <td className="py-2 pr-4">
+                      <span className="font-medium">{p.title}</span>
+                      <span className="ml-2 text-xs text-muted-foreground">{p.courseId}</span>
+                    </td>
+                    <td className="py-2 pr-4 font-semibold">{pct(p.alignment)}</td>
+                    <td className="py-2 pr-4">{p.bestSector}</td>
+                    <td className="py-2">
+                      <div className="flex flex-wrap gap-1">
+                        {p.skills.map((id) => (
+                          <Badge key={id} variant="secondary" className="text-[11px]">{name(id)}</Badge>
+                        ))}
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Footer provenance note */}
+      <p className="flex items-start gap-2 text-xs text-muted-foreground">
+        <AlertTriangle className="mt-0.5 h-3.5 w-3.5 shrink-0" />
+        Demand signal built from {demand.meta.postings} postings ({demand.meta.source}
+        {demand.meta.source.startsWith("maharashtra_seed") ? " — labeled synthetic seed; drop a Kaggle corpus into data/jobs/raw/ to re-run on real postings" : ""}).
+        Alignment scoring is deterministic given the tagged demand and catalog.
+      </p>
+      <div className="mt-4 flex items-center gap-2 text-xs text-muted-foreground">
+        <GraduationCap className="h-4 w-4" />
+        KaushalSetu · closed-loop skilling alignment for Maharashtra · built on the PathFinder evidence pipeline
+      </div>
+    </div>
+  );
+}

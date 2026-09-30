@@ -1,0 +1,1146 @@
+{
+  "meta": {
+    "builtAt": "2026-09-30T12:08:48.186Z",
+    "demandSource": "maharashtra_seed_v1",
+    "tagger": "keyword",
+    "postings": 102,
+    "programs": 35,
+    "minDemandShare": 0.15
+  },
+  "programAlignment": [
+    {
+      "courseId": "IGOT008",
+      "title": "Statistical Report Writing for Officials",
+      "category": "Communication",
+      "skills": [
+        "cg_report_writing"
+      ],
+      "alignment": 0.716,
+      "bestSector": "Construction & Infrastructure",
+      "bestSectorRelevance": 1,
+      "sectorDemand": 8,
+      "missingInBestSector": [
+        "cg_user_engagement",
+        "dc_data_entry",
+        "dc_edit_rules",
+        "dc_spreadsheets",
+        "dq_quality_audit",
+        "it_basics"
+      ]
+    },
+    {
+      "courseId": "GEN008",
+      "title": "Spreadsheets for Statistical Work",
+      "category": "Digital Competency",
+      "skills": [
+        "dc_spreadsheets",
+        "it_basics"
+      ],
+      "alignment": 0.373,
+      "bestSector": "Construction & Infrastructure",
+      "bestSectorRelevance": 0.5,
+      "sectorDemand": 8,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "cg_user_engagement",
+        "dc_data_entry",
+        "dc_edit_rules",
+        "dq_quality_audit",
+        "ss_field_ops"
+      ]
+    },
+    {
+      "courseId": "MOSPI012",
+      "title": "CSPro: Census & Survey Processing",
+      "category": "Data Collection",
+      "skills": [
+        "dc_cspro",
+        "dc_cspro_logic",
+        "dc_data_entry"
+      ],
+      "alignment": 0.294,
+      "bestSector": "Pharma & Healthcare",
+      "bestSectorRelevance": 0.5,
+      "sectorDemand": 8,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dq_quality_audit",
+        "it_dashboards",
+        "med_icd"
+      ]
+    },
+    {
+      "courseId": "IGOT004",
+      "title": "Data Quality Assurance for Government Datasets",
+      "category": "Data Quality",
+      "skills": [
+        "dq_frameworks",
+        "dq_quality_audit"
+      ],
+      "alignment": 0.265,
+      "bestSector": "Manufacturing & Auto",
+      "bestSectorRelevance": 0.5,
+      "sectorDemand": 14,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dc_edit_rules",
+        "dc_spreadsheets",
+        "it_basics"
+      ]
+    },
+    {
+      "courseId": "MOSPI016",
+      "title": "Data Processing & Editing in Official Surveys",
+      "category": "Data Collection",
+      "skills": [
+        "dc_cleaning",
+        "dc_edit_rules"
+      ],
+      "alignment": 0.245,
+      "bestSector": "Construction & Infrastructure",
+      "bestSectorRelevance": 0.375,
+      "sectorDemand": 8,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "cg_user_engagement",
+        "dc_data_entry",
+        "dc_spreadsheets",
+        "dq_quality_audit",
+        "it_basics"
+      ]
+    },
+    {
+      "courseId": "GEN001",
+      "title": "Statistics: Descriptive to Inference",
+      "category": "Statistical Methods",
+      "skills": [
+        "sm_descriptive",
+        "sm_probability",
+        "sm_inference",
+        "sm_hypothesis"
+      ],
+      "alignment": 0.177,
+      "bestSector": "BFSI",
+      "bestSectorRelevance": 0.5,
+      "sectorDemand": 10,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dc_spreadsheets",
+        "dq_quality_audit",
+        "dc_sql",
+        "dq_confidentiality"
+      ]
+    },
+    {
+      "courseId": "GEN015",
+      "title": "Policy Briefs & Data Storytelling",
+      "category": "Communication",
+      "skills": [
+        "cg_policy_briefs",
+        "cg_user_engagement"
+      ],
+      "alignment": 0.176,
+      "bestSector": "Construction & Infrastructure",
+      "bestSectorRelevance": 0.375,
+      "sectorDemand": 8,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dc_edit_rules",
+        "dc_spreadsheets",
+        "dq_quality_audit",
+        "it_basics"
+      ]
+    },
+    {
+      "courseId": "GEN007",
+      "title": "SQL for Data-Driven Departments",
+      "category": "Digital Competency",
+      "skills": [
+        "dc_sql"
+      ],
+      "alignment": 0.147,
+      "bestSector": "IT & Software",
+      "bestSectorRelevance": 0.5,
+      "sectorDemand": 18,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dc_spreadsheets",
+        "cg_project_mgmt",
+        "cg_user_engagement",
+        "dc_cleaning",
+        "it_basics"
+      ]
+    },
+    {
+      "courseId": "GEN003",
+      "title": "Time Series & Seasonal Adjustment",
+      "category": "Statistical Methods",
+      "skills": [
+        "sm_time_series",
+        "sm_seasonal"
+      ],
+      "alignment": 0.137,
+      "bestSector": "Retail & FMCG",
+      "bestSectorRelevance": 0.333,
+      "sectorDemand": 6,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "cg_user_engagement",
+        "dc_data_entry",
+        "dc_spreadsheets",
+        "sm_descriptive",
+        "dc_cleaning"
+      ]
+    },
+    {
+      "courseId": "GEN011",
+      "title": "Administrative Data as a Statistical Source",
+      "category": "Official Statistics",
+      "skills": [
+        "os_admin_data"
+      ],
+      "alignment": 0.108,
+      "bestSector": "Textile & Apparel",
+      "bestSectorRelevance": 0.333,
+      "sectorDemand": 6,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dq_quality_audit",
+        "dc_data_entry",
+        "it_basics",
+        "cg_training_delivery",
+        "cg_user_engagement"
+      ]
+    },
+    {
+      "courseId": "GEN013",
+      "title": "CAPI Field Operations & Device Management",
+      "category": "Data Collection",
+      "skills": [
+        "dc_capi",
+        "ss_field_ops"
+      ],
+      "alignment": 0.108,
+      "bestSector": "Government & Statistics",
+      "bestSectorRelevance": 0.3,
+      "sectorDemand": 10,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dq_quality_audit",
+        "os_price_stats",
+        "sm_time_series",
+        "ss_sampling_basics"
+      ]
+    },
+    {
+      "courseId": "IGOT009",
+      "title": "Effective Data Visualisation for Public Reports",
+      "category": "Communication",
+      "skills": [
+        "it_data_viz",
+        "it_dashboards"
+      ],
+      "alignment": 0.108,
+      "bestSector": "IT & Software",
+      "bestSectorRelevance": 0.334,
+      "sectorDemand": 18,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dc_sql",
+        "dc_spreadsheets",
+        "cg_project_mgmt",
+        "cg_user_engagement",
+        "dc_cleaning"
+      ]
+    },
+    {
+      "courseId": "MOSPI015",
+      "title": "Census Operations Management",
+      "category": "Official Statistics",
+      "skills": [
+        "os_census",
+        "ss_field_ops"
+      ],
+      "alignment": 0.108,
+      "bestSector": "Government & Statistics",
+      "bestSectorRelevance": 0.3,
+      "sectorDemand": 10,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dq_quality_audit",
+        "os_price_stats",
+        "sm_time_series",
+        "ss_sampling_basics"
+      ]
+    },
+    {
+      "courseId": "GEN009",
+      "title": "Python for Government Data Work",
+      "category": "Digital Competency",
+      "skills": [
+        "it_python_basics",
+        "it_python_stats"
+      ],
+      "alignment": 0.098,
+      "bestSector": "Pharma & Healthcare",
+      "bestSectorRelevance": 0.25,
+      "sectorDemand": 8,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dq_quality_audit",
+        "it_dashboards",
+        "med_icd"
+      ]
+    },
+    {
+      "courseId": "GEN018",
+      "title": "Training of Trainers for Statistical Fieldwork",
+      "category": "Communication",
+      "skills": [
+        "cg_training_delivery"
+      ],
+      "alignment": 0.098,
+      "bestSector": "Education & Skilling",
+      "bestSectorRelevance": 0.667,
+      "sectorDemand": 6,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "cg_user_engagement",
+        "dc_data_entry",
+        "dc_cleaning",
+        "dc_edit_rules",
+        "dc_spreadsheets"
+      ]
+    },
+    {
+      "courseId": "IGOT003",
+      "title": "Mission Karmayogi & Competency-Based HR",
+      "category": "Governance",
+      "skills": [
+        "cg_project_mgmt"
+      ],
+      "alignment": 0.059,
+      "bestSector": "IT & Software",
+      "bestSectorRelevance": 0.222,
+      "sectorDemand": 18,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dc_sql",
+        "dc_spreadsheets",
+        "cg_user_engagement",
+        "dc_cleaning",
+        "it_basics"
+      ]
+    },
+    {
+      "courseId": "IGOT005",
+      "title": "Confidentiality & Statistical Disclosure Control",
+      "category": "Data Quality",
+      "skills": [
+        "dq_confidentiality"
+      ],
+      "alignment": 0.059,
+      "bestSector": "BFSI",
+      "bestSectorRelevance": 0.2,
+      "sectorDemand": 10,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dc_spreadsheets",
+        "dq_quality_audit",
+        "dc_sql",
+        "os_admin_data"
+      ]
+    },
+    {
+      "courseId": "GEN010",
+      "title": "R for Official Statistics",
+      "category": "Digital Competency",
+      "skills": [
+        "it_r_stats",
+        "it_python_stats"
+      ],
+      "alignment": 0.049,
+      "bestSector": "BFSI",
+      "bestSectorRelevance": 0.2,
+      "sectorDemand": 10,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dc_spreadsheets",
+        "dq_quality_audit",
+        "dc_sql",
+        "dq_confidentiality"
+      ]
+    },
+    {
+      "courseId": "GEN012",
+      "title": "Big Data & Alternative Data for Statistics",
+      "category": "Official Statistics",
+      "skills": [
+        "os_big_data"
+      ],
+      "alignment": 0.049,
+      "bestSector": "IT & Software",
+      "bestSectorRelevance": 0.167,
+      "sectorDemand": 18,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dc_sql",
+        "dc_spreadsheets",
+        "cg_project_mgmt",
+        "cg_user_engagement",
+        "dc_cleaning"
+      ]
+    },
+    {
+      "courseId": "MOSPI013",
+      "title": "Index Numbers: CPI, WPI and IIP",
+      "category": "Official Statistics",
+      "skills": [
+        "sm_index_numbers",
+        "os_price_stats"
+      ],
+      "alignment": 0.04,
+      "bestSector": "Government & Statistics",
+      "bestSectorRelevance": 0.3,
+      "sectorDemand": 10,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dq_quality_audit",
+        "sm_time_series",
+        "ss_field_ops",
+        "ss_sampling_basics"
+      ]
+    },
+    {
+      "courseId": "GEN002",
+      "title": "Regression Analysis in Practice",
+      "category": "Statistical Methods",
+      "skills": [
+        "sm_regression"
+      ],
+      "alignment": 0.039,
+      "bestSector": "IT & Software",
+      "bestSectorRelevance": 0.111,
+      "sectorDemand": 18,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dc_sql",
+        "dc_spreadsheets",
+        "cg_project_mgmt",
+        "cg_user_engagement",
+        "dc_cleaning"
+      ]
+    },
+    {
+      "courseId": "GEN005",
+      "title": "Total Survey Error in Official Statistics",
+      "category": "Data Quality",
+      "skills": [
+        "dq_errors",
+        "ss_quality_assurance"
+      ],
+      "alignment": 0.039,
+      "bestSector": "Textile & Apparel",
+      "bestSectorRelevance": 0.167,
+      "sectorDemand": 6,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dq_quality_audit",
+        "dc_data_entry",
+        "it_basics",
+        "os_admin_data",
+        "cg_training_delivery"
+      ]
+    },
+    {
+      "courseId": "MOSPI010",
+      "title": "Understanding NSS Rounds & Survey Methodology",
+      "category": "Official Statistics",
+      "skills": [
+        "os_nss",
+        "ss_survey_design",
+        "ss_sampling_stratified"
+      ],
+      "alignment": 0.03,
+      "bestSector": "Government & Statistics",
+      "bestSectorRelevance": 0.2,
+      "sectorDemand": 10,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dq_quality_audit",
+        "os_price_stats",
+        "sm_time_series",
+        "ss_field_ops"
+      ]
+    },
+    {
+      "courseId": "MOSPI011",
+      "title": "Sampling Methods for Official Surveys",
+      "category": "Survey & Sampling",
+      "skills": [
+        "ss_sampling_basics",
+        "ss_sampling_stratified",
+        "ss_sampling_frames"
+      ],
+      "alignment": 0.03,
+      "bestSector": "Government & Statistics",
+      "bestSectorRelevance": 0.3,
+      "sectorDemand": 10,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dq_quality_audit",
+        "os_price_stats",
+        "sm_time_series",
+        "ss_field_ops"
+      ]
+    },
+    {
+      "courseId": "MOSPI017",
+      "title": "Dissemination, Revisions & Release Practices",
+      "category": "Data Quality",
+      "skills": [
+        "dq_revision_policy",
+        "dq_dissemination"
+      ],
+      "alignment": 0.03,
+      "bestSector": "Pharma & Healthcare",
+      "bestSectorRelevance": 0.125,
+      "sectorDemand": 8,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dq_quality_audit",
+        "it_dashboards",
+        "med_icd"
+      ]
+    },
+    {
+      "courseId": "GEN004",
+      "title": "Survey Weighting & Estimation Workshop",
+      "category": "Survey & Sampling",
+      "skills": [
+        "ss_weighting",
+        "sm_estimation",
+        "sm_variance"
+      ],
+      "alignment": 0.02,
+      "bestSector": "Government & Statistics",
+      "bestSectorRelevance": 0.2,
+      "sectorDemand": 10,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dq_quality_audit",
+        "os_price_stats",
+        "sm_time_series",
+        "ss_field_ops"
+      ]
+    },
+    {
+      "courseId": "GEN014",
+      "title": "Questionnaire Design & Testing",
+      "category": "Survey & Sampling",
+      "skills": [
+        "ss_questionnaire"
+      ],
+      "alignment": 0.02,
+      "bestSector": "Retail & FMCG",
+      "bestSectorRelevance": 0.167,
+      "sectorDemand": 6,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "cg_user_engagement",
+        "dc_data_entry",
+        "dc_spreadsheets",
+        "sm_descriptive",
+        "sm_time_series"
+      ]
+    },
+    {
+      "courseId": "MOSPI014",
+      "title": "National Accounts & the SNA Framework",
+      "category": "Official Statistics",
+      "skills": [
+        "os_gva"
+      ],
+      "alignment": 0.02,
+      "bestSector": "BFSI",
+      "bestSectorRelevance": 0.1,
+      "sectorDemand": 10,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dc_spreadsheets",
+        "dq_quality_audit",
+        "dc_sql",
+        "dq_confidentiality"
+      ]
+    },
+    {
+      "courseId": "GEN016",
+      "title": "Handling Non-response in Field Surveys",
+      "category": "Survey & Sampling",
+      "skills": [
+        "ss_nonresponse"
+      ],
+      "alignment": 0.01,
+      "bestSector": "Government & Statistics",
+      "bestSectorRelevance": 0.1,
+      "sectorDemand": 10,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dq_quality_audit",
+        "os_price_stats",
+        "sm_time_series",
+        "ss_field_ops"
+      ]
+    },
+    {
+      "courseId": "GEN017",
+      "title": "ASI & Agricultural Statistics Operations",
+      "category": "Official Statistics",
+      "skills": [
+        "os_asi",
+        "os_agri_stats"
+      ],
+      "alignment": 0.01,
+      "bestSector": "Agri & Food Processing",
+      "bestSectorRelevance": 0.1,
+      "sectorDemand": 10,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dc_spreadsheets",
+        "os_admin_data",
+        "ss_field_ops",
+        "dc_edit_rules"
+      ]
+    },
+    {
+      "courseId": "IGOT001",
+      "title": "Introduction to Official Statistics",
+      "category": "Official Statistics",
+      "skills": [
+        "ss_concepts",
+        "ss_frameworks"
+      ],
+      "alignment": 0.01,
+      "bestSector": "Government & Statistics",
+      "bestSectorRelevance": 0.1,
+      "sectorDemand": 10,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dq_quality_audit",
+        "os_price_stats",
+        "sm_time_series",
+        "ss_field_ops"
+      ]
+    },
+    {
+      "courseId": "IGOT006",
+      "title": "SDMX for Data Producers",
+      "category": "Data Quality",
+      "skills": [
+        "dq_sdmx",
+        "dc_metadata"
+      ],
+      "alignment": 0.01,
+      "bestSector": "Government & Statistics",
+      "bestSectorRelevance": 0.1,
+      "sectorDemand": 10,
+      "missingInBestSector": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dq_quality_audit",
+        "os_price_stats",
+        "sm_time_series",
+        "ss_field_ops"
+      ]
+    },
+    {
+      "courseId": "GEN006",
+      "title": "Small Area Estimation: Concepts and Cases",
+      "category": "Statistical Methods",
+      "skills": [
+        "sm_small_area"
+      ],
+      "alignment": 0,
+      "bestSector": "—",
+      "bestSectorRelevance": 0,
+      "sectorDemand": 0,
+      "missingInBestSector": []
+    },
+    {
+      "courseId": "IGOT002",
+      "title": "UN Fundamental Principles of Official Statistics",
+      "category": "Official Statistics",
+      "skills": [
+        "dq_unfpa"
+      ],
+      "alignment": 0,
+      "bestSector": "—",
+      "bestSectorRelevance": 0,
+      "sectorDemand": 0,
+      "missingInBestSector": []
+    },
+    {
+      "courseId": "IGOT007",
+      "title": "Ethics in Data-Driven Governance",
+      "category": "Governance",
+      "skills": [
+        "it_data_ethics"
+      ],
+      "alignment": 0,
+      "bestSector": "—",
+      "bestSectorRelevance": 0,
+      "sectorDemand": 0,
+      "missingInBestSector": []
+    }
+  ],
+  "sectorCoverage": [
+    {
+      "sector": "Construction & Infrastructure",
+      "postings": 8,
+      "topSkills": [
+        "cg_report_writing",
+        "cg_user_engagement",
+        "dc_data_entry",
+        "dc_edit_rules",
+        "dc_spreadsheets",
+        "dq_quality_audit",
+        "it_basics",
+        "ss_field_ops",
+        "surv_total_station",
+        "cg_project_mgmt",
+        "cg_training_delivery",
+        "civ_bim"
+      ],
+      "coveredSkills": [
+        "cg_report_writing",
+        "cg_user_engagement",
+        "dc_data_entry",
+        "dc_edit_rules",
+        "dc_spreadsheets",
+        "dq_quality_audit",
+        "it_basics",
+        "ss_field_ops",
+        "cg_project_mgmt",
+        "cg_training_delivery"
+      ],
+      "coverage": 0.893
+    },
+    {
+      "sector": "Manufacturing & Auto",
+      "postings": 14,
+      "topSkills": [
+        "cg_report_writing",
+        "dq_quality_audit",
+        "dc_data_entry",
+        "dc_edit_rules",
+        "dc_spreadsheets",
+        "it_basics",
+        "cg_user_engagement",
+        "mfg_cnc",
+        "mfg_plc",
+        "sm_time_series",
+        "cg_project_mgmt",
+        "cg_training_delivery"
+      ],
+      "coveredSkills": [
+        "cg_report_writing",
+        "dq_quality_audit",
+        "dc_data_entry",
+        "dc_edit_rules",
+        "dc_spreadsheets",
+        "it_basics",
+        "cg_user_engagement",
+        "sm_time_series",
+        "cg_project_mgmt",
+        "cg_training_delivery"
+      ],
+      "coverage": 0.897
+    },
+    {
+      "sector": "Pharma & Healthcare",
+      "postings": 8,
+      "topSkills": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dq_quality_audit",
+        "it_dashboards",
+        "med_icd",
+        "cg_training_delivery",
+        "cg_user_engagement",
+        "dc_cleaning",
+        "dc_edit_rules",
+        "dc_sql",
+        "dq_confidentiality",
+        "dq_revision_policy"
+      ],
+      "coveredSkills": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dq_quality_audit",
+        "it_dashboards",
+        "cg_training_delivery",
+        "cg_user_engagement",
+        "dc_cleaning",
+        "dc_edit_rules",
+        "dc_sql",
+        "dq_confidentiality",
+        "dq_revision_policy"
+      ],
+      "coverage": 0.917
+    },
+    {
+      "sector": "Agri & Food Processing",
+      "postings": 10,
+      "topSkills": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dc_spreadsheets",
+        "os_admin_data",
+        "ss_field_ops",
+        "dc_edit_rules",
+        "dq_quality_audit",
+        "sm_time_series",
+        "agri_drone",
+        "cg_training_delivery",
+        "cg_user_engagement",
+        "dc_cleaning"
+      ],
+      "coveredSkills": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dc_spreadsheets",
+        "os_admin_data",
+        "ss_field_ops",
+        "dc_edit_rules",
+        "dq_quality_audit",
+        "sm_time_series",
+        "cg_training_delivery",
+        "cg_user_engagement",
+        "dc_cleaning"
+      ],
+      "coverage": 0.966
+    },
+    {
+      "sector": "IT & Software",
+      "postings": 18,
+      "topSkills": [
+        "cg_report_writing",
+        "dc_sql",
+        "dc_spreadsheets",
+        "cg_project_mgmt",
+        "cg_user_engagement",
+        "dc_cleaning",
+        "it_basics",
+        "it_dashboards",
+        "it_data_viz",
+        "it_python_basics",
+        "os_big_data",
+        "sm_descriptive"
+      ],
+      "coveredSkills": [
+        "cg_report_writing",
+        "dc_sql",
+        "dc_spreadsheets",
+        "cg_project_mgmt",
+        "cg_user_engagement",
+        "dc_cleaning",
+        "it_basics",
+        "it_dashboards",
+        "it_data_viz",
+        "it_python_basics",
+        "os_big_data",
+        "sm_descriptive"
+      ],
+      "coverage": 1
+    },
+    {
+      "sector": "BFSI",
+      "postings": 10,
+      "topSkills": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dc_spreadsheets",
+        "dq_quality_audit",
+        "dc_sql",
+        "dq_confidentiality",
+        "os_admin_data",
+        "sm_descriptive",
+        "sm_hypothesis",
+        "sm_time_series",
+        "cg_user_engagement",
+        "dc_cleaning"
+      ],
+      "coveredSkills": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dc_spreadsheets",
+        "dq_quality_audit",
+        "dc_sql",
+        "dq_confidentiality",
+        "os_admin_data",
+        "sm_descriptive",
+        "sm_hypothesis",
+        "sm_time_series",
+        "cg_user_engagement",
+        "dc_cleaning"
+      ],
+      "coverage": 1
+    },
+    {
+      "sector": "Government & Statistics",
+      "postings": 10,
+      "topSkills": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dq_quality_audit",
+        "os_price_stats",
+        "sm_time_series",
+        "ss_field_ops",
+        "ss_sampling_basics",
+        "cg_training_delivery",
+        "cg_user_engagement",
+        "dc_capi",
+        "dc_cleaning",
+        "dc_cspro"
+      ],
+      "coveredSkills": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dq_quality_audit",
+        "os_price_stats",
+        "sm_time_series",
+        "ss_field_ops",
+        "ss_sampling_basics",
+        "cg_training_delivery",
+        "cg_user_engagement",
+        "dc_capi",
+        "dc_cleaning",
+        "dc_cspro"
+      ],
+      "coverage": 1
+    },
+    {
+      "sector": "Education & Skilling",
+      "postings": 6,
+      "topSkills": [
+        "cg_report_writing",
+        "cg_training_delivery",
+        "cg_user_engagement",
+        "dc_data_entry",
+        "dc_cleaning",
+        "dc_edit_rules",
+        "dc_spreadsheets",
+        "dq_quality_audit",
+        "it_basics"
+      ],
+      "coveredSkills": [
+        "cg_report_writing",
+        "cg_training_delivery",
+        "cg_user_engagement",
+        "dc_data_entry",
+        "dc_cleaning",
+        "dc_edit_rules",
+        "dc_spreadsheets",
+        "dq_quality_audit",
+        "it_basics"
+      ],
+      "coverage": 1
+    },
+    {
+      "sector": "Logistics & Warehousing",
+      "postings": 6,
+      "topSkills": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dq_quality_audit",
+        "sm_descriptive",
+        "cg_user_engagement",
+        "dc_cleaning",
+        "dc_spreadsheets",
+        "dc_sql",
+        "it_basics",
+        "it_python_basics",
+        "os_admin_data",
+        "sm_time_series"
+      ],
+      "coveredSkills": [
+        "cg_report_writing",
+        "dc_data_entry",
+        "dq_quality_audit",
+        "sm_descriptive",
+        "cg_user_engagement",
+        "dc_cleaning",
+        "dc_spreadsheets",
+        "dc_sql",
+        "it_basics",
+        "it_python_basics",
+        "os_admin_data",
+        "sm_time_series"
+      ],
+      "coverage": 1
+    },
+    {
+      "sector": "Retail & FMCG",
+      "postings": 6,
+      "topSkills": [
+        "cg_report_writing",
+        "cg_user_engagement",
+        "dc_data_entry",
+        "dc_spreadsheets",
+        "sm_descriptive",
+        "sm_time_series",
+        "dc_cleaning",
+        "dc_edit_rules",
+        "it_basics",
+        "it_data_viz",
+        "sm_hypothesis",
+        "ss_field_ops"
+      ],
+      "coveredSkills": [
+        "cg_report_writing",
+        "cg_user_engagement",
+        "dc_data_entry",
+        "dc_spreadsheets",
+        "sm_descriptive",
+        "sm_time_series",
+        "dc_cleaning",
+        "dc_edit_rules",
+        "it_basics",
+        "it_data_viz",
+        "sm_hypothesis",
+        "ss_field_ops"
+      ],
+      "coverage": 1
+    },
+    {
+      "sector": "Textile & Apparel",
+      "postings": 6,
+      "topSkills": [
+        "cg_report_writing",
+        "dq_quality_audit",
+        "dc_data_entry",
+        "it_basics",
+        "os_admin_data",
+        "cg_training_delivery",
+        "cg_user_engagement",
+        "dc_cleaning",
+        "dc_edit_rules",
+        "dc_spreadsheets",
+        "it_data_viz",
+        "sm_time_series"
+      ],
+      "coveredSkills": [
+        "cg_report_writing",
+        "dq_quality_audit",
+        "dc_data_entry",
+        "it_basics",
+        "os_admin_data",
+        "cg_training_delivery",
+        "cg_user_engagement",
+        "dc_cleaning",
+        "dc_edit_rules",
+        "dc_spreadsheets",
+        "it_data_viz",
+        "sm_time_series"
+      ],
+      "coverage": 1
+    }
+  ],
+  "uncoveredSkills": [
+    {
+      "skillId": "med_icd",
+      "demand": 2,
+      "share": 0.02,
+      "sectors": [
+        "Pharma & Healthcare"
+      ],
+      "examplePostingIds": [
+        "PH003",
+        "PH004"
+      ]
+    },
+    {
+      "skillId": "mfg_cnc",
+      "demand": 2,
+      "share": 0.02,
+      "sectors": [
+        "Manufacturing & Auto"
+      ],
+      "examplePostingIds": [
+        "MF001",
+        "MF002"
+      ]
+    },
+    {
+      "skillId": "mfg_plc",
+      "demand": 2,
+      "share": 0.02,
+      "sectors": [
+        "Manufacturing & Auto"
+      ],
+      "examplePostingIds": [
+        "MF004",
+        "MF012"
+      ]
+    },
+    {
+      "skillId": "surv_total_station",
+      "demand": 2,
+      "share": 0.02,
+      "sectors": [
+        "Construction & Infrastructure"
+      ],
+      "examplePostingIds": [
+        "CN001",
+        "CN004"
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "type": "add-program",
+      "skillId": "med_icd",
+      "sector": "Pharma & Healthcare",
+      "title": "Add content for \"med_icd\"",
+      "detail": "2 posting(s) demand this skill (notably in Pharma & Healthcare) but no current program teaches it. Prioritise a module or bridge course."
+    },
+    {
+      "type": "add-program",
+      "skillId": "mfg_cnc",
+      "sector": "Manufacturing & Auto",
+      "title": "Add content for \"mfg_cnc\"",
+      "detail": "2 posting(s) demand this skill (notably in Manufacturing & Auto) but no current program teaches it. Prioritise a module or bridge course."
+    },
+    {
+      "type": "add-program",
+      "skillId": "mfg_plc",
+      "sector": "Manufacturing & Auto",
+      "title": "Add content for \"mfg_plc\"",
+      "detail": "2 posting(s) demand this skill (notably in Manufacturing & Auto) but no current program teaches it. Prioritise a module or bridge course."
+    },
+    {
+      "type": "add-program",
+      "skillId": "surv_total_station",
+      "sector": "Construction & Infrastructure",
+      "title": "Add content for \"surv_total_station\"",
+      "detail": "2 posting(s) demand this skill (notably in Construction & Infrastructure) but no current program teaches it. Prioritise a module or bridge course."
+    }
+  ]
+}

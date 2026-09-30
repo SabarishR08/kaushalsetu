@@ -80,3 +80,22 @@ npm test
 - [Grand Finale Presentation Deck Blueprint](docs/sih26134-presentation-deck.md)
 - [Technical Architecture & Mathematical Formulation](docs/sih26134-architecture-and-implementation.md)
 - [Grand Finale 3-Minute Pitch Script & Judge Q&A Defense](docs/sih26134-grand-finale-pitch.md)
+
+---
+
+## 🔁 The Working Alignment Pipeline (implemented in this repo)
+
+The closed loop runs as two deterministic, fully offline commands:
+
+```bash
+npm run sih:demand       # postings → tagged skill demand   → data/demand.json
+npm run sih:alignment    # demand × program catalog         → data/alignment.json
+```
+
+1. **Demand side** — job postings are loaded from `data/jobs/raw/*.csv` (any Kaggle-style corpus: title/description columns auto-detected) or, absent that, the labeled Maharashtra seed corpus at `data/jobs/maharashtra_seed.json`. Every posting is skill-tagged.
+2. **Tagger** — the trained logistic heads on bge embeddings are used whenever the encoder is installed (`npm run ml:install-encoder`); otherwise the deterministic keyword tagger (`src/lib/skills/keyword-tagger.ts`, alias table `data/skill_aliases.json`) answers. Same skill vocabulary either way. No retraining is ever required.
+3. **Supply side** — the course/program catalog (`data/courses.json` + `data/course_skill_mapping.json`) is tagged on the same skill graph, so demand and supply are directly comparable.
+4. **Alignment scoring** — per-program alignment = share of overall in-demand skill mass covered; per-sector coverage = share of the sector's top-12 demand mass taught by at least one program; uncovered skills = demanded by postings, taught by no program.
+5. **Outputs** — `/department` dashboard (KPIs, demand chart, sector gap table, recommendations, program alignment) and `/department/report` (printable department report).
+
+Provenance note: the shipped seed corpus is a labeled synthetic seed so the pipeline is reproducible end-to-end; drop a real corpus into `data/jobs/raw/` and re-run the two commands to regenerate every number from live data.
