@@ -84,6 +84,85 @@ function pickCol(headers: string[], candidates: string[]): number {
   return -1;
 }
 
+/**
+ * Naukri JSONL corpora (real postings, e.g. muhammetakkurt/naukri-jobs-dataset
+ * on Hugging Face, fetched anonymously over plain HTTP — no CLI/token needed).
+ * Drop `*.jsonl` files into data/jobs/raw/. Columns auto-mapped; HTML stripped
+ * from descriptions.
+ */
+function stripHtml(s: string): string {
+  return s
+    .replace(/<br\s*\/?>/gi, ". ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&nbsp;/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+const MH_PATTERN = /(mumbai|pune|nagpur|nashik|nashik|thane|navi mumbai|aurangabad|chh\.? sambhajinagar|kolhapur|solapur|amravati|jalgaon|sangli|satara|latur|ichalkaranji|bhiwandi|hinjawadi|chakan|maharashtra)/i;
+
+async function loadJsonlDir(): Promise<Posting[]> {
+  const dir = path.join(process.cwd(), "data", "jobs", "raw");
+  const files = (await fs.readdir(dir)).filter((f) => f.toLowerCase().endsWith(".jsonl"));
+  // Read every file fully and filter FIRST (Maharashtra attribution), then cap
+  // the kept rows at MAX_POSTINGS round-robin across files so no file's slice
+  // crowds out the others.
+  const perFile: string[][] = [];
+  for (const f of files) {
+    const text = await fs.readFile(path.join(dir, f), "utf8");
+    const lines = text.split(/\r?\n/).filter((l) => l.trim());
+    perFile.push(lines);
+  }
+  const postings: Posting[] = [];
+  const cursors = perFile.map(() => 0);
+  let remaining = perFile.reduce((a, lines) => a + lines.length, 0);
+  while (postings.length < 5000 && remaining > 0) {
+    let keptThisRound = false;
+    for (let fi = 0; fi < perFile.length && postings.length < 5000; fi++) {
+      const lines = perFile[fi];
+      while (cursors[fi] < lines.length) {
+        const i = cursors[fi]++;
+        remaining--;
+        let row: Record<string, unknown>;
+        try {
+          row = JSON.parse(lines[i]) as Record<string, unknown>;
+        } catch {
+          continue; // truncated last line from a range fetch is fine
+        }
+        const title = String(row.title ?? row.Title ?? "").trim();
+        const desc = stripHtml(String(row.jobDescription ?? row.job_description ?? ""));
+        const skills = String(row.tagsAndSkills ?? row.skills ?? "").replace(/,/g, ", ");
+        const location = String(row.location ?? "").trim();
+        if (!title && !desc && !skills) continue;
+        // Maharashtra attribution filter: the department is a state body, so
+        // postings must be in Maharashtra cities to count toward the demand signal.
+        if (!MH_PATTERN.test(location)) continue;
+        const stem = path.basename(f, ".jsonl").toLowerCase();
+        const sector = stem.includes("data_scientist")
+          ? "Data Science & AI"
+          : stem.includes("software")
+            ? "Software Engineering"
+            : stem;
+        postings.push({
+          id: `nk-${String(row.jobId ?? `${path.basename(f, ".jsonl")}-${i}`)}`,
+          title,
+          org: String(row.companyName ?? row.company ?? "").trim() || undefined,
+          sector,
+          city: location || undefined,
+          text: `${title}. Skills: ${skills}. ${desc}`.slice(0, 4000),
+        });
+        keptThisRound = true;
+        break; // one kept row per file per round
+      }
+    }
+    if (!keptThisRound) break; // every remaining line was rejected — files exhausted
+  }
+  return postings;
+}
+
 async function loadSeed(): Promise<Posting[]> {
   const p = path.join(process.cwd(), "data", "jobs", "maharashtra_seed.json");
   const raw = JSON.parse(await fs.readFile(p, "utf8")) as { postings: Posting[] };
@@ -165,10 +244,18 @@ async function main(): Promise<void> {
   let postings: Posting[] = [];
   let source = "maharashtra_seed_v1";
   try {
-    postings = await loadRawCsv();
-    if (postings.length) source = "data/jobs/raw CSV corpus";
+    postings = await loadJsonlDir();
+    if (postings.length) source = "real Naukri JSONL corpus (data/jobs/raw)";
   } catch {
-    // no raw dir — fall through to seed
+    // no raw dir — fall through
+  }
+  if (!postings.length) {
+    try {
+      postings = await loadRawCsv();
+      if (postings.length) source = "data/jobs/raw CSV corpus";
+    } catch {
+      // no raw dir — fall through to seed
+    }
   }
   if (!postings.length) postings = await loadSeed();
 
@@ -182,8 +269,10 @@ async function main(): Promise<void> {
   const strengths = tagged.map((ts) => ts.map((t) => ({ skillId: t.skillId, strength: t.strength })));
   const { overall, perSector } = summarize(postings, strengths);
 
+  // Audit trail is capped so large real corpora keep demand.json compact.
   const audit: Record<string, string[]> = {};
-  for (let i = 0; i < postings.length; i++) {
+  const auditLimit = Math.min(postings.length, 500);
+  for (let i = 0; i < auditLimit; i++) {
     audit[postings[i].id] = (await keywordMatches(texts[i])).map((m) => m.matchedAlias);
   }
 

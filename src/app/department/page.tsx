@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { AlertTriangle, ArrowLeft, CheckCircle2, FileText, GraduationCap, Lightbulb, Target } from "lucide-react";
+import { AlertTriangle, ArrowLeft, CheckCircle2, FileText, GraduationCap, Lightbulb, Target, MapPin, Sparkles, Activity, ShieldCheck, Mic } from "lucide-react";
 
+import { AppShell } from "@/components/app/AppShell";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -22,25 +23,27 @@ export default async function DepartmentPage() {
 
   if (!demand || !alignment) {
     return (
-      <div className="mx-auto max-w-3xl px-4 py-16">
-        <Card>
-          <CardHeader>
-            <CardTitle>Department dashboard needs its data build</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-3 text-sm text-muted-foreground">
-            <p>
-              Run <code className="rounded bg-muted px-1 py-0.5">npm run sih:demand</code> then{" "}
-              <code className="rounded bg-muted px-1 py-0.5">npm run sih:alignment</code> to generate{" "}
-              <code className="rounded bg-muted px-1 py-0.5">data/demand.json</code> and{" "}
-              <code className="rounded bg-muted px-1 py-0.5">data/alignment.json</code>.
-            </p>
-            <p>Drop a real jobs corpus (Kaggle CSV) into <code>data/jobs/raw/</code> and re-run to refresh the demand signal on live data.</p>
-            <Button asChild variant="outline" size="sm">
-              <Link href="/"><ArrowLeft className="mr-2 h-4 w-4" /> Back home</Link>
-            </Button>
-          </CardContent>
-        </Card>
-      </div>
+      <AppShell>
+        <div className="mx-auto max-w-3xl px-4 py-16">
+          <Card>
+            <CardHeader>
+              <CardTitle>Department dashboard needs its data build</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3 text-sm text-muted-foreground">
+              <p>
+                Run <code className="rounded bg-muted px-1 py-0.5">npm run sih:demand</code> then{" "}
+                <code className="rounded bg-muted px-1 py-0.5">npm run sih:alignment</code> to generate{" "}
+                <code className="rounded bg-muted px-1 py-0.5">data/demand.json</code> and{" "}
+                <code className="rounded bg-muted px-1 py-0.5">data/alignment.json</code>.
+              </p>
+              <p>Drop a real jobs corpus (Kaggle CSV) into <code>data/jobs/raw/</code> and re-run to refresh the demand signal on live data.</p>
+              <Button asChild variant="outline" size="sm">
+                <Link href="/"><ArrowLeft className="mr-2 h-4 w-4" /> Back home</Link>
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+      </AppShell>
     );
   }
 
@@ -49,24 +52,49 @@ export default async function DepartmentPage() {
   const weakest = [...alignment.sectorCoverage].sort((a, b) => a.coverage - b.coverage).slice(0, 5);
 
   return (
-    <div className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6">
-      {/* Header */}
-      <div className="mb-6 flex flex-wrap items-start justify-between gap-4">
-        <div>
-          <h1 className="text-2xl font-bold tracking-tight">Department Dashboard — Skilling Alignment</h1>
-          <p className="text-sm text-muted-foreground">
-            Demand signal → gap detection → program recommendations · SIH26134 · Government of Maharashtra
-          </p>
+    <AppShell>
+      <div className="w-full space-y-6">
+        {/* Header */}
+        <div className="flex flex-wrap items-start justify-between gap-4 border-b border-white/5 pb-4">
+          <div>
+            <div className="flex items-center gap-2 mb-1">
+              <Badge className="bg-orange-500/10 text-orange-400 border-orange-500/20 text-xs">
+                State Administration Cockpit
+              </Badge>
+              <span className="text-xs text-muted-foreground font-mono">
+                SIH26134 • Government of Maharashtra
+              </span>
+            </div>
+            <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
+              Department Dashboard — Skilling Alignment
+            </h1>
+            <p className="text-sm text-muted-foreground mt-0.5">
+              Live sensing of 1,000 real Maharashtra postings → automated gap detection → 30-hr bridge recommendations.
+            </p>
+          </div>
+          <div className="flex flex-wrap items-center gap-2">
+            <Button asChild variant="outline" size="sm" className="border-white/10 text-xs h-9 bg-black/40">
+              <Link href="/districts">
+                <MapPin className="mr-1.5 h-3.5 w-3.5 text-orange-400" /> 36-District GIS Twin
+              </Link>
+            </Button>
+            <Button asChild variant="outline" size="sm" className="border-white/10 text-xs h-9 bg-black/40">
+              <Link href="/curriculum-diff">
+                <Sparkles className="mr-1.5 h-3.5 w-3.5 text-orange-400" /> Curriculum Diff
+              </Link>
+            </Button>
+            <Button asChild variant="outline" size="sm" className="border-white/10 text-xs h-9 bg-black/40">
+              <Link href="/telemetry">
+                <Activity className="mr-1.5 h-3.5 w-3.5 text-emerald-400" /> 1,000 Postings
+              </Link>
+            </Button>
+            <Button asChild size="sm" className="bg-orange-500 hover:bg-orange-600 text-white text-xs h-9">
+              <Link href="/department/report">
+                <FileText className="mr-1.5 h-3.5 w-3.5" /> Printable Report
+              </Link>
+            </Button>
+          </div>
         </div>
-        <div className="flex gap-2">
-          <Button asChild variant="ghost" size="sm">
-            <Link href="/"><ArrowLeft className="mr-2 h-4 w-4" /> Home</Link>
-          </Button>
-          <Button asChild variant="outline" size="sm">
-            <Link href="/department/report"><FileText className="mr-2 h-4 w-4" /> Printable report</Link>
-          </Button>
-        </div>
-      </div>
 
       {/* KPI row */}
       <div className="mb-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -294,6 +322,7 @@ export default async function DepartmentPage() {
         <GraduationCap className="h-4 w-4" />
         KaushalSetu · closed-loop skilling alignment for Maharashtra · built on the PathFinder evidence pipeline
       </div>
-    </div>
+      </div>
+    </AppShell>
   );
 }

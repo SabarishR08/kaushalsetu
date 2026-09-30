@@ -43,7 +43,7 @@
   "os_price_stats": ["price statistics", "price collection", "price data", "price monitoring"],
   "os_agri_stats": ["agricultural statistics", "crop statistics", "agri data", "crop cutting"],
   "os_admin_data": ["administrative data", "administrative records", "government records", "revenue records"],
-  "os_big_data": ["big data", "web scraping", "satellite data", "scanner data", "alternative data"],
+  "os_big_data": ["big data", "web scraping", "satellite data", "scanner data", "alternative data", "spark", "hadoop"],
   "os_gva": ["national accounts", "gva", "gdp", "gdp estimation", "sna"],
   "it_basics": ["ms office", "office suite", "computer literacy", "computer basics", "basic computer", "typing"],
   "it_data_viz": ["data visualisation", "data visualization", "chart", "infographic", "graphical representation"],
@@ -63,5 +63,15 @@
   "civ_bim": ["bim", "revit"],
   "surv_total_station": ["total station", "dgps", "theodolite", "setting out"],
   "med_icd": ["icd", "icd 10", "medical coding", "nabh"],
-  "agri_drone": ["drone", "precision agriculture", "drone imagery"]
+  "agri_drone": ["drone", "precision agriculture", "drone imagery"],
+
+  "aiml_ml": ["machine learning", "ml algorithms", "predictive modeling", "predictive modelling"],
+  "aiml_dl": ["deep learning", "neural network", "cnn", "rnn", "tensorflow", "pytorch"],
+  "aiml_nlp": ["natural language processing", "nlp", "text mining"],
+  "aiml_cv": ["computer vision", "image processing", "opencv"],
+  "aiml_genai": ["generative ai", "genai", "llm", "large language model", "prompt engineering"],
+  "cloud_aws": ["aws", "amazon web services"],
+  "cloud_azure": ["azure"],
+  "cloud_gcp": ["gcp", "google cloud"],
+  "devops_docker": ["docker", "kubernetes", "container", "ci cd", "jenkins"]
 }

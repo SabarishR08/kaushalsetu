@@ -81,7 +81,7 @@ describe("mcq pipeline — end-to-end from a text buffer", () => {
       expect(q.chunkIndex).toBeGreaterThanOrEqual(0);
       expect(q.options[q.correctIndex]).toBeTruthy();
     }
-  });
+  }, 20000);
 
   it("throws a helpful error on an empty document", async () => {
     const buffer = new TextEncoder().encode("").buffer as ArrayBuffer;

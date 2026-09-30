@@ -1,1074 +1,642 @@
 {
   "meta": {
-    "builtAt": "2026-09-30T12:08:47.629Z",
-    "source": "maharashtra_seed_v1",
+    "builtAt": "2026-09-30T12:36:57.496Z",
+    "source": "data/jobs/raw CSV corpus",
     "tagger": "keyword",
-    "postings": 102,
-    "sectors": 11
+    "postings": 1000,
+    "sectors": 7
   },
   "overall": [
     {
       "skillId": "cg_report_writing",
-      "demand": 73,
-      "share": 0.716,
+      "demand": 40,
+      "share": 0.04,
       "avgStrength": 3,
       "examplePostingIds": [
-        "IT001",
-        "IT002",
-        "IT004"
-      ]
-    },
-    {
-      "skillId": "dc_data_entry",
-      "demand": 29,
-      "share": 0.284,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "IT009",
-        "IT017",
-        "BK001"
-      ]
-    },
-    {
-      "skillId": "dq_quality_audit",
-      "demand": 27,
-      "share": 0.265,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "IT005",
-        "BK003",
-        "BK005"
-      ]
-    },
-    {
-      "skillId": "dc_spreadsheets",
-      "demand": 22,
-      "share": 0.216,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "IT001",
-        "IT004",
-        "IT007"
-      ]
-    },
-    {
-      "skillId": "cg_user_engagement",
-      "demand": 18,
-      "share": 0.176,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "IT004",
-        "IT011",
-        "IT015"
-      ]
-    },
-    {
-      "skillId": "it_basics",
-      "demand": 16,
-      "share": 0.157,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "IT002",
-        "IT014",
-        "IT017"
+        "maharashtra_-61",
+        "maharashtra_-105",
+        "maharashtra_-151"
       ]
     },
     {
       "skillId": "dc_sql",
-      "demand": 15,
-      "share": 0.147,
+      "demand": 37,
+      "share": 0.037,
       "avgStrength": 3,
       "examplePostingIds": [
-        "IT001",
-        "IT003",
-        "IT008"
-      ]
-    },
-    {
-      "skillId": "sm_time_series",
-      "demand": 14,
-      "share": 0.137,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "IT006",
-        "IT015",
-        "BK007"
-      ]
-    },
-    {
-      "skillId": "dc_cleaning",
-      "demand": 13,
-      "share": 0.127,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "IT003",
-        "IT010",
-        "IT016"
-      ]
-    },
-    {
-      "skillId": "dc_edit_rules",
-      "demand": 12,
-      "share": 0.118,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "BK008",
-        "MF001",
-        "MF002"
-      ]
-    },
-    {
-      "skillId": "os_admin_data",
-      "demand": 11,
-      "share": 0.108,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "BK001",
-        "BK006",
-        "TX003"
+        "maharashtra_-2",
+        "maharashtra_-7",
+        "maharashtra_-120"
       ]
     },
     {
       "skillId": "cg_training_delivery",
-      "demand": 10,
-      "share": 0.098,
+      "demand": 27,
+      "share": 0.027,
       "avgStrength": 3,
       "examplePostingIds": [
-        "MF003",
-        "TX001",
-        "AG003"
-      ]
-    },
-    {
-      "skillId": "sm_descriptive",
-      "demand": 10,
-      "share": 0.098,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "IT002",
-        "IT004",
-        "IT013"
-      ]
-    },
-    {
-      "skillId": "ss_field_ops",
-      "demand": 10,
-      "share": 0.098,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "IT010",
-        "MF006",
-        "AG001"
+        "maharashtra_-9",
+        "maharashtra_-16",
+        "maharashtra_-25"
       ]
     },
     {
       "skillId": "cg_project_mgmt",
-      "demand": 6,
-      "share": 0.059,
+      "demand": 24,
+      "share": 0.024,
       "avgStrength": 3,
       "examplePostingIds": [
-        "IT002",
-        "IT005",
-        "IT008"
+        "maharashtra_-53",
+        "maharashtra_-74",
+        "maharashtra_-107"
       ]
     },
     {
-      "skillId": "dq_confidentiality",
-      "demand": 6,
-      "share": 0.059,
+      "skillId": "dq_quality_audit",
+      "demand": 22,
+      "share": 0.022,
       "avgStrength": 3,
       "examplePostingIds": [
-        "IT008",
-        "IT012",
-        "BK003"
+        "maharashtra_-52",
+        "maharashtra_-78",
+        "maharashtra_-96"
       ]
     },
     {
-      "skillId": "it_dashboards",
-      "demand": 6,
-      "share": 0.059,
+      "skillId": "med_icd",
+      "demand": 17,
+      "share": 0.017,
       "avgStrength": 3,
       "examplePostingIds": [
-        "IT001",
-        "IT011",
-        "IT013"
+        "maharashtra_-14",
+        "maharashtra_-34",
+        "maharashtra_-97"
+      ]
+    },
+    {
+      "skillId": "ss_quality_assurance",
+      "demand": 15,
+      "share": 0.015,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "maharashtra_-52",
+        "maharashtra_-54",
+        "maharashtra_-304"
+      ]
+    },
+    {
+      "skillId": "it_basics",
+      "demand": 13,
+      "share": 0.013,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "maharashtra_-18",
+        "maharashtra_-24",
+        "maharashtra_-511"
+      ]
+    },
+    {
+      "skillId": "sm_descriptive",
+      "demand": 11,
+      "share": 0.011,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "maharashtra_-81",
+        "maharashtra_-100",
+        "maharashtra_-167"
+      ]
+    },
+    {
+      "skillId": "os_big_data",
+      "demand": 8,
+      "share": 0.008,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "maharashtra_-13",
+        "maharashtra_-167",
+        "maharashtra_-204"
+      ]
+    },
+    {
+      "skillId": "sm_time_series",
+      "demand": 8,
+      "share": 0.008,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "maharashtra_-413",
+        "maharashtra_-487",
+        "maharashtra_-546"
+      ]
+    },
+    {
+      "skillId": "dc_spreadsheets",
+      "demand": 7,
+      "share": 0.007,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "maharashtra_-385",
+        "maharashtra_-788",
+        "maharashtra_-860"
       ]
     },
     {
       "skillId": "it_python_basics",
       "demand": 6,
-      "share": 0.059,
+      "share": 0.006,
       "avgStrength": 3,
       "examplePostingIds": [
-        "IT003",
-        "IT014",
-        "IT016"
+        "maharashtra_-2",
+        "maharashtra_-4",
+        "maharashtra_-94"
       ]
     },
     {
-      "skillId": "sm_hypothesis",
-      "demand": 6,
-      "share": 0.059,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "IT013",
-        "IT018",
-        "BK004"
-      ]
-    },
-    {
-      "skillId": "it_data_viz",
+      "skillId": "it_dashboards",
       "demand": 5,
-      "share": 0.049,
+      "share": 0.005,
       "avgStrength": 3,
       "examplePostingIds": [
-        "IT007",
-        "IT010",
-        "IT011"
-      ]
-    },
-    {
-      "skillId": "os_big_data",
-      "demand": 5,
-      "share": 0.049,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "IT003",
-        "IT010",
-        "IT016"
-      ]
-    },
-    {
-      "skillId": "it_python_stats",
-      "demand": 4,
-      "share": 0.039,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "IT006",
-        "BK009",
-        "PH006"
-      ]
-    },
-    {
-      "skillId": "sm_regression",
-      "demand": 4,
-      "share": 0.039,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "IT006",
-        "IT018",
-        "BK004"
-      ]
-    },
-    {
-      "skillId": "ss_quality_assurance",
-      "demand": 4,
-      "share": 0.039,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "MF003",
-        "TX003",
-        "PH003"
-      ]
-    },
-    {
-      "skillId": "dq_revision_policy",
-      "demand": 2,
-      "share": 0.02,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "BK003",
-        "PH007"
-      ]
-    },
-    {
-      "skillId": "med_icd",
-      "demand": 2,
-      "share": 0.02,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "PH003",
-        "PH004"
+        "maharashtra_-181",
+        "maharashtra_-228",
+        "maharashtra_-246"
       ]
     },
     {
       "skillId": "mfg_cnc",
-      "demand": 2,
-      "share": 0.02,
+      "demand": 5,
+      "share": 0.005,
       "avgStrength": 3,
       "examplePostingIds": [
-        "MF001",
-        "MF002"
+        "maharashtra_-187",
+        "maharashtra_-348",
+        "maharashtra_-363"
+      ]
+    },
+    {
+      "skillId": "dc_data_entry",
+      "demand": 4,
+      "share": 0.004,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "maharashtra_-18",
+        "maharashtra_-537",
+        "maharashtra_-570"
+      ]
+    },
+    {
+      "skillId": "ss_sampling_basics",
+      "demand": 4,
+      "share": 0.004,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "maharashtra_-304",
+        "maharashtra_-351",
+        "maharashtra_-421"
+      ]
+    },
+    {
+      "skillId": "sm_regression",
+      "demand": 3,
+      "share": 0.003,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "maharashtra_-585",
+        "maharashtra_-857",
+        "maharashtra_-882"
+      ]
+    },
+    {
+      "skillId": "cg_user_engagement",
+      "demand": 2,
+      "share": 0.002,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "maharashtra_-381",
+        "maharashtra_-443"
+      ]
+    },
+    {
+      "skillId": "cloud_aws",
+      "demand": 2,
+      "share": 0.002,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "maharashtra_-627",
+        "maharashtra_-761"
+      ]
+    },
+    {
+      "skillId": "cloud_azure",
+      "demand": 2,
+      "share": 0.002,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "maharashtra_-544",
+        "maharashtra_-849"
+      ]
+    },
+    {
+      "skillId": "devops_docker",
+      "demand": 2,
+      "share": 0.002,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "maharashtra_-369",
+        "maharashtra_-984"
+      ]
+    },
+    {
+      "skillId": "it_data_viz",
+      "demand": 2,
+      "share": 0.002,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "maharashtra_-630",
+        "maharashtra_-734"
       ]
     },
     {
       "skillId": "mfg_plc",
       "demand": 2,
-      "share": 0.02,
+      "share": 0.002,
       "avgStrength": 3,
       "examplePostingIds": [
-        "MF004",
-        "MF012"
+        "maharashtra_-195",
+        "maharashtra_-679"
       ]
     },
     {
-      "skillId": "os_gva",
+      "skillId": "sm_hypothesis",
       "demand": 2,
-      "share": 0.02,
+      "share": 0.002,
       "avgStrength": 3,
       "examplePostingIds": [
-        "BK007",
-        "GO006"
-      ]
-    },
-    {
-      "skillId": "os_price_stats",
-      "demand": 2,
-      "share": 0.02,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "GO001",
-        "GO008"
-      ]
-    },
-    {
-      "skillId": "sm_index_numbers",
-      "demand": 2,
-      "share": 0.02,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "BK007",
-        "GO008"
+        "maharashtra_-857",
+        "maharashtra_-882"
       ]
     },
     {
       "skillId": "sm_probability",
       "demand": 2,
-      "share": 0.02,
+      "share": 0.002,
       "avgStrength": 3,
       "examplePostingIds": [
-        "IT018",
-        "BK009"
+        "maharashtra_-857",
+        "maharashtra_-882"
       ]
     },
     {
-      "skillId": "ss_questionnaire",
+      "skillId": "ss_field_ops",
       "demand": 2,
-      "share": 0.02,
+      "share": 0.002,
       "avgStrength": 3,
       "examplePostingIds": [
-        "GO001",
-        "RT005"
+        "maharashtra_-688",
+        "maharashtra_-787"
       ]
     },
     {
-      "skillId": "ss_sampling_basics",
-      "demand": 2,
-      "share": 0.02,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "GO001",
-        "GO007"
-      ]
-    },
-    {
-      "skillId": "surv_total_station",
-      "demand": 2,
-      "share": 0.02,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "CN001",
-        "CN004"
-      ]
-    },
-    {
-      "skillId": "agri_drone",
+      "skillId": "aiml_ml",
       "demand": 1,
-      "share": 0.01,
+      "share": 0.001,
       "avgStrength": 3,
       "examplePostingIds": [
-        "AG006"
+        "maharashtra_-167"
       ]
     },
     {
-      "skillId": "civ_bim",
+      "skillId": "cloud_gcp",
       "demand": 1,
-      "share": 0.01,
+      "share": 0.001,
       "avgStrength": 3,
       "examplePostingIds": [
-        "CN007"
+        "maharashtra_-627"
       ]
     },
     {
-      "skillId": "dc_capi",
+      "skillId": "dc_cleaning",
       "demand": 1,
-      "share": 0.01,
+      "share": 0.001,
       "avgStrength": 3,
       "examplePostingIds": [
-        "GO004"
-      ]
-    },
-    {
-      "skillId": "dc_cspro",
-      "demand": 1,
-      "share": 0.01,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "GO001"
-      ]
-    },
-    {
-      "skillId": "dc_metadata",
-      "demand": 1,
-      "share": 0.01,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "GO010"
-      ]
-    },
-    {
-      "skillId": "dq_dissemination",
-      "demand": 1,
-      "share": 0.01,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "GO003"
-      ]
-    },
-    {
-      "skillId": "it_r_stats",
-      "demand": 1,
-      "share": 0.01,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "BK009"
-      ]
-    },
-    {
-      "skillId": "os_agri_stats",
-      "demand": 1,
-      "share": 0.01,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "AG001"
-      ]
-    },
-    {
-      "skillId": "os_census",
-      "demand": 1,
-      "share": 0.01,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "GO004"
-      ]
-    },
-    {
-      "skillId": "os_nss",
-      "demand": 1,
-      "share": 0.01,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "PH006"
-      ]
-    },
-    {
-      "skillId": "sm_variance",
-      "demand": 1,
-      "share": 0.01,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "GO007"
-      ]
-    },
-    {
-      "skillId": "ss_frameworks",
-      "demand": 1,
-      "share": 0.01,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "GO003"
-      ]
-    },
-    {
-      "skillId": "ss_nonresponse",
-      "demand": 1,
-      "share": 0.01,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "GO004"
-      ]
-    },
-    {
-      "skillId": "ss_sampling_stratified",
-      "demand": 1,
-      "share": 0.01,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "GO001"
-      ]
-    },
-    {
-      "skillId": "ss_survey_design",
-      "demand": 1,
-      "share": 0.01,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "GO007"
-      ]
-    },
-    {
-      "skillId": "ss_weighting",
-      "demand": 1,
-      "share": 0.01,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "GO007"
+        "maharashtra_-255"
       ]
     }
   ],
   "sectors": [
     {
       "sector": "IT & Software",
-      "postings": 18,
+      "postings": 727,
       "topSkills": [
         {
-          "skillId": "cg_report_writing",
-          "demand": 13,
-          "share": 0.722,
+          "skillId": "dc_sql",
+          "demand": 36,
+          "share": 0.05,
           "avgStrength": 3,
           "examplePostingIds": [
-            "IT001",
-            "IT002",
-            "IT004"
+            "maharashtra_-2",
+            "maharashtra_-7",
+            "maharashtra_-120"
           ]
         },
         {
-          "skillId": "dc_sql",
-          "demand": 9,
-          "share": 0.5,
+          "skillId": "cg_report_writing",
+          "demand": 27,
+          "share": 0.037,
           "avgStrength": 3,
           "examplePostingIds": [
-            "IT001",
-            "IT003",
-            "IT008"
+            "maharashtra_-151",
+            "maharashtra_-240",
+            "maharashtra_-364"
+          ]
+        },
+        {
+          "skillId": "cg_project_mgmt",
+          "demand": 24,
+          "share": 0.033,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-53",
+            "maharashtra_-74",
+            "maharashtra_-107"
+          ]
+        },
+        {
+          "skillId": "med_icd",
+          "demand": 15,
+          "share": 0.021,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-14",
+            "maharashtra_-34",
+            "maharashtra_-97"
+          ]
+        },
+        {
+          "skillId": "ss_quality_assurance",
+          "demand": 13,
+          "share": 0.018,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-54",
+            "maharashtra_-304",
+            "maharashtra_-334"
+          ]
+        },
+        {
+          "skillId": "sm_descriptive",
+          "demand": 10,
+          "share": 0.014,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-81",
+            "maharashtra_-100",
+            "maharashtra_-167"
+          ]
+        },
+        {
+          "skillId": "dq_quality_audit",
+          "demand": 9,
+          "share": 0.012,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-96",
+            "maharashtra_-431",
+            "maharashtra_-466"
+          ]
+        },
+        {
+          "skillId": "it_basics",
+          "demand": 9,
+          "share": 0.012,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-18",
+            "maharashtra_-24",
+            "maharashtra_-511"
+          ]
+        },
+        {
+          "skillId": "os_big_data",
+          "demand": 8,
+          "share": 0.011,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-13",
+            "maharashtra_-167",
+            "maharashtra_-204"
+          ]
+        },
+        {
+          "skillId": "cg_training_delivery",
+          "demand": 6,
+          "share": 0.008,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-158",
+            "maharashtra_-347",
+            "maharashtra_-690"
+          ]
+        },
+        {
+          "skillId": "it_python_basics",
+          "demand": 6,
+          "share": 0.008,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-2",
+            "maharashtra_-4",
+            "maharashtra_-94"
           ]
         },
         {
           "skillId": "dc_spreadsheets",
           "demand": 5,
-          "share": 0.278,
+          "share": 0.007,
           "avgStrength": 3,
           "examplePostingIds": [
-            "IT001",
-            "IT004",
-            "IT007"
-          ]
-        },
-        {
-          "skillId": "cg_project_mgmt",
-          "demand": 4,
-          "share": 0.222,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "IT002",
-            "IT005",
-            "IT008"
-          ]
-        },
-        {
-          "skillId": "cg_user_engagement",
-          "demand": 3,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "IT004",
-            "IT011",
-            "IT015"
-          ]
-        },
-        {
-          "skillId": "dc_cleaning",
-          "demand": 3,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "IT003",
-            "IT010",
-            "IT016"
-          ]
-        },
-        {
-          "skillId": "it_basics",
-          "demand": 3,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "IT002",
-            "IT014",
-            "IT017"
+            "maharashtra_-385",
+            "maharashtra_-860",
+            "maharashtra_-952"
           ]
         },
         {
           "skillId": "it_dashboards",
-          "demand": 3,
-          "share": 0.167,
+          "demand": 5,
+          "share": 0.007,
           "avgStrength": 3,
           "examplePostingIds": [
-            "IT001",
-            "IT011",
-            "IT013"
+            "maharashtra_-181",
+            "maharashtra_-228",
+            "maharashtra_-246"
+          ]
+        },
+        {
+          "skillId": "mfg_cnc",
+          "demand": 5,
+          "share": 0.007,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-187",
+            "maharashtra_-348",
+            "maharashtra_-363"
+          ]
+        },
+        {
+          "skillId": "sm_time_series",
+          "demand": 4,
+          "share": 0.006,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-805",
+            "maharashtra_-857",
+            "maharashtra_-882"
+          ]
+        },
+        {
+          "skillId": "sm_regression",
+          "demand": 3,
+          "share": 0.004,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-585",
+            "maharashtra_-857",
+            "maharashtra_-882"
+          ]
+        },
+        {
+          "skillId": "ss_sampling_basics",
+          "demand": 3,
+          "share": 0.004,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-304",
+            "maharashtra_-351",
+            "maharashtra_-421"
+          ]
+        },
+        {
+          "skillId": "cg_user_engagement",
+          "demand": 2,
+          "share": 0.003,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-381",
+            "maharashtra_-443"
+          ]
+        },
+        {
+          "skillId": "cloud_aws",
+          "demand": 2,
+          "share": 0.003,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-627",
+            "maharashtra_-761"
+          ]
+        },
+        {
+          "skillId": "cloud_azure",
+          "demand": 2,
+          "share": 0.003,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-544",
+            "maharashtra_-849"
+          ]
+        },
+        {
+          "skillId": "devops_docker",
+          "demand": 2,
+          "share": 0.003,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-369",
+            "maharashtra_-984"
           ]
         },
         {
           "skillId": "it_data_viz",
-          "demand": 3,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "IT007",
-            "IT010",
-            "IT011"
-          ]
-        },
-        {
-          "skillId": "it_python_basics",
-          "demand": 3,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "IT003",
-            "IT014",
-            "IT016"
-          ]
-        },
-        {
-          "skillId": "os_big_data",
-          "demand": 3,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "IT003",
-            "IT010",
-            "IT016"
-          ]
-        },
-        {
-          "skillId": "sm_descriptive",
-          "demand": 3,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "IT002",
-            "IT004",
-            "IT013"
-          ]
-        },
-        {
-          "skillId": "dc_data_entry",
           "demand": 2,
-          "share": 0.111,
+          "share": 0.003,
           "avgStrength": 3,
           "examplePostingIds": [
-            "IT009",
-            "IT017"
-          ]
-        },
-        {
-          "skillId": "dq_confidentiality",
-          "demand": 2,
-          "share": 0.111,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "IT008",
-            "IT012"
+            "maharashtra_-630",
+            "maharashtra_-734"
           ]
         },
         {
           "skillId": "sm_hypothesis",
           "demand": 2,
-          "share": 0.111,
+          "share": 0.003,
           "avgStrength": 3,
           "examplePostingIds": [
-            "IT013",
-            "IT018"
-          ]
-        },
-        {
-          "skillId": "sm_regression",
-          "demand": 2,
-          "share": 0.111,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "IT006",
-            "IT018"
-          ]
-        },
-        {
-          "skillId": "sm_time_series",
-          "demand": 2,
-          "share": 0.111,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "IT006",
-            "IT015"
-          ]
-        },
-        {
-          "skillId": "dq_quality_audit",
-          "demand": 1,
-          "share": 0.056,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "IT005"
-          ]
-        },
-        {
-          "skillId": "it_python_stats",
-          "demand": 1,
-          "share": 0.056,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "IT006"
+            "maharashtra_-857",
+            "maharashtra_-882"
           ]
         },
         {
           "skillId": "sm_probability",
-          "demand": 1,
-          "share": 0.056,
+          "demand": 2,
+          "share": 0.003,
           "avgStrength": 3,
           "examplePostingIds": [
-            "IT018"
+            "maharashtra_-857",
+            "maharashtra_-882"
           ]
         },
         {
-          "skillId": "ss_field_ops",
+          "skillId": "aiml_ml",
           "demand": 1,
-          "share": 0.056,
+          "share": 0.001,
           "avgStrength": 3,
           "examplePostingIds": [
-            "IT010"
-          ]
-        }
-      ],
-      "uncoveredSkills": []
-    },
-    {
-      "sector": "Manufacturing & Auto",
-      "postings": 14,
-      "topSkills": [
-        {
-          "skillId": "cg_report_writing",
-          "demand": 10,
-          "share": 0.714,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "MF004",
-            "MF005",
-            "MF006"
+            "maharashtra_-167"
           ]
         },
         {
-          "skillId": "dq_quality_audit",
-          "demand": 7,
-          "share": 0.5,
+          "skillId": "cloud_gcp",
+          "demand": 1,
+          "share": 0.001,
           "avgStrength": 3,
           "examplePostingIds": [
-            "MF002",
-            "MF004",
-            "MF006"
+            "maharashtra_-627"
+          ]
+        },
+        {
+          "skillId": "dc_cleaning",
+          "demand": 1,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-255"
           ]
         },
         {
           "skillId": "dc_data_entry",
-          "demand": 3,
-          "share": 0.214,
+          "demand": 1,
+          "share": 0.001,
           "avgStrength": 3,
           "examplePostingIds": [
-            "MF007",
-            "MF011",
-            "MF013"
-          ]
-        },
-        {
-          "skillId": "dc_edit_rules",
-          "demand": 3,
-          "share": 0.214,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "MF001",
-            "MF002",
-            "MF006"
-          ]
-        },
-        {
-          "skillId": "dc_spreadsheets",
-          "demand": 3,
-          "share": 0.214,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "MF003",
-            "MF005",
-            "MF013"
-          ]
-        },
-        {
-          "skillId": "it_basics",
-          "demand": 3,
-          "share": 0.214,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "MF003",
-            "MF007",
-            "MF012"
-          ]
-        },
-        {
-          "skillId": "cg_user_engagement",
-          "demand": 2,
-          "share": 0.143,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "MF005",
-            "MF010"
-          ]
-        },
-        {
-          "skillId": "mfg_cnc",
-          "demand": 2,
-          "share": 0.143,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "MF001",
-            "MF002"
+            "maharashtra_-18"
           ]
         },
         {
           "skillId": "mfg_plc",
-          "demand": 2,
-          "share": 0.143,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "MF004",
-            "MF012"
-          ]
-        },
-        {
-          "skillId": "sm_time_series",
-          "demand": 2,
-          "share": 0.143,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "MF005",
-            "MF008"
-          ]
-        },
-        {
-          "skillId": "cg_project_mgmt",
           "demand": 1,
-          "share": 0.071,
+          "share": 0.001,
           "avgStrength": 3,
           "examplePostingIds": [
-            "MF010"
-          ]
-        },
-        {
-          "skillId": "cg_training_delivery",
-          "demand": 1,
-          "share": 0.071,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "MF003"
-          ]
-        },
-        {
-          "skillId": "dc_cleaning",
-          "demand": 1,
-          "share": 0.071,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "MF008"
-          ]
-        },
-        {
-          "skillId": "dc_sql",
-          "demand": 1,
-          "share": 0.071,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "MF008"
+            "maharashtra_-679"
           ]
         },
         {
           "skillId": "ss_field_ops",
           "demand": 1,
-          "share": 0.071,
+          "share": 0.001,
           "avgStrength": 3,
           "examplePostingIds": [
-            "MF006"
-          ]
-        },
-        {
-          "skillId": "ss_quality_assurance",
-          "demand": 1,
-          "share": 0.071,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "MF003"
-          ]
-        }
-      ],
-      "uncoveredSkills": []
-    },
-    {
-      "sector": "Agri & Food Processing",
-      "postings": 10,
-      "topSkills": [
-        {
-          "skillId": "cg_report_writing",
-          "demand": 6,
-          "share": 0.6,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "AG003",
-            "AG004",
-            "AG005"
-          ]
-        },
-        {
-          "skillId": "dc_data_entry",
-          "demand": 4,
-          "share": 0.4,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "AG004",
-            "AG007",
-            "AG008"
-          ]
-        },
-        {
-          "skillId": "dc_spreadsheets",
-          "demand": 3,
-          "share": 0.3,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "AG002",
-            "AG003",
-            "AG009"
-          ]
-        },
-        {
-          "skillId": "os_admin_data",
-          "demand": 3,
-          "share": 0.3,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "AG003",
-            "AG007",
-            "AG008"
-          ]
-        },
-        {
-          "skillId": "ss_field_ops",
-          "demand": 3,
-          "share": 0.3,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "AG001",
-            "AG006",
-            "AG008"
-          ]
-        },
-        {
-          "skillId": "dc_edit_rules",
-          "demand": 2,
-          "share": 0.2,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "AG004",
-            "AG007"
-          ]
-        },
-        {
-          "skillId": "dq_quality_audit",
-          "demand": 2,
-          "share": 0.2,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "AG004",
-            "AG009"
-          ]
-        },
-        {
-          "skillId": "sm_time_series",
-          "demand": 2,
-          "share": 0.2,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "AG002",
-            "AG010"
-          ]
-        },
-        {
-          "skillId": "agri_drone",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "AG006"
-          ]
-        },
-        {
-          "skillId": "cg_training_delivery",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "AG003"
-          ]
-        },
-        {
-          "skillId": "cg_user_engagement",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "AG003"
-          ]
-        },
-        {
-          "skillId": "dc_cleaning",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "AG006"
-          ]
-        },
-        {
-          "skillId": "os_agri_stats",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "AG001"
-          ]
-        },
-        {
-          "skillId": "os_big_data",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "AG006"
-          ]
-        },
-        {
-          "skillId": "sm_descriptive",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "AG010"
+            "maharashtra_-688"
           ]
         }
       ],
@@ -1076,1925 +644,1042 @@
     },
     {
       "sector": "BFSI",
-      "postings": 10,
+      "postings": 133,
       "topSkills": [
-        {
-          "skillId": "cg_report_writing",
-          "demand": 6,
-          "share": 0.6,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "BK003",
-            "BK005",
-            "BK006"
-          ]
-        },
-        {
-          "skillId": "dc_data_entry",
-          "demand": 4,
-          "share": 0.4,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "BK001",
-            "BK002",
-            "BK006"
-          ]
-        },
-        {
-          "skillId": "dc_spreadsheets",
-          "demand": 3,
-          "share": 0.3,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "BK001",
-            "BK006",
-            "BK008"
-          ]
-        },
-        {
-          "skillId": "dq_quality_audit",
-          "demand": 3,
-          "share": 0.3,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "BK003",
-            "BK005",
-            "BK010"
-          ]
-        },
-        {
-          "skillId": "dc_sql",
-          "demand": 2,
-          "share": 0.2,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "BK004",
-            "BK008"
-          ]
-        },
-        {
-          "skillId": "dq_confidentiality",
-          "demand": 2,
-          "share": 0.2,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "BK003",
-            "BK010"
-          ]
-        },
-        {
-          "skillId": "os_admin_data",
-          "demand": 2,
-          "share": 0.2,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "BK001",
-            "BK006"
-          ]
-        },
-        {
-          "skillId": "sm_descriptive",
-          "demand": 2,
-          "share": 0.2,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "BK004",
-            "BK005"
-          ]
-        },
-        {
-          "skillId": "sm_hypothesis",
-          "demand": 2,
-          "share": 0.2,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "BK004",
-            "BK009"
-          ]
-        },
-        {
-          "skillId": "sm_time_series",
-          "demand": 2,
-          "share": 0.2,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "BK007",
-            "BK009"
-          ]
-        },
-        {
-          "skillId": "cg_user_engagement",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "BK006"
-          ]
-        },
-        {
-          "skillId": "dc_cleaning",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "BK005"
-          ]
-        },
-        {
-          "skillId": "dc_edit_rules",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "BK008"
-          ]
-        },
-        {
-          "skillId": "dq_revision_policy",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "BK003"
-          ]
-        },
-        {
-          "skillId": "it_basics",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "BK002"
-          ]
-        },
-        {
-          "skillId": "it_dashboards",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "BK004"
-          ]
-        },
-        {
-          "skillId": "it_python_stats",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "BK009"
-          ]
-        },
-        {
-          "skillId": "it_r_stats",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "BK009"
-          ]
-        },
-        {
-          "skillId": "os_gva",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "BK007"
-          ]
-        },
-        {
-          "skillId": "sm_index_numbers",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "BK007"
-          ]
-        },
-        {
-          "skillId": "sm_probability",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "BK009"
-          ]
-        },
-        {
-          "skillId": "sm_regression",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "BK004"
-          ]
-        }
-      ],
-      "uncoveredSkills": []
-    },
-    {
-      "sector": "Government & Statistics",
-      "postings": 10,
-      "topSkills": [
-        {
-          "skillId": "cg_report_writing",
-          "demand": 5,
-          "share": 0.5,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO002",
-            "GO005",
-            "GO006"
-          ]
-        },
-        {
-          "skillId": "dc_data_entry",
-          "demand": 2,
-          "share": 0.2,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO001",
-            "GO005"
-          ]
-        },
-        {
-          "skillId": "dq_quality_audit",
-          "demand": 2,
-          "share": 0.2,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO005",
-            "GO010"
-          ]
-        },
-        {
-          "skillId": "os_price_stats",
-          "demand": 2,
-          "share": 0.2,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO001",
-            "GO008"
-          ]
-        },
-        {
-          "skillId": "sm_time_series",
-          "demand": 2,
-          "share": 0.2,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO003",
-            "GO006"
-          ]
-        },
-        {
-          "skillId": "ss_field_ops",
-          "demand": 2,
-          "share": 0.2,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO001",
-            "GO004"
-          ]
-        },
-        {
-          "skillId": "ss_sampling_basics",
-          "demand": 2,
-          "share": 0.2,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO001",
-            "GO007"
-          ]
-        },
         {
           "skillId": "cg_training_delivery",
-          "demand": 1,
-          "share": 0.1,
+          "demand": 20,
+          "share": 0.15,
           "avgStrength": 3,
           "examplePostingIds": [
-            "GO009"
+            "maharashtra_-16",
+            "maharashtra_-25",
+            "maharashtra_-26"
           ]
         },
         {
-          "skillId": "cg_user_engagement",
-          "demand": 1,
-          "share": 0.1,
+          "skillId": "dq_quality_audit",
+          "demand": 11,
+          "share": 0.083,
           "avgStrength": 3,
           "examplePostingIds": [
-            "GO009"
+            "maharashtra_-78",
+            "maharashtra_-132",
+            "maharashtra_-153"
           ]
         },
-        {
-          "skillId": "dc_capi",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO004"
-          ]
-        },
-        {
-          "skillId": "dc_cleaning",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO008"
-          ]
-        },
-        {
-          "skillId": "dc_cspro",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO001"
-          ]
-        },
-        {
-          "skillId": "dc_metadata",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO010"
-          ]
-        },
-        {
-          "skillId": "dc_spreadsheets",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO002"
-          ]
-        },
-        {
-          "skillId": "dc_sql",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO005"
-          ]
-        },
-        {
-          "skillId": "dq_confidentiality",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO010"
-          ]
-        },
-        {
-          "skillId": "dq_dissemination",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO003"
-          ]
-        },
-        {
-          "skillId": "it_basics",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO009"
-          ]
-        },
-        {
-          "skillId": "it_python_basics",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO003"
-          ]
-        },
-        {
-          "skillId": "it_python_stats",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO003"
-          ]
-        },
-        {
-          "skillId": "os_admin_data",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO002"
-          ]
-        },
-        {
-          "skillId": "os_big_data",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO003"
-          ]
-        },
-        {
-          "skillId": "os_census",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO004"
-          ]
-        },
-        {
-          "skillId": "os_gva",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO006"
-          ]
-        },
-        {
-          "skillId": "sm_index_numbers",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO008"
-          ]
-        },
-        {
-          "skillId": "sm_regression",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO003"
-          ]
-        },
-        {
-          "skillId": "sm_variance",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO007"
-          ]
-        },
-        {
-          "skillId": "ss_frameworks",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO003"
-          ]
-        },
-        {
-          "skillId": "ss_nonresponse",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO004"
-          ]
-        },
-        {
-          "skillId": "ss_quality_assurance",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO007"
-          ]
-        },
-        {
-          "skillId": "ss_questionnaire",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO001"
-          ]
-        },
-        {
-          "skillId": "ss_sampling_stratified",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO001"
-          ]
-        },
-        {
-          "skillId": "ss_survey_design",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO007"
-          ]
-        },
-        {
-          "skillId": "ss_weighting",
-          "demand": 1,
-          "share": 0.1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "GO007"
-          ]
-        }
-      ],
-      "uncoveredSkills": []
-    },
-    {
-      "sector": "Construction & Infrastructure",
-      "postings": 8,
-      "topSkills": [
         {
           "skillId": "cg_report_writing",
           "demand": 8,
-          "share": 1,
+          "share": 0.06,
           "avgStrength": 3,
           "examplePostingIds": [
-            "CN001",
-            "CN002",
-            "CN003"
-          ]
-        },
-        {
-          "skillId": "cg_user_engagement",
-          "demand": 3,
-          "share": 0.375,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "CN002",
-            "CN003",
-            "CN007"
-          ]
-        },
-        {
-          "skillId": "dc_data_entry",
-          "demand": 2,
-          "share": 0.25,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "CN006",
-            "CN008"
-          ]
-        },
-        {
-          "skillId": "dc_edit_rules",
-          "demand": 2,
-          "share": 0.25,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "CN001",
-            "CN008"
-          ]
-        },
-        {
-          "skillId": "dc_spreadsheets",
-          "demand": 2,
-          "share": 0.25,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "CN003",
-            "CN006"
-          ]
-        },
-        {
-          "skillId": "dq_quality_audit",
-          "demand": 2,
-          "share": 0.25,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "CN003",
-            "CN005"
+            "maharashtra_-105",
+            "maharashtra_-184",
+            "maharashtra_-350"
           ]
         },
         {
           "skillId": "it_basics",
-          "demand": 2,
-          "share": 0.25,
+          "demand": 3,
+          "share": 0.023,
           "avgStrength": 3,
           "examplePostingIds": [
-            "CN001",
-            "CN007"
-          ]
-        },
-        {
-          "skillId": "ss_field_ops",
-          "demand": 2,
-          "share": 0.25,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "CN001",
-            "CN004"
-          ]
-        },
-        {
-          "skillId": "surv_total_station",
-          "demand": 2,
-          "share": 0.25,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "CN001",
-            "CN004"
-          ]
-        },
-        {
-          "skillId": "cg_project_mgmt",
-          "demand": 1,
-          "share": 0.125,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "CN002"
-          ]
-        },
-        {
-          "skillId": "cg_training_delivery",
-          "demand": 1,
-          "share": 0.125,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "CN005"
-          ]
-        },
-        {
-          "skillId": "civ_bim",
-          "demand": 1,
-          "share": 0.125,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "CN007"
-          ]
-        },
-        {
-          "skillId": "dc_cleaning",
-          "demand": 1,
-          "share": 0.125,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "CN004"
-          ]
-        },
-        {
-          "skillId": "os_admin_data",
-          "demand": 1,
-          "share": 0.125,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "CN003"
-          ]
-        }
-      ],
-      "uncoveredSkills": []
-    },
-    {
-      "sector": "Pharma & Healthcare",
-      "postings": 8,
-      "topSkills": [
-        {
-          "skillId": "cg_report_writing",
-          "demand": 5,
-          "share": 0.625,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "PH001",
-            "PH002",
-            "PH003"
+            "maharashtra_-535",
+            "maharashtra_-725",
+            "maharashtra_-911"
           ]
         },
         {
           "skillId": "dc_data_entry",
-          "demand": 4,
-          "share": 0.5,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "PH001",
-            "PH004",
-            "PH005"
-          ]
-        },
-        {
-          "skillId": "dq_quality_audit",
-          "demand": 4,
-          "share": 0.5,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "PH001",
-            "PH002",
-            "PH003"
-          ]
-        },
-        {
-          "skillId": "it_dashboards",
           "demand": 2,
-          "share": 0.25,
+          "share": 0.015,
           "avgStrength": 3,
           "examplePostingIds": [
-            "PH006",
-            "PH008"
+            "maharashtra_-537",
+            "maharashtra_-663"
           ]
         },
         {
           "skillId": "med_icd",
           "demand": 2,
-          "share": 0.25,
+          "share": 0.015,
           "avgStrength": 3,
           "examplePostingIds": [
-            "PH003",
-            "PH004"
-          ]
-        },
-        {
-          "skillId": "cg_training_delivery",
-          "demand": 1,
-          "share": 0.125,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "PH003"
-          ]
-        },
-        {
-          "skillId": "cg_user_engagement",
-          "demand": 1,
-          "share": 0.125,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "PH008"
-          ]
-        },
-        {
-          "skillId": "dc_cleaning",
-          "demand": 1,
-          "share": 0.125,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "PH002"
-          ]
-        },
-        {
-          "skillId": "dc_edit_rules",
-          "demand": 1,
-          "share": 0.125,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "PH005"
-          ]
-        },
-        {
-          "skillId": "dc_sql",
-          "demand": 1,
-          "share": 0.125,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "PH002"
-          ]
-        },
-        {
-          "skillId": "dq_confidentiality",
-          "demand": 1,
-          "share": 0.125,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "PH004"
-          ]
-        },
-        {
-          "skillId": "dq_revision_policy",
-          "demand": 1,
-          "share": 0.125,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "PH007"
-          ]
-        },
-        {
-          "skillId": "it_basics",
-          "demand": 1,
-          "share": 0.125,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "PH008"
-          ]
-        },
-        {
-          "skillId": "it_python_basics",
-          "demand": 1,
-          "share": 0.125,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "PH006"
-          ]
-        },
-        {
-          "skillId": "it_python_stats",
-          "demand": 1,
-          "share": 0.125,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "PH006"
-          ]
-        },
-        {
-          "skillId": "os_admin_data",
-          "demand": 1,
-          "share": 0.125,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "PH007"
-          ]
-        },
-        {
-          "skillId": "os_nss",
-          "demand": 1,
-          "share": 0.125,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "PH006"
-          ]
-        },
-        {
-          "skillId": "sm_hypothesis",
-          "demand": 1,
-          "share": 0.125,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "PH006"
-          ]
-        },
-        {
-          "skillId": "ss_quality_assurance",
-          "demand": 1,
-          "share": 0.125,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "PH003"
-          ]
-        }
-      ],
-      "uncoveredSkills": []
-    },
-    {
-      "sector": "Education & Skilling",
-      "postings": 6,
-      "topSkills": [
-        {
-          "skillId": "cg_report_writing",
-          "demand": 5,
-          "share": 0.833,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "ED002",
-            "ED003",
-            "ED004"
-          ]
-        },
-        {
-          "skillId": "cg_training_delivery",
-          "demand": 4,
-          "share": 0.667,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "ED001",
-            "ED002",
-            "ED004"
-          ]
-        },
-        {
-          "skillId": "cg_user_engagement",
-          "demand": 2,
-          "share": 0.333,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "ED002",
-            "ED005"
-          ]
-        },
-        {
-          "skillId": "dc_data_entry",
-          "demand": 2,
-          "share": 0.333,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "ED001",
-            "ED004"
-          ]
-        },
-        {
-          "skillId": "dc_cleaning",
-          "demand": 1,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "ED003"
-          ]
-        },
-        {
-          "skillId": "dc_edit_rules",
-          "demand": 1,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "ED001"
-          ]
-        },
-        {
-          "skillId": "dc_spreadsheets",
-          "demand": 1,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "ED005"
-          ]
-        },
-        {
-          "skillId": "dq_quality_audit",
-          "demand": 1,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "ED003"
-          ]
-        },
-        {
-          "skillId": "it_basics",
-          "demand": 1,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "ED004"
-          ]
-        }
-      ],
-      "uncoveredSkills": []
-    },
-    {
-      "sector": "Logistics & Warehousing",
-      "postings": 6,
-      "topSkills": [
-        {
-          "skillId": "cg_report_writing",
-          "demand": 6,
-          "share": 1,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "LG001",
-            "LG002",
-            "LG003"
-          ]
-        },
-        {
-          "skillId": "dc_data_entry",
-          "demand": 2,
-          "share": 0.333,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "LG002",
-            "LG004"
-          ]
-        },
-        {
-          "skillId": "dq_quality_audit",
-          "demand": 2,
-          "share": 0.333,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "LG004",
-            "LG006"
-          ]
-        },
-        {
-          "skillId": "sm_descriptive",
-          "demand": 2,
-          "share": 0.333,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "LG001",
-            "LG003"
-          ]
-        },
-        {
-          "skillId": "cg_user_engagement",
-          "demand": 1,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "LG005"
-          ]
-        },
-        {
-          "skillId": "dc_cleaning",
-          "demand": 1,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "LG003"
-          ]
-        },
-        {
-          "skillId": "dc_spreadsheets",
-          "demand": 1,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "LG002"
-          ]
-        },
-        {
-          "skillId": "dc_sql",
-          "demand": 1,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "LG001"
-          ]
-        },
-        {
-          "skillId": "it_basics",
-          "demand": 1,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "LG005"
-          ]
-        },
-        {
-          "skillId": "it_python_basics",
-          "demand": 1,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "LG003"
-          ]
-        },
-        {
-          "skillId": "os_admin_data",
-          "demand": 1,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "LG004"
-          ]
-        },
-        {
-          "skillId": "sm_time_series",
-          "demand": 1,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "LG001"
-          ]
-        }
-      ],
-      "uncoveredSkills": []
-    },
-    {
-      "sector": "Retail & FMCG",
-      "postings": 6,
-      "topSkills": [
-        {
-          "skillId": "cg_report_writing",
-          "demand": 5,
-          "share": 0.833,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "RT001",
-            "RT002",
-            "RT003"
-          ]
-        },
-        {
-          "skillId": "cg_user_engagement",
-          "demand": 2,
-          "share": 0.333,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "RT002",
-            "RT003"
-          ]
-        },
-        {
-          "skillId": "dc_data_entry",
-          "demand": 2,
-          "share": 0.333,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "RT003",
-            "RT006"
-          ]
-        },
-        {
-          "skillId": "dc_spreadsheets",
-          "demand": 2,
-          "share": 0.333,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "RT002",
-            "RT004"
-          ]
-        },
-        {
-          "skillId": "sm_descriptive",
-          "demand": 2,
-          "share": 0.333,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "RT001",
-            "RT005"
+            "maharashtra_-394",
+            "maharashtra_-432"
           ]
         },
         {
           "skillId": "sm_time_series",
           "demand": 2,
-          "share": 0.333,
+          "share": 0.015,
           "avgStrength": 3,
           "examplePostingIds": [
-            "RT002",
-            "RT004"
+            "maharashtra_-413",
+            "maharashtra_-863"
           ]
         },
         {
-          "skillId": "dc_cleaning",
+          "skillId": "dc_spreadsheets",
           "demand": 1,
-          "share": 0.167,
+          "share": 0.008,
           "avgStrength": 3,
           "examplePostingIds": [
-            "RT005"
+            "maharashtra_-911"
           ]
         },
         {
-          "skillId": "dc_edit_rules",
+          "skillId": "dc_sql",
           "demand": 1,
-          "share": 0.167,
+          "share": 0.008,
           "avgStrength": 3,
           "examplePostingIds": [
-            "RT006"
+            "maharashtra_-586"
+          ]
+        },
+        {
+          "skillId": "ss_sampling_basics",
+          "demand": 1,
+          "share": 0.008,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-910"
+          ]
+        }
+      ],
+      "uncoveredSkills": []
+    },
+    {
+      "sector": "Services & Miscellaneous",
+      "postings": 101,
+      "topSkills": [
+        {
+          "skillId": "cg_report_writing",
+          "demand": 3,
+          "share": 0.03,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-61",
+            "maharashtra_-560",
+            "maharashtra_-650"
+          ]
+        },
+        {
+          "skillId": "cg_training_delivery",
+          "demand": 1,
+          "share": 0.01,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-9"
+          ]
+        },
+        {
+          "skillId": "dc_data_entry",
+          "demand": 1,
+          "share": 0.01,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-570"
+          ]
+        },
+        {
+          "skillId": "dc_spreadsheets",
+          "demand": 1,
+          "share": 0.01,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-788"
+          ]
+        },
+        {
+          "skillId": "dq_quality_audit",
+          "demand": 1,
+          "share": 0.01,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-617"
           ]
         },
         {
           "skillId": "it_basics",
           "demand": 1,
-          "share": 0.167,
+          "share": 0.01,
           "avgStrength": 3,
           "examplePostingIds": [
-            "RT003"
+            "maharashtra_-967"
           ]
         },
         {
-          "skillId": "it_data_viz",
+          "skillId": "sm_descriptive",
           "demand": 1,
-          "share": 0.167,
+          "share": 0.01,
           "avgStrength": 3,
           "examplePostingIds": [
-            "RT004"
+            "maharashtra_-741"
           ]
         },
         {
-          "skillId": "sm_hypothesis",
+          "skillId": "sm_time_series",
           "demand": 1,
-          "share": 0.167,
+          "share": 0.01,
           "avgStrength": 3,
           "examplePostingIds": [
-            "RT001"
+            "maharashtra_-546"
           ]
         },
         {
           "skillId": "ss_field_ops",
           "demand": 1,
-          "share": 0.167,
+          "share": 0.01,
           "avgStrength": 3,
           "examplePostingIds": [
-            "RT004"
-          ]
-        },
-        {
-          "skillId": "ss_questionnaire",
-          "demand": 1,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "RT005"
+            "maharashtra_-787"
           ]
         }
       ],
       "uncoveredSkills": []
     },
     {
-      "sector": "Textile & Apparel",
-      "postings": 6,
+      "sector": "Manufacturing & Auto",
+      "postings": 27,
       "topSkills": [
         {
           "skillId": "cg_report_writing",
-          "demand": 4,
-          "share": 0.667,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "TX002",
-            "TX003",
-            "TX005"
-          ]
-        },
-        {
-          "skillId": "dq_quality_audit",
-          "demand": 3,
-          "share": 0.5,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "TX001",
-            "TX005",
-            "TX006"
-          ]
-        },
-        {
-          "skillId": "dc_data_entry",
           "demand": 2,
-          "share": 0.333,
+          "share": 0.074,
           "avgStrength": 3,
           "examplePostingIds": [
-            "TX001",
-            "TX006"
+            "maharashtra_-292",
+            "maharashtra_-302"
           ]
         },
         {
-          "skillId": "it_basics",
-          "demand": 2,
-          "share": 0.333,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "TX004",
-            "TX006"
-          ]
-        },
-        {
-          "skillId": "os_admin_data",
-          "demand": 2,
-          "share": 0.333,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "TX003",
-            "TX006"
-          ]
-        },
-        {
-          "skillId": "cg_training_delivery",
+          "skillId": "mfg_plc",
           "demand": 1,
-          "share": 0.167,
+          "share": 0.037,
           "avgStrength": 3,
           "examplePostingIds": [
-            "TX001"
-          ]
-        },
-        {
-          "skillId": "cg_user_engagement",
-          "demand": 1,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "TX002"
-          ]
-        },
-        {
-          "skillId": "dc_cleaning",
-          "demand": 1,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "TX005"
-          ]
-        },
-        {
-          "skillId": "dc_edit_rules",
-          "demand": 1,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "TX001"
-          ]
-        },
-        {
-          "skillId": "dc_spreadsheets",
-          "demand": 1,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "TX002"
-          ]
-        },
-        {
-          "skillId": "it_data_viz",
-          "demand": 1,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "TX004"
-          ]
-        },
-        {
-          "skillId": "sm_time_series",
-          "demand": 1,
-          "share": 0.167,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "TX004"
+            "maharashtra_-195"
           ]
         },
         {
           "skillId": "ss_quality_assurance",
           "demand": 1,
-          "share": 0.167,
+          "share": 0.037,
           "avgStrength": 3,
           "examplePostingIds": [
-            "TX003"
+            "maharashtra_-935"
           ]
         }
       ],
       "uncoveredSkills": []
+    },
+    {
+      "sector": "Logistics & Supply Chain",
+      "postings": 9,
+      "topSkills": [
+        {
+          "skillId": "dq_quality_audit",
+          "demand": 1,
+          "share": 0.111,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-52"
+          ]
+        },
+        {
+          "skillId": "sm_time_series",
+          "demand": 1,
+          "share": 0.111,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-487"
+          ]
+        },
+        {
+          "skillId": "ss_quality_assurance",
+          "demand": 1,
+          "share": 0.111,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-52"
+          ]
+        }
+      ],
+      "uncoveredSkills": []
+    },
+    {
+      "sector": "Agriculture & Food Processing",
+      "postings": 2,
+      "topSkills": [],
+      "uncoveredSkills": []
+    },
+    {
+      "sector": "Energy & Power",
+      "postings": 1,
+      "topSkills": [],
+      "uncoveredSkills": []
     }
   ],
   "audit": {
-    "IT001": [
-      "excel",
-      "sql",
-      "power bi",
-      "reporting"
-    ],
-    "IT002": [
-      "analytics",
-      "computer literacy",
-      "documentation",
-      "agile"
-    ],
-    "IT003": [
-      "data cleaning",
-      "sql",
-      "big data",
-      "python"
-    ],
-    "IT004": [
-      "excel",
-      "descriptive analytics",
-      "documentation",
-      "stakeholder"
-    ],
-    "IT005": [
-      "audit",
-      "reporting",
-      "project management"
-    ],
-    "IT006": [
-      "regression",
-      "time series",
-      "pandas"
-    ],
-    "IT007": [
-      "excel",
-      "data visualisation",
-      "report writing"
-    ],
-    "IT008": [
+    "maharashtra_-1": [],
+    "maharashtra_-2": [
       "mysql",
-      "data protection",
-      "documentation",
-      "scrum"
-    ],
-    "IT009": [
-      "data entry",
-      "excel",
-      "sql",
-      "reporting"
-    ],
-    "IT010": [
-      "field survey",
-      "data cleaning",
-      "satellite data",
-      "chart"
-    ],
-    "IT011": [
-      "data visualisation",
-      "tableau",
-      "feedback management"
-    ],
-    "IT012": [
-      "data protection",
-      "documentation"
-    ],
-    "IT013": [
-      "sql",
-      "descriptive statistics",
-      "hypothesis testing",
-      "power bi",
-      "reporting"
-    ],
-    "IT014": [
-      "sql",
-      "computer literacy",
-      "python",
-      "documentation",
-      "agile"
-    ],
-    "IT015": [
-      "excel",
-      "sql",
-      "time series",
-      "reporting",
-      "stakeholder"
-    ],
-    "IT016": [
-      "data cleaning",
-      "sql",
-      "big data",
       "python"
     ],
-    "IT017": [
+    "maharashtra_-3": [],
+    "maharashtra_-4": [
+      "python"
+    ],
+    "maharashtra_-5": [],
+    "maharashtra_-6": [],
+    "maharashtra_-7": [
+      "sql"
+    ],
+    "maharashtra_-8": [],
+    "maharashtra_-9": [
+      "teaching"
+    ],
+    "maharashtra_-10": [],
+    "maharashtra_-11": [],
+    "maharashtra_-12": [],
+    "maharashtra_-13": [
+      "big data"
+    ],
+    "maharashtra_-14": [
+      "medical coding"
+    ],
+    "maharashtra_-15": [],
+    "maharashtra_-16": [
+      "teaching"
+    ],
+    "maharashtra_-17": [],
+    "maharashtra_-18": [
       "data entry",
-      "ms office",
-      "reporting"
+      "typing"
     ],
-    "IT018": [
-      "sql",
-      "probability",
-      "hypothesis testing",
-      "regression",
-      "reporting"
+    "maharashtra_-19": [],
+    "maharashtra_-20": [],
+    "maharashtra_-21": [],
+    "maharashtra_-22": [],
+    "maharashtra_-23": [],
+    "maharashtra_-24": [
+      "basic computer"
     ],
-    "BK001": [
-      "data entry",
-      "excel",
-      "administrative records"
+    "maharashtra_-25": [
+      "teaching"
     ],
-    "BK002": [
-      "data entry",
-      "ms office"
+    "maharashtra_-26": [
+      "teaching"
     ],
-    "BK003": [
-      "confidentiality",
-      "error correction",
-      "audit",
-      "reporting"
+    "maharashtra_-27": [],
+    "maharashtra_-28": [],
+    "maharashtra_-29": [],
+    "maharashtra_-30": [],
+    "maharashtra_-31": [],
+    "maharashtra_-32": [],
+    "maharashtra_-33": [],
+    "maharashtra_-34": [
+      "medical coding"
     ],
-    "BK004": [
-      "sql",
-      "analytics",
-      "hypothesis testing",
-      "regression",
-      "power bi"
-    ],
-    "BK005": [
-      "data validation",
-      "analytics",
-      "audit",
-      "documentation"
-    ],
-    "BK006": [
-      "data entry",
-      "excel",
-      "administrative records",
-      "reporting",
-      "feedback management"
-    ],
-    "BK007": [
-      "cpi",
-      "time series",
-      "gdp",
-      "report writing"
-    ],
-    "BK008": [
-      "quality checks",
-      "excel",
-      "sql",
-      "reporting"
-    ],
-    "BK009": [
-      "probability",
-      "hypothesis testing",
-      "time series",
-      "statistical computing",
-      "r programming"
-    ],
-    "BK010": [
-      "data entry",
-      "confidentiality",
-      "audit",
-      "documentation"
-    ],
-    "MF001": [
-      "quality checks",
-      "cnc"
-    ],
-    "MF002": [
-      "quality checks",
-      "audit",
-      "cmm"
-    ],
-    "MF003": [
+    "maharashtra_-35": [],
+    "maharashtra_-36": [],
+    "maharashtra_-37": [],
+    "maharashtra_-38": [],
+    "maharashtra_-39": [],
+    "maharashtra_-40": [],
+    "maharashtra_-41": [],
+    "maharashtra_-42": [],
+    "maharashtra_-43": [],
+    "maharashtra_-44": [],
+    "maharashtra_-45": [],
+    "maharashtra_-46": [],
+    "maharashtra_-47": [],
+    "maharashtra_-48": [],
+    "maharashtra_-49": [],
+    "maharashtra_-50": [],
+    "maharashtra_-51": [],
+    "maharashtra_-52": [
       "quality assurance",
-      "excel",
-      "ms office",
-      "training delivery"
+      "auditing"
     ],
-    "MF004": [
-      "audit",
-      "documentation",
-      "plc"
-    ],
-    "MF005": [
-      "excel",
-      "forecasting",
-      "reporting",
-      "stakeholder"
-    ],
-    "MF006": [
-      "field work",
-      "quality checks",
-      "audit",
-      "documentation"
-    ],
-    "MF007": [
-      "data entry",
-      "computer literacy",
-      "reporting"
-    ],
-    "MF008": [
-      "data cleaning",
-      "sql",
-      "trend analysis"
-    ],
-    "MF009": [
-      "quality audit",
-      "documentation"
-    ],
-    "MF010": [
-      "documentation",
-      "client interaction",
+    "maharashtra_-53": [
       "project management"
     ],
-    "MF011": [
-      "data entry",
-      "audit",
-      "report preparation"
+    "maharashtra_-54": [
+      "quality assurance"
     ],
-    "MF012": [
-      "ms office",
-      "documentation",
-      "teach pendant"
-    ],
-    "MF013": [
-      "data entry",
-      "excel",
-      "audit",
-      "annual report"
-    ],
-    "MF014": [
-      "audit",
+    "maharashtra_-55": [],
+    "maharashtra_-56": [],
+    "maharashtra_-57": [],
+    "maharashtra_-58": [],
+    "maharashtra_-59": [],
+    "maharashtra_-60": [],
+    "maharashtra_-61": [
       "documentation"
     ],
-    "TX001": [
-      "data entry",
-      "quality checks",
-      "audit",
-      "training delivery"
+    "maharashtra_-62": [],
+    "maharashtra_-63": [],
+    "maharashtra_-64": [],
+    "maharashtra_-65": [],
+    "maharashtra_-66": [],
+    "maharashtra_-67": [],
+    "maharashtra_-68": [],
+    "maharashtra_-69": [],
+    "maharashtra_-70": [],
+    "maharashtra_-71": [],
+    "maharashtra_-72": [],
+    "maharashtra_-73": [],
+    "maharashtra_-74": [
+      "program management"
     ],
-    "TX002": [
-      "excel",
-      "reporting",
-      "client interaction"
+    "maharashtra_-75": [],
+    "maharashtra_-76": [],
+    "maharashtra_-77": [],
+    "maharashtra_-78": [
+      "audit"
     ],
-    "TX003": [
-      "quality assurance",
-      "administrative records",
+    "maharashtra_-79": [],
+    "maharashtra_-80": [],
+    "maharashtra_-81": [
+      "analytics"
+    ],
+    "maharashtra_-82": [],
+    "maharashtra_-83": [],
+    "maharashtra_-84": [],
+    "maharashtra_-85": [],
+    "maharashtra_-86": [],
+    "maharashtra_-87": [],
+    "maharashtra_-88": [],
+    "maharashtra_-89": [],
+    "maharashtra_-90": [],
+    "maharashtra_-91": [],
+    "maharashtra_-92": [],
+    "maharashtra_-93": [],
+    "maharashtra_-94": [
+      "python"
+    ],
+    "maharashtra_-95": [],
+    "maharashtra_-96": [
+      "audit"
+    ],
+    "maharashtra_-97": [
+      "medical coding"
+    ],
+    "maharashtra_-98": [],
+    "maharashtra_-99": [],
+    "maharashtra_-100": [
+      "analytics"
+    ],
+    "maharashtra_-101": [],
+    "maharashtra_-102": [],
+    "maharashtra_-103": [],
+    "maharashtra_-104": [],
+    "maharashtra_-105": [
       "reporting"
     ],
-    "TX004": [
-      "trend analysis",
-      "computer literacy",
-      "infographic"
+    "maharashtra_-106": [],
+    "maharashtra_-107": [
+      "project management"
     ],
-    "TX005": [
-      "data validation",
-      "audit",
+    "maharashtra_-108": [
+      "medical coding"
+    ],
+    "maharashtra_-109": [],
+    "maharashtra_-110": [],
+    "maharashtra_-111": [],
+    "maharashtra_-112": [],
+    "maharashtra_-113": [],
+    "maharashtra_-114": [],
+    "maharashtra_-115": [],
+    "maharashtra_-116": [
+      "project management"
+    ],
+    "maharashtra_-117": [],
+    "maharashtra_-118": [],
+    "maharashtra_-119": [],
+    "maharashtra_-120": [
+      "database"
+    ],
+    "maharashtra_-121": [],
+    "maharashtra_-122": [
+      "medical coding"
+    ],
+    "maharashtra_-123": [],
+    "maharashtra_-124": [
+      "teaching"
+    ],
+    "maharashtra_-125": [
+      "medical coding"
+    ],
+    "maharashtra_-126": [],
+    "maharashtra_-127": [],
+    "maharashtra_-128": [],
+    "maharashtra_-129": [],
+    "maharashtra_-130": [],
+    "maharashtra_-131": [],
+    "maharashtra_-132": [
+      "audit"
+    ],
+    "maharashtra_-133": [],
+    "maharashtra_-134": [],
+    "maharashtra_-135": [],
+    "maharashtra_-136": [],
+    "maharashtra_-137": [
+      "medical coding"
+    ],
+    "maharashtra_-138": [],
+    "maharashtra_-139": [],
+    "maharashtra_-140": [],
+    "maharashtra_-141": [],
+    "maharashtra_-142": [],
+    "maharashtra_-143": [],
+    "maharashtra_-144": [],
+    "maharashtra_-145": [],
+    "maharashtra_-146": [],
+    "maharashtra_-147": [],
+    "maharashtra_-148": [],
+    "maharashtra_-149": [],
+    "maharashtra_-150": [],
+    "maharashtra_-151": [
       "reporting"
     ],
-    "TX006": [
-      "data entry",
-      "audit",
-      "administrative records",
-      "ms office",
-      "documentation"
+    "maharashtra_-152": [],
+    "maharashtra_-153": [
+      "audit"
     ],
-    "AG001": [
-      "field survey",
-      "agricultural statistics"
+    "maharashtra_-154": [],
+    "maharashtra_-155": [],
+    "maharashtra_-156": [],
+    "maharashtra_-157": [],
+    "maharashtra_-158": [
+      "teaching"
     ],
-    "AG002": [
-      "excel",
-      "forecasting"
+    "maharashtra_-159": [],
+    "maharashtra_-160": [],
+    "maharashtra_-161": [
+      "sql"
     ],
-    "AG003": [
-      "excel",
-      "administrative data",
-      "annual report",
-      "stakeholder",
-      "training delivery"
+    "maharashtra_-162": [
+      "medical coding"
     ],
-    "AG004": [
-      "data entry",
-      "quality checks",
-      "audit",
-      "documentation"
+    "maharashtra_-163": [],
+    "maharashtra_-164": [],
+    "maharashtra_-165": [],
+    "maharashtra_-166": [],
+    "maharashtra_-167": [
+      "analytics",
+      "big data",
+      "machine learning"
     ],
-    "AG005": [
-      "reporting"
-    ],
-    "AG006": [
-      "field survey",
-      "data cleaning",
-      "satellite data",
-      "drone"
-    ],
-    "AG007": [
-      "data entry",
-      "quality checks",
-      "administrative records",
-      "reporting"
-    ],
-    "AG008": [
-      "field investigation",
-      "data entry",
-      "revenue records",
-      "reporting"
-    ],
-    "AG009": [
-      "data entry",
-      "excel",
-      "audit",
-      "reporting"
-    ],
-    "AG010": [
-      "descriptive analytics",
-      "trend analysis"
-    ],
-    "PH001": [
-      "data entry",
-      "audit",
-      "documentation"
-    ],
-    "PH002": [
-      "data cleaning",
+    "maharashtra_-168": [],
+    "maharashtra_-169": [],
+    "maharashtra_-170": [],
+    "maharashtra_-171": [],
+    "maharashtra_-172": [],
+    "maharashtra_-173": [],
+    "maharashtra_-174": [],
+    "maharashtra_-175": [],
+    "maharashtra_-176": [],
+    "maharashtra_-177": [],
+    "maharashtra_-178": [],
+    "maharashtra_-179": [],
+    "maharashtra_-180": [],
+    "maharashtra_-181": [
       "sql",
-      "audit",
-      "reporting"
-    ],
-    "PH003": [
-      "quality assurance",
-      "audit",
-      "reporting",
-      "training delivery",
-      "nabh"
-    ],
-    "PH004": [
-      "data entry",
-      "confidentiality",
-      "icd"
-    ],
-    "PH005": [
-      "data entry",
-      "quality checks",
-      "audit",
-      "documentation"
-    ],
-    "PH006": [
-      "hypothesis testing",
-      "nfhs",
-      "python",
-      "pandas",
       "tableau"
     ],
-    "PH007": [
-      "error correction",
-      "administrative records",
-      "reporting"
+    "maharashtra_-182": [],
+    "maharashtra_-183": [],
+    "maharashtra_-184": [
+      "documentation"
     ],
-    "PH008": [
-      "data entry",
-      "ms office",
-      "dashboard",
-      "feedback management"
+    "maharashtra_-185": [],
+    "maharashtra_-186": [],
+    "maharashtra_-187": [
+      "database",
+      "cmm"
     ],
-    "CN001": [
-      "field work",
-      "quality checks",
-      "ms office",
-      "reporting",
-      "total station"
+    "maharashtra_-188": [],
+    "maharashtra_-189": [],
+    "maharashtra_-190": [],
+    "maharashtra_-191": [],
+    "maharashtra_-192": [],
+    "maharashtra_-193": [],
+    "maharashtra_-194": [
+      "sql"
     ],
-    "CN002": [
-      "reporting",
-      "stakeholder",
+    "maharashtra_-195": [
+      "plc"
+    ],
+    "maharashtra_-196": [],
+    "maharashtra_-197": [],
+    "maharashtra_-198": [],
+    "maharashtra_-199": [],
+    "maharashtra_-200": [],
+    "maharashtra_-201": [],
+    "maharashtra_-202": [],
+    "maharashtra_-203": [],
+    "maharashtra_-204": [
+      "big data"
+    ],
+    "maharashtra_-205": [
+      "database"
+    ],
+    "maharashtra_-206": [],
+    "maharashtra_-207": [],
+    "maharashtra_-208": [],
+    "maharashtra_-209": [],
+    "maharashtra_-210": [],
+    "maharashtra_-211": [],
+    "maharashtra_-212": [],
+    "maharashtra_-213": [],
+    "maharashtra_-214": [],
+    "maharashtra_-215": [],
+    "maharashtra_-216": [],
+    "maharashtra_-217": [],
+    "maharashtra_-218": [],
+    "maharashtra_-219": [],
+    "maharashtra_-220": [],
+    "maharashtra_-221": [
+      "teaching"
+    ],
+    "maharashtra_-222": [],
+    "maharashtra_-223": [],
+    "maharashtra_-224": [],
+    "maharashtra_-225": [],
+    "maharashtra_-226": [],
+    "maharashtra_-227": [],
+    "maharashtra_-228": [
+      "sql",
+      "hadoop",
+      "tableau"
+    ],
+    "maharashtra_-229": [],
+    "maharashtra_-230": [],
+    "maharashtra_-231": [],
+    "maharashtra_-232": [
+      "sql"
+    ],
+    "maharashtra_-233": [],
+    "maharashtra_-234": [],
+    "maharashtra_-235": [],
+    "maharashtra_-236": [],
+    "maharashtra_-237": [],
+    "maharashtra_-238": [],
+    "maharashtra_-239": [],
+    "maharashtra_-240": [
+      "sql",
+      "documentation"
+    ],
+    "maharashtra_-241": [],
+    "maharashtra_-242": [],
+    "maharashtra_-243": [],
+    "maharashtra_-244": [],
+    "maharashtra_-245": [],
+    "maharashtra_-246": [
+      "sql",
+      "hadoop",
+      "tableau"
+    ],
+    "maharashtra_-247": [
+      "analytics"
+    ],
+    "maharashtra_-248": [],
+    "maharashtra_-249": [],
+    "maharashtra_-250": [],
+    "maharashtra_-251": [],
+    "maharashtra_-252": [],
+    "maharashtra_-253": [
+      "teaching"
+    ],
+    "maharashtra_-254": [
+      "database"
+    ],
+    "maharashtra_-255": [
+      "data validation",
+      "sql"
+    ],
+    "maharashtra_-256": [],
+    "maharashtra_-257": [],
+    "maharashtra_-258": [],
+    "maharashtra_-259": [],
+    "maharashtra_-260": [],
+    "maharashtra_-261": [],
+    "maharashtra_-262": [],
+    "maharashtra_-263": [],
+    "maharashtra_-264": [],
+    "maharashtra_-265": [],
+    "maharashtra_-266": [],
+    "maharashtra_-267": [],
+    "maharashtra_-268": [],
+    "maharashtra_-269": [
       "project management"
     ],
-    "CN003": [
-      "excel",
-      "audit",
-      "administrative records",
+    "maharashtra_-270": [],
+    "maharashtra_-271": [],
+    "maharashtra_-272": [],
+    "maharashtra_-273": [],
+    "maharashtra_-274": [],
+    "maharashtra_-275": [],
+    "maharashtra_-276": [],
+    "maharashtra_-277": [],
+    "maharashtra_-278": [],
+    "maharashtra_-279": [],
+    "maharashtra_-280": [],
+    "maharashtra_-281": [],
+    "maharashtra_-282": [],
+    "maharashtra_-283": [],
+    "maharashtra_-284": [
+      "database"
+    ],
+    "maharashtra_-285": [],
+    "maharashtra_-286": [],
+    "maharashtra_-287": [],
+    "maharashtra_-288": [],
+    "maharashtra_-289": [],
+    "maharashtra_-290": [],
+    "maharashtra_-291": [],
+    "maharashtra_-292": [
+      "reporting"
+    ],
+    "maharashtra_-293": [],
+    "maharashtra_-294": [],
+    "maharashtra_-295": [],
+    "maharashtra_-296": [],
+    "maharashtra_-297": [],
+    "maharashtra_-298": [],
+    "maharashtra_-299": [],
+    "maharashtra_-300": [],
+    "maharashtra_-301": [
+      "audit"
+    ],
+    "maharashtra_-302": [
+      "documentation"
+    ],
+    "maharashtra_-303": [],
+    "maharashtra_-304": [
+      "sampling",
+      "quality assurance"
+    ],
+    "maharashtra_-305": [],
+    "maharashtra_-306": [],
+    "maharashtra_-307": [],
+    "maharashtra_-308": [],
+    "maharashtra_-309": [
+      "analytics"
+    ],
+    "maharashtra_-310": [],
+    "maharashtra_-311": [],
+    "maharashtra_-312": [],
+    "maharashtra_-313": [
+      "project management"
+    ],
+    "maharashtra_-314": [],
+    "maharashtra_-315": [],
+    "maharashtra_-316": [],
+    "maharashtra_-317": [],
+    "maharashtra_-318": [],
+    "maharashtra_-319": [],
+    "maharashtra_-320": [],
+    "maharashtra_-321": [],
+    "maharashtra_-322": [],
+    "maharashtra_-323": [],
+    "maharashtra_-324": [],
+    "maharashtra_-325": [],
+    "maharashtra_-326": [],
+    "maharashtra_-327": [],
+    "maharashtra_-328": [],
+    "maharashtra_-329": [
+      "medical coding"
+    ],
+    "maharashtra_-330": [],
+    "maharashtra_-331": [],
+    "maharashtra_-332": [
+      "project management"
+    ],
+    "maharashtra_-333": [],
+    "maharashtra_-334": [
+      "quality assurance"
+    ],
+    "maharashtra_-335": [],
+    "maharashtra_-336": [
+      "sql"
+    ],
+    "maharashtra_-337": [],
+    "maharashtra_-338": [],
+    "maharashtra_-339": [],
+    "maharashtra_-340": [
+      "sql"
+    ],
+    "maharashtra_-341": [],
+    "maharashtra_-342": [],
+    "maharashtra_-343": [],
+    "maharashtra_-344": [],
+    "maharashtra_-345": [],
+    "maharashtra_-346": [],
+    "maharashtra_-347": [
+      "teaching"
+    ],
+    "maharashtra_-348": [
+      "cmm"
+    ],
+    "maharashtra_-349": [],
+    "maharashtra_-350": [
+      "documentation",
+      "teaching"
+    ],
+    "maharashtra_-351": [
+      "sampling",
+      "quality assurance"
+    ],
+    "maharashtra_-352": [],
+    "maharashtra_-353": [
+      "project management"
+    ],
+    "maharashtra_-354": [],
+    "maharashtra_-355": [],
+    "maharashtra_-356": [],
+    "maharashtra_-357": [],
+    "maharashtra_-358": [],
+    "maharashtra_-359": [],
+    "maharashtra_-360": [],
+    "maharashtra_-361": [],
+    "maharashtra_-362": [],
+    "maharashtra_-363": [
+      "cmm"
+    ],
+    "maharashtra_-364": [
+      "reporting"
+    ],
+    "maharashtra_-365": [],
+    "maharashtra_-366": [
+      "quality assurance"
+    ],
+    "maharashtra_-367": [
+      "medical coding"
+    ],
+    "maharashtra_-368": [
+      "sql"
+    ],
+    "maharashtra_-369": [
+      "python",
+      "jenkins"
+    ],
+    "maharashtra_-370": [
+      "reporting"
+    ],
+    "maharashtra_-371": [],
+    "maharashtra_-372": [
+      "database"
+    ],
+    "maharashtra_-373": [],
+    "maharashtra_-374": [],
+    "maharashtra_-375": [],
+    "maharashtra_-376": [],
+    "maharashtra_-377": [],
+    "maharashtra_-378": [],
+    "maharashtra_-379": [
+      "medical coding"
+    ],
+    "maharashtra_-380": [],
+    "maharashtra_-381": [
       "documentation",
       "client interaction"
     ],
-    "CN004": [
-      "field survey",
-      "data cleaning",
-      "documentation",
-      "total station"
+    "maharashtra_-382": [],
+    "maharashtra_-383": [],
+    "maharashtra_-384": [],
+    "maharashtra_-385": [
+      "excel"
     ],
-    "CN005": [
-      "audit",
-      "reporting",
-      "training delivery"
-    ],
-    "CN006": [
-      "data verification",
-      "excel",
-      "reporting"
-    ],
-    "CN007": [
-      "computer literacy",
-      "documentation",
-      "feedback management",
-      "bim"
-    ],
-    "CN008": [
-      "data entry",
-      "quality checks",
-      "reporting"
-    ],
-    "GO001": [
-      "sampling",
-      "stratified",
-      "questionnaire",
-      "field survey",
-      "cspro",
-      "data entry",
-      "price statistics"
-    ],
-    "GO002": [
-      "excel",
-      "administrative data",
-      "report writing"
-    ],
-    "GO003": [
-      "mospi",
-      "regression",
-      "time series",
-      "dissemination",
-      "big data",
-      "python",
-      "statistical computing"
-    ],
-    "GO004": [
-      "non response",
-      "field operations",
-      "capi",
-      "census"
-    ],
-    "GO005": [
-      "data entry",
+    "maharashtra_-386": [],
+    "maharashtra_-387": [],
+    "maharashtra_-388": [],
+    "maharashtra_-389": [],
+    "maharashtra_-390": [
       "sql",
-      "audit",
-      "reporting"
-    ],
-    "GO006": [
-      "time series",
-      "national accounts",
-      "report writing"
-    ],
-    "GO007": [
-      "survey design",
-      "sampling",
-      "weighting",
-      "quality assurance",
-      "variance estimation"
-    ],
-    "GO008": [
-      "data validation",
-      "index number",
-      "price statistics",
-      "reporting"
-    ],
-    "GO009": [
-      "ms office",
-      "feedback management",
-      "training design"
-    ],
-    "GO010": [
-      "metadata",
-      "confidentiality",
-      "audit",
       "documentation"
     ],
-    "RT001": [
-      "descriptive analytics",
-      "hypothesis testing",
+    "maharashtra_-391": [],
+    "maharashtra_-392": [
+      "sql"
+    ],
+    "maharashtra_-393": [
+      "audit"
+    ],
+    "maharashtra_-394": [
+      "medical coding"
+    ],
+    "maharashtra_-395": [],
+    "maharashtra_-396": [],
+    "maharashtra_-397": [],
+    "maharashtra_-398": [
+      "documentation"
+    ],
+    "maharashtra_-399": [],
+    "maharashtra_-400": [],
+    "maharashtra_-401": [],
+    "maharashtra_-402": [
+      "medical coding"
+    ],
+    "maharashtra_-403": [],
+    "maharashtra_-404": [],
+    "maharashtra_-405": [],
+    "maharashtra_-406": [],
+    "maharashtra_-407": [],
+    "maharashtra_-408": [],
+    "maharashtra_-409": [],
+    "maharashtra_-410": [
+      "medical coding"
+    ],
+    "maharashtra_-411": [],
+    "maharashtra_-412": [],
+    "maharashtra_-413": [
+      "forecast"
+    ],
+    "maharashtra_-414": [],
+    "maharashtra_-415": [],
+    "maharashtra_-416": [],
+    "maharashtra_-417": [],
+    "maharashtra_-418": [
+      "medical coding"
+    ],
+    "maharashtra_-419": [],
+    "maharashtra_-420": [],
+    "maharashtra_-421": [
+      "sampling",
+      "quality assurance"
+    ],
+    "maharashtra_-422": [],
+    "maharashtra_-423": [],
+    "maharashtra_-424": [],
+    "maharashtra_-425": [
+      "sql"
+    ],
+    "maharashtra_-426": [],
+    "maharashtra_-427": [],
+    "maharashtra_-428": [],
+    "maharashtra_-429": [
       "reporting"
     ],
-    "RT002": [
-      "excel",
-      "time series",
-      "reporting",
+    "maharashtra_-430": [
+      "medical coding"
+    ],
+    "maharashtra_-431": [
+      "audit"
+    ],
+    "maharashtra_-432": [
+      "medical coding"
+    ],
+    "maharashtra_-433": [],
+    "maharashtra_-434": [
+      "hadoop"
+    ],
+    "maharashtra_-435": [],
+    "maharashtra_-436": [],
+    "maharashtra_-437": [],
+    "maharashtra_-438": [],
+    "maharashtra_-439": [],
+    "maharashtra_-440": [
+      "dashboard"
+    ],
+    "maharashtra_-441": [],
+    "maharashtra_-442": [],
+    "maharashtra_-443": [
       "stakeholder"
     ],
-    "RT003": [
-      "data entry",
-      "computer literacy",
-      "reporting",
-      "feedback management"
+    "maharashtra_-444": [],
+    "maharashtra_-445": [],
+    "maharashtra_-446": [],
+    "maharashtra_-447": [],
+    "maharashtra_-448": [],
+    "maharashtra_-449": [
+      "teaching"
     ],
-    "RT004": [
-      "field visits",
-      "excel",
-      "trend analysis",
-      "infographic",
+    "maharashtra_-450": [],
+    "maharashtra_-451": [],
+    "maharashtra_-452": [],
+    "maharashtra_-453": [],
+    "maharashtra_-454": [
       "reporting"
     ],
-    "RT005": [
-      "questionnaire",
-      "data cleaning",
-      "descriptive statistics",
-      "report writing"
+    "maharashtra_-455": [
+      "sql"
     ],
-    "RT006": [
-      "data entry",
-      "quality checks"
+    "maharashtra_-456": [
+      "quality assurance"
     ],
-    "LG001": [
-      "sql",
-      "analytics",
-      "trend analysis",
-      "reporting"
-    ],
-    "LG002": [
-      "data entry",
-      "excel",
-      "reporting"
-    ],
-    "LG003": [
-      "data cleaning",
-      "analytics",
-      "python",
-      "reporting"
-    ],
-    "LG004": [
-      "data entry",
+    "maharashtra_-457": [
       "audit",
-      "administrative records",
-      "documentation"
+      "teaching"
     ],
-    "LG005": [
-      "ms office",
-      "reporting",
-      "feedback management"
-    ],
-    "LG006": [
+    "maharashtra_-458": [],
+    "maharashtra_-459": [],
+    "maharashtra_-460": [],
+    "maharashtra_-461": [],
+    "maharashtra_-462": [],
+    "maharashtra_-463": [],
+    "maharashtra_-464": [],
+    "maharashtra_-465": [],
+    "maharashtra_-466": [
       "audit",
       "documentation"
     ],
-    "ED001": [
-      "data entry",
-      "quality checks",
-      "training delivery"
-    ],
-    "ED002": [
-      "reporting",
-      "stakeholder",
-      "training design"
-    ],
-    "ED003": [
-      "data validation",
-      "quality audit",
+    "maharashtra_-467": [],
+    "maharashtra_-468": [],
+    "maharashtra_-469": [],
+    "maharashtra_-470": [
       "reporting"
     ],
-    "ED004": [
-      "data entry",
-      "computer literacy",
+    "maharashtra_-471": [],
+    "maharashtra_-472": [],
+    "maharashtra_-473": [],
+    "maharashtra_-474": [
+      "analytics",
       "reporting",
-      "training delivery"
+      "project management"
     ],
-    "ED005": [
-      "excel",
-      "reporting",
-      "stakeholder"
+    "maharashtra_-475": [],
+    "maharashtra_-476": [],
+    "maharashtra_-477": [],
+    "maharashtra_-478": [
+      "cnc"
     ],
-    "ED006": [
-      "report writing",
-      "training design"
-    ]
+    "maharashtra_-479": [],
+    "maharashtra_-480": [],
+    "maharashtra_-481": [],
+    "maharashtra_-482": [
+      "project management"
+    ],
+    "maharashtra_-483": [
+      "documentation"
+    ],
+    "maharashtra_-484": [],
+    "maharashtra_-485": [],
+    "maharashtra_-486": [],
+    "maharashtra_-487": [
+      "forecast"
+    ],
+    "maharashtra_-488": [],
+    "maharashtra_-489": [],
+    "maharashtra_-490": [
+      "quality assurance"
+    ],
+    "maharashtra_-491": [],
+    "maharashtra_-492": [],
+    "maharashtra_-493": [],
+    "maharashtra_-494": [],
+    "maharashtra_-495": [
+      "teaching"
+    ],
+    "maharashtra_-496": [
+      "project management"
+    ],
+    "maharashtra_-497": [],
+    "maharashtra_-498": [],
+    "maharashtra_-499": [],
+    "maharashtra_-500": []
   }
 }

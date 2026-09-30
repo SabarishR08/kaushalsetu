@@ -4,5 +4,14 @@
   "civ_bim": "BIM & Revit Modelling",
   "surv_total_station": "Total Station & DGPS Surveying",
   "med_icd": "Medical Coding (ICD) & NABH Compliance",
-  "agri_drone": "Drones & Precision Agriculture"
+  "agri_drone": "Drones & Precision Agriculture",
+  "aiml_ml": "Machine Learning",
+  "aiml_dl": "Deep Learning",
+  "aiml_nlp": "Natural Language Processing",
+  "aiml_cv": "Computer Vision",
+  "aiml_genai": "Generative AI & LLMs",
+  "cloud_aws": "AWS Cloud",
+  "cloud_azure": "Azure Cloud",
+  "cloud_gcp": "Google Cloud",
+  "devops_docker": "Docker & Kubernetes / CI-CD"
 }
