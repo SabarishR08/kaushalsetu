@@ -45,6 +45,8 @@ export interface AlignmentData {
     topSkills: string[];
     coveredSkills: string[];
     missingSkills: string[];
+    missingDetail: { skillId: string; demand: number; share: number }[];
+    uncoveredPostings: number;
     coverage: number;
   }[];
   focusComparison: {

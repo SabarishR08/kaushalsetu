@@ -1,6 +1,6 @@
 {
   "meta": {
-    "builtAt": "2026-09-30T13:58:12.948Z",
+    "builtAt": "2026-09-30T14:47:03.629Z",
     "demandSource": "real corpus merge: Naukri JSONL + sector CSV (data/jobs/raw)",
     "tagger": "keyword",
     "postings": 13511,
@@ -2215,6 +2215,14 @@
       "missingSkills": [
         "biz_sales"
       ],
+      "missingDetail": [
+        {
+          "skillId": "biz_sales",
+          "demand": 1908,
+          "share": 0.208
+        }
+      ],
+      "uncoveredPostings": 1908,
       "coverage": 0.529
     },
     {
@@ -2243,6 +2251,8 @@
         "os_big_data"
       ],
       "missingSkills": [],
+      "missingDetail": [],
+      "uncoveredPostings": 0,
       "coverage": 0.628
     },
     {
@@ -2273,6 +2283,19 @@
         "biz_hr",
         "biz_sales"
       ],
+      "missingDetail": [
+        {
+          "skillId": "biz_hr",
+          "demand": 99,
+          "share": 0.178
+        },
+        {
+          "skillId": "biz_sales",
+          "demand": 84,
+          "share": 0.151
+        }
+      ],
+      "uncoveredPostings": 183,
       "coverage": 0.529
     },
     {
@@ -2303,6 +2326,14 @@
       "missingSkills": [
         "biz_sales"
       ],
+      "missingDetail": [
+        {
+          "skillId": "biz_sales",
+          "demand": 39,
+          "share": 0.238
+        }
+      ],
+      "uncoveredPostings": 39,
       "coverage": 0.558
     },
     {
@@ -2334,6 +2365,14 @@
       "missingSkills": [
         "biz_sales"
       ],
+      "missingDetail": [
+        {
+          "skillId": "biz_sales",
+          "demand": 11,
+          "share": 0.183
+        }
+      ],
+      "uncoveredPostings": 11,
       "coverage": 0.584
     },
     {
@@ -2364,6 +2403,19 @@
         "mfg_production",
         "biz_hr"
       ],
+      "missingDetail": [
+        {
+          "skillId": "mfg_production",
+          "demand": 18,
+          "share": 0.45
+        },
+        {
+          "skillId": "biz_hr",
+          "demand": 9,
+          "share": 0.225
+        }
+      ],
+      "uncoveredPostings": 27,
       "coverage": 0.348
     },
     {
@@ -2395,6 +2447,24 @@
         "biz_sales",
         "med_clinical"
       ],
+      "missingDetail": [
+        {
+          "skillId": "biz_hr",
+          "demand": 4,
+          "share": 0.333
+        },
+        {
+          "skillId": "biz_sales",
+          "demand": 4,
+          "share": 0.333
+        },
+        {
+          "skillId": "med_clinical",
+          "demand": 2,
+          "share": 0.167
+        }
+      ],
+      "uncoveredPostings": 10,
       "coverage": 0.392
     },
     {
@@ -2421,6 +2491,24 @@
         "biz_sales",
         "biz_supply_chain"
       ],
+      "missingDetail": [
+        {
+          "skillId": "biz_hr",
+          "demand": 3,
+          "share": 0.429
+        },
+        {
+          "skillId": "biz_sales",
+          "demand": 2,
+          "share": 0.286
+        },
+        {
+          "skillId": "biz_supply_chain",
+          "demand": 2,
+          "share": 0.286
+        }
+      ],
+      "uncoveredPostings": 7,
       "coverage": 0.286
     },
     {
@@ -2448,6 +2536,39 @@
         "mfg_production",
         "mfg_quality"
       ],
+      "missingDetail": [
+        {
+          "skillId": "biz_hr",
+          "demand": 2,
+          "share": 0.4
+        },
+        {
+          "skillId": "biz_sales",
+          "demand": 2,
+          "share": 0.4
+        },
+        {
+          "skillId": "biz_accounts",
+          "demand": 1,
+          "share": 0.2
+        },
+        {
+          "skillId": "biz_supply_chain",
+          "demand": 1,
+          "share": 0.2
+        },
+        {
+          "skillId": "mfg_production",
+          "demand": 1,
+          "share": 0.2
+        },
+        {
+          "skillId": "mfg_quality",
+          "demand": 1,
+          "share": 0.2
+        }
+      ],
+      "uncoveredPostings": 8,
       "coverage": 0.2
     },
     {
@@ -2469,6 +2590,24 @@
         "biz_sales",
         "biz_supply_chain"
       ],
+      "missingDetail": [
+        {
+          "skillId": "biz_hr",
+          "demand": 3,
+          "share": 0.75
+        },
+        {
+          "skillId": "biz_sales",
+          "demand": 3,
+          "share": 0.75
+        },
+        {
+          "skillId": "biz_supply_chain",
+          "demand": 1,
+          "share": 0.25
+        }
+      ],
+      "uncoveredPostings": 7,
       "coverage": 0.222
     },
     {
@@ -2488,6 +2627,24 @@
         "biz_supply_chain",
         "eng_design"
       ],
+      "missingDetail": [
+        {
+          "skillId": "biz_hr",
+          "demand": 1,
+          "share": 0.25
+        },
+        {
+          "skillId": "biz_supply_chain",
+          "demand": 1,
+          "share": 0.25
+        },
+        {
+          "skillId": "eng_design",
+          "demand": 1,
+          "share": 0.25
+        }
+      ],
+      "uncoveredPostings": 3,
       "coverage": 0.25
     },
     {
@@ -2505,6 +2662,19 @@
         "biz_hr",
         "biz_supply_chain"
       ],
+      "missingDetail": [
+        {
+          "skillId": "biz_hr",
+          "demand": 2,
+          "share": 0.667
+        },
+        {
+          "skillId": "biz_supply_chain",
+          "demand": 1,
+          "share": 0.333
+        }
+      ],
+      "uncoveredPostings": 3,
       "coverage": 0.25
     },
     {
@@ -2523,6 +2693,29 @@
         "biz_supply_chain",
         "mfg_production"
       ],
+      "missingDetail": [
+        {
+          "skillId": "biz_hr",
+          "demand": 1,
+          "share": 0.333
+        },
+        {
+          "skillId": "biz_sales",
+          "demand": 1,
+          "share": 0.333
+        },
+        {
+          "skillId": "biz_supply_chain",
+          "demand": 1,
+          "share": 0.333
+        },
+        {
+          "skillId": "mfg_production",
+          "demand": 1,
+          "share": 0.333
+        }
+      ],
+      "uncoveredPostings": 4,
       "coverage": 0
     },
     {
@@ -2542,6 +2735,19 @@
         "biz_hr",
         "biz_supply_chain"
       ],
+      "missingDetail": [
+        {
+          "skillId": "biz_hr",
+          "demand": 1,
+          "share": 0.5
+        },
+        {
+          "skillId": "biz_supply_chain",
+          "demand": 1,
+          "share": 0.5
+        }
+      ],
+      "uncoveredPostings": 2,
       "coverage": 0.5
     },
     {
@@ -2561,6 +2767,24 @@
         "biz_supply_chain",
         "mfg_quality"
       ],
+      "missingDetail": [
+        {
+          "skillId": "biz_hr",
+          "demand": 1,
+          "share": 0.5
+        },
+        {
+          "skillId": "biz_supply_chain",
+          "demand": 1,
+          "share": 0.5
+        },
+        {
+          "skillId": "mfg_quality",
+          "demand": 1,
+          "share": 0.5
+        }
+      ],
+      "uncoveredPostings": 3,
       "coverage": 0.25
     },
     {
@@ -2579,6 +2803,29 @@
         "med_clinical",
         "med_icd"
       ],
+      "missingDetail": [
+        {
+          "skillId": "biz_hr",
+          "demand": 2,
+          "share": 1
+        },
+        {
+          "skillId": "biz_supply_chain",
+          "demand": 1,
+          "share": 0.5
+        },
+        {
+          "skillId": "med_clinical",
+          "demand": 1,
+          "share": 0.5
+        },
+        {
+          "skillId": "med_icd",
+          "demand": 1,
+          "share": 0.5
+        }
+      ],
+      "uncoveredPostings": 5,
       "coverage": 0
     },
     {
@@ -2595,6 +2842,24 @@
         "biz_sales",
         "biz_supply_chain"
       ],
+      "missingDetail": [
+        {
+          "skillId": "biz_hr",
+          "demand": 1,
+          "share": 0.5
+        },
+        {
+          "skillId": "biz_sales",
+          "demand": 1,
+          "share": 0.5
+        },
+        {
+          "skillId": "biz_supply_chain",
+          "demand": 1,
+          "share": 0.5
+        }
+      ],
+      "uncoveredPostings": 3,
       "coverage": 0
     },
     {
@@ -2609,6 +2874,19 @@
         "biz_sales",
         "eng_design"
       ],
+      "missingDetail": [
+        {
+          "skillId": "biz_sales",
+          "demand": 1,
+          "share": 0.5
+        },
+        {
+          "skillId": "eng_design",
+          "demand": 1,
+          "share": 0.5
+        }
+      ],
+      "uncoveredPostings": 2,
       "coverage": 0
     },
     {
@@ -2627,6 +2905,29 @@
         "biz_sales",
         "med_icd"
       ],
+      "missingDetail": [
+        {
+          "skillId": "biz_hr",
+          "demand": 2,
+          "share": 1
+        },
+        {
+          "skillId": "med_clinical",
+          "demand": 2,
+          "share": 1
+        },
+        {
+          "skillId": "biz_sales",
+          "demand": 1,
+          "share": 0.5
+        },
+        {
+          "skillId": "med_icd",
+          "demand": 1,
+          "share": 0.5
+        }
+      ],
+      "uncoveredPostings": 6,
       "coverage": 0
     },
     {
@@ -2639,6 +2940,8 @@
         "dc_sql"
       ],
       "missingSkills": [],
+      "missingDetail": [],
+      "uncoveredPostings": 0,
       "coverage": 1
     },
     {
@@ -2651,6 +2954,14 @@
       "missingSkills": [
         "biz_sales"
       ],
+      "missingDetail": [
+        {
+          "skillId": "biz_sales",
+          "demand": 1,
+          "share": 1
+        }
+      ],
+      "uncoveredPostings": 1,
       "coverage": 0
     },
     {
@@ -2667,6 +2978,24 @@
         "med_clinical",
         "med_icd"
       ],
+      "missingDetail": [
+        {
+          "skillId": "biz_hr",
+          "demand": 1,
+          "share": 1
+        },
+        {
+          "skillId": "med_clinical",
+          "demand": 1,
+          "share": 1
+        },
+        {
+          "skillId": "med_icd",
+          "demand": 1,
+          "share": 1
+        }
+      ],
+      "uncoveredPostings": 3,
       "coverage": 0
     },
     {
@@ -2683,6 +3012,24 @@
         "med_clinical",
         "med_icd"
       ],
+      "missingDetail": [
+        {
+          "skillId": "biz_hr",
+          "demand": 1,
+          "share": 1
+        },
+        {
+          "skillId": "med_clinical",
+          "demand": 1,
+          "share": 1
+        },
+        {
+          "skillId": "med_icd",
+          "demand": 1,
+          "share": 1
+        }
+      ],
+      "uncoveredPostings": 3,
       "coverage": 0
     }
   ],
@@ -3614,26 +3961,26 @@
     {
       "type": "revise-program",
       "district": "Mumbai",
-      "title": "Close skill gaps in Mumbai",
-      "detail": "9178 postings demand skills the catalog lacks (top: biz_sales). Coverage of Mumbai's top demand mass: 53%."
+      "title": "Close skill gaps in Mumbai — ~1908 actionable postings",
+      "detail": "Priority skills: biz_sales (1908 postings, 21%). Coverage of Mumbai's top demand mass: 53%."
     },
     {
       "type": "revise-program",
       "district": "Thane",
-      "title": "Close skill gaps in Thane",
-      "detail": "556 postings demand skills the catalog lacks (top: biz_hr, biz_sales). Coverage of Thane's top demand mass: 53%."
+      "title": "Close skill gaps in Thane — ~183 actionable postings",
+      "detail": "Priority skills: biz_hr (99 postings, 18%); biz_sales (84 postings, 15%). Coverage of Thane's top demand mass: 53%."
     },
     {
       "type": "revise-program",
       "district": "Nagpur",
-      "title": "Close skill gaps in Nagpur",
-      "detail": "164 postings demand skills the catalog lacks (top: biz_sales). Coverage of Nagpur's top demand mass: 56%."
+      "title": "Close skill gaps in Nagpur — ~39 actionable postings",
+      "detail": "Priority skills: biz_sales (39 postings, 24%). Coverage of Nagpur's top demand mass: 56%."
     },
     {
       "type": "revise-program",
-      "district": "Nashik",
-      "title": "Close skill gaps in Nashik",
-      "detail": "60 postings demand skills the catalog lacks (top: biz_sales). Coverage of Nashik's top demand mass: 58%."
+      "district": "Chh. Sambhajinagar",
+      "title": "Close skill gaps in Chh. Sambhajinagar — ~27 actionable postings",
+      "detail": "Priority skills: mfg_production (18 postings, 45%); biz_hr (9 postings, 23%). Coverage of Chh. Sambhajinagar's top demand mass: 35%."
     }
   ]
 }

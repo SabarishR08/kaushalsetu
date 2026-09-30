@@ -70,6 +70,8 @@ interface AlignmentFile {
     topSkills: string[];
     coveredSkills: string[];
     missingSkills: string[];        // top demanded (share >= GAP_SHARE) and untaught
+    missingDetail: { skillId: string; demand: number; share: number }[]; // gap scoring per skill
+    uncoveredPostings: number;      // postings needing at least one missing skill (upper bound)
     coverage: number;               // 0-1 of the district's top-N demand mass
   }[];
   focusComparison: {
@@ -175,14 +177,20 @@ async function main(): Promise<void> {
       const covered = top.filter((s) => allProgramSkills.has(s.skillId));
       const mass = top.reduce((a, s) => a + s.share, 0) || 1;
       const coveredMass = covered.reduce((a, s) => a + s.share, 0);
+      const missingDetail = top
+        .filter((s) => s.share >= GAP_SHARE && !allProgramSkills.has(s.skillId))
+        .map((s) => ({ skillId: s.skillId, demand: s.demand, share: s.share }))
+        .sort((a, b) => b.demand - a.demand);
       return {
         district: d.district,
         postings: d.postings,
         topSkills: top.map((s) => s.skillId),
         coveredSkills: covered.map((s) => s.skillId),
-        missingSkills: top
-          .filter((s) => s.share >= GAP_SHARE && !allProgramSkills.has(s.skillId))
-          .map((s) => s.skillId),
+        missingSkills: missingDetail.map((m) => m.skillId),
+        missingDetail,
+        // Upper bound on locally-actionable postings: every posting mentioning
+        // any missing skill would find its demand met by teaching that skill.
+        uncoveredPostings: missingDetail.reduce((a, m) => a + m.demand, 0),
         coverage: Math.round((coveredMass / mass) * 1000) / 1000,
       };
     })
@@ -257,14 +265,21 @@ async function main(): Promise<void> {
       detail: `Only ${Math.round(sec.coverage * 100)}% of top demand mass is covered. Missing: ${missing.slice(0, 6).join(", ")}. Update existing curricula before adding new programs.`,
     });
   }
-  // District-level actions for the high-volume districts only — that is where
+  // District-level actions, ranked by actionable volume — that is where
   // closing a gap moves the state number.
-  for (const d of districtCoverage.filter((x) => x.postings >= 20 && x.missingSkills.length > 0).slice(0, 4)) {
+  for (const d of [...districtCoverage]
+    .filter((x) => x.postings >= 20 && x.missingSkills.length > 0)
+    .sort((a, b) => b.uncoveredPostings - a.uncoveredPostings)
+    .slice(0, 4)) {
+    const topGaps = d.missingDetail
+      .slice(0, 3)
+      .map((m) => `${m.skillId} (${m.demand} postings, ${Math.round(m.share * 100)}%)`)
+      .join("; ");
     recommendations.push({
       type: "revise-program",
       district: d.district,
-      title: `Close skill gaps in ${d.district}`,
-      detail: `${d.postings} postings demand skills the catalog lacks (top: ${d.missingSkills.slice(0, 4).join(", ")}). Coverage of ${d.district}'s top demand mass: ${Math.round(d.coverage * 100)}%.`,
+      title: `Close skill gaps in ${d.district} — ~${d.uncoveredPostings} actionable postings`,
+      detail: `Priority skills: ${topGaps}. Coverage of ${d.district}'s top demand mass: ${Math.round(d.coverage * 100)}%.`,
     });
   }
 

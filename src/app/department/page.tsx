@@ -66,6 +66,11 @@ export default async function DepartmentPage() {
   const zeroCount = ALL_DISTRICTS.filter((n) => !districtList.some((d) => d.district === n)).length;
   const topDistricts = districtList.filter((d) => d.postings >= 20).slice(0, 4);
   const focus = alignment.focusComparison;
+  // Districts where targeted action converts the most postings, ranked.
+  const districtActions = (alignment.districtCoverage ?? [])
+    .filter((d) => d.postings >= 20 && d.missingDetail?.length)
+    .sort((a, b) => b.uncoveredPostings - a.uncoveredPostings)
+    .slice(0, 4);
   const districtPivot: DistrictSkillRow[] = demand.overall.slice(0, 8).map((s) => {
     const row: DistrictSkillRow = { skill: name(s.skillId) };
     for (const d of topDistricts) {
@@ -320,10 +325,12 @@ export default async function DepartmentPage() {
                       <td className="py-2 pr-4">{d.postings}</td>
                       <td className={`py-2 pr-4 font-semibold ${coverageClass(d.coverage)}`}>{pct(d.coverage)}</td>
                       <td className="py-2">
-                        {d.missingSkills.length ? (
+                        {d.missingDetail?.length ? (
                           <div className="flex flex-wrap gap-1">
-                            {d.missingSkills.slice(0, 4).map((id) => (
-                              <Badge key={id} variant="destructive" className="text-[11px]">{name(id)}</Badge>
+                            {d.missingDetail.slice(0, 4).map((m) => (
+                              <Badge key={m.skillId} variant="destructive" className="text-[11px]">
+                                {name(m.skillId)} · {m.demand} ({Math.round(m.share * 100)}%)
+                              </Badge>
                             ))}
                           </div>
                         ) : (
@@ -374,6 +381,38 @@ export default async function DepartmentPage() {
                 </div>
               </div>
             ) : null}
+          </CardContent>
+        </Card>
+      ) : null}
+
+      {/* District-specific actions — ranked by actionable posting volume */}
+      {districtActions.length ? (
+        <Card className="mb-6 border-amber-500/30">
+          <CardHeader className="pb-2">
+            <CardTitle className="text-base">District-specific actions</CardTitle>
+            <p className="text-xs text-muted-foreground">
+              High-volume districts ranked by actionable postings — postings demanding at least one skill no program teaches. Teaching the priority skill converts them.
+            </p>
+          </CardHeader>
+          <CardContent className="space-y-3">
+            {districtActions.map((d) => (
+              <div key={d.district} className="rounded-lg border p-3">
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <span className="text-sm font-medium">{d.district}</span>
+                  <span className="text-sm font-bold text-amber-500">~{d.uncoveredPostings.toLocaleString("en-IN")} actionable postings</span>
+                </div>
+                <div className="mt-2 flex flex-wrap gap-1.5">
+                  {d.missingDetail.slice(0, 4).map((m) => (
+                    <Badge key={m.skillId} variant="destructive" className="text-[11px]">
+                      {name(m.skillId)} — {m.demand} postings ({Math.round(m.share * 100)}% of district demand)
+                    </Badge>
+                  ))}
+                </div>
+                <p className="mt-2 text-xs text-muted-foreground">
+                  Recommended: add a bridge module for {name(d.missingDetail[0].skillId)} at {d.district} training centers — coverage of the district&apos;s top demand mass is {pct(d.coverage)}.
+                </p>
+              </div>
+            ))}
           </CardContent>
         </Card>
       ) : null}
