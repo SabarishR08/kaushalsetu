@@ -80,12 +80,15 @@ export async function getDepartmentData(): Promise<{
   demand: DemandData | null;
   alignment: AlignmentData | null;
   skillNames: Record<string, string>;
+  programSkills: Set<string>;
 }> {
-  const [demand, alignment, graph] = await Promise.all([
+  const [demand, alignment, graph, mapping] = await Promise.all([
     readJson<DemandData>("demand.json"),
     readJson<AlignmentData>("alignment.json"),
     readJson<Record<string, { id: string; name: string }[]>>("skill_graph.json"),
+    readJson<Record<string, string[]>>("course_skill_mapping.json"),
   ]);
+  const programSkills = new Set(Object.values(mapping ?? {}).flat());
   const skillNames: Record<string, string> = {};
   if (graph) {
     for (const skills of Object.values(graph)) for (const s of skills) skillNames[s.id] = s.name;
@@ -98,5 +101,5 @@ export async function getDepartmentData(): Promise<{
   } catch {
     // optional file
   }
-  return { demand, alignment, skillNames };
+  return { demand, alignment, skillNames, programSkills };
 }

@@ -5,7 +5,7 @@ import { AppShell } from "@/components/app/AppShell";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { DemandChart, SectorCoverageChart } from "./charts";
+import { SectorDemandTabs, type SectorTabData } from "./sector-tabs";
 import { DistrictMap } from "./district-map";
 import { DistrictDemandChart, DistrictSkillChart, type DistrictSkillRow } from "./district-charts";
 import { ALL_DISTRICTS } from "@/lib/geo/districts";
@@ -22,7 +22,7 @@ function coverageClass(c: number): string {
 }
 
 export default async function DepartmentPage() {
-  const { demand, alignment, skillNames } = await getDepartmentData();
+  const { demand, alignment, skillNames, programSkills } = await getDepartmentData();
 
   if (!demand || !alignment) {
     return (
@@ -53,6 +53,69 @@ export default async function DepartmentPage() {
   const name = (id: string) => skillNames[id] ?? id;
   const topDemand = demand.overall.slice(0, 10);
   const weakest = [...alignment.sectorCoverage].sort((a, b) => a.coverage - b.coverage).slice(0, 5);
+
+  // Sector tabs: merge related raw sectors into department-meaningful groups.
+  // Precomputed per tab so switching is pure client-side state.
+  const sectorTabData: SectorTabData[] = (() => {
+    const groups: Record<string, string[]> = {
+      Manufacturing: ["Manufacturing & Auto", "Automobile / Auto Anciliary / Auto Components", "Industrial Products / Heavy Machinery", "Chemicals / PetroChemical / Plastic / Rubber", "Textiles / Garments / Accessories", "Electricals / Switchgears", "Semiconductors / Electronics"],
+      "IT & Tech": ["IT & Software", "IT-Software / Software Services", "Software Engineering", "Data Science & AI", "Internet / Ecommerce", "BPO / Call Centre / ITES", "IT-Hardware & Networking", "KPO / Research / Analytics"],
+      Healthcare: ["Medical / Healthcare / Hospitals", "Pharma / Biotech / Clinical Research", "Medical Devices / Equipments", "Wellness / Fitness / Sports / Beauty", "Wellness / Fitness / Sports"],
+      BFSI: ["Banking / Financial Services / Broking", "BFSI", "Accounting / Finance", "Insurance", "Strategy / Management Consulting Firms"],
+      Logistics: ["Courier / Transportation / Freight / Warehousing", "Logistics & Supply Chain", "Shipping / Marine", "Export / Import"],
+    };
+    const sectorSkillMap = new Map(demand.sectors.map((s) => [s.sector, s.topSkills]));
+    const covMap = new Map(alignment.sectorCoverage.map((s) => [s.sector, s]));
+
+    const build = (tab: string, sectors: string[]): SectorTabData => {
+      if (tab === "ALL") {
+        const topSkills = demand.overall.slice(0, 12).map((s) => ({ skillId: s.skillId, demand: s.demand }));
+        const totalMass = topSkills.reduce((a, s) => a + s.demand, 0) || 1;
+        const coveredMass = topSkills.reduce((a, s) => a + (programSkills.has(s.skillId) ? s.demand : 0), 0);
+        const coverage = alignment.sectorCoverage.map((s) => ({
+          sector: s.sector,
+          postings: s.postings,
+          coverage: s.coverage,
+        }));
+        return {
+          tab: "ALL",
+          topSkills,
+          coverage,
+          coverageTop12: Math.round((coveredMass / totalMass) * 1000) / 1000,
+          postings: demand.meta.postings,
+        };
+      }
+
+      const merged = new Map<string, number>();
+      let postings = 0;
+      for (const s of sectors) {
+        const skills = sectorSkillMap.get(s);
+        if (!skills) continue;
+        postings += demand.sectors.find((x) => x.sector === s)?.postings ?? 0;
+        for (const sk of skills) merged.set(sk.skillId, (merged.get(sk.skillId) ?? 0) + sk.demand);
+      }
+      const topSkills = [...merged.entries()]
+        .map(([skillId, d]) => ({ skillId, demand: d }))
+        .sort((a, b) => b.demand - a.demand);
+      // Tab-level coverage: demand-weighted share of the merged top-12 mass
+      // that any program teaches (same definition as sector coverage).
+      const top12 = topSkills.slice(0, 12);
+      const totalMass = top12.reduce((a, s) => a + s.demand, 0) || 1;
+      const coveredMass = top12.reduce((a, s) => a + (programSkills.has(s.skillId) ? s.demand : 0), 0);
+      const coverage = top12.length
+        ? [...sectors].map((s) => ({
+            sector: s,
+            postings: demand.sectors.find((x) => x.sector === s)?.postings ?? 0,
+            coverage: covMap.get(s)?.coverage ?? 0,
+          }))
+        : [];
+      return { tab, topSkills, coverage, coverageTop12: Math.round((coveredMass / totalMass) * 1000) / 1000, postings };
+    };
+
+    const tabs = [build("ALL", [])];
+    for (const [tab, sectors] of Object.entries(groups)) tabs.push(build(tab, sectors));
+    return tabs;
+  })();
 
   // District layer: choropleth over all 36 districts — zero-demand districts
   // are the "skill deserts" and must appear on the map. Multi-district
@@ -168,30 +231,9 @@ export default async function DepartmentPage() {
         </Card>
       </div>
 
-      {/* Charts */}
-      <div className="mb-6 grid gap-4 lg:grid-cols-2">
-        <Card>
-          <CardHeader className="pb-2">
-            <CardTitle className="text-base">Top skill demand (all sectors)</CardTitle>
-          </CardHeader>
-          <CardContent className="h-80">
-            <DemandChart
-              data={topDemand.map((s) => ({ name: name(s.skillId), demand: s.demand }))}
-            />
-          </CardContent>
-        </Card>
-        <Card>
-          <CardHeader className="pb-2">
-            <CardTitle className="text-base">Coverage of top demand mass by sector</CardTitle>
-          </CardHeader>
-          <CardContent className="h-80">
-            <SectorCoverageChart
-              data={[...alignment.sectorCoverage]
-                .sort((a, b) => b.postings - a.postings)
-                .map((s) => ({ name: s.sector, coverage: Math.round(s.coverage * 100) }))}
-            />
-          </CardContent>
-        </Card>
+      {/* Charts with sector filter tabs */}
+      <div className="mb-6">
+        <SectorDemandTabs tabs={sectorTabData} skillNames={skillNames} />
       </div>
 
       {/* District-level demand: choropleth + bars */}
