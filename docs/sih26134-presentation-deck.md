@@ -45,7 +45,8 @@
 * **The Killer Stat Callout:** *"₹1,200+ Crores spent annually on state skilling, yet 54% of employers retrain new hires at their own expense."*
 * **Real-Demand Evidence Block (from our live pipeline, slide 3 chart source):**
   - 13,511 real Naukri postings (three public Naukri datasets on Hugging Face, merged + Maharashtra-filtered), 69 sectors, tagged on our skill graph.
-  - Top demanded skills: SQL (3,270), Project Management (2,258), **Sales (2,107 — taught by no current program)**, Python (1,684), HR (1,517), Production (1,371).
+  - Top demanded skills: SQL (3,285), Project Management (2,270), **Sales (2,167 — taught by no current program)**, Report Writing (1,702), Python (1,691), HR (1,570), Production (1,381).
+  - State-wide untaught ranking (demand with zero catalog coverage): **Sales 2,167 · HR 1,570 · Production 1,381** · Supply Chain 843 · Accounts 788 — plus the cloud/AI block below.
   - **Cloud/AI is one aggregate gap: 4,833 postings** demand AWS (1,046), Azure (921), ML (898), Docker/K8s (755), GCP (476), Deep Learning (252), NLP (230), GenAI (140), CV (115) — zero catalog coverage.
   - **Sector coverage is two-speed** (share of each sector's top-12 demand mass taught by any program): Data Science & AI 66%, Software Engineering 67%, Education 66% — versus **Manufacturing & Auto 9%, Services 9%, Healthcare 12%, Automobile 14%, Pharma 15%**.
   - 📸 *Slide image ready:* `docs/deck/slide3-kpis-and-demand.png` (KPIs + demand chart) and `docs/deck/slide3-sector-gaps.png` (coverage matrix).
