@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { DemandChart, SectorCoverageChart } from "./charts";
+import { CitySkillChart, type CitySkillRow } from "./city-charts";
 import { getDepartmentData } from "@/lib/dept-data";
 
 export const dynamic = "force-dynamic";
@@ -50,6 +51,18 @@ export default async function DepartmentPage() {
   const name = (id: string) => skillNames[id] ?? id;
   const topDemand = demand.overall.slice(0, 10);
   const weakest = [...alignment.sectorCoverage].sort((a, b) => a.coverage - b.coverage).slice(0, 5);
+
+  // City × top-skill pivot for the grouped chart. Clusters with meaningful
+  // volume only; multi-city postings credit every listed cluster, so city
+  // counts sum to more than the total by design.
+  const cityList = demand.cities.filter((c) => c.city !== "Unattributed" && c.postings >= 5);
+  const cityPivot: CitySkillRow[] = demand.overall.slice(0, 8).map((s) => {
+    const row: CitySkillRow = { skill: name(s.skillId) };
+    for (const c of cityList) {
+      row[c.city] = c.topSkills.find((t) => t.skillId === s.skillId)?.demand ?? 0;
+    }
+    return row;
+  });
 
   return (
     <AppShell>
@@ -165,6 +178,34 @@ export default async function DepartmentPage() {
           </CardContent>
         </Card>
       </div>
+
+      {/* City-wise demand */}
+      <Card className="mb-6">
+        <CardHeader className="pb-2">
+          <CardTitle className="text-base">Skill demand by city cluster</CardTitle>
+          <p className="text-xs text-muted-foreground">
+            Postings attribute to every Maharashtra city they list — multi-city listings count in each, so city counts sum above the total
+          </p>
+        </CardHeader>
+        <CardContent>
+          <div className="h-80">
+            <CitySkillChart data={cityPivot} cities={cityList.map((c) => c.city)} />
+          </div>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {cityList.map((c) => (
+              <div key={c.city} className="rounded-lg border p-3">
+                <div className="flex items-baseline justify-between">
+                  <span className="text-sm font-medium">{c.city}</span>
+                  <span className="text-lg font-bold">{c.postings}</span>
+                </div>
+                <p className="mt-1 text-xs text-muted-foreground">
+                  Top: {c.topSkills.slice(0, 3).map((s) => name(s.skillId)).join(", ")}
+                </p>
+              </div>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
 
       {/* Sector coverage table */}
       <Card className="mb-6">

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "builtAt": "2026-09-30T12:39:58.970Z",
+    "builtAt": "2026-09-30T12:48:10.269Z",
     "source": "real corpus merge: Naukri JSONL + sector CSV (data/jobs/raw)",
     "tagger": "keyword",
     "postings": 6000,
@@ -9,8 +9,8 @@
   "overall": [
     {
       "skillId": "dc_sql",
-      "demand": 2115,
-      "share": 0.353,
+      "demand": 2104,
+      "share": 0.351,
       "avgStrength": 3,
       "examplePostingIds": [
         "nk-231224500732",
@@ -20,8 +20,8 @@
     },
     {
       "skillId": "cg_project_mgmt",
-      "demand": 1407,
-      "share": 0.235,
+      "demand": 1400,
+      "share": 0.233,
       "avgStrength": 3,
       "examplePostingIds": [
         "nk-221224001677",
@@ -31,8 +31,8 @@
     },
     {
       "skillId": "it_python_basics",
-      "demand": 1321,
-      "share": 0.22,
+      "demand": 1315,
+      "share": 0.219,
       "avgStrength": 3,
       "examplePostingIds": [
         "nk-231224902246",
@@ -42,8 +42,8 @@
     },
     {
       "skillId": "cloud_aws",
-      "demand": 850,
-      "share": 0.142,
+      "demand": 837,
+      "share": 0.14,
       "avgStrength": 3,
       "examplePostingIds": [
         "nk-231224500732",
@@ -53,7 +53,7 @@
     },
     {
       "skillId": "sm_descriptive",
-      "demand": 810,
+      "demand": 812,
       "share": 0.135,
       "avgStrength": 3,
       "examplePostingIds": [
@@ -64,8 +64,8 @@
     },
     {
       "skillId": "cloud_azure",
-      "demand": 732,
-      "share": 0.122,
+      "demand": 737,
+      "share": 0.123,
       "avgStrength": 3,
       "examplePostingIds": [
         "nk-231224902246",
@@ -75,8 +75,8 @@
     },
     {
       "skillId": "aiml_ml",
-      "demand": 707,
-      "share": 0.118,
+      "demand": 704,
+      "share": 0.117,
       "avgStrength": 3,
       "examplePostingIds": [
         "nk-181224502708",
@@ -97,8 +97,8 @@
     },
     {
       "skillId": "os_big_data",
-      "demand": 649,
-      "share": 0.108,
+      "demand": 643,
+      "share": 0.107,
       "avgStrength": 3,
       "examplePostingIds": [
         "nk-171224915222",
@@ -108,8 +108,8 @@
     },
     {
       "skillId": "devops_docker",
-      "demand": 563,
-      "share": 0.094,
+      "demand": 560,
+      "share": 0.093,
       "avgStrength": 3,
       "examplePostingIds": [
         "nk-111224502204",
@@ -119,8 +119,8 @@
     },
     {
       "skillId": "cloud_gcp",
-      "demand": 383,
-      "share": 0.064,
+      "demand": 377,
+      "share": 0.063,
       "avgStrength": 3,
       "examplePostingIds": [
         "nk-201224015240",
@@ -141,7 +141,7 @@
     },
     {
       "skillId": "ss_quality_assurance",
-      "demand": 228,
+      "demand": 229,
       "share": 0.038,
       "avgStrength": 3,
       "examplePostingIds": [
@@ -152,8 +152,8 @@
     },
     {
       "skillId": "it_data_viz",
-      "demand": 213,
-      "share": 0.036,
+      "demand": 212,
+      "share": 0.035,
       "avgStrength": 3,
       "examplePostingIds": [
         "nk-171224915222",
@@ -163,7 +163,7 @@
     },
     {
       "skillId": "aiml_dl",
-      "demand": 189,
+      "demand": 192,
       "share": 0.032,
       "avgStrength": 3,
       "examplePostingIds": [
@@ -174,8 +174,8 @@
     },
     {
       "skillId": "aiml_nlp",
-      "demand": 175,
-      "share": 0.029,
+      "demand": 177,
+      "share": 0.03,
       "avgStrength": 3,
       "examplePostingIds": [
         "nk-010421006391",
@@ -185,7 +185,7 @@
     },
     {
       "skillId": "dc_spreadsheets",
-      "demand": 158,
+      "demand": 157,
       "share": 0.026,
       "avgStrength": 3,
       "examplePostingIds": [
@@ -207,7 +207,7 @@
     },
     {
       "skillId": "cg_user_engagement",
-      "demand": 103,
+      "demand": 104,
       "share": 0.017,
       "avgStrength": 3,
       "examplePostingIds": [
@@ -229,7 +229,7 @@
     },
     {
       "skillId": "aiml_genai",
-      "demand": 95,
+      "demand": 98,
       "share": 0.016,
       "avgStrength": 3,
       "examplePostingIds": [
@@ -240,8 +240,8 @@
     },
     {
       "skillId": "it_python_stats",
-      "demand": 86,
-      "share": 0.014,
+      "demand": 87,
+      "share": 0.015,
       "avgStrength": 3,
       "examplePostingIds": [
         "nk-231224902246",
@@ -251,7 +251,7 @@
     },
     {
       "skillId": "aiml_cv",
-      "demand": 78,
+      "demand": 80,
       "share": 0.013,
       "avgStrength": 3,
       "examplePostingIds": [
@@ -273,24 +273,13 @@
     },
     {
       "skillId": "dc_cleaning",
-      "demand": 65,
+      "demand": 68,
       "share": 0.011,
       "avgStrength": 3,
       "examplePostingIds": [
         "nk-231024019509",
         "nk-300524501258",
         "nk-281124904142"
-      ]
-    },
-    {
-      "skillId": "dc_metadata",
-      "demand": 62,
-      "share": 0.01,
-      "avgStrength": 3,
-      "examplePostingIds": [
-        "nk-010323500468",
-        "nk-111124500727",
-        "nk-101224501433"
       ]
     },
     {
@@ -302,6 +291,17 @@
         "nk-030423501907",
         "nk-051124502337",
         "nk-201224500237"
+      ]
+    },
+    {
+      "skillId": "dc_metadata",
+      "demand": 59,
+      "share": 0.01,
+      "avgStrength": 3,
+      "examplePostingIds": [
+        "nk-010323500468",
+        "nk-111124500727",
+        "nk-101224501433"
       ]
     },
     {
@@ -350,7 +350,7 @@
     },
     {
       "skillId": "dc_edit_rules",
-      "demand": 16,
+      "demand": 17,
       "share": 0.003,
       "avgStrength": 3,
       "examplePostingIds": [
@@ -536,7 +536,7 @@
       "topSkills": [
         {
           "skillId": "dc_sql",
-          "demand": 1080,
+          "demand": 1081,
           "share": 0.432,
           "avgStrength": 3,
           "examplePostingIds": [
@@ -547,8 +547,8 @@
         },
         {
           "skillId": "it_python_basics",
-          "demand": 942,
-          "share": 0.377,
+          "demand": 945,
+          "share": 0.378,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-231224902246",
@@ -558,8 +558,8 @@
         },
         {
           "skillId": "sm_descriptive",
-          "demand": 695,
-          "share": 0.278,
+          "demand": 700,
+          "share": 0.28,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-231224902246",
@@ -580,8 +580,8 @@
         },
         {
           "skillId": "os_big_data",
-          "demand": 569,
-          "share": 0.228,
+          "demand": 574,
+          "share": 0.23,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-171224915222",
@@ -591,8 +591,8 @@
         },
         {
           "skillId": "cloud_azure",
-          "demand": 522,
-          "share": 0.209,
+          "demand": 532,
+          "share": 0.213,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-231224902246",
@@ -602,8 +602,8 @@
         },
         {
           "skillId": "cg_project_mgmt",
-          "demand": 500,
-          "share": 0.2,
+          "demand": 495,
+          "share": 0.198,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-121224500504",
@@ -613,8 +613,8 @@
         },
         {
           "skillId": "cloud_aws",
-          "demand": 497,
-          "share": 0.199,
+          "demand": 491,
+          "share": 0.196,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-221224002224",
@@ -635,7 +635,7 @@
         },
         {
           "skillId": "it_dashboards",
-          "demand": 295,
+          "demand": 296,
           "share": 0.118,
           "avgStrength": 3,
           "examplePostingIds": [
@@ -646,8 +646,8 @@
         },
         {
           "skillId": "cloud_gcp",
-          "demand": 277,
-          "share": 0.111,
+          "demand": 275,
+          "share": 0.11,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-201224015240",
@@ -657,7 +657,7 @@
         },
         {
           "skillId": "it_data_viz",
-          "demand": 200,
+          "demand": 199,
           "share": 0.08,
           "avgStrength": 3,
           "examplePostingIds": [
@@ -668,8 +668,8 @@
         },
         {
           "skillId": "devops_docker",
-          "demand": 195,
-          "share": 0.078,
+          "demand": 192,
+          "share": 0.077,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-111224502998",
@@ -679,8 +679,8 @@
         },
         {
           "skillId": "aiml_dl",
-          "demand": 180,
-          "share": 0.072,
+          "demand": 183,
+          "share": 0.073,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-010421006391",
@@ -690,8 +690,8 @@
         },
         {
           "skillId": "aiml_nlp",
-          "demand": 162,
-          "share": 0.065,
+          "demand": 165,
+          "share": 0.066,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-010421006391",
@@ -701,8 +701,8 @@
         },
         {
           "skillId": "dc_spreadsheets",
-          "demand": 129,
-          "share": 0.052,
+          "demand": 128,
+          "share": 0.051,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-211024011963",
@@ -712,8 +712,8 @@
         },
         {
           "skillId": "ss_quality_assurance",
-          "demand": 93,
-          "share": 0.037,
+          "demand": 95,
+          "share": 0.038,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-061124502921",
@@ -745,8 +745,8 @@
         },
         {
           "skillId": "aiml_genai",
-          "demand": 81,
-          "share": 0.032,
+          "demand": 84,
+          "share": 0.034,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-211224008589",
@@ -756,7 +756,7 @@
         },
         {
           "skillId": "it_python_stats",
-          "demand": 79,
+          "demand": 80,
           "share": 0.032,
           "avgStrength": 3,
           "examplePostingIds": [
@@ -767,8 +767,8 @@
         },
         {
           "skillId": "cg_user_engagement",
-          "demand": 71,
-          "share": 0.028,
+          "demand": 72,
+          "share": 0.029,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-211024011963",
@@ -778,8 +778,8 @@
         },
         {
           "skillId": "aiml_cv",
-          "demand": 62,
-          "share": 0.025,
+          "demand": 64,
+          "share": 0.026,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-201224500897",
@@ -789,8 +789,8 @@
         },
         {
           "skillId": "dc_cleaning",
-          "demand": 60,
-          "share": 0.024,
+          "demand": 63,
+          "share": 0.025,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-231024019509",
@@ -800,8 +800,8 @@
         },
         {
           "skillId": "dc_metadata",
-          "demand": 54,
-          "share": 0.022,
+          "demand": 52,
+          "share": 0.021,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-101224501433",
@@ -855,7 +855,7 @@
         },
         {
           "skillId": "dc_edit_rules",
-          "demand": 15,
+          "demand": 16,
           "share": 0.006,
           "avgStrength": 3,
           "examplePostingIds": [
@@ -1026,8 +1026,8 @@
       "topSkills": [
         {
           "skillId": "dc_sql",
-          "demand": 998,
-          "share": 0.399,
+          "demand": 986,
+          "share": 0.394,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-231224500732",
@@ -1037,24 +1037,13 @@
         },
         {
           "skillId": "cg_project_mgmt",
-          "demand": 883,
-          "share": 0.353,
+          "demand": 881,
+          "share": 0.352,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-221224001677",
             "nk-181224500595",
             "nk-171224504250"
-          ]
-        },
-        {
-          "skillId": "it_python_basics",
-          "demand": 373,
-          "share": 0.149,
-          "avgStrength": 3,
-          "examplePostingIds": [
-            "nk-171224503020",
-            "nk-101224924660",
-            "nk-141224906327"
           ]
         },
         {
@@ -1069,9 +1058,20 @@
           ]
         },
         {
+          "skillId": "it_python_basics",
+          "demand": 364,
+          "share": 0.146,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-171224503020",
+            "nk-101224924660",
+            "nk-141224906327"
+          ]
+        },
+        {
           "skillId": "cloud_aws",
-          "demand": 351,
-          "share": 0.14,
+          "demand": 344,
+          "share": 0.138,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-231224500732",
@@ -1092,8 +1092,8 @@
         },
         {
           "skillId": "cloud_azure",
-          "demand": 208,
-          "share": 0.083,
+          "demand": 203,
+          "share": 0.081,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-171224501235",
@@ -1103,7 +1103,7 @@
         },
         {
           "skillId": "ss_quality_assurance",
-          "demand": 120,
+          "demand": 119,
           "share": 0.048,
           "avgStrength": 3,
           "examplePostingIds": [
@@ -1114,8 +1114,8 @@
         },
         {
           "skillId": "cloud_gcp",
-          "demand": 105,
-          "share": 0.042,
+          "demand": 101,
+          "share": 0.04,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-090924501338",
@@ -1125,8 +1125,8 @@
         },
         {
           "skillId": "sm_descriptive",
-          "demand": 104,
-          "share": 0.042,
+          "demand": 101,
+          "share": 0.04,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-021224007126",
@@ -1136,8 +1136,8 @@
         },
         {
           "skillId": "aiml_ml",
-          "demand": 87,
-          "share": 0.035,
+          "demand": 84,
+          "share": 0.034,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-131224003203",
@@ -1147,8 +1147,8 @@
         },
         {
           "skillId": "os_big_data",
-          "demand": 72,
-          "share": 0.029,
+          "demand": 61,
+          "share": 0.024,
           "avgStrength": 3,
           "examplePostingIds": [
             "nk-010323500468",
@@ -1180,7 +1180,7 @@
         },
         {
           "skillId": "it_dashboards",
-          "demand": 26,
+          "demand": 25,
           "share": 0.01,
           "avgStrength": 3,
           "examplePostingIds": [
@@ -1246,7 +1246,7 @@
         },
         {
           "skillId": "aiml_nlp",
-          "demand": 13,
+          "demand": 12,
           "share": 0.005,
           "avgStrength": 3,
           "examplePostingIds": [
@@ -1290,7 +1290,7 @@
         },
         {
           "skillId": "dc_metadata",
-          "demand": 8,
+          "demand": 7,
           "share": 0.003,
           "avgStrength": 3,
           "examplePostingIds": [
@@ -2040,6 +2040,1634 @@
       "postings": 1,
       "topSkills": [],
       "uncoveredSkills": []
+    }
+  ],
+  "cities": [
+    {
+      "city": "Pune",
+      "postings": 3878,
+      "topSkills": [
+        {
+          "skillId": "dc_sql",
+          "demand": 1415,
+          "share": 0.365,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231224500732",
+            "nk-231224500385",
+            "nk-201224505002"
+          ]
+        },
+        {
+          "skillId": "cg_project_mgmt",
+          "demand": 974,
+          "share": 0.251,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-221224001677",
+            "nk-181224500595",
+            "nk-171224504250"
+          ]
+        },
+        {
+          "skillId": "it_python_basics",
+          "demand": 895,
+          "share": 0.231,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231224902246",
+            "nk-211224008589",
+            "nk-221224002224"
+          ]
+        },
+        {
+          "skillId": "cloud_aws",
+          "demand": 593,
+          "share": 0.153,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231224500732",
+            "nk-231224500385",
+            "nk-221224002224"
+          ]
+        },
+        {
+          "skillId": "cloud_azure",
+          "demand": 534,
+          "share": 0.138,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231224902246",
+            "nk-201224015240",
+            "nk-131224911892"
+          ]
+        },
+        {
+          "skillId": "sm_descriptive",
+          "demand": 497,
+          "share": 0.128,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231224902246",
+            "nk-181224502708",
+            "nk-191224916209"
+          ]
+        },
+        {
+          "skillId": "aiml_ml",
+          "demand": 468,
+          "share": 0.121,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-181224502708",
+            "nk-211224008589",
+            "nk-221224002224"
+          ]
+        },
+        {
+          "skillId": "os_big_data",
+          "demand": 457,
+          "share": 0.118,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-051224502801",
+            "nk-261124922233",
+            "nk-010323500468"
+          ]
+        },
+        {
+          "skillId": "cg_report_writing",
+          "demand": 437,
+          "share": 0.113,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231224500732",
+            "nk-231224500385",
+            "nk-111224502204"
+          ]
+        },
+        {
+          "skillId": "devops_docker",
+          "demand": 407,
+          "share": 0.105,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-111224502204",
+            "nk-111224502998",
+            "nk-101224924660"
+          ]
+        },
+        {
+          "skillId": "cloud_gcp",
+          "demand": 276,
+          "share": 0.071,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-201224015240",
+            "nk-161024500826",
+            "nk-261124010031"
+          ]
+        },
+        {
+          "skillId": "it_dashboards",
+          "demand": 176,
+          "share": 0.045,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-191224916209",
+            "nk-051224008574",
+            "nk-171224500028"
+          ]
+        },
+        {
+          "skillId": "ss_quality_assurance",
+          "demand": 155,
+          "share": 0.04,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-171224503447",
+            "nk-041224501290",
+            "nk-061124502921"
+          ]
+        },
+        {
+          "skillId": "it_data_viz",
+          "demand": 130,
+          "share": 0.034,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231224500680",
+            "nk-171224503932",
+            "nk-191224503322"
+          ]
+        },
+        {
+          "skillId": "aiml_dl",
+          "demand": 129,
+          "share": 0.033,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-211224008589",
+            "nk-221224002224",
+            "nk-201224504862"
+          ]
+        },
+        {
+          "skillId": "aiml_nlp",
+          "demand": 117,
+          "share": 0.03,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-211224008589",
+            "nk-171224503932",
+            "nk-161224502069"
+          ]
+        },
+        {
+          "skillId": "sm_regression",
+          "demand": 74,
+          "share": 0.019,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-131224911892",
+            "nk-121224504379",
+            "nk-201224004491"
+          ]
+        },
+        {
+          "skillId": "aiml_genai",
+          "demand": 70,
+          "share": 0.018,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-211224008589",
+            "nk-201224504862",
+            "nk-101224011445"
+          ]
+        },
+        {
+          "skillId": "dc_spreadsheets",
+          "demand": 65,
+          "share": 0.017,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-081022500085",
+            "nk-250219502336",
+            "nk-170715504669"
+          ]
+        },
+        {
+          "skillId": "aiml_cv",
+          "demand": 60,
+          "share": 0.015,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-201224500897",
+            "nk-111224502998",
+            "nk-161224502069"
+          ]
+        },
+        {
+          "skillId": "sm_time_series",
+          "demand": 59,
+          "share": 0.015,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231224500680",
+            "nk-121224504379",
+            "nk-051224502801"
+          ]
+        },
+        {
+          "skillId": "cg_user_engagement",
+          "demand": 56,
+          "share": 0.014,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-051224008574",
+            "nk-271124500891",
+            "nk-100521501383"
+          ]
+        },
+        {
+          "skillId": "it_python_stats",
+          "demand": 56,
+          "share": 0.014,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231224902246",
+            "nk-171224009612",
+            "nk-081224001771"
+          ]
+        },
+        {
+          "skillId": "dc_metadata",
+          "demand": 43,
+          "share": 0.011,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-010323500468",
+            "nk-111124500727",
+            "nk-101224501433"
+          ]
+        },
+        {
+          "skillId": "dc_cleaning",
+          "demand": 39,
+          "share": 0.01,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231024019509",
+            "nk-300524501258",
+            "nk-101224501433"
+          ]
+        },
+        {
+          "skillId": "dq_quality_audit",
+          "demand": 36,
+          "share": 0.009,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-241024502839",
+            "nk-241024501932",
+            "nk-220824503831"
+          ]
+        },
+        {
+          "skillId": "dq_confidentiality",
+          "demand": 30,
+          "share": 0.008,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-111224502204",
+            "nk-121224500382",
+            "nk-091224016569"
+          ]
+        },
+        {
+          "skillId": "it_basics",
+          "demand": 22,
+          "share": 0.006,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-181224500468",
+            "nk-131224501214",
+            "nk-080524502706"
+          ]
+        },
+        {
+          "skillId": "cg_training_delivery",
+          "demand": 20,
+          "share": 0.005,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-201224501425",
+            "nk-151019500690",
+            "nk-181224003732"
+          ]
+        },
+        {
+          "skillId": "med_icd",
+          "demand": 18,
+          "share": 0.005,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-150923501533",
+            "nk-160524008633",
+            "maharashtra_-14"
+          ]
+        },
+        {
+          "skillId": "dc_edit_rules",
+          "demand": 10,
+          "share": 0.003,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-091224503384",
+            "nk-090824500465",
+            "nk-270824010153"
+          ]
+        },
+        {
+          "skillId": "sm_hypothesis",
+          "demand": 10,
+          "share": 0.003,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-121224504379",
+            "nk-250823500648",
+            "nk-280723500525"
+          ]
+        },
+        {
+          "skillId": "mfg_plc",
+          "demand": 9,
+          "share": 0.002,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-280423500312",
+            "nk-171224016319",
+            "nk-250924507396"
+          ]
+        },
+        {
+          "skillId": "mfg_cnc",
+          "demand": 6,
+          "share": 0.002,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-130123004494",
+            "maharashtra_-187",
+            "maharashtra_-348"
+          ]
+        },
+        {
+          "skillId": "it_data_ethics",
+          "demand": 5,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-021224502136",
+            "nk-141024501889",
+            "nk-230924502311"
+          ]
+        },
+        {
+          "skillId": "sm_probability",
+          "demand": 5,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-051124502615",
+            "nk-280824012388",
+            "nk-100424500911"
+          ]
+        },
+        {
+          "skillId": "ss_field_ops",
+          "demand": 5,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-081223500253",
+            "nk-150724501253",
+            "nk-180724500371"
+          ]
+        },
+        {
+          "skillId": "agri_drone",
+          "demand": 4,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-250123502703",
+            "nk-131224913352",
+            "nk-131224913681"
+          ]
+        },
+        {
+          "skillId": "dc_data_entry",
+          "demand": 4,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-101224501433",
+            "nk-041224504340",
+            "nk-031224009568"
+          ]
+        },
+        {
+          "skillId": "ss_sampling_basics",
+          "demand": 4,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-211124505631",
+            "maharashtra_-304",
+            "maharashtra_-421"
+          ]
+        },
+        {
+          "skillId": "civ_bim",
+          "demand": 3,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-051124502592",
+            "nk-030724500395",
+            "nk-051224016739"
+          ]
+        },
+        {
+          "skillId": "dq_dissemination",
+          "demand": 2,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-181224500749",
+            "nk-050224500663"
+          ]
+        },
+        {
+          "skillId": "it_r_stats",
+          "demand": 2,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-251124008562",
+            "nk-161224909456"
+          ]
+        },
+        {
+          "skillId": "ss_sampling_stratified",
+          "demand": 2,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-021224502136",
+            "nk-141024501889"
+          ]
+        },
+        {
+          "skillId": "os_census",
+          "demand": 1,
+          "share": 0,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-300724502059"
+          ]
+        },
+        {
+          "skillId": "sm_inference",
+          "demand": 1,
+          "share": 0,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-170624502783"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Mumbai (MMR)",
+      "postings": 2947,
+      "topSkills": [
+        {
+          "skillId": "dc_sql",
+          "demand": 1029,
+          "share": 0.349,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-201224505002",
+            "nk-051224008574",
+            "nk-201224006799"
+          ]
+        },
+        {
+          "skillId": "cg_project_mgmt",
+          "demand": 671,
+          "share": 0.228,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-181224505466",
+            "nk-171224502303",
+            "nk-121224500504"
+          ]
+        },
+        {
+          "skillId": "it_python_basics",
+          "demand": 639,
+          "share": 0.217,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-201224504862",
+            "nk-171224915222",
+            "nk-231224000653"
+          ]
+        },
+        {
+          "skillId": "sm_descriptive",
+          "demand": 472,
+          "share": 0.16,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-181224502708",
+            "nk-171224915222",
+            "nk-201224007030"
+          ]
+        },
+        {
+          "skillId": "cloud_aws",
+          "demand": 426,
+          "share": 0.145,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-201224504862",
+            "nk-161224502063",
+            "nk-021224007126"
+          ]
+        },
+        {
+          "skillId": "aiml_ml",
+          "demand": 400,
+          "share": 0.136,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-181224502708",
+            "nk-201224504862",
+            "nk-231224000653"
+          ]
+        },
+        {
+          "skillId": "cg_report_writing",
+          "demand": 384,
+          "share": 0.13,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-101224502232",
+            "nk-191224500979",
+            "nk-171224501235"
+          ]
+        },
+        {
+          "skillId": "cloud_azure",
+          "demand": 328,
+          "share": 0.111,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-171224501235",
+            "nk-211024011963",
+            "nk-281124919101"
+          ]
+        },
+        {
+          "skillId": "os_big_data",
+          "demand": 319,
+          "share": 0.108,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-171224915222",
+            "nk-201224006799",
+            "nk-211024011963"
+          ]
+        },
+        {
+          "skillId": "devops_docker",
+          "demand": 266,
+          "share": 0.09,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-181224505466",
+            "nk-131224504023",
+            "nk-270924502434"
+          ]
+        },
+        {
+          "skillId": "it_dashboards",
+          "demand": 190,
+          "share": 0.064,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-051224008574",
+            "nk-201224006799",
+            "nk-211024011963"
+          ]
+        },
+        {
+          "skillId": "cloud_gcp",
+          "demand": 184,
+          "share": 0.062,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-211024011963",
+            "nk-101224003789",
+            "nk-101224006262"
+          ]
+        },
+        {
+          "skillId": "it_data_viz",
+          "demand": 117,
+          "share": 0.04,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-171224915222",
+            "nk-201224007030",
+            "nk-201224006799"
+          ]
+        },
+        {
+          "skillId": "ss_quality_assurance",
+          "demand": 114,
+          "share": 0.039,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-061124502921",
+            "nk-050923500700",
+            "nk-290324501310"
+          ]
+        },
+        {
+          "skillId": "aiml_dl",
+          "demand": 106,
+          "share": 0.036,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-010421006391",
+            "nk-201224504862",
+            "nk-191224916486"
+          ]
+        },
+        {
+          "skillId": "dc_spreadsheets",
+          "demand": 103,
+          "share": 0.035,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-211024011963",
+            "nk-281124919450",
+            "nk-041023500183"
+          ]
+        },
+        {
+          "skillId": "aiml_nlp",
+          "demand": 102,
+          "share": 0.035,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-010421006391",
+            "nk-231224000653",
+            "nk-191224916486"
+          ]
+        },
+        {
+          "skillId": "sm_time_series",
+          "demand": 63,
+          "share": 0.021,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-201224006799",
+            "nk-121224500504",
+            "nk-211024011963"
+          ]
+        },
+        {
+          "skillId": "sm_regression",
+          "demand": 60,
+          "share": 0.02,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-191224916486",
+            "nk-121224500504",
+            "nk-211024011963"
+          ]
+        },
+        {
+          "skillId": "cg_user_engagement",
+          "demand": 57,
+          "share": 0.019,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-051224008574",
+            "nk-211024011963",
+            "nk-091224913055"
+          ]
+        },
+        {
+          "skillId": "aiml_genai",
+          "demand": 50,
+          "share": 0.017,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-201224504862",
+            "nk-171224915222",
+            "nk-191224916486"
+          ]
+        },
+        {
+          "skillId": "aiml_cv",
+          "demand": 47,
+          "share": 0.016,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-161224502069",
+            "nk-011124500329",
+            "nk-021224013217"
+          ]
+        },
+        {
+          "skillId": "it_python_stats",
+          "demand": 40,
+          "share": 0.014,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-201224006799",
+            "nk-091224905479",
+            "nk-100924500764"
+          ]
+        },
+        {
+          "skillId": "dc_cleaning",
+          "demand": 38,
+          "share": 0.013,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-281124904142",
+            "nk-101224501433",
+            "nk-111224021092"
+          ]
+        },
+        {
+          "skillId": "dq_quality_audit",
+          "demand": 38,
+          "share": 0.013,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-100924500764",
+            "nk-031024501934",
+            "nk-050824502594"
+          ]
+        },
+        {
+          "skillId": "it_basics",
+          "demand": 36,
+          "share": 0.012,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-030423501907",
+            "nk-051124502337",
+            "nk-201224500237"
+          ]
+        },
+        {
+          "skillId": "dc_metadata",
+          "demand": 34,
+          "share": 0.012,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-010323500468",
+            "nk-101224501433",
+            "nk-041024501888"
+          ]
+        },
+        {
+          "skillId": "dq_confidentiality",
+          "demand": 19,
+          "share": 0.006,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-031024501978",
+            "nk-021224503330",
+            "nk-091224016569"
+          ]
+        },
+        {
+          "skillId": "sm_hypothesis",
+          "demand": 14,
+          "share": 0.005,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-121224500504",
+            "nk-211024011963",
+            "nk-250823500648"
+          ]
+        },
+        {
+          "skillId": "cg_training_delivery",
+          "demand": 10,
+          "share": 0.003,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-16",
+            "maharashtra_-26",
+            "maharashtra_-347"
+          ]
+        },
+        {
+          "skillId": "dc_edit_rules",
+          "demand": 10,
+          "share": 0.003,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-301024500031",
+            "nk-041224006015",
+            "nk-090824500465"
+          ]
+        },
+        {
+          "skillId": "dc_data_entry",
+          "demand": 8,
+          "share": 0.003,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-101224501433",
+            "nk-220724502522",
+            "nk-220724501751"
+          ]
+        },
+        {
+          "skillId": "mfg_plc",
+          "demand": 6,
+          "share": 0.002,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-121124500509",
+            "nk-161024501271",
+            "nk-071024503615"
+          ]
+        },
+        {
+          "skillId": "ss_field_ops",
+          "demand": 4,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-041224504773",
+            "nk-041224504652",
+            "nk-081223500253"
+          ]
+        },
+        {
+          "skillId": "dq_dissemination",
+          "demand": 3,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-010319501401",
+            "nk-051224914740",
+            "nk-031224921938"
+          ]
+        },
+        {
+          "skillId": "it_data_ethics",
+          "demand": 3,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-021224502136",
+            "nk-141024501889",
+            "nk-230924502311"
+          ]
+        },
+        {
+          "skillId": "it_r_stats",
+          "demand": 3,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-211124502113",
+            "nk-031224005454",
+            "nk-021224010616"
+          ]
+        },
+        {
+          "skillId": "sm_inference",
+          "demand": 3,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-290623500367",
+            "nk-291223501127",
+            "nk-270922500487"
+          ]
+        },
+        {
+          "skillId": "sm_probability",
+          "demand": 3,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-100424500911",
+            "nk-111224018522",
+            "nk-041224501714"
+          ]
+        },
+        {
+          "skillId": "ss_sampling_basics",
+          "demand": 2,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-211124505631",
+            "maharashtra_-351"
+          ]
+        },
+        {
+          "skillId": "ss_sampling_stratified",
+          "demand": 2,
+          "share": 0.001,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-021224502136",
+            "nk-141024501889"
+          ]
+        },
+        {
+          "skillId": "agri_drone",
+          "demand": 1,
+          "share": 0,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-171224502322"
+          ]
+        },
+        {
+          "skillId": "civ_bim",
+          "demand": 1,
+          "share": 0,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-030724500395"
+          ]
+        },
+        {
+          "skillId": "dq_revision_policy",
+          "demand": 1,
+          "share": 0,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-061224504201"
+          ]
+        },
+        {
+          "skillId": "med_icd",
+          "demand": 1,
+          "share": 0,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "maharashtra_-97"
+          ]
+        },
+        {
+          "skillId": "os_census",
+          "demand": 1,
+          "share": 0,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-300724502059"
+          ]
+        },
+        {
+          "skillId": "sm_estimation",
+          "demand": 1,
+          "share": 0,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-250124500340"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Nagpur",
+      "postings": 76,
+      "topSkills": [
+        {
+          "skillId": "dc_sql",
+          "demand": 30,
+          "share": 0.395,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-211024503114",
+            "nk-151024022533",
+            "nk-080819501441"
+          ]
+        },
+        {
+          "skillId": "cg_project_mgmt",
+          "demand": 11,
+          "share": 0.145,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-020123501286",
+            "nk-050424501310",
+            "nk-020124500504"
+          ]
+        },
+        {
+          "skillId": "it_python_basics",
+          "demand": 11,
+          "share": 0.145,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-261124914788",
+            "nk-051224917748",
+            "nk-201124512363"
+          ]
+        },
+        {
+          "skillId": "os_big_data",
+          "demand": 9,
+          "share": 0.118,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-180919500668",
+            "nk-050424502649",
+            "nk-231224001876"
+          ]
+        },
+        {
+          "skillId": "sm_descriptive",
+          "demand": 8,
+          "share": 0.105,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-031224007880",
+            "nk-151024022533",
+            "nk-101221500466"
+          ]
+        },
+        {
+          "skillId": "cg_report_writing",
+          "demand": 7,
+          "share": 0.092,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-070819501018",
+            "nk-060624500924",
+            "nk-050424501310"
+          ]
+        },
+        {
+          "skillId": "cloud_aws",
+          "demand": 5,
+          "share": 0.066,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-031224007880",
+            "nk-121224504334",
+            "nk-050424502649"
+          ]
+        },
+        {
+          "skillId": "it_dashboards",
+          "demand": 5,
+          "share": 0.066,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-171024501872",
+            "nk-111124003589",
+            "nk-291024505582"
+          ]
+        },
+        {
+          "skillId": "cloud_azure",
+          "demand": 4,
+          "share": 0.053,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-151024022533",
+            "nk-221124918933",
+            "nk-050424502649"
+          ]
+        },
+        {
+          "skillId": "dc_spreadsheets",
+          "demand": 4,
+          "share": 0.053,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-111124003589",
+            "nk-291024505582",
+            "nk-060624500924"
+          ]
+        },
+        {
+          "skillId": "it_basics",
+          "demand": 3,
+          "share": 0.039,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-080819501441",
+            "nk-311219500397",
+            "nk-040319502010"
+          ]
+        },
+        {
+          "skillId": "aiml_ml",
+          "demand": 2,
+          "share": 0.026,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-170624502294",
+            "nk-180919500668"
+          ]
+        },
+        {
+          "skillId": "cloud_gcp",
+          "demand": 2,
+          "share": 0.026,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231224001876",
+            "nk-150424500589"
+          ]
+        },
+        {
+          "skillId": "devops_docker",
+          "demand": 2,
+          "share": 0.026,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-151024022533",
+            "nk-201124512363"
+          ]
+        },
+        {
+          "skillId": "it_data_viz",
+          "demand": 2,
+          "share": 0.026,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-170624502294",
+            "nk-171024501872"
+          ]
+        },
+        {
+          "skillId": "aiml_cv",
+          "demand": 1,
+          "share": 0.013,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-180919500668"
+          ]
+        },
+        {
+          "skillId": "dc_cleaning",
+          "demand": 1,
+          "share": 0.013,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-131224503217"
+          ]
+        },
+        {
+          "skillId": "dc_data_entry",
+          "demand": 1,
+          "share": 0.013,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-040319502010"
+          ]
+        },
+        {
+          "skillId": "dc_metadata",
+          "demand": 1,
+          "share": 0.013,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-120724500264"
+          ]
+        },
+        {
+          "skillId": "dq_confidentiality",
+          "demand": 1,
+          "share": 0.013,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-050424501310"
+          ]
+        },
+        {
+          "skillId": "it_python_stats",
+          "demand": 1,
+          "share": 0.013,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-150424500589"
+          ]
+        },
+        {
+          "skillId": "ss_quality_assurance",
+          "demand": 1,
+          "share": 0.013,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-061224502980"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Other Maharashtra",
+      "postings": 23,
+      "topSkills": [
+        {
+          "skillId": "dc_sql",
+          "demand": 6,
+          "share": 0.261,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-211220500763",
+            "nk-080524502278",
+            "nk-201124512363"
+          ]
+        },
+        {
+          "skillId": "cg_project_mgmt",
+          "demand": 3,
+          "share": 0.13,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-301024505432",
+            "nk-031224500492",
+            "nk-071124502909"
+          ]
+        },
+        {
+          "skillId": "it_data_viz",
+          "demand": 3,
+          "share": 0.13,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-101224503703",
+            "nk-231224902263",
+            "nk-301024505431"
+          ]
+        },
+        {
+          "skillId": "aiml_ml",
+          "demand": 2,
+          "share": 0.087,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-101224503703",
+            "nk-301024505432"
+          ]
+        },
+        {
+          "skillId": "cg_report_writing",
+          "demand": 2,
+          "share": 0.087,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-080524502278",
+            "maharashtra_-483"
+          ]
+        },
+        {
+          "skillId": "devops_docker",
+          "demand": 2,
+          "share": 0.087,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-201124512363",
+            "nk-071124502909"
+          ]
+        },
+        {
+          "skillId": "it_python_basics",
+          "demand": 2,
+          "share": 0.087,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231224902263",
+            "nk-201124512363"
+          ]
+        },
+        {
+          "skillId": "ss_quality_assurance",
+          "demand": 2,
+          "share": 0.087,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-080524502278",
+            "maharashtra_-603"
+          ]
+        },
+        {
+          "skillId": "aiml_cv",
+          "demand": 1,
+          "share": 0.043,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-301024505432"
+          ]
+        },
+        {
+          "skillId": "aiml_dl",
+          "demand": 1,
+          "share": 0.043,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-301024505432"
+          ]
+        },
+        {
+          "skillId": "aiml_nlp",
+          "demand": 1,
+          "share": 0.043,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-301024505432"
+          ]
+        },
+        {
+          "skillId": "dc_cleaning",
+          "demand": 1,
+          "share": 0.043,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-301024505431"
+          ]
+        },
+        {
+          "skillId": "dc_edit_rules",
+          "demand": 1,
+          "share": 0.043,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-301024505431"
+          ]
+        },
+        {
+          "skillId": "dc_metadata",
+          "demand": 1,
+          "share": 0.043,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-080524502278"
+          ]
+        },
+        {
+          "skillId": "it_basics",
+          "demand": 1,
+          "share": 0.043,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-221124020793"
+          ]
+        },
+        {
+          "skillId": "it_dashboards",
+          "demand": 1,
+          "share": 0.043,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231224902263"
+          ]
+        },
+        {
+          "skillId": "os_big_data",
+          "demand": 1,
+          "share": 0.043,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-031224500492"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Nashik",
+      "postings": 15,
+      "topSkills": [
+        {
+          "skillId": "dc_sql",
+          "demand": 6,
+          "share": 0.4,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-120520500091",
+            "nk-211220500763",
+            "nk-201124512363"
+          ]
+        },
+        {
+          "skillId": "cloud_aws",
+          "demand": 2,
+          "share": 0.133,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-031224007880",
+            "nk-211222500132"
+          ]
+        },
+        {
+          "skillId": "cloud_azure",
+          "demand": 2,
+          "share": 0.133,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-251124010171",
+            "nk-211222500132"
+          ]
+        },
+        {
+          "skillId": "it_dashboards",
+          "demand": 2,
+          "share": 0.133,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231224902263",
+            "nk-251124010171"
+          ]
+        },
+        {
+          "skillId": "it_python_basics",
+          "demand": 2,
+          "share": 0.133,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231224902263",
+            "nk-201124512363"
+          ]
+        },
+        {
+          "skillId": "aiml_ml",
+          "demand": 1,
+          "share": 0.067,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-211222500132"
+          ]
+        },
+        {
+          "skillId": "cg_project_mgmt",
+          "demand": 1,
+          "share": 0.067,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-031224500492"
+          ]
+        },
+        {
+          "skillId": "devops_docker",
+          "demand": 1,
+          "share": 0.067,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-201124512363"
+          ]
+        },
+        {
+          "skillId": "it_data_viz",
+          "demand": 1,
+          "share": 0.067,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-231224902263"
+          ]
+        },
+        {
+          "skillId": "os_big_data",
+          "demand": 1,
+          "share": 0.067,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-031224500492"
+          ]
+        },
+        {
+          "skillId": "sm_descriptive",
+          "demand": 1,
+          "share": 0.067,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-031224007880"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Unattributed",
+      "postings": 9,
+      "topSkills": [
+        {
+          "skillId": "dc_sql",
+          "demand": 6,
+          "share": 0.667,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-061224903980",
+            "nk-061224906939",
+            "nk-061224903992"
+          ]
+        },
+        {
+          "skillId": "it_python_basics",
+          "demand": 4,
+          "share": 0.444,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-061224903980",
+            "nk-061224903965",
+            "nk-061224903979"
+          ]
+        },
+        {
+          "skillId": "cg_project_mgmt",
+          "demand": 2,
+          "share": 0.222,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-061224906939",
+            "nk-061224903992"
+          ]
+        },
+        {
+          "skillId": "aiml_ml",
+          "demand": 1,
+          "share": 0.111,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-061224903980"
+          ]
+        },
+        {
+          "skillId": "cg_report_writing",
+          "demand": 1,
+          "share": 0.111,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-061224906939"
+          ]
+        },
+        {
+          "skillId": "cg_training_delivery",
+          "demand": 1,
+          "share": 0.111,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-061224903968"
+          ]
+        },
+        {
+          "skillId": "it_dashboards",
+          "demand": 1,
+          "share": 0.111,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-061224903980"
+          ]
+        },
+        {
+          "skillId": "it_data_viz",
+          "demand": 1,
+          "share": 0.111,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-061224903980"
+          ]
+        },
+        {
+          "skillId": "os_big_data",
+          "demand": 1,
+          "share": 0.111,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-061224903965"
+          ]
+        },
+        {
+          "skillId": "sm_descriptive",
+          "demand": 1,
+          "share": 0.111,
+          "avgStrength": 3,
+          "examplePostingIds": [
+            "nk-061224903980"
+          ]
+        }
+      ]
     }
   ],
   "audit": {

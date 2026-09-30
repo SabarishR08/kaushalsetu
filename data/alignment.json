@@ -1,6 +1,6 @@
 {
   "meta": {
-    "builtAt": "2026-09-30T12:39:59.632Z",
+    "builtAt": "2026-09-30T12:48:11.350Z",
     "demandSource": "real corpus merge: Naukri JSONL + sector CSV (data/jobs/raw)",
     "tagger": "keyword",
     "postings": 6000,
@@ -15,12 +15,33 @@
       "skills": [
         "dc_sql"
       ],
-      "alignment": 0.353,
+      "alignment": 0.351,
       "bestSector": "Data Science & AI",
       "bestSectorRelevance": 0.432,
       "sectorDemand": 2500,
       "missingInBestSector": [
         "it_python_basics",
+        "sm_descriptive",
+        "aiml_ml",
+        "os_big_data",
+        "cloud_azure",
+        "cg_project_mgmt"
+      ]
+    },
+    {
+      "courseId": "GEN009",
+      "title": "Python for Government Data Work",
+      "category": "Digital Competency",
+      "skills": [
+        "it_python_basics",
+        "it_python_stats"
+      ],
+      "alignment": 0.234,
+      "bestSector": "Data Science & AI",
+      "bestSectorRelevance": 0.41,
+      "sectorDemand": 2500,
+      "missingInBestSector": [
+        "dc_sql",
         "sm_descriptive",
         "aiml_ml",
         "os_big_data",
@@ -35,33 +56,12 @@
       "skills": [
         "cg_project_mgmt"
       ],
-      "alignment": 0.235,
+      "alignment": 0.233,
       "bestSector": "Software Engineering",
-      "bestSectorRelevance": 0.353,
+      "bestSectorRelevance": 0.352,
       "sectorDemand": 2500,
       "missingInBestSector": [
         "dc_sql"
-      ]
-    },
-    {
-      "courseId": "GEN009",
-      "title": "Python for Government Data Work",
-      "category": "Digital Competency",
-      "skills": [
-        "it_python_basics",
-        "it_python_stats"
-      ],
-      "alignment": 0.234,
-      "bestSector": "Data Science & AI",
-      "bestSectorRelevance": 0.409,
-      "sectorDemand": 2500,
-      "missingInBestSector": [
-        "dc_sql",
-        "sm_descriptive",
-        "aiml_ml",
-        "os_big_data",
-        "cloud_azure",
-        "cg_project_mgmt"
       ]
     },
     {
@@ -76,7 +76,7 @@
       ],
       "alignment": 0.141,
       "bestSector": "Data Science & AI",
-      "bestSectorRelevance": 0.29,
+      "bestSectorRelevance": 0.292,
       "sectorDemand": 2500,
       "missingInBestSector": [
         "dc_sql",
@@ -114,9 +114,9 @@
       "skills": [
         "os_big_data"
       ],
-      "alignment": 0.108,
+      "alignment": 0.107,
       "bestSector": "Data Science & AI",
-      "bestSectorRelevance": 0.228,
+      "bestSectorRelevance": 0.23,
       "sectorDemand": 2500,
       "missingInBestSector": [
         "dc_sql",
@@ -135,7 +135,7 @@
         "it_data_viz",
         "it_dashboards"
       ],
-      "alignment": 0.09,
+      "alignment": 0.089,
       "bestSector": "Data Science & AI",
       "bestSectorRelevance": 0.198,
       "sectorDemand": 2500,
@@ -172,7 +172,7 @@
       ],
       "alignment": 0.036,
       "bestSector": "Data Science & AI",
-      "bestSectorRelevance": 0.069,
+      "bestSectorRelevance": 0.068,
       "sectorDemand": 2500,
       "missingInBestSector": [
         "dc_sql",
@@ -227,7 +227,7 @@
       ],
       "alignment": 0.017,
       "bestSector": "Data Science & AI",
-      "bestSectorRelevance": 0.028,
+      "bestSectorRelevance": 0.029,
       "sectorDemand": 2500,
       "missingInBestSector": [
         "dc_sql",
@@ -246,7 +246,7 @@
         "it_r_stats",
         "it_python_stats"
       ],
-      "alignment": 0.015,
+      "alignment": 0.016,
       "bestSector": "Data Science & AI",
       "bestSectorRelevance": 0.034,
       "sectorDemand": 2500,
@@ -269,7 +269,7 @@
       ],
       "alignment": 0.014,
       "bestSector": "Data Science & AI",
-      "bestSectorRelevance": 0.03,
+      "bestSectorRelevance": 0.031,
       "sectorDemand": 2500,
       "missingInBestSector": [
         "dc_sql",
@@ -304,7 +304,7 @@
       ],
       "alignment": 0.01,
       "bestSector": "Data Science & AI",
-      "bestSectorRelevance": 0.022,
+      "bestSectorRelevance": 0.021,
       "sectorDemand": 2500,
       "missingInBestSector": [
         "dc_sql",
@@ -655,8 +655,8 @@
       "topSkills": [
         "dc_sql",
         "cg_project_mgmt",
-        "it_python_basics",
         "devops_docker",
+        "it_python_basics",
         "cloud_aws",
         "cg_report_writing",
         "cloud_azure",
@@ -675,7 +675,7 @@
         "sm_descriptive",
         "os_big_data"
       ],
-      "coverage": 0.72
+      "coverage": 0.721
     },
     {
       "sector": "Manufacturing & Auto",
@@ -797,8 +797,8 @@
   "uncoveredSkills": [
     {
       "skillId": "cloud_aws",
-      "demand": 850,
-      "share": 0.142,
+      "demand": 837,
+      "share": 0.14,
       "sectors": [
         "Data Science & AI",
         "Software Engineering",
@@ -812,8 +812,8 @@
     },
     {
       "skillId": "cloud_azure",
-      "demand": 732,
-      "share": 0.122,
+      "demand": 737,
+      "share": 0.123,
       "sectors": [
         "Data Science & AI",
         "Software Engineering",
@@ -827,8 +827,8 @@
     },
     {
       "skillId": "aiml_ml",
-      "demand": 707,
-      "share": 0.118,
+      "demand": 704,
+      "share": 0.117,
       "sectors": [
         "Data Science & AI",
         "Software Engineering",
@@ -842,8 +842,8 @@
     },
     {
       "skillId": "devops_docker",
-      "demand": 563,
-      "share": 0.094,
+      "demand": 560,
+      "share": 0.093,
       "sectors": [
         "Data Science & AI",
         "Software Engineering",
@@ -857,8 +857,8 @@
     },
     {
       "skillId": "cloud_gcp",
-      "demand": 383,
-      "share": 0.064,
+      "demand": 377,
+      "share": 0.063,
       "sectors": [
         "Data Science & AI",
         "Software Engineering",
@@ -872,7 +872,7 @@
     },
     {
       "skillId": "aiml_dl",
-      "demand": 189,
+      "demand": 192,
       "share": 0.032,
       "sectors": [
         "Data Science & AI",
@@ -886,8 +886,8 @@
     },
     {
       "skillId": "aiml_nlp",
-      "demand": 175,
-      "share": 0.029,
+      "demand": 177,
+      "share": 0.03,
       "sectors": [
         "Data Science & AI",
         "Software Engineering"
@@ -900,7 +900,7 @@
     },
     {
       "skillId": "aiml_genai",
-      "demand": 95,
+      "demand": 98,
       "share": 0.016,
       "sectors": [
         "Data Science & AI",
@@ -914,7 +914,7 @@
     },
     {
       "skillId": "aiml_cv",
-      "demand": 78,
+      "demand": 80,
       "share": 0.013,
       "sectors": [
         "Data Science & AI",
@@ -1006,56 +1006,56 @@
       "skillId": "cloud_aws",
       "sector": "Data Science & AI",
       "title": "Add content for \"cloud_aws\"",
-      "detail": "850 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
+      "detail": "837 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
     },
     {
       "type": "add-program",
       "skillId": "cloud_azure",
       "sector": "Data Science & AI",
       "title": "Add content for \"cloud_azure\"",
-      "detail": "732 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
+      "detail": "737 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
     },
     {
       "type": "add-program",
       "skillId": "aiml_ml",
       "sector": "Data Science & AI",
       "title": "Add content for \"aiml_ml\"",
-      "detail": "707 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
+      "detail": "704 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
     },
     {
       "type": "add-program",
       "skillId": "devops_docker",
       "sector": "Data Science & AI",
       "title": "Add content for \"devops_docker\"",
-      "detail": "563 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
+      "detail": "560 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
     },
     {
       "type": "add-program",
       "skillId": "cloud_gcp",
       "sector": "Data Science & AI",
       "title": "Add content for \"cloud_gcp\"",
-      "detail": "383 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
+      "detail": "377 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
     },
     {
       "type": "add-program",
       "skillId": "aiml_dl",
       "sector": "Data Science & AI",
       "title": "Add content for \"aiml_dl\"",
-      "detail": "189 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
+      "detail": "192 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
     },
     {
       "type": "add-program",
       "skillId": "aiml_nlp",
       "sector": "Data Science & AI",
       "title": "Add content for \"aiml_nlp\"",
-      "detail": "175 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
+      "detail": "177 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
     },
     {
       "type": "add-program",
       "skillId": "aiml_genai",
       "sector": "Data Science & AI",
       "title": "Add content for \"aiml_genai\"",
-      "detail": "95 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
+      "detail": "98 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
     },
     {
       "type": "revise-program",

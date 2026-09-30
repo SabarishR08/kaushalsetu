@@ -21,6 +21,7 @@ export interface DemandData {
   meta: { builtAt: string; source: string; tagger: string; postings: number; sectors: number };
   overall: DemandSkill[];
   sectors: { sector: string; postings: number; topSkills: DemandSkill[]; uncoveredSkills: DemandSkill[] }[];
+  cities: { city: string; postings: number; topSkills: DemandSkill[] }[];
   audit: Record<string, string[]>;
 }
 

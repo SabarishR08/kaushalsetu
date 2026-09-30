@@ -49,6 +49,7 @@ interface DemandFile {
   };
   overall: DemandSkill[];
   sectors: DemandSector[];
+  cities: { city: string; postings: number; topSkills: DemandSkill[] }[];
   audit: Record<string, string[]>; // postingId -> matched aliases
 }
 
@@ -104,9 +105,34 @@ function stripHtml(s: string): string {
 
 const MH_PATTERN = /(mumbai|pune|nagpur|nashik|nashik|thane|navi mumbai|aurangabad|chh\.? sambhajinagar|kolhapur|solapur|amravati|jalgaon|sangli|satara|latur|ichalkaranji|bhiwandi|hinjawadi|chakan|maharashtra)/i;
 
+/**
+ * City clusters for the department dashboard. Ordered rules; a posting whose
+ * location mentions several cities ("Pune, Bengaluru", "Navi Mumbai, Mumbai")
+ * credits every Maharashtra cluster it matches — multi-city postings are real
+ * demand in each listed city. Hinjawadi/Pimpri/Chakan fold into Pune, Navi
+ * Mumbai/Thane into the Mumbai MMR cluster.
+ */
+const CITY_RULES: { city: string; patterns: RegExp[] }[] = [
+  { city: "Pune", patterns: [/pune/i, /hinjawadi/i, /pimpri/i, /chakan/i] },
+  { city: "Mumbai (MMR)", patterns: [/mumbai/i, /navi mumbai/i, /thane/i] },
+  { city: "Nagpur", patterns: [/nagpur/i] },
+  { city: "Nashik", patterns: [/nashik|nasik/i] },
+  { city: "Other Maharashtra", patterns: [/kolhapur/i, /aurangabad/i, /chh\.? sambhajinagar/i, /solapur/i, /amravati/i, /jalgaon/i, /sangli/i, /satara/i, /latur/i, /ichalkaranji/i, /bhiwandi/i] },
+];
+
+export function extractCities(location: string): string[] {
+  if (!location) return [];
+  const out = CITY_RULES.filter((r) => r.patterns.some((p) => p.test(location))).map((r) => r.city);
+  return out;
+}
+
 async function loadJsonlDir(): Promise<Posting[]> {
   const dir = path.join(process.cwd(), "data", "jobs", "raw");
-  const files = (await fs.readdir(dir)).filter((f) => f.toLowerCase().endsWith(".jsonl"));
+  // `*.sample.jsonl` files exist for repo browsing/tests only — never ingest
+  // them alongside the full corpora (they duplicate the first N rows).
+  const files = (await fs.readdir(dir)).filter(
+    (f) => f.toLowerCase().endsWith(".jsonl") && !f.includes(".sample."),
+  );
   // Read every file fully and filter FIRST (Maharashtra attribution), then cap
   // the kept rows at MAX_POSTINGS round-robin across files so no file's slice
   // crowds out the others.
@@ -117,6 +143,7 @@ async function loadJsonlDir(): Promise<Posting[]> {
     perFile.push(lines);
   }
   const postings: Posting[] = [];
+  const seenIds = new Set<string>();
   const cursors = perFile.map(() => 0);
   let remaining = perFile.reduce((a, lines) => a + lines.length, 0);
   while (postings.length < 5000 && remaining > 0) {
@@ -141,6 +168,9 @@ async function loadJsonlDir(): Promise<Posting[]> {
         // Maharashtra attribution filter: the department is a state body, so
         // postings must be in Maharashtra cities to count toward the demand signal.
         if (!MH_PATTERN.test(location)) continue;
+        const id = `nk-${String(row.jobId ?? `${path.basename(f, ".jsonl")}-${i}`)}`;
+        if (seenIds.has(id)) continue; // corpus overlap guard
+        seenIds.add(id);
         const stem = path.basename(f, ".jsonl").toLowerCase();
         const sector = stem.includes("data_scientist")
           ? "Data Science & AI"
@@ -148,7 +178,7 @@ async function loadJsonlDir(): Promise<Posting[]> {
             ? "Software Engineering"
             : stem;
         postings.push({
-          id: `nk-${String(row.jobId ?? `${path.basename(f, ".jsonl")}-${i}`)}`,
+          id,
           title,
           org: String(row.companyName ?? row.company ?? "").trim() || undefined,
           sector,
@@ -206,7 +236,15 @@ async function loadRawCsv(): Promise<Posting[]> {
   return postings;
 }
 
-function summarize(postings: Posting[], tags: { skillId: string; strength: number }[][]): { overall: DemandSkill[]; perSector: Map<string, DemandSkill[]> } {
+/** Number of postings attributed to a city cluster ("Unattributed" for none). */
+function cityPostings(postings: Posting[], city: string): number {
+  return postings.filter((p) => {
+    const cities = extractCities(p.city ?? "");
+    return cities.length ? cities.includes(city) : city === "Unattributed";
+  }).length;
+}
+
+function summarize(postings: Posting[], tags: { skillId: string; strength: number }[][]): { overall: DemandSkill[]; perSector: Map<string, DemandSkill[]>; perCity: Map<string, DemandSkill[]> } {
   const n = postings.length || 1;
   const accumulate = (subset: number[]): DemandSkill[] => {
     const m = new Map<string, { count: number; strSum: number; examples: string[] }>();
@@ -237,7 +275,22 @@ function summarize(postings: Posting[], tags: { skillId: string; strength: numbe
     const idxs = postings.map((p, i) => (p.sector === s ? i : -1)).filter((i) => i >= 0);
     perSector.set(s, accumulate(idxs));
   }
-  return { overall: all, perSector };
+  // City attribution: a posting can credit multiple clusters (multi-city
+  // listings are demand in each). Postings with no Maharashtra city (should
+  // not happen after the filter, but the CSV may lack one) land in
+  // "Unattributed" so the counts reconcile.
+  const cityIndex = new Map<string, number[]>();
+  for (let i = 0; i < postings.length; i++) {
+    const cities = extractCities(postings[i].city ?? "");
+    for (const c of cities.length ? cities : ["Unattributed"]) {
+      const arr = cityIndex.get(c) ?? [];
+      arr.push(i);
+      cityIndex.set(c, arr);
+    }
+  }
+  const perCity = new Map<string, DemandSkill[]>();
+  for (const [c, idxs] of cityIndex) perCity.set(c, accumulate(idxs));
+  return { overall: all, perSector, perCity };
 }
 
 async function main(): Promise<void> {
@@ -276,7 +329,7 @@ async function main(): Promise<void> {
   console.log(`[demand] tagger: ${tagger}`);
 
   const strengths = tagged.map((ts) => ts.map((t) => ({ skillId: t.skillId, strength: t.strength })));
-  const { overall, perSector } = summarize(postings, strengths);
+  const { overall, perSector, perCity } = summarize(postings, strengths);
 
   // Audit trail is capped so large real corpora keep demand.json compact.
   const audit: Record<string, string[]> = {};
@@ -296,6 +349,13 @@ async function main(): Promise<void> {
     overall,
     sectors: [...perSector.entries()]
       .map(([sector, topSkills]) => ({ sector, postings: postings.filter((p) => p.sector === sector).length, topSkills, uncoveredSkills: [] }))
+      .sort((a, b) => b.postings - a.postings),
+    cities: [...perCity.entries()]
+      .map(([city, topSkills]) => ({
+        city,
+        postings: cityPostings(postings, city),
+        topSkills,
+      }))
       .sort((a, b) => b.postings - a.postings),
     audit,
   };

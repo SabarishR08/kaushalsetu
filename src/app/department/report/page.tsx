@@ -72,7 +72,38 @@ export default async function DepartmentReportPage() {
       </section>
 
       <section className="mb-8">
-        <h2 className="mb-2 text-base font-semibold">2. In-demand skills no program teaches</h2>
+        <h2 className="mb-2 text-base font-semibold">2. Skill demand by city cluster</h2>
+        {demand.cities?.length ? (
+          <table className="w-full border-collapse text-sm">
+            <thead>
+              <tr className="border-b text-left">
+                <th className="py-1 pr-4">City cluster</th>
+                <th className="py-1 pr-4">Postings</th>
+                <th className="py-1">Top 5 skills demanded</th>
+              </tr>
+            </thead>
+            <tbody>
+              {demand.cities
+                .filter((c) => c.city !== "Unattributed" && c.postings >= 5)
+                .map((c) => (
+                  <tr key={c.city} className="border-b align-top">
+                    <td className="py-1.5 pr-4 font-medium">{c.city}</td>
+                    <td className="py-1.5 pr-4">{c.postings}</td>
+                    <td className="py-1.5">{c.topSkills.slice(0, 5).map((s) => name(s.skillId)).join(", ")}</td>
+                  </tr>
+                ))}
+            </tbody>
+          </table>
+        ) : (
+          <p className="text-sm">City attribution unavailable for this demand build.</p>
+        )}
+        <p className="mt-1 text-xs text-muted-foreground">
+          Multi-city postings credit every listed city, so counts sum above the posting total.
+        </p>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="mb-2 text-base font-semibold">3. In-demand skills no program teaches</h2>
         {alignment.uncoveredSkills.length ? (
           <ul className="list-disc space-y-1 pl-5 text-sm">
             {alignment.uncoveredSkills.map((g) => (
@@ -88,7 +119,7 @@ export default async function DepartmentReportPage() {
       </section>
 
       <section className="mb-8">
-        <h2 className="mb-2 text-base font-semibold">3. Recommendations</h2>
+        <h2 className="mb-2 text-base font-semibold">4. Recommendations</h2>
         <ol className="list-decimal space-y-2 pl-5 text-sm">
           {alignment.recommendations.map((r, i) => (
             <li key={i}>
@@ -102,7 +133,7 @@ export default async function DepartmentReportPage() {
       </section>
 
       <section>
-        <h2 className="mb-2 text-base font-semibold">4. Most market-aligned programs</h2>
+        <h2 className="mb-2 text-base font-semibold">5. Most market-aligned programs</h2>
         <table className="w-full border-collapse text-sm">
           <thead>
             <tr className="border-b text-left">
