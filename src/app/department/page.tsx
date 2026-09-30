@@ -12,7 +12,7 @@ import { ALL_DISTRICTS } from "@/lib/geo/districts";
 import { getDepartmentData } from "@/lib/dept-data";
 import { PIPELINE_POSTINGS } from "@/lib/pipeline-meta";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
 
 const pct = (x: number) => `${Math.round(x * 100)}%`;
 

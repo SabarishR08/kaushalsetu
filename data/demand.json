@@ -1,6 +1,6 @@
 {
   "meta": {
-    "builtAt": "2026-09-30T13:42:25.919Z",
+    "builtAt": "2026-09-30T16:48:52.984Z",
     "source": "real corpus merge: Naukri JSONL + sector CSV (data/jobs/raw)",
     "tagger": "keyword",
     "postings": 13511,

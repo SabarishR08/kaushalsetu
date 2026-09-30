@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { getDepartmentData } from "@/lib/dept-data";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
 
 const pct = (x: number) => `${Math.round(x * 100)}%`;
 

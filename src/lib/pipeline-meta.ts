@@ -2,5 +2,5 @@
 // Regenerated on every npm run sih:demand from the live corpus.
 export const PIPELINE_POSTINGS = 13511;
 export const PIPELINE_SECTORS = 69;
-export const PIPELINE_BUILT_AT = "2026-09-30T19:22:00.000Z";
+export const PIPELINE_BUILT_AT = "2026-09-30T16:48:52.984Z";
 export const PIPELINE_SOURCE = "real corpus merge: Naukri JSONL + sector CSV (data/jobs/raw)";

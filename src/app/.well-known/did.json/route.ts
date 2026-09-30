@@ -1,7 +1,7 @@
 import { getDidDocument } from "@/lib/passport-crypto";
 import { json } from "@/lib/api-helpers";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
 
 export async function GET(request: Request) {
   const host = request.headers.get("x-forwarded-host") || request.headers.get("host") || "statsetu.onrender.com";

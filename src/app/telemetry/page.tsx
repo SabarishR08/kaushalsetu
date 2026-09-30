@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Activity, Database, CheckCircle2, ArrowRight } from "lucide-react";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
 
 async function loadRealJobs(): Promise<RealPosting[]> {
   try {
