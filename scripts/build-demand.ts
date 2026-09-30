@@ -52,7 +52,7 @@ interface DemandFile {
   };
   overall: DemandSkill[];
   sectors: DemandSector[];
-  cities: { city: string; postings: number; topSkills: DemandSkill[] }[];
+  districts: { district: string; postings: number; topSkills: DemandSkill[] }[];
   audit: Record<string, string[]>; // postingId -> matched aliases
 }
 
@@ -106,27 +106,68 @@ function stripHtml(s: string): string {
     .trim();
 }
 
-const MH_PATTERN = /(mumbai|pune|nagpur|nashik|nashik|thane|navi mumbai|aurangabad|chh\.? sambhajinagar|kolhapur|solapur|amravati|jalgaon|sangli|satara|latur|ichalkaranji|bhiwandi|hinjawadi|chakan|maharashtra)/i;
+const MH_PATTERN = /(maharashtra|mumbai|navi mumbai|pune|hinjawadi|pimpri|chinchwad|chakan|nagpur|nashik|nasik|thane|kalyan|dombivli|bhiwandi|ulhasnagar|ambarnath|palghar|vasai|virar|raigad|alibag|panvel|ratnagiri|chiplun|sindhudurg|malvan|satara|karad|sangli|miraj|kolhapur|ichalkaranji|solapur|barshi|pandharpur|dhule|nandurbar|jalgaon|bhusawal|amalner|ahmednagar|shrirampur|kopargaon|shirdi|sangamner|sambhajinagar|aurangabad|jalna|beed|ambajogai|osmanabad|usmanabad|dharashiv|latur|udgir|nanded|parbhani|hingoli|basmath|buldhana|khamgaon|malkapur|akola|washim|risod|amravati|achalpur|yavatmal|pusad|wardha|hinganghat|kamptee|bhandara|gondia|gondiya|chandrapur|ballarpur|gadchiroli)/i;
 
 /**
- * City clusters for the department dashboard. Ordered rules; a posting whose
- * location mentions several cities ("Pune, Bengaluru", "Navi Mumbai, Mumbai")
- * credits every Maharashtra cluster it matches — multi-city postings are real
- * demand in each listed city. Hinjawadi/Pimpri/Chakan fold into Pune, Navi
- * Mumbai/Thane into the Mumbai MMR cluster.
+ * All 36 Maharashtra districts (Mumbai City & Suburban combined into one
+ * "Mumbai" tile — Naukri never distinguishes them; footnoted on the map).
+ * A posting credits EVERY district its location string matches, so
+ * multi-district listings ("Pune, Nagpur") count in each. Specific towns are
+ * matched before bare district names to survive the usual location soup
+ * ("Hinjawadi, Pune", "Mumbai (All Areas)", "Chh. Sambhajinagar").
  */
-const CITY_RULES: { city: string; patterns: RegExp[] }[] = [
-  { city: "Pune", patterns: [/pune/i, /hinjawadi/i, /pimpri/i, /chakan/i] },
-  { city: "Mumbai (MMR)", patterns: [/mumbai/i, /navi mumbai/i, /thane/i] },
-  { city: "Nagpur", patterns: [/nagpur/i] },
-  { city: "Nashik", patterns: [/nashik|nasik/i] },
-  { city: "Other Maharashtra", patterns: [/kolhapur/i, /aurangabad/i, /chh\.? sambhajinagar/i, /solapur/i, /amravati/i, /jalgaon/i, /sangli/i, /satara/i, /latur/i, /ichalkaranji/i, /bhiwandi/i] },
+const DISTRICT_RULES: { district: string; patterns: RegExp[] }[] = [
+  { district: "Palghar", patterns: [/palghar/i, /vasai/i, /virar/i, /boisar/i] },
+  { district: "Mumbai", patterns: [/mumbai/i] },
+  { district: "Thane", patterns: [/thane/i, /navi mumbai/i, /kalyan/i, /dombivli/i, /bhiwandi/i, /ulhasnagar/i, /ambarnath/i] },
+  { district: "Raigad", patterns: [/raigad/i, /alibag/i, /panvel/i, /khopoli/i] },
+  { district: "Ratnagiri", patterns: [/ratnagiri/i, /chiplun/i] },
+  { district: "Sindhudurg", patterns: [/sindhudurg/i, /malvan/i, /kankavli/i, /sawantwadi/i] },
+  { district: "Pune", patterns: [/pune/i, /hinjawadi/i, /pimpri/i, /chinchwad/i, /chakan/i, /baramati/i, /talegaon/i, /lonavala/i] },
+  { district: "Satara", patterns: [/satara/i, /karad/i, /wai/i] },
+  { district: "Sangli", patterns: [/sangli/i, /miraj/i, /tasgaon/i] },
+  { district: "Solapur", patterns: [/solapur/i, /barshi/i, /pandharpur/i] },
+  { district: "Kolhapur", patterns: [/kolhapur/i, /ichalkaranji/i, /gadhinglaj/i] },
+  { district: "Nashik", patterns: [/nashik/i, /nasik/i, /malegaon/i, /sinnar/i, /igatpuri/i] },
+  { district: "Dhule", patterns: [/dhule/i, /dhulia/i] },
+  { district: "Nandurbar", patterns: [/nandurbar/i, /shahada/i, /taloda/i] },
+  { district: "Jalgaon", patterns: [/jalgaon(?! jamod)/i, /bhusawal/i, /amalner/i, /chopda/i, /raver/i] },
+  { district: "Ahmednagar", patterns: [/ahmednagar/i, /shrirampur/i, /kopargaon/i, /shirdi/i, /sangamner/i] },
+  { district: "Chh. Sambhajinagar", patterns: [/sambhajinagar/i, /aurangabad/i, /paithan/i, /kannad/i] },
+  { district: "Jalna", patterns: [/jalna/i] },
+  { district: "Beed", patterns: [/beed/i, /ambajogai/i, /georai/i] },
+  { district: "Osmanabad (Dharashiv)", patterns: [/osmanabad/i, /usmanabad/i, /dharashiv/i, /tuljapur/i] },
+  { district: "Latur", patterns: [/latur/i, /udgir/i, /ahmedpur/i] },
+  { district: "Nanded", patterns: [/nanded/i, /deglur/i, /biloli/i] },
+  { district: "Parbhani", patterns: [/parbhani/i, /jintur/i] },
+  { district: "Hingoli", patterns: [/hingoli/i, /basmath/i, /kalamnuri/i] },
+  { district: "Buldhana", patterns: [/buldhana/i, /khamgaon/i, /jalgaon jamod/i, /malkapur/i] },
+  { district: "Akola", patterns: [/akola/i, /balapur/i] },
+  { district: "Washim", patterns: [/washim/i, /risod/i, /karanja/i] },
+  { district: "Amravati", patterns: [/amravati/i, /achalpur/i, /chandur/i, /dhamangaon/i] },
+  { district: "Yavatmal", patterns: [/yavatmal/i, /pusad/i, /umarkhed/i, /darwha/i, /wani/i] },
+  { district: "Wardha", patterns: [/wardha/i, /hinganghat/i, /arvi/i] },
+  { district: "Nagpur", patterns: [/nagpur/i, /kamptee/i, /katol/i, /ramtek/i, /umred/i] },
+  { district: "Bhandara", patterns: [/bhandara/i, /tumsar/i, /sakoli/i] },
+  { district: "Gondia", patterns: [/gondia/i, /gondiya/i, /tirora/i, /armori/i] },
+  { district: "Chandrapur", patterns: [/chandrapur/i, /ballarpur/i, /rajura/i, /ghugus/i] },
+  { district: "Gadchiroli", patterns: [/gadchiroli/i, /desaiganj/i, /aheri/i, /sironcha/i, /wadsa/i] },
 ];
 
-export function extractCities(location: string): string[] {
+/** Approximate geographic tile positions [row, col] for the choropleth grid. */
+export const DISTRICT_GRID: Record<string, [number, number]> = {
+  Nandurbar: [0, 1], Dhule: [0, 2], Jalgaon: [0, 3], Gondia: [0, 7],
+  Palghar: [1, 0], Nashik: [1, 1], "Chh. Sambhajinagar": [1, 2], Jalna: [1, 3], Buldhana: [1, 4], Akola: [1, 5], Amravati: [1, 6], Bhandara: [1, 7],
+  Mumbai: [2, 0], Pune: [2, 1], Ahmednagar: [2, 2], Beed: [2, 3], Parbhani: [2, 4], Hingoli: [2, 5], Washim: [2, 6], Nagpur: [2, 7],
+  Thane: [3, 0], Satara: [3, 1], Solapur: [3, 2], Latur: [3, 3], Nanded: [3, 4], Yavatmal: [3, 5], Wardha: [3, 6], Chandrapur: [3, 7],
+  Raigad: [4, 0], Sangli: [4, 1], "Osmanabad (Dharashiv)": [4, 2], Gadchiroli: [4, 7],
+  Ratnagiri: [5, 0], Kolhapur: [5, 1],
+  Sindhudurg: [6, 0],
+};
+
+export function extractDistricts(location: string): string[] {
   if (!location) return [];
-  const out = CITY_RULES.filter((r) => r.patterns.some((p) => p.test(location))).map((r) => r.city);
-  return out;
+  return DISTRICT_RULES.filter((r) => r.patterns.some((p) => p.test(location))).map((r) => r.district);
 }
 
 async function loadJsonlDir(): Promise<Posting[]> {
@@ -245,15 +286,15 @@ async function loadRawCsv(): Promise<Posting[]> {
   return postings;
 }
 
-/** Number of postings attributed to a city cluster ("Unattributed" for none). */
-function cityPostings(postings: Posting[], city: string): number {
+/** Number of postings attributed to a district ("Unattributed" for none). */
+function districtPostings(postings: Posting[], district: string): number {
   return postings.filter((p) => {
-    const cities = extractCities(p.city ?? "");
-    return cities.length ? cities.includes(city) : city === "Unattributed";
+    const ds = extractDistricts(p.city ?? "");
+    return ds.length ? ds.includes(district) : district === "Unattributed";
   }).length;
 }
 
-function summarize(postings: Posting[], tags: { skillId: string; strength: number }[][]): { overall: DemandSkill[]; perSector: Map<string, DemandSkill[]>; perCity: Map<string, DemandSkill[]> } {
+function summarize(postings: Posting[], tags: { skillId: string; strength: number }[][]): { overall: DemandSkill[]; perSector: Map<string, DemandSkill[]>; perDistrict: Map<string, DemandSkill[]> } {
   const n = postings.length || 1;
   const accumulate = (subset: number[]): DemandSkill[] => {
     const m = new Map<string, { count: number; strSum: number; examples: string[] }>();
@@ -284,22 +325,22 @@ function summarize(postings: Posting[], tags: { skillId: string; strength: numbe
     const idxs = postings.map((p, i) => (p.sector === s ? i : -1)).filter((i) => i >= 0);
     perSector.set(s, accumulate(idxs));
   }
-  // City attribution: a posting can credit multiple clusters (multi-city
-  // listings are demand in each). Postings with no Maharashtra city (should
-  // not happen after the filter, but the CSV may lack one) land in
-  // "Unattributed" so the counts reconcile.
-  const cityIndex = new Map<string, number[]>();
+  // District attribution: a posting can credit multiple districts (multi-city
+  // listings are demand in each). Postings with no district (should not happen
+  // after the filter, but location strings vary) land in "Unattributed" so
+  // the counts reconcile.
+  const districtIndex = new Map<string, number[]>();
   for (let i = 0; i < postings.length; i++) {
-    const cities = extractCities(postings[i].city ?? "");
-    for (const c of cities.length ? cities : ["Unattributed"]) {
-      const arr = cityIndex.get(c) ?? [];
+    const ds = extractDistricts(postings[i].city ?? "");
+    for (const d of ds.length ? ds : ["Unattributed"]) {
+      const arr = districtIndex.get(d) ?? [];
       arr.push(i);
-      cityIndex.set(c, arr);
+      districtIndex.set(d, arr);
     }
   }
-  const perCity = new Map<string, DemandSkill[]>();
-  for (const [c, idxs] of cityIndex) perCity.set(c, accumulate(idxs));
-  return { overall: all, perSector, perCity };
+  const perDistrict = new Map<string, DemandSkill[]>();
+  for (const [d, idxs] of districtIndex) perDistrict.set(d, accumulate(idxs));
+  return { overall: all, perSector, perDistrict };
 }
 
 async function main(): Promise<void> {
@@ -338,7 +379,7 @@ async function main(): Promise<void> {
   console.log(`[demand] tagger: ${tagger}`);
 
   const strengths = tagged.map((ts) => ts.map((t) => ({ skillId: t.skillId, strength: t.strength })));
-  const { overall, perSector, perCity } = summarize(postings, strengths);
+  const { overall, perSector, perDistrict } = summarize(postings, strengths);
 
   // Audit trail is capped so large real corpora keep demand.json compact.
   const audit: Record<string, string[]> = {};
@@ -359,10 +400,10 @@ async function main(): Promise<void> {
     sectors: [...perSector.entries()]
       .map(([sector, topSkills]) => ({ sector, postings: postings.filter((p) => p.sector === sector).length, topSkills, uncoveredSkills: [] }))
       .sort((a, b) => b.postings - a.postings),
-    cities: [...perCity.entries()]
-      .map(([city, topSkills]) => ({
-        city,
-        postings: cityPostings(postings, city),
+    districts: [...perDistrict.entries()]
+      .map(([district, topSkills]) => ({
+        district,
+        postings: districtPostings(postings, district),
         topSkills,
       }))
       .sort((a, b) => b.postings - a.postings),
