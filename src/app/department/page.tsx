@@ -61,7 +61,7 @@ export default async function DepartmentPage() {
   const mapData = districtList.map((d) => ({
     district: d.district,
     postings: d.postings,
-    topSkills: d.topSkills.slice(0, 3).map((s) => name(s.skillId)),
+    topSkills: d.topSkills.slice(0, 5).map((s) => name(s.skillId)),
   }));
   const zeroCount = ALL_DISTRICTS.filter((n) => !districtList.some((d) => d.district === n)).length;
   const topDistricts = districtList.filter((d) => d.postings >= 20).slice(0, 4);

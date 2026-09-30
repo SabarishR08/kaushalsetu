@@ -40,7 +40,7 @@ export default function LandingPage() {
         <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
         <span>महाराष्ट्र शासन • Department of Skills, Employment, Entrepreneurship & Innovation (SIH26134)</span>
         <Badge variant="outline" className="border-orange-500/30 text-orange-300 text-[10px] py-0 px-2 h-4.5 ml-1">
-          1,000 Real Postings Ingested
+          13,511 Real Postings Ingested
         </Badge>
       </div>
 
@@ -103,7 +103,7 @@ export default function LandingPage() {
           <div className="flex flex-wrap items-center justify-center gap-3 mt-1">
             <Badge variant="outline" className="border-white/10 text-xs py-1 px-3 bg-white/[0.02] text-muted-foreground">
               <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 mr-1.5" />
-              1,000 Real Naukri Postings
+              13,511 Real Naukri Postings
             </Badge>
             <Badge variant="outline" className="border-white/10 text-xs py-1 px-3 bg-white/[0.02] text-muted-foreground">
               <Building2 className="w-3.5 h-3.5 text-orange-400 mr-1.5" />
@@ -213,14 +213,14 @@ export default function LandingPage() {
                     <Activity className="h-6 w-6" />
                   </div>
                   <h3 className="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors">
-                    1,000 Live Postings Telemetry
+                    13,511 Live Postings Telemetry
                   </h3>
                   <p className="text-xs text-muted-foreground mt-2 leading-relaxed">
                     Search and inspect authentic Maharashtra job vacancies from Naukri across Tata Motors, Infosys, Tech Mahindra, L&T, and Bosch India.
                   </p>
                 </div>
                 <div className="mt-4 pt-3 border-t border-white/5 text-xs text-emerald-400 flex items-center gap-1 font-medium">
-                  Search 1,000 Postings <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
+                  Search 13,511 Postings <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
             </Link>

@@ -400,7 +400,53 @@ Content-Type: application/json
 
 ---
 
-## 10. Non-Functional Requirements & Performance SLAs
+## 10. District Choropleth & Cascade Equilibrium Engine Specification
+
+### 10.1 Regional Gravity Model for Talent Cascading
+Labor markets operate across spatial corridors rather than administrative district boundaries. For secondary industrial centers and zero-demand agricultural districts (the 12 "skill deserts"), KaushalSetu formulates a **Gravitational Labor Cascading Model**:
+
+$$G_{ij} = \frac{D_j}{d_{ij}^\alpha} \cdot \kappa_{ij}$$
+
+Where:
+- $G_{ij}$ is the cascading absorption draw exerted by Tier-1 industrial hub $j$ (e.g., Chakan/Pune, BKC/Mumbai, MIHAN/Nagpur) on feeder district $i$.
+- $D_j$ is the aggregate active vacancy demand mass of hub $j$.
+- $d_{ij}$ is the transit highway corridor distance in kilometers.
+- $\alpha \approx 1.8$ is the Maharashtra transit impedance coefficient (calibrated against arterial access via Samruddhi Mahamarg, Mumbai-Pune Expressway, and DMIC spurs).
+- $\kappa_{ij} \in [0.6, 1.2]$ is the sectoral synergy factor between feeder ITI training trades and destination industrial clusters.
+
+### 10.2 Skill Desert Neighbor Benchmark Weighting Formulation
+For the 12 districts with zero direct postings in formal datasets, training capacity cannot be planned from empty records. KaushalSetu computes an empirical **Neighbor Benchmark Weight** $W_s(d)$ for every skill $s$ in district $d$:
+
+$$W_s(d) = \sum_{n \in \mathcal{N}(d)} \left[ \left( 3 - \min(\text{rank}(s, n), 2) \right) \cdot \log_{10}(\text{postings}_n + 10) \right]$$
+
+Where:
+- $\mathcal{N}(d)$ denotes the topological neighbor set of district $d$ within Maharashtra.
+- $\text{rank}(s, n) \in \{0, 1, 2, \dots\}$ is the priority rank of skill $s$ in neighbor district $n$ (top rank = 0).
+- $\log_{10}(\text{postings}_n + 10)$ smooths posting volume, preventing hyper-concentration from overpowering local neighbor relevance.
+
+### 10.3 District Equilibrium Index ($E_d$)
+To determine whether a district exhibits a skill surplus, deficit, or equilibrium:
+
+$$E_d = \frac{S_d}{D_d + \sum_{k \in \mathcal{N}(d)} \lambda_{kd} D_k}$$
+
+- $S_d$: Total annual vocational seats sanctioned in district $d$.
+- $D_d$: Local verified industrial vacancies in district $d$.
+- $\lambda_{kd}$: Corridor mobility spillover coefficient ($\lambda_{kd} \in [0.15, 0.40]$ depending on commuter rail and state highway availability).
+- **Equilibrium Classification:**
+  - $E_d > 1.35$: **Surplus Feeder Zone** $\to$ Route students toward destination industrial apprenticeships.
+  - $0.75 \le E_d \le 1.35$: **Equilibrium Zone** $\to$ Maintain baseline seat distribution with 30-hour modular diffs.
+  - $E_d < 0.75$: **Severe Skill Deficit** $\to$ Inject emergency CapEx and new trade sanctions.
+
+### 10.4 Corridor Linkage Taxonomy
+| Linkage Archetype | Distance Band | Representative Corridors | Strategic Policy Action |
+| :--- | :--- | :--- | :--- |
+| **Direct Commute** | $\le 75\text{ km}$ | Palghar $\to$ Thane, Bhandara $\to$ Nagpur, Raigad $\to$ Mumbai, Jalna $\to$ Chh. Sambhajinagar | Daily transit passes; twilight apprentice shift matching |
+| **Apprenticeship Feeder** | $75 - 160\text{ km}$ | Dhule $\to$ Nashik, Beed $\to$ Ahmednagar, Washim $\to$ Amravati, Gondia $\to$ Nagpur | 6-month dual-training stipends under DVET NEEM schemes |
+| **Regional Supply Chain** | $> 160\text{ km}$ | Parbhani $\to$ AURIC DMIC, Nandurbar $\to$ Dhule/Surat, Solapur $\to$ Chakan Auto Belt | Specialized residential hostel tie-ups and cluster-specific MoUs |
+
+---
+
+## 11. Non-Functional Requirements & Performance SLAs
 
 | Metric / Dimension | Target SLA | Implementation Strategy |
 | :--- | :--- | :--- |
@@ -413,7 +459,7 @@ Content-Type: application/json
 
 ---
 
-## 11. Architectural Summary & Competitive Advantage
+## 12. Architectural Summary & Competitive Advantage
 
 | Architectural Dimension | Competitor Hackathon Projects | KaushalSetu Maharashtra (Our Build) |
 | :--- | :--- | :--- |
@@ -423,3 +469,4 @@ Content-Type: application/json
 | **Actionable Output** | Generic text advice ("Take a Python course") | Accredited **30-Hour Curriculum-Delta-Diff** with bilingual lesson plans & lab rubrics |
 | **Geospatial Scope** | None (pan-India generic) | 36 Maharashtra Districts Digital Twin with "What-If" budget optimizer |
 | **Trust Model** | Unverified plain text certificates | W3C Verifiable Credentials with DigiLocker QR verification |
+

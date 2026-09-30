@@ -193,7 +193,7 @@ export default function DistrictsPage() {
               <div className="text-xs text-muted-foreground flex items-center gap-1.5 font-medium">
                 <Factory className="h-3.5 w-3.5 text-orange-400" /> Active Postings Mapped
               </div>
-              <div className="text-2xl sm:text-3xl font-bold text-white mt-1">1,000</div>
+              <div className="text-2xl sm:text-3xl font-bold text-white mt-1">13,511</div>
               <div className="text-[11px] text-emerald-400 mt-1 flex items-center gap-1">
                 <CheckCircle2 className="h-3 w-3" /> Live Naukri Verified Corpus
               </div>

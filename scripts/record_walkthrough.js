@@ -207,10 +207,25 @@ async function runCleanWalkthrough() {
       await puneTile.hover();
       await page.waitForTimeout(600);
     }
-    const desertTile = page.locator('[title*="no demand signal"]').first();
+    // Click the Sindhudurg desert tile: the neighbor-benchmark panel opens,
+    // showing what nearby labor markets demand (the plannable-desert story).
+    const desertTile = page.locator("button[title^='Sindhudurg:']").first();
     if (await desertTile.isVisible()) {
       await desertTile.hover();
-      await page.waitForTimeout(600);
+      await page.waitForTimeout(500);
+      await desertTile.click();
+      await page.waitForTimeout(1100); // benchmark panel + chips read on camera
+      const benchTitle = page.locator('text=Suggested skill benchmark').first();
+      if (await benchTitle.isVisible()) {
+        await benchTitle.hover();
+        await page.waitForTimeout(600);
+      }
+      // Close so later choreography starts clean.
+      const closeBtn = page.locator("button[aria-label='Close benchmark panel']").first();
+      if (await closeBtn.isVisible()) {
+        await closeBtn.click();
+        await page.waitForTimeout(400);
+      }
     }
     await smoothScroll(page, 450, 12, 30);
     await page.waitForTimeout(600);
@@ -228,6 +243,18 @@ async function runCleanWalkthrough() {
     } else {
       await smoothScroll(page, 300, 10, 30);
       await page.waitForTimeout(400);
+    }
+
+    // District-specific actions panel — ranked by actionable postings.
+    const actionsPanel = page.locator('text=District-specific actions').first();
+    if (await actionsPanel.isVisible()) {
+      await actionsPanel.hover();
+      await page.waitForTimeout(700);
+      const mumbaiAction = page.locator('text=~1,908 actionable postings').first();
+      if (await mumbaiAction.isVisible()) {
+        await mumbaiAction.hover();
+        await page.waitForTimeout(700);
+      }
     }
 
     // Continuous scroll to Sector Coverage Deficit Matrix

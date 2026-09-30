@@ -71,7 +71,7 @@ export function TelemetryClient({ postings }: { postings: RealPosting[] }) {
             <Input
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              placeholder="Search 1,000 live postings by role, skill (e.g. CNC, SQL, Welder, Tax), or company..."
+              placeholder="Search 13,511 live postings by role, skill (e.g. CNC, SQL, Welder, Sales), or company..."
               className="pl-9 bg-black/40 border-white/10 text-xs sm:text-sm h-10 w-full rounded-lg"
             />
           </div>

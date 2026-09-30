@@ -103,6 +103,34 @@ const COURSES: BaseCourse[] = [
       "Hydraulic Brake Servicing",
       "Suspension & Steering Geometry"
     ]
+  },
+  {
+    id: "cts-sales-crm",
+    title: "B2B Tech Sales & Commercial CRM Associate",
+    tradeCode: "DVET-CTS-SALES-05",
+    nsqfLevel: 4,
+    durationMonths: 12,
+    coveredSkills: [
+      "Customer Relationship Management",
+      "Lead Qualification & Pipeline Tracking",
+      "Commercial Contract Drafting",
+      "Enterprise Pitch Presentation",
+      "ERP Inventory Inquiries"
+    ]
+  },
+  {
+    id: "cts-quality-pharma",
+    title: "Pharma & Precision Manufacturing Quality Associate",
+    tradeCode: "DVET-CTS-QAQC-06",
+    nsqfLevel: 5,
+    durationMonths: 24,
+    coveredSkills: [
+      "Wet Chemistry & Titration",
+      "Raw Material Sampling & Testing",
+      "SOP Documentation & Batch Records",
+      "Cleanroom Sanitization Protocols",
+      "Standard Operating Inspections"
+    ]
   }
 ];
 
@@ -400,6 +428,218 @@ const PRECOMPUTED_DIFFS: Record<string, BridgeCurriculum> = {
       }
     ],
     bisSafetyCompliance: "Complies with AIS 038 (Rev 2) for Electric Vehicle Safety & DVET Vocational Guidelines."
+  },
+  "cts-sales-crm": {
+    title: "30-Hour Bridge: Enterprise SaaS Pipeline & AI-Driven CRM Automation",
+    titleMarathi: "३० तासांचा ब्रिज कोर्स: एंटरप्राइज सास पाईपलाईन आणि एआय-आधारित सीआरएम ऑटोमेशन",
+    hours: 30,
+    targetSector: "IT Services, FinTech & Enterprise Commerce",
+    targetDistrict: "Mumbai City / Suburban & BKC Corridor (1,908 vacancies)",
+    deltaSkills: [
+      "HubSpot & Salesforce Workflow Automation",
+      "Outbound Cadence & AI Copy Prospecting",
+      "SaaS ARR/ACV Deal Structuring & Negotiation",
+      "Post-Sale Customer Health Telemetry"
+    ],
+    modules: [
+      {
+        day: 1,
+        title: "Enterprise CRM Architecture & Data Hygiene",
+        titleMarathi: "एंटरप्राइज सीआरएम रचना आणि डेटा हायजीन",
+        theoryHours: 2,
+        practicalHours: 4,
+        topics: [
+          "Lead-to-Opportunity lifecycle mapping in Salesforce/HubSpot",
+          "Deduplication, enrichment, and ICP (Ideal Customer Profile) scoring",
+          "Hands-on: Configuring custom lead scoring fields and pipeline stages"
+        ],
+        topicsMarathi: [
+          "सेल्सफोर्स/हबस्पॉटमधील लीड-टू-अपॉर्च्युनिटी सायकल मॅपिंग",
+          "डेटा डिड्युप्लिकेशन आणि आयडीयल कस्टमर प्रोफाईल स्कोअरिंग",
+          "प्रात्यक्षिक: कस्टम लीड स्कोअरिंग आणि पाईपलाईन स्टेजेस सेट करणे"
+        ],
+        labChecklist: "Salesforce Trailhead sandbox, CRM schema validator, Apollo/ZoomInfo prospecting trial."
+      },
+      {
+        day: 2,
+        title: "AI-Augmented Multi-Channel Prospecting Cadences",
+        titleMarathi: "एआय-सक्षम मल्टी-चॅनल प्रॉस्पेक्टिंग कॅडेन्स",
+        theoryHours: 2,
+        practicalHours: 4,
+        topics: [
+          "Building 8-touch omnichannel sequences (Email, LinkedIn, Cold Call)",
+          "Prompt engineering for personalized B2B outreach at scale",
+          "Hands-on: Running automated outreach simulator with bounce handling"
+        ],
+        topicsMarathi: [
+          "ईमेल, लिंक्डइन आणि कोल्ड कॉलची ८-टप्प्यांची सिक्वेन्स तयार करणे",
+          "पर्सनलाइज्ड बी२बी आऊटरीचसाठी प्रॉम्प्ट इंजिनिअरिंग",
+          "प्रात्यक्षिक: ऑटोमेटेड आऊटरीच सिम्युलेटर आणि बाऊन्स हँडलिंग"
+        ],
+        labChecklist: "Smartlead / Lemlist simulation environment, LinkedIn Sales Navigator workbook."
+      },
+      {
+        day: 3,
+        title: "B2B SaaS Financials & Deal Structuring",
+        titleMarathi: "बी२बी सास फायनान्स आणि डील स्ट्रक्चरिंग",
+        theoryHours: 2,
+        practicalHours: 4,
+        topics: [
+          "ARR, ACV, TCV, Net Revenue Retention (NRR) and churn metrics",
+          "Tiered SaaS pricing, discount approval matrices, and MSAs",
+          "Hands-on: Drafting an enterprise Master Services Agreement (MSA) quote"
+        ],
+        topicsMarathi: [
+          "एआरआर (ARR), एसीव्ही (ACV), एनआरआर (NRR) आणि चर्न मेट्रिक्सची समज",
+          "सास प्राइसिंंग टियर्स, डिस्काउंट मॅट्रिक्स आणि करार रचना",
+          "प्रात्यक्षिक: एंटरप्राइज मास्टर सर्व्हिसेस अ‍ॅग्रीमेंट (MSA) कोटेशन तयार करणे"
+        ],
+        labChecklist: "CPQ (Configure, Price, Quote) sandbox, multi-tier pricing calculator spreadsheet."
+      },
+      {
+        day: 4,
+        title: "High-Stakes Discovery & Objection Handling Simulations",
+        titleMarathi: "क्लायंट डिस्कव्हरी कॉल्स आणि ऑब्जेक्शन हँडलिंग",
+        theoryHours: 1,
+        practicalHours: 5,
+        topics: [
+          "MEDDPICC qualification framework execution",
+          "Addressing procurement, compliance, and enterprise data security objections",
+          "Hands-on: Recorded roleplay discovery call with instant rubric scoring"
+        ],
+        topicsMarathi: [
+          "MEDDPICC फ्रेमवर्कनुसार क्लायंटची गरज ओळखणे",
+          "माहिती सुरक्षा आणि कंपनी नियमांवरील हरकती हाताळणे",
+          "प्रात्यक्षिक: लाईव्ह मॉक डिस्कव्हरी कॉल आणि रेकॉर्डेड फीडबॅक"
+        ],
+        labChecklist: "Gong/Chorus call telemetry simulator, objection-handling scenario cards."
+      },
+      {
+        day: 5,
+        title: "Customer Success Handoff & Account Retention Telemetry",
+        titleMarathi: "कस्टमर सक्सेस हँडऑफ आणि अकाऊंट रिटेन्शन टेलिमेट्री",
+        theoryHours: 1,
+        practicalHours: 5,
+        topics: [
+          "Sales-to-CS transition protocols and product adoption telemetry",
+          "Identifying upsell/cross-sell triggers from user health scores",
+          "Final Practical Capstone: Live Pipeline Review & Kaushal Passport Stamp"
+        ],
+        topicsMarathi: [
+          "विक्रीनंतर ग्राहक सेवा हस्तांतरण आणि प्रॉडक्ट अ‍ॅडॉप्शन ट्रॅकिंग",
+          "वापरकर्त्याच्या हेल्थ स्कोअरवरून नवीन विक्री संधी ओळखणे",
+          "अंतिम प्रात्यक्षिक परीक्षा: पाईपलाईन रिव्ह्यू आणि कौशल पासपोर्ट सर्टिफिकेशन"
+        ],
+        labChecklist: "Customer health dashboard, QBR (Quarterly Business Review) deck template."
+      }
+    ],
+    bisSafetyCompliance: "Complies with MEITY Digital Commerce Guidelines & DVET Maharashtra Service Sector Framework."
+  },
+  "cts-quality-pharma": {
+    title: "30-Hour Bridge: cGMP Cleanroom Analytics & HPLC In-Process Quality Control",
+    titleMarathi: "३० तासांचा ब्रिज कोर्स: सीजीएमपी क्लिनरूम अनॅलिटिक्स आणि एचपीएलसी क्वालिटी कंट्रोल",
+    hours: 30,
+    targetSector: "Biopharma, Formulations & Medical Devices",
+    targetDistrict: "Thane-Belapur & Chh. Sambhajinagar Pharma Belts (183 vacancies)",
+    deltaSkills: [
+      "High-Performance Liquid Chromatography (HPLC)",
+      "USFDA 21 CFR Part 11 Electronic Records Compliance",
+      "OOS (Out of Specification) Root Cause Investigation",
+      "Cleanroom HVAC Class ISO 7/8 Particle Monitoring"
+    ],
+    modules: [
+      {
+        day: 1,
+        title: "Cleanroom Classification & Airborne Particle Monitoring",
+        titleMarathi: "क्लिनरूम वर्गीकरण आणि एअरबॉर्न पार्टिकल मॉनिटरिंग",
+        theoryHours: 2,
+        practicalHours: 4,
+        topics: [
+          "ISO 14644 cleanroom standards (Class ISO 7, ISO 8) and differential pressure",
+          "Operating laser optical particle counters and HEPA filter integrity (DOP testing)",
+          "Hands-on: Gowning qualification and particulate mapping in a simulated cleanroom"
+        ],
+        topicsMarathi: [
+          "ISO १४६४४ क्लिनरूम मानके आणि डिफरन्शियल एअर प्रेशर",
+          "लेझर पार्टिकल काउंटर आणि हेपा (HEPA) फिल्टर टेस्टिंग",
+          "प्रात्यक्षिक: निर्जंतुक गाऊनिंग आणि पार्टिकल मॅपिंग चाचणी"
+        ],
+        labChecklist: "Aerosol optical particle counter, anemometer, sterile gowning kit, differential gauge."
+      },
+      {
+        day: 2,
+        title: "High-Performance Liquid Chromatography (HPLC) Operation",
+        titleMarathi: "हाय-परफॉर्मन्स लिक्विड क्रोमॅटोग्राफी (HPLC) हाताळणी",
+        theoryHours: 2,
+        practicalHours: 4,
+        topics: [
+          "Reversed-phase C18 column chemistry and degassed mobile phase preparation",
+          "Isocratic vs gradient elution profiling and UV-Vis spectrophotometer detection",
+          "Hands-on: Active Pharmaceutical Ingredient (API) assay run and peak integration"
+        ],
+        topicsMarathi: [
+          "रिव्हर्स्ड-फेज C18 कॉलम आणि मोबाईल फेज तयार करणे",
+          "आयसोक्रॅटिक व ग्रेडियंट इल्युशन आणि यूव्ही डिटेक्टर",
+          "प्रात्यक्षिक: औषधी घटक (API) सॅम्पल टेस्टिंग आणि पीक इंटिग्रेशन"
+        ],
+        labChecklist: "HPLC quaternary pump simulator, analytical column C18 (250x4.6mm), autosampler vials."
+      },
+      {
+        day: 3,
+        title: "USFDA 21 CFR Part 11 & Data Integrity Compliance",
+        titleMarathi: "यूएसएफडीए २१ सीएफआर पार्ट ११ आणि डेटा इंटिग्रिटी",
+        theoryHours: 2,
+        practicalHours: 4,
+        topics: [
+          "ALCOA+ principles (Attributable, Legible, Contemporaneous, Original, Accurate)",
+          "Electronic audit trail review, user access tiering, and e-signatures",
+          "Hands-on: Identifying intentional and accidental audit trail red flags"
+        ],
+        topicsMarathi: [
+          "ALCOA+ डेटा अखंडता तत्त्वांचे पालन",
+          "इलेक्ट्रॉनिक ऑडिट ट्रेल तपासणी आणि ई-स्वाक्षरी नियम",
+          "प्रात्यक्षिक: सॉफ्टवेअर ऑडिट लॉगमधील त्रुटी आणि डेटा छेडछाड शोधणे"
+        ],
+        labChecklist: "Chromatography Data System (CDS) audit log trainer, 21 CFR gap assessment checklist."
+      },
+      {
+        day: 4,
+        title: "Out-of-Specification (OOS) & CAPA Root Cause Analysis",
+        titleMarathi: "ओओएस (OOS) त्रुटी तपासणी आणि कापा (CAPA) अ‍ॅनालिसिस",
+        theoryHours: 2,
+        practicalHours: 4,
+        topics: [
+          "Phase I laboratory investigation vs Phase II manufacturing investigation",
+          "Ishikawa 5-Why analysis for analytical variance and pipetting errors",
+          "Hands-on: Authoring a defensible CAPA remediation protocol"
+        ],
+        topicsMarathi: [
+          "फेज १ लॅब तपासणी विरुद्ध फेज २ मॅन्युफॅक्चरिंग तपासणी",
+          "इशिकावा ५-व्हाय (5-Why) विश्लेषणाद्वारे त्रुटी शोधणे",
+          "प्रात्यक्षिक: सुधारात्मक कृती (CAPA) अहवाल तयार करणे"
+        ],
+        labChecklist: "OOS investigation SOP templates, micropipette calibration check, analytical balance."
+      },
+      {
+        day: 5,
+        title: "Commercial Batch Release & cGMP Audit Capstone",
+        titleMarathi: "कमर्शियल बॅच रिलीज आणि सीजीएमपी ऑडिट सर्टिफिकेशन",
+        theoryHours: 1,
+        practicalHours: 5,
+        topics: [
+          "Master Batch Manufacturing Record (MBMR) reconciliation and QA sign-off",
+          "Mock regulatory audit interview and defensive documentation defense",
+          "Final Practical Capstone: Batch Inspection Pass & Kaushal Passport Stamp"
+        ],
+        topicsMarathi: [
+          "बॅच मॅन्युफॅक्चरिंग रेकॉर्ड (MBMR) तपासणी आणि क्यूए मंजुरी",
+          "मॉक रेग्युलेटरी ऑडिट मुलाखत आणि कागदपत्र पडताळणी",
+          "अंतिम प्रात्यक्षिक परीक्षा: बॅच रिलीज मंजुरी आणि कौशल पासपोर्ट सर्टिफिकेशन"
+        ],
+        labChecklist: "Complete batch release dossier, deviation deviation log, QA stamp kit."
+      }
+    ],
+    bisSafetyCompliance: "Complies with CDSCO / WHO-GMP & USFDA 21 CFR Part 11 Data Integrity Standards."
   }
 };
 
@@ -466,7 +706,7 @@ export default function CurriculumDiffPage() {
           <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider block mb-2">
             Select Base ITI Trade for Gap Analysis:
           </span>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5">
             {COURSES.map((course) => {
               const isSelected = course.id === selectedCourseId;
               return (

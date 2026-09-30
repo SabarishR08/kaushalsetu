@@ -94,3 +94,222 @@ export const DISTRICT_NEIGHBORS: Record<string, string[]> = {
 export function getNeighbors(district: string): string[] {
   return DISTRICT_NEIGHBORS[district] ?? [];
 }
+
+export interface CascadeHubInfo {
+  hubDistrict: string;
+  distanceKm: number;
+  corridor: string;
+  focusSectors: string[];
+  linkageType: "Direct Commute" | "Apprenticeship Feeder" | "Regional Supply Chain";
+}
+
+/**
+ * Gravity-model cascade mapping for zero-demand or feeder districts to their
+ * nearest high-absorptive industrial corridor in Maharashtra.
+ */
+export const INDUSTRIAL_CASCADE_HUBS: Record<string, CascadeHubInfo> = {
+  Nandurbar: {
+    hubDistrict: "Dhule",
+    distanceKm: 90,
+    corridor: "NH 53 (Surat-Nagpur Corridor)",
+    focusSectors: ["Renewable Energy & Solar", "Agri-Logistics", "Light Engineering"],
+    linkageType: "Regional Supply Chain",
+  },
+  Dhule: {
+    hubDistrict: "Nashik",
+    distanceKm: 155,
+    corridor: "NH 60 (Nashik-Dhule Industrial Belt)",
+    focusSectors: ["Automotive Components", "Electrical Machinery", "Agro-Processing"],
+    linkageType: "Apprenticeship Feeder",
+  },
+  Jalgaon: {
+    hubDistrict: "Nashik",
+    distanceKm: 190,
+    corridor: "NH 53 & Central Railway Corridor",
+    focusSectors: ["Polymer Piping & Extrusion", "Electronics Manufacturing", "Solar Pumps"],
+    linkageType: "Regional Supply Chain",
+  },
+  Gondia: {
+    hubDistrict: "Nagpur",
+    distanceKm: 160,
+    corridor: "NH 53 & MIHAN Metro Corridor",
+    focusSectors: ["Logistics & Warehousing", "Aerospace MRO", "Steel & Mineral Processing"],
+    linkageType: "Apprenticeship Feeder",
+  },
+  Bhandara: {
+    hubDistrict: "Nagpur",
+    distanceKm: 65,
+    corridor: "NH 53 (Nagpur-Bhandara Highway)",
+    focusSectors: ["Ferro-Alloys & Foundry", "Automotive Ancillaries", "MIHAN Multi-Modal"],
+    linkageType: "Direct Commute",
+  },
+  Gadchiroli: {
+    hubDistrict: "Chandrapur",
+    distanceKm: 75,
+    corridor: "SH 9 (Gadchiroli-Chandrapur Mining Belt)",
+    focusSectors: ["Mining Heavy Equipment Maintenance", "Forest Biomass", "Industrial Safety"],
+    linkageType: "Apprenticeship Feeder",
+  },
+  Chandrapur: {
+    hubDistrict: "Nagpur",
+    distanceKm: 150,
+    corridor: "NH 353 (Nagpur-Chandrapur Belt)",
+    focusSectors: ["Thermal Power Automation", "Cement Plant Metrology", "Heavy Fabrication"],
+    linkageType: "Apprenticeship Feeder",
+  },
+  Wardha: {
+    hubDistrict: "Nagpur",
+    distanceKm: 75,
+    corridor: "Samruddhi Mahamarg & Wardha Dry Port",
+    focusSectors: ["Multi-Modal Logistics", "Defense Ordinance Ancillaries", "Textile Finishing"],
+    linkageType: "Direct Commute",
+  },
+  Yavatmal: {
+    hubDistrict: "Nagpur",
+    distanceKm: 150,
+    corridor: "NH 361 (Nagpur-Wardha-Yavatmal Belt)",
+    focusSectors: ["Industrial Garments", "Biomass Processing", "Commercial Vehicle Driving"],
+    linkageType: "Apprenticeship Feeder",
+  },
+  Washim: {
+    hubDistrict: "Amravati",
+    distanceKm: 110,
+    corridor: "Samruddhi Mahamarg Corridor",
+    focusSectors: ["Textile Weaving", "Agri-Warehousing & Cold Chain", "Solar Inverters"],
+    linkageType: "Apprenticeship Feeder",
+  },
+  Akola: {
+    hubDistrict: "Amravati",
+    distanceKm: 90,
+    corridor: "NH 6 (Vidarbha Industrial Corridor)",
+    focusSectors: ["Cotton Processing & Textiles", "Chemical Fertilizers", "Electrical Panels"],
+    linkageType: "Direct Commute",
+  },
+  Amravati: {
+    hubDistrict: "Nagpur",
+    distanceKm: 155,
+    corridor: "Samruddhi Expressway Corridor",
+    focusSectors: ["Textile City MIDC", "Food Processing", "Electrical Assemblies"],
+    linkageType: "Regional Supply Chain",
+  },
+  Buldhana: {
+    hubDistrict: "Jalgaon",
+    distanceKm: 95,
+    corridor: "NH 53 & Malkapur Rail Junction",
+    focusSectors: ["Plastics & Polymer Extrusion", "Cotton Ginning", "Drip Irrigation Systems"],
+    linkageType: "Direct Commute",
+  },
+  Hingoli: {
+    hubDistrict: "Nanded",
+    distanceKm: 80,
+    corridor: "NH 161 (Marathwada Link)",
+    focusSectors: ["Bio-Fertilizers", "Agro-Equipment Repair", "Pharma Packaging"],
+    linkageType: "Regional Supply Chain",
+  },
+  Parbhani: {
+    hubDistrict: "Chh. Sambhajinagar",
+    distanceKm: 190,
+    corridor: "Jalna-Nanded Samruddhi Spur",
+    focusSectors: ["Automotive Ancillaries", "Seed Biotechnology", "Cold Chain Logistics"],
+    linkageType: "Apprenticeship Feeder",
+  },
+  Nanded: {
+    hubDistrict: "Chh. Sambhajinagar",
+    distanceKm: 240,
+    corridor: "Samruddhi Connector Corridor",
+    focusSectors: ["Specialty Chemicals", "Textile Looms", "Automotive Sub-assemblies"],
+    linkageType: "Apprenticeship Feeder",
+  },
+  Jalna: {
+    hubDistrict: "Chh. Sambhajinagar",
+    distanceKm: 60,
+    corridor: "DMIC Shendra-Bidkin Corridor",
+    focusSectors: ["Steel Re-Rolling", "Hybrid Seeds", "Automotive Castings"],
+    linkageType: "Direct Commute",
+  },
+  Beed: {
+    hubDistrict: "Ahmednagar",
+    distanceKm: 135,
+    corridor: "NH 61 Industrial Belt",
+    focusSectors: ["Precision Tooling", "Dairy & Agro-Processing", "Commercial EV Maintenance"],
+    linkageType: "Apprenticeship Feeder",
+  },
+  Latur: {
+    hubDistrict: "Solapur",
+    distanceKm: 120,
+    corridor: "NH 52 Marathwada Corridor",
+    focusSectors: ["Soybean Processing", "Solar Installations", "Medium Industrial Fabrication"],
+    linkageType: "Regional Supply Chain",
+  },
+  "Osmanabad (Dharashiv)": {
+    hubDistrict: "Solapur",
+    distanceKm: 70,
+    corridor: "NH 52 (Dharashiv-Solapur Belt)",
+    focusSectors: ["Technical Textiles", "Sugar By-products & Ethanol", "Heavy Fabrication"],
+    linkageType: "Direct Commute",
+  },
+  Solapur: {
+    hubDistrict: "Pune",
+    distanceKm: 250,
+    corridor: "Pune-Solapur Highway (NH 65)",
+    focusSectors: ["Garment Manufacturing", "Heavy Boilers", "Automotive Ancillaries"],
+    linkageType: "Regional Supply Chain",
+  },
+  Satara: {
+    hubDistrict: "Pune",
+    distanceKm: 110,
+    corridor: "NH 48 (Pune-Bengaluru Industrial Corridor)",
+    focusSectors: ["Automotive Assemblies", "Food Engineering", "Electrical Component Tooling"],
+    linkageType: "Direct Commute",
+  },
+  Sangli: {
+    hubDistrict: "Kolhapur",
+    distanceKm: 50,
+    corridor: "Sangli-Kolhapur Twin Hub",
+    focusSectors: ["Foundry & Casting", "Textile Weaving", "Agri-Cold Storage"],
+    linkageType: "Direct Commute",
+  },
+  Kolhapur: {
+    hubDistrict: "Pune",
+    distanceKm: 230,
+    corridor: "NH 48 Industrial Spine",
+    focusSectors: ["Precision Casting & Foundry", "Auto Forging", "Sugar Machinery"],
+    linkageType: "Regional Supply Chain",
+  },
+  Ratnagiri: {
+    hubDistrict: "Kolhapur",
+    distanceKm: 130,
+    corridor: "NH 166 Coastal Link",
+    focusSectors: ["Marine Logistics", "Chemical Processing", "Heavy Engineering"],
+    linkageType: "Regional Supply Chain",
+  },
+  Sindhudurg: {
+    hubDistrict: "Kolhapur",
+    distanceKm: 140,
+    corridor: "NH 66 & Anuskura Ghat",
+    focusSectors: ["Precision Foundry", "Food & Fruit Processing", "Hospitality Technology"],
+    linkageType: "Regional Supply Chain",
+  },
+  Raigad: {
+    hubDistrict: "Mumbai",
+    distanceKm: 60,
+    corridor: "MTHL Atal Setu & JNPA Port Corridor",
+    focusSectors: ["Port Logistics & Supply Chain", "Petrochemicals", "Steel Manufacturing"],
+    linkageType: "Direct Commute",
+  },
+  Palghar: {
+    hubDistrict: "Thane",
+    distanceKm: 75,
+    corridor: "Western Corridor & DMIC",
+    focusSectors: ["Pharma Formulation", "Specialty Plastics", "Industrial Fabrication"],
+    linkageType: "Direct Commute",
+  },
+};
+
+/**
+ * Returns industrial cascade hub information for a district, if defined.
+ */
+export function getCascadeHub(district: string): CascadeHubInfo | undefined {
+  return INDUSTRIAL_CASCADE_HUBS[district];
+}
+

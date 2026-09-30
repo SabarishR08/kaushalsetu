@@ -42,7 +42,7 @@ export default async function TelemetryPage() {
               <Activity className="h-6 w-6 text-orange-400" /> Live Industrial Job Market Telemetry
             </h1>
             <p className="text-sm text-muted-foreground mt-1">
-              Real-time feed of 1,000 authentic vacancies across Pune, Mumbai, Thane, Nagpur, Nashik, and Chh. Sambhajinagar.
+              Real-time feed of 13,511 authentic vacancies across Pune, Mumbai, Thane, Nagpur, Nashik, and all 36 Maharashtra districts.
             </p>
           </div>
 
