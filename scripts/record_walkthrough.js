@@ -5,7 +5,7 @@
  * Requirements:
  * - 100% Pure, unobstructed full-screen UI (NO banners, NO bottom captions, NO artificial overlays)
  * - Zero dead pauses: fluid, continuous human-cadence navigation and scrolling
- * - Showcases ALL routes: /, /department, /districts, /curriculum-diff, /telemetry, /voice-sahayak, /passport, /path, /department/report
+ * - Showcases ALL routes: /, /department (district heatmap + coverage focus), /districts, /curriculum-diff, /telemetry, /voice-sahayak, /passport, /path, /department/report
  * - Crystal-clear 1080p 60fps transcode with FFmpeg
  */
 
@@ -195,6 +195,41 @@ async function runCleanWalkthrough() {
     await smoothScroll(page, 550, 14, 30);
     await page.waitForTimeout(800);
 
+    // District-level choropleth heatmap (all 36 districts) + demand bars —
+    // hover a couple of tiles so the counts read on camera.
+    const mumbaiTile = page.locator('[title*="Mumbai:"]').first();
+    if (await mumbaiTile.isVisible()) {
+      await mumbaiTile.hover();
+      await page.waitForTimeout(700);
+    }
+    const puneTile = page.locator('[title*="Pune:"]').first();
+    if (await puneTile.isVisible()) {
+      await puneTile.hover();
+      await page.waitForTimeout(600);
+    }
+    const desertTile = page.locator('[title*="no demand signal"]').first();
+    if (await desertTile.isVisible()) {
+      await desertTile.hover();
+      await page.waitForTimeout(600);
+    }
+    await smoothScroll(page, 450, 12, 30);
+    await page.waitForTimeout(600);
+
+    // Per-district coverage & Pune-vs-Mumbai focus comparison
+    const focusPanel = page.locator('text=Focus:').first();
+    if (await focusPanel.isVisible()) {
+      await focusPanel.hover();
+      await page.waitForTimeout(800);
+      const salesRow = page.locator('tr', { hasText: 'Sales & Business Development' }).first();
+      if (await salesRow.isVisible()) {
+        await salesRow.hover();
+        await page.waitForTimeout(700);
+      }
+    } else {
+      await smoothScroll(page, 300, 10, 30);
+      await page.waitForTimeout(400);
+    }
+
     // Continuous scroll to Sector Coverage Deficit Matrix
     await smoothScroll(page, 600, 14, 30);
     const tableRow = page.locator('table tr').nth(1);
@@ -203,8 +238,9 @@ async function runCleanWalkthrough() {
       await page.waitForTimeout(400);
     }
 
-    // Scroll up and click "36-District GIS Twin" nav button
-    await smoothScroll(page, -1150, 16, 25);
+    // Scroll up to reach the top nav for the GIS Twin button
+    await smoothScroll(page, -1900, 18, 25);
+    await page.waitForTimeout(300);
     const districtsNav = page.locator('a[href="/districts"]').first();
     await focusAndClick(districtsNav, 300);
     await page.waitForLoadState('networkidle');
@@ -287,9 +323,9 @@ async function runCleanWalkthrough() {
     await page.goto(`${CONFIG.baseUrl}/telemetry`, { waitUntil: 'networkidle' });
 
     // ========================================================================
-    // CHAPTER 5: LIVE 1,000 POSTINGS TELEMETRY FEED (/telemetry)
+    // CHAPTER 5: LIVE POSTINGS TELEMETRY FEED (/telemetry)
     // ========================================================================
-    console.log('[Walkthrough] 5/9: Live 1,000 Postings Telemetry Feed');
+    console.log('[Walkthrough] 5/9: Live Postings Telemetry Feed');
     await page.waitForTimeout(600);
 
     const searchInput = page.locator('input[placeholder*="Search 1,000 live postings"]').first();
