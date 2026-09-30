@@ -70,14 +70,40 @@ function resolveProviders(): Provider[] {
     }
   }
 
-  // 3. NVIDIA (only if no Groq/Gateway)
-  const nvidiaKey = process.env.NVIDIA_API_KEY;
-  if (nvidiaKey && groqKeys.length === 0) {
+  // 2. OpenRouter fallback pool
+  const openRouterKeys: string[] = [];
+  if (process.env.OPENROUTER_API_KEYS) {
+    for (const k of process.env.OPENROUTER_API_KEYS.split(",")) {
+      const trimmed = k.trim();
+      if (trimmed && !openRouterKeys.includes(trimmed)) openRouterKeys.push(trimmed);
+    }
+  }
+  if (process.env.OPENROUTER_API_KEY && !openRouterKeys.includes(process.env.OPENROUTER_API_KEY.trim())) {
+    openRouterKeys.push(process.env.OPENROUTER_API_KEY.trim());
+  }
+  for (const k of openRouterKeys) {
+    providers.push({
+      name: "openrouter",
+      model: process.env.OPENROUTER_MODEL || "meta-llama/llama-3.1-70b-instruct",
+      baseUrl: process.env.OPENROUTER_BASE_URL || "https://openrouter.ai/api/v1",
+      apiKey: k,
+      extraHeaders: {
+        "HTTP-Referer": "https://kaushalsetu.gov.in",
+        "X-Title": "KaushalSetu Maharashtra",
+      },
+    });
+  }
+
+  // 3. NVIDIA NIM fallback accounts
+  const nvidiaKeys: string[] = [];
+  if (process.env.NVIDIA_API_KEY) nvidiaKeys.push(process.env.NVIDIA_API_KEY.trim());
+  if (process.env.NVIDIA_API_KEY_ACC2) nvidiaKeys.push(process.env.NVIDIA_API_KEY_ACC2.trim());
+  for (const k of nvidiaKeys) {
     providers.push({
       name: "nvidia",
       model: process.env.NVIDIA_MODEL || "meta/llama-3.1-70b-instruct",
       baseUrl: process.env.NVIDIA_BASE_URL || "https://integrate.api.nvidia.com/v1",
-      apiKey: nvidiaKey,
+      apiKey: k,
     });
   }
 

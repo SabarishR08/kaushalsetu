@@ -1,23 +1,25 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { AppShell } from "@/components/app/AppShell";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { 
   Mic, 
   MicOff, 
   Volume2, 
   Sparkles, 
   ArrowRight, 
-  CheckCircle2, 
   MapPin, 
   Building2, 
   DollarSign, 
-  GraduationCap, 
-  Languages 
+  Languages,
+  Send,
+  Loader2,
+  Cpu
 } from "lucide-react";
 
 interface GuidanceResponse {
@@ -33,6 +35,7 @@ interface GuidanceResponse {
   aiExplanationMarathi: string;
   aiExplanationEnglish: string;
   actionSteps: string[];
+  provider?: string;
 }
 
 const PRESET_QUERIES: GuidanceResponse[] = [
@@ -53,7 +56,8 @@ const PRESET_QUERIES: GuidanceResponse[] = [
       "शासकीय ITI पिंपरी-चिंचवड किंवा चाकण येथे 'मशिनिस्ट' ट्रेड निवडा.",
       "कौशल्य सेतूचे ३० तासांचे 'फॅनुक ५-अ‍ॅक्सिस सीएनसी' अ‍ॅड-ऑन मॉड्यूल पूर्ण करा.",
       "कौशल पासपोर्ट QR कोड मिळवून चाकण MIDC रोजगार मेळाव्यात थेट मुलाखत द्या."
-    ]
+    ],
+    provider: "verified-preset"
   },
   {
     userQueryMarathi: "माझं १२वी सायन्स झालंय. मला छत्रपती संभाजीनगर मधील फार्मा किंवा ऑटो कंपनीत टेक्निकल जॉब पाहिजे.",
@@ -71,7 +75,8 @@ const PRESET_QUERIES: GuidanceResponse[] = [
       "शासकीय ITI संभाजीनगर येथे 'केमिकल ऑपरेटर' ट्रेडमध्ये प्रवेश घ्या.",
       "cGMP आणि क्लीनरूम सुरक्षा मानकांचे ३० तासांचे ब्रिज मॉड्यूल पूर्ण करा.",
       "शेंद्रा AURIC फार्मा क्लस्टरमध्ये १ वर्षाची राष्ट्रीय अ‍ॅपेंटिसशिप (NAPS) मिळवा."
-    ]
+    ],
+    provider: "verified-preset"
   },
   {
     userQueryMarathi: "मी विदर्भात (नागपूर) राहतो. मला लॉजिस्टिक किंवा एअरपोर्ट (मिहान) मध्ये काम करायचं आहे.",
@@ -89,24 +94,108 @@ const PRESET_QUERIES: GuidanceResponse[] = [
       "शासकीय ITI नागपूर येथे लॉजिस्टिक ट्रेडमध्ये प्रवेश नोंदणी करा.",
       "इन्व्हेंटरी बारकोड आणि डिजिटल वेअरहाऊस सॉफ्टवेअर शिका.",
       "मिहान एसईझेड मधील लॉजिस्टिक कंपन्यांमध्ये थेट ऑन-जॉब ट्रेनिंग (OJT) सुरू करा."
-    ]
+    ],
+    provider: "verified-preset"
   }
 ];
 
 export default function VoiceSahayakPage() {
   const [activeQueryIndex, setActiveQueryIndex] = useState<number>(0);
+  const [activeResponse, setActiveResponse] = useState<GuidanceResponse>(PRESET_QUERIES[0]);
   const [isRecording, setIsRecording] = useState<boolean>(false);
-  const [customQuery, setCustomQuery] = useState<string>("");
+  const [inputText, setInputText] = useState<string>("");
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isPlayingAudio, setIsPlayingAudio] = useState<boolean>(false);
+  const [speechSupported, setSpeechSupported] = useState<boolean>(false);
+  const recognitionRef = useRef<any>(null);
 
-  const activeResponse = PRESET_QUERIES[activeQueryIndex];
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+      if (SpeechRecognition) {
+        setSpeechSupported(true);
+        const recognition = new SpeechRecognition();
+        recognition.continuous = false;
+        recognition.interimResults = false;
+        recognition.lang = "mr-IN"; // Marathi speech recognition
 
-  const handleSimulateRecording = () => {
-    setIsRecording(true);
-    setTimeout(() => {
-      setIsRecording(false);
-      setActiveQueryIndex((activeQueryIndex + 1) % PRESET_QUERIES.length);
-    }, 1500);
+        recognition.onresult = (event: any) => {
+          const spokenText = event.results[0][0].transcript;
+          setInputText(spokenText);
+          setIsRecording(false);
+          submitQuery(spokenText);
+        };
+
+        recognition.onerror = () => {
+          setIsRecording(false);
+        };
+
+        recognition.onend = () => {
+          setIsRecording(false);
+        };
+
+        recognitionRef.current = recognition;
+      }
+    }
+  }, []);
+
+  const submitQuery = async (queryText: string) => {
+    if (!queryText.trim()) return;
+    setIsLoading(true);
+
+    try {
+      const res = await fetch("/api/voice-guidance", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ query: queryText, language: "mr" }),
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+        setActiveResponse(data);
+        setActiveQueryIndex(-1); // custom active
+      } else {
+        // Fallback to cycling presets if API fails
+        setActiveQueryIndex((prev) => (prev + 1) % PRESET_QUERIES.length);
+        setActiveResponse(PRESET_QUERIES[(activeQueryIndex + 1) % PRESET_QUERIES.length]);
+      }
+    } catch {
+      setActiveQueryIndex((prev) => (prev + 1) % PRESET_QUERIES.length);
+      setActiveResponse(PRESET_QUERIES[(activeQueryIndex + 1) % PRESET_QUERIES.length]);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleToggleVoiceInput = () => {
+    if (speechSupported && recognitionRef.current) {
+      if (isRecording) {
+        recognitionRef.current.stop();
+        setIsRecording(false);
+      } else {
+        try {
+          recognitionRef.current.start();
+          setIsRecording(true);
+        } catch {
+          setIsRecording(false);
+        }
+      }
+    } else {
+      // Simulate recording & cycle presets for environments without microphone access
+      setIsRecording(true);
+      setTimeout(() => {
+        setIsRecording(false);
+        const nextIdx = (activeQueryIndex + 1) % PRESET_QUERIES.length;
+        setActiveQueryIndex(nextIdx);
+        setActiveResponse(PRESET_QUERIES[nextIdx]);
+      }, 1200);
+    }
+  };
+
+  const handleSelectPreset = (idx: number) => {
+    setActiveQueryIndex(idx);
+    setActiveResponse(PRESET_QUERIES[idx]);
+    setInputText("");
   };
 
   const handlePlayVoice = () => {
@@ -132,7 +221,7 @@ export default function VoiceSahayakPage() {
           <div>
             <div className="flex items-center gap-2 mb-1">
               <Badge className="bg-orange-500/10 text-orange-400 border-orange-500/20 text-xs">
-                AI4Bharat / Bhashini Speech Engine
+                AI4Bharat / Bhashini Speech & LLM Engine
               </Badge>
               <span className="text-xs text-muted-foreground font-mono">
                 Marathi NLP & Career Trajectory Reasoner
@@ -155,20 +244,24 @@ export default function VoiceSahayakPage() {
           </div>
         </div>
 
-        {/* Voice Input Interaction Hub */}
+        {/* Voice & Text Input Interaction Hub */}
         <Card className="bg-gradient-to-r from-orange-950/30 via-black to-black border-orange-500/30 shadow-2xl">
           <CardContent className="p-6">
             <div className="flex flex-col sm:flex-row items-center gap-6">
               {/* Giant Glowing Mic Button */}
               <button
-                onClick={handleSimulateRecording}
+                onClick={handleToggleVoiceInput}
+                disabled={isLoading}
+                title={speechSupported ? "बोलण्यासाठी क्लिक करा (Click to Speak)" : "मायक्रोफोन सिम्युलेशन (Simulate Speech)"}
                 className={`relative flex items-center justify-center w-20 h-20 rounded-full transition-all shrink-0 ${
                   isRecording
                     ? "bg-rose-500 shadow-[0_0_35px_rgba(244,63,94,0.6)] animate-pulse scale-105"
                     : "bg-gradient-to-br from-orange-500 to-amber-600 shadow-[0_0_25px_rgba(249,115,22,0.35)] hover:scale-105"
-                }`}
+                } ${isLoading ? "opacity-50 cursor-not-allowed" : ""}`}
               >
-                {isRecording ? (
+                {isLoading ? (
+                  <Loader2 className="h-9 w-9 text-white animate-spin" />
+                ) : isRecording ? (
                   <MicOff className="h-9 w-9 text-white" />
                 ) : (
                   <Mic className="h-9 w-9 text-white" />
@@ -180,14 +273,14 @@ export default function VoiceSahayakPage() {
                 )}
               </button>
 
-              {/* Spoken Query Display */}
-              <div className="flex-1 space-y-2 text-center sm:text-left">
+              {/* Spoken Query Display & Input Form */}
+              <div className="flex-1 space-y-3 w-full text-center sm:text-left">
                 <div className="flex items-center justify-center sm:justify-start gap-2">
                   <span className="text-xs font-semibold text-orange-400 uppercase tracking-wider">
-                    उमेदवाराचा आवाज (Candidate Audio Query):
+                    उमेदवाराचा आवाज (Candidate Inquiry):
                   </span>
                   <Badge variant="outline" className="text-[10px] border-white/10 text-muted-foreground font-mono">
-                    Marathi Audio Stream
+                    {activeResponse.provider ? `Engine: ${activeResponse.provider}` : "Marathi Audio Stream"}
                   </Badge>
                 </div>
 
@@ -199,6 +292,32 @@ export default function VoiceSahayakPage() {
                   <Languages className="h-3 w-3 text-orange-400" />
                   <span>English Translation: "{activeResponse.userQueryEnglish}"</span>
                 </div>
+
+                {/* Custom Text/Speech Input Row */}
+                <form 
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    submitQuery(inputText);
+                  }}
+                  className="flex items-center gap-2 pt-1"
+                >
+                  <Input 
+                    value={inputText}
+                    onChange={(e) => setInputText(e.target.value)}
+                    placeholder="येथे मराठीत किंवा इंग्रजीत विचारा (उदा. 'मला पिंपरी चिंचवडमध्ये वेल्डर व्हायचं आहे')..."
+                    className="bg-black/50 border-white/10 text-xs sm:text-sm text-white placeholder:text-muted-foreground/60 h-9"
+                    disabled={isLoading}
+                  />
+                  <Button 
+                    type="submit" 
+                    size="sm" 
+                    disabled={isLoading || !inputText.trim()}
+                    className="bg-orange-500 hover:bg-orange-600 text-white text-xs h-9 px-3 shrink-0"
+                  >
+                    {isLoading ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <Send className="h-3.5 w-3.5 mr-1" />}
+                    विचारा
+                  </Button>
+                </form>
               </div>
             </div>
 
@@ -210,7 +329,7 @@ export default function VoiceSahayakPage() {
               {PRESET_QUERIES.map((q, idx) => (
                 <button
                   key={idx}
-                  onClick={() => setActiveQueryIndex(idx)}
+                  onClick={() => handleSelectPreset(idx)}
                   className={`text-xs px-3 py-1.5 rounded-lg border transition-all ${
                     activeQueryIndex === idx
                       ? "bg-orange-500/20 text-orange-300 border-orange-500/40 font-semibold"
@@ -319,6 +438,13 @@ export default function VoiceSahayakPage() {
                     ))}
                   </div>
                 </div>
+
+                {activeResponse.provider && (
+                  <div className="pt-2 flex items-center justify-end gap-1.5 text-[11px] text-muted-foreground font-mono">
+                    <Cpu className="h-3 w-3 text-orange-400" />
+                    <span>Inference Provider: {activeResponse.provider}</span>
+                  </div>
+                )}
               </CardContent>
             </Card>
           </div>
