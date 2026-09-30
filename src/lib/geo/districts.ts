@@ -45,3 +45,52 @@ export function districtColor(postings: number, max: number): string {
   if (r > 0.01) return "bg-sky-800";
   return "bg-sky-900";
 }
+
+/**
+ * Adjacency within Maharashtra (approximate — border stretches simplified) —
+ * the benchmark heuristic for zero-demand districts: what do their real-world
+ * neighbors' labor markets demand? Approximation is fine here; the panel is a
+ * planning aid, not a boundary map.
+ */
+export const DISTRICT_NEIGHBORS: Record<string, string[]> = {
+  Nandurbar: ["Dhule"],
+  Dhule: ["Nandurbar", "Jalgaon", "Nashik"],
+  Jalgaon: ["Dhule", "Nashik", "Buldhana", "Chh. Sambhajinagar"],
+  Gondia: ["Bhandara", "Gadchiroli", "Chandrapur"],
+  Palghar: ["Thane"],
+  Nashik: ["Dhule", "Jalgaon", "Palghar", "Thane", "Ahmednagar", "Chh. Sambhajinagar"],
+  Mumbai: ["Thane", "Palghar"],
+  Thane: ["Mumbai", "Palghar", "Raigad", "Pune", "Nashik"],
+  Raigad: ["Thane", "Pune", "Ratnagiri", "Satara"],
+  Ratnagiri: ["Raigad", "Satara", "Sangli", "Kolhapur", "Sindhudurg"],
+  Sindhudurg: ["Ratnagiri", "Kolhapur"],
+  Pune: ["Thane", "Raigad", "Ahmednagar", "Solapur", "Satara"],
+  Satara: ["Pune", "Solapur", "Sangli", "Ratnagiri"],
+  Sangli: ["Satara", "Kolhapur", "Solapur", "Ratnagiri"],
+  Solapur: ["Pune", "Satara", "Sangli", "Ahmednagar", "Osmanabad (Dharashiv)", "Latur"],
+  Kolhapur: ["Sangli", "Ratnagiri", "Sindhudurg"],
+  Ahmednagar: ["Nashik", "Pune", "Beed", "Osmanabad (Dharashiv)", "Solapur", "Chh. Sambhajinagar"],
+  "Chh. Sambhajinagar": ["Jalgaon", "Nashik", "Ahmednagar", "Beed", "Jalna"],
+  Jalna: ["Chh. Sambhajinagar", "Buldhana", "Beed", "Parbhani"],
+  Beed: ["Ahmednagar", "Chh. Sambhajinagar", "Jalna", "Parbhani", "Latur", "Osmanabad (Dharashiv)"],
+  "Osmanabad (Dharashiv)": ["Solapur", "Ahmednagar", "Beed", "Latur"],
+  Latur: ["Beed", "Osmanabad (Dharashiv)", "Nanded"],
+  Nanded: ["Latur", "Parbhani", "Hingoli", "Yavatmal"],
+  Parbhani: ["Jalna", "Beed", "Hingoli", "Nanded"],
+  Hingoli: ["Parbhani", "Nanded", "Washim", "Yavatmal"],
+  Buldhana: ["Jalgaon", "Jalna", "Akola", "Washim"],
+  Akola: ["Buldhana", "Washim", "Amravati"],
+  Washim: ["Akola", "Amravati", "Buldhana", "Hingoli", "Yavatmal"],
+  Amravati: ["Akola", "Washim", "Yavatmal", "Wardha"],
+  Yavatmal: ["Washim", "Hingoli", "Nanded", "Amravati", "Wardha", "Chandrapur"],
+  Wardha: ["Amravati", "Nagpur", "Chandrapur", "Yavatmal"],
+  Nagpur: ["Wardha", "Bhandara", "Chandrapur"],
+  Bhandara: ["Nagpur", "Gondia", "Chandrapur"],
+  Chandrapur: ["Nagpur", "Bhandara", "Gadchiroli", "Yavatmal", "Gondia"],
+  Gadchiroli: ["Chandrapur", "Gondia"],
+};
+
+/** Neighbors of a district, unknown districts returning []. */
+export function getNeighbors(district: string): string[] {
+  return DISTRICT_NEIGHBORS[district] ?? [];
+}
