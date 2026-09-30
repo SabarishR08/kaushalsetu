@@ -13,5 +13,13 @@
   "cloud_aws": "AWS Cloud",
   "cloud_azure": "Azure Cloud",
   "cloud_gcp": "Google Cloud",
-  "devops_docker": "Docker & Kubernetes / CI-CD"
+  "devops_docker": "Docker & Kubernetes / CI-CD",
+  "mfg_production": "Production & Manufacturing Operations",
+  "mfg_quality": "Quality Control & Six Sigma",
+  "eng_design": "Engineering Design (CAD)",
+  "biz_sales": "Sales & Business Development",
+  "biz_hr": "HR & Recruitment",
+  "biz_accounts": "Accounts, Taxation & GST",
+  "biz_supply_chain": "Supply Chain & Logistics",
+  "med_clinical": "Clinical & Hospital Care"
 }

@@ -73,5 +73,14 @@
   "cloud_aws": ["aws", "amazon web services"],
   "cloud_azure": ["azure"],
   "cloud_gcp": ["gcp", "google cloud"],
-  "devops_docker": ["docker", "kubernetes", "container", "ci cd", "jenkins"]
+  "devops_docker": ["docker", "kubernetes", "container", "ci cd", "jenkins"],
+
+  "mfg_production": ["production", "manufacturing", "plant operations", "shift operations", "assembly line"],
+  "mfg_quality": ["quality control", "six sigma", "lean manufacturing", "iso 9001"],
+  "eng_design": ["engineering design", "autocad", "solidworks", "catia", "creo", "cad design", "design engineer"],
+  "biz_sales": ["sales", "business development", "channel sales", "telecalling", "lead generation"],
+  "biz_hr": ["hr", "human resources", "recruitment", "talent acquisition", "payroll"],
+  "biz_accounts": ["accounts", "bookkeeping", "taxation", "gst", "tds", "accounting"],
+  "biz_supply_chain": ["supply chain", "logistics", "warehousing", "inventory management", "courier", "freight", "transportation", "store management"],
+  "med_clinical": ["nursing", "nurse", "patient care", "medical", "hospital operations", "ward", "clinic"]
 }

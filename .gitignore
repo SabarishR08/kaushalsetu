@@ -53,6 +53,7 @@ test-results/
 # Full Naukri JSONL corpora stay local; samples are committed
 data/jobs/raw/*.jsonl
 !data/jobs/raw/*.sample.jsonl
+data/jobs/raw/naukri_com-job_sample.csv
 
 # Temporary screen recording captures
 recordings/*.webm

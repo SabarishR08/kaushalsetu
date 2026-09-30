@@ -169,7 +169,8 @@ async function main(): Promise<void> {
       detail: `${g.demand} posting(s) demand this skill (notably in ${g.sectors.slice(0, 2).join(", ") || "multiple sectors"}) but no current program teaches it. Prioritise a module or bridge course.`,
     });
   }
-  for (const sec of sectorCoverage.filter((s) => s.coverage < 0.6).slice(0, 5)) {
+  // Skip tiny sectors — a 2-posting sector at 0% coverage is noise, not policy.
+  for (const sec of sectorCoverage.filter((s) => s.coverage < 0.6 && s.postings >= 10).slice(0, 5)) {
     const missing = sec.topSkills.filter((s) => !sec.coveredSkills.includes(s));
     recommendations.push({
       type: "revise-program",

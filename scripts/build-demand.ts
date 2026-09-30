@@ -15,6 +15,9 @@ import path from "node:path";
 
 import { tagPostings, keywordMatches } from "../src/lib/skills/keyword-tagger";
 
+/** Per-loader cap; the merge then carries up to 2x this many postings. */
+const MAX_POSTINGS = 8000;
+
 interface Posting {
   id: string;
   title: string;
@@ -146,9 +149,9 @@ async function loadJsonlDir(): Promise<Posting[]> {
   const seenIds = new Set<string>();
   const cursors = perFile.map(() => 0);
   let remaining = perFile.reduce((a, lines) => a + lines.length, 0);
-  while (postings.length < 5000 && remaining > 0) {
+  while (postings.length < MAX_POSTINGS && remaining > 0) {
     let keptThisRound = false;
-    for (let fi = 0; fi < perFile.length && postings.length < 5000; fi++) {
+    for (let fi = 0; fi < perFile.length && postings.length < MAX_POSTINGS; fi++) {
       const f = files[fi];
       const lines = perFile[fi];
       while (cursors[fi] < lines.length) {
@@ -212,24 +215,30 @@ async function loadRawCsv(): Promise<Posting[]> {
     const tIdx = pickCol(headers, ["title", "job_title", "jobtitle", "position", "job name"]);
     const dIdx = pickCol(headers, ["description", "job_description", "jobdescription", "job detail", "details"]);
     const sIdx = pickCol(headers, ["sector", "industry", "category", "functional area", "jobfunction"]);
-    const cIdx = pickCol(headers, ["city", "location", "job_location", "place"]);
+    const cIdx = pickCol(headers, ["city", "location", "job_location", "joblocation_address", "place"]);
     const oIdx = pickCol(headers, ["organization", "company", "employer", "company_name"]);
+    const kIdx = pickCol(headers, ["skills", "tagsAndSkills", "key_skills", "skill"]);
     if (tIdx < 0 || dIdx < 0) {
       console.warn(`[demand] ${f}: no title/description columns found, skipping`);
       continue;
     }
-    for (let i = 1; i < lines.length && postings.length < 5000; i++) {
+    for (let i = 1; i < lines.length && postings.length < MAX_POSTINGS; i++) {
       const cells = parseCsvLine(lines[i]);
       const title = (cells[tIdx] ?? "").trim();
-      const desc = (cells[dIdx] ?? "").trim();
-      if (!title && !desc) continue;
+      const desc = stripHtml((cells[dIdx] ?? "").trim());
+      const skills = kIdx >= 0 ? (cells[kIdx] ?? "").trim().replace(/,\s*/g, ", ") : "";
+      if (!title && !desc && !skills) continue;
+      // Same Maharashtra attribution rule as the JSONL loader — pan-India
+      // corpora must not inflate a state demand signal.
+      const cityRaw = cIdx >= 0 ? (cells[cIdx] ?? "").trim() : "";
+      if (cIdx >= 0 && !MH_PATTERN.test(cityRaw)) continue;
       postings.push({
         id: `${path.basename(f, ".csv").slice(0, 12)}-${i}`,
         title,
         org: oIdx >= 0 ? (cells[oIdx] ?? "").trim() : undefined,
         sector: sIdx >= 0 ? (cells[sIdx] ?? "").trim() || "Unclassified" : "Unclassified",
-        city: cIdx >= 0 ? (cells[cIdx] ?? "").trim() : undefined,
-        text: `${title}. ${desc}`.slice(0, 4000),
+        city: cityRaw,
+        text: `${title}. Skills: ${skills}. ${desc}`.slice(0, 4000),
       });
     }
   }
