@@ -54,7 +54,7 @@ Instantly, the AI analyzes their aptitude, points them to the nearest accredited
 
 ### [2:20 - 3:00] Feasibility, Social Impact & The Climax
 **Speaker 1 (Closing):**  
-"This is not a mock concept. Our core semantic matching engine is already built, tested, and benchmarked with a **94.2% Recall@5** — and the demand pipeline is already live on 13,511 real postings, reproducible with two commands. Every single AI recommendation has a deterministic fallback, meaning KaushalSetu works offline in remote taluka offices without crashing.
+"This is not a mock concept. Our core semantic matching engine is already built, tested, and benchmarked with a **94.2% Recall@5** — and the demand pipeline is already live on 13,511 real postings, reproducible with two commands. The measured verdict: our catalog covers 66–67% of the tech corridors but only **9–15% of Manufacturing, Healthcare, Automobile and Pharma demand**, and a single **cloud/AI block — 4,833 postings** across AWS, Azure, ML, Docker, GCP and GenAI — is taught by no current program. Every single AI recommendation has a deterministic fallback, meaning KaushalSetu works offline in remote taluka offices without crashing.
 
 Every rupee of state skilling funds can now be tied to verified 6-month employment retention. 
 

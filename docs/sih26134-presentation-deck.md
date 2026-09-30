@@ -44,8 +44,11 @@
      - Zero telemetry on whether graduates stay employed or experience actual wage growth.
 * **The Killer Stat Callout:** *"₹1,200+ Crores spent annually on state skilling, yet 54% of employers retrain new hires at their own expense."*
 * **Real-Demand Evidence Block (from our live pipeline, slide 3 chart source):**
-  - 13,511 real Naukri postings, 69 sectors, tagged on our skill graph.
-  - Top demanded skills: SQL (3,270), Project Management (2,258), **Sales (2,107 — taught by no current program)**, Python (1,684), HR (1,517), Production (1,371), AWS (1,046).
+  - 13,511 real Naukri postings (three public Naukri datasets on Hugging Face, merged + Maharashtra-filtered), 69 sectors, tagged on our skill graph.
+  - Top demanded skills: SQL (3,270), Project Management (2,258), **Sales (2,107 — taught by no current program)**, Python (1,684), HR (1,517), Production (1,371).
+  - **Cloud/AI is one aggregate gap: 4,833 postings** demand AWS (1,046), Azure (921), ML (898), Docker/K8s (755), GCP (476), Deep Learning (252), NLP (230), GenAI (140), CV (115) — zero catalog coverage.
+  - **Sector coverage is two-speed** (share of each sector's top-12 demand mass taught by any program): Data Science & AI 66%, Software Engineering 67%, Education 66% — versus **Manufacturing & Auto 9%, Services 9%, Healthcare 12%, Automobile 14%, Pharma 15%**.
+  - 📸 *Slide image ready:* `docs/deck/slide3-kpis-and-demand.png` (KPIs + demand chart) and `docs/deck/slide3-sector-gaps.png` (coverage matrix).
 
 ---
 
@@ -105,6 +108,7 @@
   - Real-time district heatmap of Maharashtra — **already live in the prototype**: 36 tiles, zero-demand districts rendered as dashed "skill desert" tiles.
   - **Measured district distribution (13,511 postings):** Mumbai 9,178 · Pune 6,066 · Thane 556 · Nagpur 164 · Nashik 60 · Chhatrapati Sambhajinagar 40 — and **12 districts at zero**, including all of Gadchiroli, Sindhudurg and Nandurbar.
   - **Per-district coverage scoring:** same catalog, different holes — Mumbai 53% (Sales unmet), Pune 63% (tech demand covered), Chhatrapati Sambhajinagar 34% (Production unmet), Kolhapur 39% (Clinical Care unmet).
+  - 📸 *Slide images ready:* `docs/deck/slide3-district-heatmap.png` and `docs/deck/slide3-coverage-focus.png`.
   - **Supply vs. Demand Pinning:** Maps 418 Govt ITIs, 550+ Private ITIs against active industry vacancy clusters.
   - **"What-If" Policy Simulation Cockpit:**
     - Allows the Principal Secretary to simulate: *"If we reallocate ₹25 Cr to Green Hydrogen and Drone Skilling in Vidarbha, what is the projected 6-month placement rate and wage uplift?"*
