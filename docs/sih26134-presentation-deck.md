@@ -100,6 +100,7 @@
     1. A modular **30-hour weekend bridge course**.
     2. Bilingual ITI Instructor lesson plan (Marathi + English).
     3. Practical workshop test rubrics.
+  - 📄 **Full curricula ready:** three complete 30-hour modules (10 sessions × 3 h, session-by-session plans, practicum rubrics, passport credentials, deployment sequencing by district) — [docs/sih26134-bridge-module-curricula.md](sih26134-bridge-module-curricula.md): *Retail & B2B Sales Excellence* (Mumbai), *Cloud & AI Foundations* (Pune/Mumbai), *Modern Production Operations* (Sambhajinagar + auto belt).
 
 ---
 
