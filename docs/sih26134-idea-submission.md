@@ -67,3 +67,13 @@ The core matching engine, embedding vector pipeline, and graph traversal logic a
 - **For Youth:** Direct, transparent pathway to high-paying jobs in regional industrial clusters; inclusive voice guidance in Marathi for rural candidates.
 - **For Industry (MIDC / MSMEs):** Ready availability of pre-trained, job-aligned technicians, slashing onboarding and apprenticeship training costs by 60%.
 - **For Government (MSSDS / DVET):** Maximized return on public skilling expenditures (preventing spend on redundant courses), real-time district labor-market visibility, and an agile curriculum mechanism that keeps Maharashtra at the forefront of national industrial competitiveness.
+
+---
+
+## 7. Appendix — Ready-to-Deploy 30-Hour Bridge Modules (from the Measured Gaps)
+
+Generated **directly from the live 13,511-posting pipeline** (`data/alignment.json` → `uncoveredSkills`); full session-by-session curricula with labs and rubrics live in `docs/sih26134-bridge-module-curricula.md`. Format: 10 sessions × 3 hours, bilingual (Marathi + English), deployable inside the CTS 20% flex band — no board syllabus rewrite.
+
+**Module A — Retail & B2B Sales Excellence (the Mumbai gap):** `biz_sales` demanded by **2,167 postings with zero catalog coverage** (~1,908 actionable in Mumbai — 21% of the city's demand). Arc: consultative selling → pipeline discipline → objection handling → WhatsApp/LinkedIn digital selling → telecalling → retail floor → B2B quoting & negotiation → sales MIS → practicum (end-to-end sales simulation). Passport: *Sales Readiness — Level 1*.
+
+**Module B — Cloud & AI Foundations (the 4,833-posting tech gap):** AWS 1,046 + Azure 921 + ML 898 + Docker/K8s 755 + GCP 476 + DL/NLP/GenAI/CV — **zero catalog coverage**; hotspots Pune + Mumbai. Arc: cloud literacy → AWS/Azure core → Linux & networking → Python for cloud ops → ML foundations → GenAI & prompting → containers & CI/CD → cost/security/DPDP → practicum (deploy a working micro-service). Passport: *Cloud & AI Foundations — Level 1*.

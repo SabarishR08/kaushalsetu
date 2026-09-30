@@ -86,3 +86,21 @@ Thank you, and we welcome your questions!"
 ### Question 4: "How do you know students actually get jobs after your recommended training?"
 **Winning Answer:**  
 "We close the loop using **Telemetry Tracking**. In our architecture, the candidate's Kaushal Passport is linked to anonymized EPFO (Provident Fund) and NAPS (National Apprenticeship Promotion Scheme) monthly contribution status at the 3-month and 6-month marks. This computes a verifiable **Training Center ROI Index**, so the state only finances programs with proven employment conversion."
+
+---
+
+## Appendix — Ready-to-Deploy 30-Hour Bridge Modules (from the Measured Gaps)
+
+Both modules below are generated **directly from the live 13,511-posting pipeline** (`data/alignment.json` → `uncoveredSkills`) and written out in full — session-by-session, with labs and rubrics — in [sih26134-bridge-module-curricula.md](sih26134-bridge-module-curricula.md). Each is a 10-session × 3-hour add-on a training center can schedule within the CTS 20% flex band — no board syllabus rewrite required. Delivery is bilingual (Marathi + English) throughout.
+
+### Module A — Retail & B2B Sales Excellence (the Mumbai gap)
+- **Measured gap:** `biz_sales` — **2,167 postings** demand it, **zero catalog coverage**; ~1,908 actionable postings in Mumbai alone (21% of all Mumbai demand — the city's single largest unmet skill).
+- **Evidence anchors:** real corpus posting IDs `nk-231224500680`, `nk-201224006799`, `nk-040324005788`.
+- **Arc (10 × 3 h):** Maharashtra sales landscape → consultative selling → pipeline discipline → objection handling → WhatsApp/LinkedIn digital selling → telecalling craft → retail floor excellence → B2B quoting & negotiation → sales analytics & MIS → **practicum: end-to-end sales simulation**.
+- **Assessment:** 40% practicum · 30% labs · 20% scenario test · 10% attendance → Passport: *Sales Readiness — Level 1 (Retail & B2B)*.
+
+### Module B — Cloud & AI Foundations (the 4,833-posting tech gap)
+- **Measured gap:** the cloud/AI block — **4,833 postings aggregate** (AWS 1,046, Azure 921, ML 898, Docker/K8s 755, GCP 476, DL 252, NLP 230, GenAI 140, CV 115), **zero catalog coverage**. Hotspots: Pune + Mumbai tech corridors.
+- **Evidence anchors:** `nk-231224500732` (SQL+AWS), `nk-231224902246` (Python+Azure), `nk-211224008589` (Python+ML/DL/NLP/GenAI), `nk-111224502204` (Docker).
+- **Arc (10 × 3 h):** cloud literacy → AWS core → Azure parity → Linux & networking → Python for cloud ops → ML foundations → GenAI & prompting → containers & CI/CD → cost/security/DPDP → **practicum: deploy a working micro-service**.
+- **Assessment:** 40% practicum · 30% labs · 20% quiz · 10% attendance → Passport: *Cloud & AI Foundations — Level 1* (natural next step: AWS CCP / Azure AZ-900).

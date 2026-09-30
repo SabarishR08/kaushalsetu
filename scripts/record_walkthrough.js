@@ -33,7 +33,9 @@ const CONFIG = {
 function checkServer(url) {
   return new Promise((resolve) => {
     const req = http.get(url, (res) => {
-      resolve(res.statusCode >= 200 && res.statusCode < 500);
+      // A stale/broken server that answers 4xx/5xx is DOWN for our purposes:
+      // the walkthrough would film error pages, so refuse to start on it.
+      resolve(res.statusCode >= 200 && res.statusCode < 400);
     });
     req.on('error', () => resolve(false));
     req.setTimeout(1500, () => {
@@ -50,6 +52,12 @@ async function ensureServerRunning() {
     return null;
   }
 
+  // Auto-start only makes sense for the default localhost:3000 target — the
+  // spawn always binds :3000. For any other TARGET_URL, failing fast beats a
+  // 45s timeout followed by a confusing timeout error.
+  if (CONFIG.baseUrl !== 'http://localhost:3000') {
+    throw new Error(`Target server ${CONFIG.baseUrl} is down. Start the current production build there, then re-run this script.`);
+  }
   console.log(`[Server] Spawning Next.js server...`);
   const nextBin = path.resolve(__dirname, '../node_modules/next/dist/bin/next');
   const dotNextExists = fs.existsSync(path.resolve(__dirname, '../.next'));
@@ -123,9 +131,15 @@ async function runCleanWalkthrough() {
   let browser = null;
   let context = null;
   let page = null;
+  let recordingError = null;
+  let recordingStartMs = null;
+  // Function scope: the finally block must be able to read this even when
+  // the try aborts before the browser/page (and its listeners) ever exist.
+  const audit = { failures: [], chapter: 'setup' };
 
   try {
     serverProc = await ensureServerRunning();
+    recordingStartMs = Date.now(); // webm files older than this are stale artifacts — never transcode them
 
     console.log(`[Studio] Launching 1080p Chromium for Pure Full-Screen UI Capture...`);
     browser = await chromium.launch({
@@ -152,11 +166,49 @@ async function runCleanWalkthrough() {
     page = await context.newPage();
 
     // ========================================================================
+    // ERROR-PAGE AUDIT — a stale server that renders 500/404 or throws client
+    // exceptions must abort the recording, or a broken demo silently reaches
+    // the repo. HTTP >= 400, uncaught JS exceptions, and missing per-chapter
+    // content markers are all fatal.
+    // ========================================================================
+    const seenFaultUrls = new Set();
+    page.on('pageerror', (err) => {
+      audit.failures.push(`JS exception while "${audit.chapter}": ${String(err.message).split('\n')[0]}`);
+    });
+    page.on('response', (res) => {
+      const rtype = res.request().resourceType();
+      if (res.status() >= 400 && (rtype === 'document' || rtype === 'xhr' || rtype === 'fetch') && !seenFaultUrls.has(res.url())) {
+        seenFaultUrls.add(res.url());
+        audit.failures.push(`HTTP ${res.status()} while "${audit.chapter}": ${res.url()}`);
+      }
+    });
+
+    const expectPage = async (marker, chapter) => {
+      audit.chapter = chapter;
+      try {
+        await page.getByText(marker, { exact: false }).first().waitFor({ state: 'visible', timeout: 20000 });
+      } catch {
+        audit.failures.push(`Marker "${marker}" not visible on ${page.url()} (chapter "${chapter}")`);
+      }
+    };
+
+    const assertNoAuditFailures = () => {
+      if (audit.failures.length) {
+        console.error('\n============================================================');
+        console.error('🛑 RECORDING FAULTED — ERROR PAGES / EXCEPTIONS CAPTURED ON FILM:');
+        audit.failures.forEach((f, i) => console.error(`   ${i + 1}. ${f}`));
+        console.error('============================================================\n');
+        throw new Error(`Walkthrough captured ${audit.failures.length} error-page fault(s) — refusing to produce a video. Start the CURRENT production build, then re-run.`);
+      }
+    };
+
+    // ========================================================================
     // CHAPTER 1: LANDING & HERO SHOWCASE (/)
     // ========================================================================
     console.log('[Walkthrough] 1/9: Landing Page & Hero Section');
     await page.goto(`${CONFIG.baseUrl}/`, { waitUntil: 'networkidle' });
     await page.waitForTimeout(800);
+    await expectPage('KaushalSetu', 'chapter 1 /');
 
     // Smooth continuous glide down the landing page
     await smoothScroll(page, 550, 14, 30);
@@ -180,6 +232,8 @@ async function runCleanWalkthrough() {
     // ========================================================================
     console.log('[Walkthrough] 2/9: State Administration Cockpit');
     await page.waitForTimeout(600);
+    await expectPage('Real Postings Active', 'chapter 2 /department');
+    await expectPage('District-level demand heatmap', 'chapter 2 /department');
 
     // Hover over executive KPI summary cards
     const kpiCards = page.locator('div[class*="sm:grid-cols-2"] > div, div[class*="grid-cols-2"] > div');
@@ -292,6 +346,7 @@ async function runCleanWalkthrough() {
     // ========================================================================
     console.log('[Walkthrough] 3/9: 36-District GIS Twin & Industrial Clusters');
     await page.waitForTimeout(600);
+    await expectPage('GIS', 'chapter 3 /districts');
 
     // Demonstrate Division filter tabs: Pune -> Marathwada -> Vidarbha -> ALL
     const puneDiv = page.locator('button:has-text("Pune")').first();
@@ -330,6 +385,7 @@ async function runCleanWalkthrough() {
     // ========================================================================
     console.log('[Walkthrough] 4/9: Autonomous Curriculum-Delta-Diff Studio');
     await page.waitForTimeout(600);
+    await expectPage('Curriculum', 'chapter 4 /curriculum-diff');
 
     // Select Trade 1: Machinist & Lathe
     const machinistBtn = page.locator('button:has-text("Machinist & Conventional Lathe")').first();
@@ -369,6 +425,7 @@ async function runCleanWalkthrough() {
     // ========================================================================
     console.log('[Walkthrough] 5/9: Live Postings Telemetry Feed');
     await page.waitForTimeout(600);
+    await expectPage('authentic vacancies', 'chapter 5 /telemetry');
 
     const searchInput = page.locator('input[placeholder*="Search 13,511 live postings"], input[placeholder*="Search"]').first();
     if (await searchInput.isVisible()) {
@@ -404,6 +461,7 @@ async function runCleanWalkthrough() {
     // ========================================================================
     console.log('[Walkthrough] 6/9: Marathi AI Voice Rojgar Sahayak');
     await page.waitForTimeout(600);
+    await expectPage('Rojgar', 'chapter 6 /voice-sahayak');
 
     // Click Marathi query preset 1 (Pune Auto)
     const puneQuery = page.locator('button:has-text("पुणे / ऑटोमोबाईल")').first();
@@ -442,6 +500,7 @@ async function runCleanWalkthrough() {
     // ========================================================================
     console.log('[Walkthrough] 7/9: Verifiable Digital Kaushal Passport');
     await page.waitForTimeout(600);
+    await expectPage('Kaushal Passport', 'chapter 7 /passport');
 
     // Click "Verify Ed25519 Signature" button
     const verifyBtn = page.locator('button:has-text("Verify Ed25519 Signature")').first();
@@ -463,6 +522,7 @@ async function runCleanWalkthrough() {
     // ========================================================================
     console.log('[Walkthrough] 8/9: What-If Skilling Simulator & DAG');
     await page.waitForTimeout(700);
+    await expectPage('What-If', 'chapter 8 /path');
 
     // Smooth scroll through learning roadmap phases and competency metrics
     await smoothScroll(page, 550, 14, 30);
@@ -477,6 +537,7 @@ async function runCleanWalkthrough() {
     // ========================================================================
     console.log('[Walkthrough] 9/9: Secretariat Executive Policy Memo');
     await page.waitForTimeout(700);
+    await expectPage('Skilling Alignment Report', 'chapter 9 /department/report');
 
     // Smooth scroll through Cabinet-ready executive memo
     await smoothScroll(page, 650, 14, 30);
@@ -489,11 +550,24 @@ async function runCleanWalkthrough() {
     await page.goto(`${CONFIG.baseUrl}/`, { waitUntil: 'networkidle' });
     await page.waitForTimeout(1000);
 
-    console.log('[Walkthrough] Full-screen pure UI walkthrough completed successfully!');
+    assertNoAuditFailures();
+    console.log('[Walkthrough] Full-screen pure UI walkthrough completed successfully — zero error pages, zero JS exceptions.');
 
   } catch (error) {
-    console.error('[Recording Error]', error);
+    recordingError = error;
   } finally {
+    // Fail loudly BEFORE anything video-ish happens: print every captured
+    // fault so the operator sees exactly which chapter filmed an error page.
+    if (audit && audit.failures.length) {
+      console.error('\n============================================================');
+      console.error('🛑 ERROR PAGES / FAULTS CAPTURED DURING THE WALKTHROUGH:');
+      audit.failures.forEach((f, i) => console.error(`   ${i + 1}. ${f}`));
+      console.error('============================================================\n');
+    }
+    if (recordingError) {
+      console.error('[Recording Error]', recordingError.message || recordingError);
+    }
+
     let rawVideoPath = null;
     if (page && context) {
       try {
@@ -511,12 +585,15 @@ async function runCleanWalkthrough() {
       } catch (e) {}
     }
 
-    // Fallback: look for latest .webm file in recordings directory
-    if (!rawVideoPath || !fs.existsSync(rawVideoPath)) {
+    // Fallback: newest .webm that THIS run produced. A fresh context starts
+    // recording at run start, so anything older is a stale artifact from a
+    // previous run and must never be transcoded or committed.
+    if ((!rawVideoPath || !fs.existsSync(rawVideoPath)) && recordingStartMs) {
       if (fs.existsSync(CONFIG.outputDir)) {
         const webmFiles = fs.readdirSync(CONFIG.outputDir)
           .filter(f => f.endsWith('.webm'))
           .map(f => ({ path: path.join(CONFIG.outputDir, f), mtime: fs.statSync(path.join(CONFIG.outputDir, f)).mtimeMs }))
+          .filter((f) => f.mtime >= recordingStartMs - 5000)
           .sort((a, b) => b.mtime - a.mtime);
         if (webmFiles.length > 0) {
           rawVideoPath = webmFiles[0].path;
@@ -532,6 +609,16 @@ async function runCleanWalkthrough() {
           serverProc.kill();
         }
       } catch (e) {}
+    }
+
+    // ---- fail loudly: no MP4, nonzero exit, so stale-server recordings can
+    // never silently reach a commit ----
+    if (recordingError || (audit && audit.failures.length)) {
+      if (rawVideoPath && fs.existsSync(rawVideoPath)) {
+        try { fs.rmSync(rawVideoPath, { force: true }); } catch (e) {}
+        console.error(`[Guard] Discarded unusable recording: ${path.basename(rawVideoPath)}`);
+      }
+      process.exit(1);
     }
 
     // ========================================================================

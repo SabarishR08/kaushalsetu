@@ -176,6 +176,11 @@ export default async function DepartmentPage() {
               </Link>
             </Button>
             <Button asChild variant="outline" size="sm" className="border-white/10 text-xs h-9 bg-black/40">
+              <Link href="/voice-sahayak">
+                <Mic className="mr-1.5 h-3.5 w-3.5 text-rose-400" /> Voice Sahayak
+              </Link>
+            </Button>
+            <Button asChild variant="outline" size="sm" className="border-white/10 text-xs h-9 bg-black/40">
               <Link href="/telemetry">
                 <Activity className="mr-1.5 h-3.5 w-3.5 text-emerald-400" /> {PIPELINE_POSTINGS.toLocaleString("en-IN")} Postings
               </Link>
@@ -536,7 +541,7 @@ export default async function DepartmentPage() {
       </p>
       <div className="mt-4 flex items-center gap-2 text-xs text-muted-foreground">
         <GraduationCap className="h-4 w-4" />
-        KaushalSetu · closed-loop skilling alignment for Maharashtra · built on the PathFinder evidence pipeline
+        KaushalSetu · closed-loop skilling alignment for Maharashtra · Government of Maharashtra (MSSDS & DVET)
       </div>
       </div>
     </AppShell>

@@ -3,8 +3,14 @@
  *
  * Captures deck-ready PNGs of the department dashboard against a running
  * server (default http://localhost:3100, override with TARGET_URL) and
- * writes them to docs/deck/. Uses deviceScaleFactor 2 for crisp projection
- * and print quality.
+ * writes them to docs/deck/. Each shot is captured twice — once in the
+ * default dark theme and once in light mode (the `dark` class is toggled
+ * off <html> for the light pass, falling back to the :root light tokens
+ * in globals.css) — so the deck has both variants:
+ *   <name>.png        (dark, default)
+ *   <name>-light.png  (light)
+ *
+ * Uses deviceScaleFactor 2 for crisp projection and print quality.
  *
  * Usage: node scripts/capture-deck-shots.js
  */
@@ -59,24 +65,33 @@ const SHOTS = [
   },
 ];
 
-async function main() {
-  if (!fs.existsSync(CONFIG.outDir)) fs.mkdirSync(CONFIG.outDir, { recursive: true });
+const PASSES = [
+  { id: 'dark', suffix: '', darkClass: true, colorScheme: 'dark' },
+  { id: 'light', suffix: '-light', darkClass: false, colorScheme: 'light' },
+];
 
-  const browser = await chromium.launch({ headless: true });
+async function capturePass(browser, pass) {
   const context = await browser.newContext({
     viewport: CONFIG.viewport,
     deviceScaleFactor: CONFIG.scale,
-    colorScheme: 'dark',
+    colorScheme: pass.colorScheme,
   });
   const page = await context.newPage();
 
   await page.goto(`${CONFIG.baseUrl}/department`, { waitUntil: 'networkidle', timeout: 60000 });
   await page.waitForTimeout(1500); // charts animate in
 
+  // Theme flip: the layout hardcodes className="dark" on <html>; the light
+  // pass removes it so the :root light token block in globals.css applies.
+  await page.evaluate((dark) => {
+    document.documentElement.classList.toggle('dark', dark);
+  }, pass.darkClass);
+  await page.waitForTimeout(300); // let CSS vars settle
+
   // Sanity check: the KPI must show the current posting count, not a stale one.
   const body = await page.innerText('body');
   const kpiMatch = body.match(/(\d[\d,]*)\s*\n\s*keyword tagger/);
-  if (kpiMatch) console.log(`[capture] postings KPI on page: ${kpiMatch[1]}`);
+  if (kpiMatch) console.log(`[capture:${pass.id}] postings KPI on page: ${kpiMatch[1]}`);
 
   for (const shot of SHOTS) {
     try {
@@ -94,24 +109,35 @@ async function main() {
         await page.evaluate((y) => window.scrollTo(0, y), shot.scrollTo);
         await page.waitForTimeout(600);
       }
-      const out = path.join(CONFIG.outDir, `${shot.name}.png`);
+      const out = path.join(CONFIG.outDir, `${shot.name}${pass.suffix}.png`);
       await page.screenshot({ path: out });
-      console.log(`[capture] ${shot.note} -> ${shot.name}.png`);
+      console.log(`[capture:${pass.id}] ${shot.note} -> ${shot.name}${pass.suffix}.png`);
       if (shot.closeAfter) {
         await page.locator("button[aria-label='Close district intelligence panel']").click();
         await page.waitForTimeout(300);
       }
     } catch (e) {
-      console.warn(`[capture] FAILED ${shot.name}: ${e.message}`);
+      console.warn(`[capture:${pass.id}] FAILED ${shot.name}: ${e.message}`);
     }
   }
 
   // Bonus: full-page capture for reference.
   await page.evaluate(() => window.scrollTo(0, 0));
   await page.waitForTimeout(400);
-  await page.screenshot({ path: path.join(CONFIG.outDir, 'department-fullpage.png'), fullPage: true });
-  console.log('[capture] full page -> department-fullpage.png');
+  await page.screenshot({ path: path.join(CONFIG.outDir, `department-fullpage${pass.suffix}.png`), fullPage: true });
+  console.log(`[capture:${pass.id}] full page -> department-fullpage${pass.suffix}.png`);
 
+  await context.close();
+}
+
+async function main() {
+  if (!fs.existsSync(CONFIG.outDir)) fs.mkdirSync(CONFIG.outDir, { recursive: true });
+
+  const browser = await chromium.launch({ headless: true });
+  for (const pass of PASSES) {
+    console.log(`[capture] === ${pass.id.toUpperCase()} pass (files suffixed "${pass.suffix || '(none)'}") ===`);
+    await capturePass(browser, pass);
+  }
   await browser.close();
 }
 
