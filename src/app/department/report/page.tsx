@@ -72,33 +72,33 @@ export default async function DepartmentReportPage() {
       </section>
 
       <section className="mb-8">
-        <h2 className="mb-2 text-base font-semibold">2. Skill demand by city cluster</h2>
-        {demand.cities?.length ? (
+        <h2 className="mb-2 text-base font-semibold">2. Skill demand by district (all 36)</h2>
+        {demand.districts?.length ? (
           <table className="w-full border-collapse text-sm">
             <thead>
               <tr className="border-b text-left">
-                <th className="py-1 pr-4">City cluster</th>
+                <th className="py-1 pr-4">District</th>
                 <th className="py-1 pr-4">Postings</th>
                 <th className="py-1">Top 5 skills demanded</th>
               </tr>
             </thead>
             <tbody>
-              {demand.cities
-                .filter((c) => c.city !== "Unattributed" && c.postings >= 5)
-                .map((c) => (
-                  <tr key={c.city} className="border-b align-top">
-                    <td className="py-1.5 pr-4 font-medium">{c.city}</td>
-                    <td className="py-1.5 pr-4">{c.postings}</td>
-                    <td className="py-1.5">{c.topSkills.slice(0, 5).map((s) => name(s.skillId)).join(", ")}</td>
+              {demand.districts
+                .filter((d) => d.district !== "Unattributed")
+                .map((d) => (
+                  <tr key={d.district} className="border-b align-top">
+                    <td className="py-1.5 pr-4 font-medium">{d.district}</td>
+                    <td className="py-1.5 pr-4">{d.postings}</td>
+                    <td className="py-1.5">{d.topSkills.slice(0, 5).map((s) => name(s.skillId)).join(", ")}</td>
                   </tr>
                 ))}
             </tbody>
           </table>
         ) : (
-          <p className="text-sm">City attribution unavailable for this demand build.</p>
+          <p className="text-sm">District attribution unavailable for this demand build.</p>
         )}
         <p className="mt-1 text-xs text-muted-foreground">
-          Multi-city postings credit every listed city, so counts sum above the posting total.
+          Multi-district postings credit every listed district, so counts sum above the posting total. Mumbai = Mumbai City + Suburban.
         </p>
       </section>
 

@@ -154,16 +154,11 @@ const DISTRICT_RULES: { district: string; patterns: RegExp[] }[] = [
   { district: "Gadchiroli", patterns: [/gadchiroli/i, /desaiganj/i, /aheri/i, /sironcha/i, /wadsa/i] },
 ];
 
-/** Approximate geographic tile positions [row, col] for the choropleth grid. */
-export const DISTRICT_GRID: Record<string, [number, number]> = {
-  Nandurbar: [0, 1], Dhule: [0, 2], Jalgaon: [0, 3], Gondia: [0, 7],
-  Palghar: [1, 0], Nashik: [1, 1], "Chh. Sambhajinagar": [1, 2], Jalna: [1, 3], Buldhana: [1, 4], Akola: [1, 5], Amravati: [1, 6], Bhandara: [1, 7],
-  Mumbai: [2, 0], Pune: [2, 1], Ahmednagar: [2, 2], Beed: [2, 3], Parbhani: [2, 4], Hingoli: [2, 5], Washim: [2, 6], Nagpur: [2, 7],
-  Thane: [3, 0], Satara: [3, 1], Solapur: [3, 2], Latur: [3, 3], Nanded: [3, 4], Yavatmal: [3, 5], Wardha: [3, 6], Chandrapur: [3, 7],
-  Raigad: [4, 0], Sangli: [4, 1], "Osmanabad (Dharashiv)": [4, 2], Gadchiroli: [4, 7],
-  Ratnagiri: [5, 0], Kolhapur: [5, 1],
-  Sindhudurg: [6, 0],
-};
+/**
+ * Tile-grid coordinates for the dashboard choropleth live in
+ * `src/lib/geo/districts.ts` — the UI owns presentation, the script owns
+ * extraction.
+ */
 
 export function extractDistricts(location: string): string[] {
   if (!location) return [];

@@ -1,9 +1,9 @@
 {
   "meta": {
-    "builtAt": "2026-09-30T13:28:15.921Z",
+    "builtAt": "2026-09-30T13:54:47.576Z",
     "demandSource": "real corpus merge: Naukri JSONL + sector CSV (data/jobs/raw)",
     "tagger": "keyword",
-    "postings": 13321,
+    "postings": 13511,
     "programs": 35,
     "minDemandShare": 0.15
   },
@@ -15,10 +15,10 @@
       "skills": [
         "dc_sql"
       ],
-      "alignment": 0.245,
+      "alignment": 0.243,
       "bestSector": "Data Science & AI",
       "bestSectorRelevance": 0.392,
-      "sectorDemand": 3401,
+      "sectorDemand": 3411,
       "missingInBestSector": [
         "it_python_basics",
         "sm_descriptive",
@@ -35,7 +35,7 @@
       "skills": [
         "cg_project_mgmt"
       ],
-      "alignment": 0.17,
+      "alignment": 0.168,
       "bestSector": "Tyres",
       "bestSectorRelevance": 0.5,
       "sectorDemand": 2,
@@ -54,10 +54,10 @@
         "it_python_basics",
         "it_python_stats"
       ],
-      "alignment": 0.134,
+      "alignment": 0.133,
       "bestSector": "Data Science & AI",
       "bestSectorRelevance": 0.359,
-      "sectorDemand": 3401,
+      "sectorDemand": 3411,
       "missingInBestSector": [
         "dc_sql",
         "sm_descriptive",
@@ -74,7 +74,7 @@
       "skills": [
         "cg_report_writing"
       ],
-      "alignment": 0.127,
+      "alignment": 0.126,
       "bestSector": "Aviation / Aerospace Firms",
       "bestSectorRelevance": 1,
       "sectorDemand": 1,
@@ -92,7 +92,7 @@
         "sm_inference",
         "sm_hypothesis"
       ],
-      "alignment": 0.093,
+      "alignment": 0.092,
       "bestSector": "KPO / Research / Analytics",
       "bestSectorRelevance": 0.862,
       "sectorDemand": 29,
@@ -113,7 +113,7 @@
         "dc_spreadsheets",
         "it_basics"
       ],
-      "alignment": 0.064,
+      "alignment": 0.063,
       "bestSector": "Fertilizers / Pesticides",
       "bestSectorRelevance": 1,
       "sectorDemand": 1,
@@ -129,10 +129,10 @@
       "skills": [
         "os_big_data"
       ],
-      "alignment": 0.061,
+      "alignment": 0.06,
       "bestSector": "Data Science & AI",
       "bestSectorRelevance": 0.192,
-      "sectorDemand": 3401,
+      "sectorDemand": 3411,
       "missingInBestSector": [
         "dc_sql",
         "it_python_basics",
@@ -149,10 +149,10 @@
       "skills": [
         "cg_training_delivery"
       ],
-      "alignment": 0.061,
+      "alignment": 0.06,
       "bestSector": "Education / Teaching / Training",
       "bestSectorRelevance": 1,
-      "sectorDemand": 737,
+      "sectorDemand": 741,
       "missingInBestSector": [
         "eng_design"
       ]
@@ -165,7 +165,7 @@
         "it_data_viz",
         "it_dashboards"
       ],
-      "alignment": 0.054,
+      "alignment": 0.053,
       "bestSector": "KPO / Research / Analytics",
       "bestSectorRelevance": 0.241,
       "sectorDemand": 29,
@@ -207,8 +207,8 @@
       ],
       "alignment": 0.032,
       "bestSector": "Accounting / Finance",
-      "bestSectorRelevance": 0.761,
-      "sectorDemand": 71,
+      "bestSectorRelevance": 0.767,
+      "sectorDemand": 73,
       "missingInBestSector": [
         "biz_accounts",
         "mfg_production",
@@ -225,7 +225,7 @@
         "sm_time_series",
         "sm_seasonal"
       ],
-      "alignment": 0.019,
+      "alignment": 0.018,
       "bestSector": "Office Equipment / Automation",
       "bestSectorRelevance": 0.333,
       "sectorDemand": 3,
@@ -311,7 +311,7 @@
       "alignment": 0.009,
       "bestSector": "Data Science & AI",
       "bestSectorRelevance": 0.03,
-      "sectorDemand": 3401,
+      "sectorDemand": 3411,
       "missingInBestSector": [
         "dc_sql",
         "it_python_basics",
@@ -350,13 +350,12 @@
       ],
       "alignment": 0.006,
       "bestSector": "FMCG / Foods / Beverage",
-      "bestSectorRelevance": 0.031,
-      "sectorDemand": 64,
+      "bestSectorRelevance": 0.03,
+      "sectorDemand": 67,
       "missingInBestSector": [
         "biz_sales",
         "mfg_production",
-        "biz_hr",
-        "cg_report_writing"
+        "biz_hr"
       ]
     },
     {
@@ -420,8 +419,8 @@
       ],
       "alignment": 0.002,
       "bestSector": "Textiles / Garments / Accessories",
-      "bestSectorRelevance": 0.12,
-      "sectorDemand": 25,
+      "bestSectorRelevance": 0.115,
+      "sectorDemand": 26,
       "missingInBestSector": [
         "biz_sales",
         "mfg_production",
@@ -462,7 +461,7 @@
       "alignment": 0.001,
       "bestSector": "Data Science & AI",
       "bestSectorRelevance": 0.001,
-      "sectorDemand": 3401,
+      "sectorDemand": 3411,
       "missingInBestSector": [
         "dc_sql",
         "it_python_basics",
@@ -484,7 +483,7 @@
       "alignment": 0.001,
       "bestSector": "Education / Teaching / Training",
       "bestSectorRelevance": 0.011,
-      "sectorDemand": 737,
+      "sectorDemand": 741,
       "missingInBestSector": [
         "cg_training_delivery",
         "eng_design"
@@ -501,13 +500,11 @@
       ],
       "alignment": 0,
       "bestSector": "Architecture / Interior Design",
-      "bestSectorRelevance": 0.077,
-      "sectorDemand": 13,
+      "bestSectorRelevance": 0.133,
+      "sectorDemand": 15,
       "missingInBestSector": [
         "dc_sql",
         "biz_hr",
-        "biz_sales",
-        "cg_project_mgmt",
         "eng_design"
       ]
     },
@@ -567,7 +564,7 @@
       "alignment": 0,
       "bestSector": "Education / Teaching / Training",
       "bestSectorRelevance": 0.001,
-      "sectorDemand": 737,
+      "sectorDemand": 741,
       "missingInBestSector": [
         "cg_training_delivery",
         "eng_design"
@@ -625,7 +622,7 @@
       "alignment": 0,
       "bestSector": "Media / Entertainment / Internet",
       "bestSectorRelevance": 0.009,
-      "sectorDemand": 106,
+      "sectorDemand": 107,
       "missingInBestSector": [
         "biz_sales",
         "mfg_production"
@@ -640,8 +637,8 @@
       ],
       "alignment": 0,
       "bestSector": "Pharma / Biotech / Clinical Research",
-      "bestSectorRelevance": 0.006,
-      "sectorDemand": 177,
+      "bestSectorRelevance": 0.005,
+      "sectorDemand": 186,
       "missingInBestSector": [
         "biz_sales",
         "med_clinical",
@@ -747,7 +744,7 @@
     },
     {
       "sector": "Ceramics / Sanitary ware",
-      "postings": 8,
+      "postings": 9,
       "topSkills": [
         "biz_sales",
         "mfg_production",
@@ -760,11 +757,11 @@
         "cg_report_writing",
         "sm_time_series"
       ],
-      "coverage": 0.118
+      "coverage": 0.111
     },
     {
       "sector": "Medical / Healthcare / Hospitals",
-      "postings": 125,
+      "postings": 132,
       "topSkills": [
         "med_clinical",
         "biz_sales",
@@ -786,11 +783,11 @@
         "dc_sql",
         "cg_project_mgmt"
       ],
-      "coverage": 0.132
+      "coverage": 0.125
     },
     {
       "sector": "Semiconductors / Electronics",
-      "postings": 12,
+      "postings": 13,
       "topSkills": [
         "biz_hr",
         "mfg_production",
@@ -806,17 +803,17 @@
         "cg_report_writing",
         "dc_sql"
       ],
-      "coverage": 0.142
+      "coverage": 0.136
     },
     {
       "sector": "Automobile / Auto Anciliary / Auto Components",
-      "postings": 142,
+      "postings": 145,
       "topSkills": [
         "mfg_production",
         "biz_sales",
         "eng_design",
-        "mfg_quality",
         "biz_hr",
+        "mfg_quality",
         "biz_supply_chain",
         "dq_quality_audit",
         "biz_accounts",
@@ -831,11 +828,11 @@
         "cg_project_mgmt",
         "cg_report_writing"
       ],
-      "coverage": 0.15
+      "coverage": 0.148
     },
     {
       "sector": "Pharma / Biotech / Clinical Research",
-      "postings": 177,
+      "postings": 186,
       "topSkills": [
         "biz_sales",
         "med_clinical",
@@ -845,8 +842,8 @@
         "mfg_quality",
         "ss_quality_assurance",
         "biz_accounts",
-        "biz_supply_chain",
         "med_icd",
+        "biz_supply_chain",
         "dc_spreadsheets",
         "dq_quality_audit"
       ],
@@ -856,7 +853,7 @@
         "dc_spreadsheets",
         "dq_quality_audit"
       ],
-      "coverage": 0.159
+      "coverage": 0.15
     },
     {
       "sector": "Logistics & Supply Chain",
@@ -903,6 +900,32 @@
       "coverage": 0.169
     },
     {
+      "sector": "Retail / Wholesale",
+      "postings": 65,
+      "topSkills": [
+        "biz_sales",
+        "biz_supply_chain",
+        "mfg_production",
+        "biz_hr",
+        "cg_report_writing",
+        "med_clinical",
+        "dc_sql",
+        "dc_spreadsheets",
+        "mfg_quality",
+        "biz_accounts",
+        "cg_project_mgmt",
+        "dq_quality_audit"
+      ],
+      "coveredSkills": [
+        "cg_report_writing",
+        "dc_sql",
+        "dc_spreadsheets",
+        "cg_project_mgmt",
+        "dq_quality_audit"
+      ],
+      "coverage": 0.173
+    },
+    {
       "sector": "IT & Software",
       "postings": 727,
       "topSkills": [
@@ -944,7 +967,7 @@
     },
     {
       "sector": "BPO / Call Centre / ITES",
-      "postings": 240,
+      "postings": 254,
       "topSkills": [
         "biz_hr",
         "mfg_quality",
@@ -965,52 +988,11 @@
         "dc_sql",
         "dc_spreadsheets"
       ],
-      "coverage": 0.197
-    },
-    {
-      "sector": "Retail / Wholesale",
-      "postings": 63,
-      "topSkills": [
-        "biz_sales",
-        "biz_supply_chain",
-        "mfg_production",
-        "biz_hr",
-        "cg_report_writing",
-        "dc_sql",
-        "med_clinical",
-        "dc_spreadsheets",
-        "biz_accounts",
-        "cg_project_mgmt",
-        "dq_quality_audit",
-        "it_basics"
-      ],
-      "coveredSkills": [
-        "cg_report_writing",
-        "dc_sql",
-        "dc_spreadsheets",
-        "cg_project_mgmt",
-        "dq_quality_audit",
-        "it_basics"
-      ],
-      "coverage": 0.198
-    },
-    {
-      "sector": "Food Processing",
-      "postings": 3,
-      "topSkills": [
-        "mfg_production",
-        "biz_accounts",
-        "biz_sales",
-        "dq_quality_audit"
-      ],
-      "coveredSkills": [
-        "dq_quality_audit"
-      ],
-      "coverage": 0.2
+      "coverage": 0.188
     },
     {
       "sector": "Textiles / Garments / Accessories",
-      "postings": 25,
+      "postings": 26,
       "topSkills": [
         "biz_sales",
         "mfg_production",
@@ -1031,7 +1013,21 @@
         "dc_sql",
         "ss_quality_assurance"
       ],
-      "coverage": 0.203
+      "coverage": 0.199
+    },
+    {
+      "sector": "Food Processing",
+      "postings": 3,
+      "topSkills": [
+        "mfg_production",
+        "biz_accounts",
+        "biz_sales",
+        "dq_quality_audit"
+      ],
+      "coveredSkills": [
+        "dq_quality_audit"
+      ],
+      "coverage": 0.2
     },
     {
       "sector": "Export / Import",
@@ -1099,30 +1095,30 @@
     },
     {
       "sector": "Courier / Transportation / Freight / Warehousing",
-      "postings": 28,
+      "postings": 30,
       "topSkills": [
         "biz_supply_chain",
         "biz_sales",
         "cg_report_writing",
         "biz_hr",
+        "dq_quality_audit",
         "mfg_production",
         "biz_accounts",
+        "mfg_quality",
         "cg_project_mgmt",
         "dc_spreadsheets",
         "dc_sql",
-        "dq_quality_audit",
-        "it_basics",
-        "mfg_quality"
+        "it_basics"
       ],
       "coveredSkills": [
         "cg_report_writing",
+        "dq_quality_audit",
         "cg_project_mgmt",
         "dc_spreadsheets",
         "dc_sql",
-        "dq_quality_audit",
         "it_basics"
       ],
-      "coverage": 0.253
+      "coverage": 0.256
     },
     {
       "sector": "BFSI",
@@ -1177,60 +1173,87 @@
       "coverage": 0.267
     },
     {
-      "sector": "Recruitment / Staffing",
-      "postings": 295,
+      "sector": "FMCG / Foods / Beverage",
+      "postings": 67,
       "topSkills": [
-        "biz_hr",
         "biz_sales",
-        "dc_sql",
+        "mfg_production",
+        "biz_hr",
         "biz_accounts",
         "cg_report_writing",
-        "cg_project_mgmt",
-        "dq_quality_audit",
-        "mfg_production",
-        "dc_spreadsheets",
         "biz_supply_chain",
-        "it_basics",
-        "sm_time_series"
+        "dq_quality_audit",
+        "dc_spreadsheets",
+        "sm_time_series",
+        "os_big_data",
+        "sm_descriptive",
+        "cg_project_mgmt"
       ],
       "coveredSkills": [
-        "dc_sql",
         "cg_report_writing",
-        "cg_project_mgmt",
         "dq_quality_audit",
         "dc_spreadsheets",
-        "it_basics",
-        "sm_time_series"
+        "sm_time_series",
+        "os_big_data",
+        "sm_descriptive",
+        "cg_project_mgmt"
       ],
-      "coverage": 0.3
+      "coverage": 0.294
     },
     {
-      "sector": "FMCG / Foods / Beverage",
-      "postings": 64,
+      "sector": "Consumer Electronics / Appliances / Durables",
+      "postings": 36,
       "topSkills": [
         "biz_sales",
         "mfg_production",
-        "biz_hr",
         "cg_report_writing",
         "biz_accounts",
         "biz_supply_chain",
-        "dc_spreadsheets",
+        "cg_project_mgmt",
         "dq_quality_audit",
         "sm_time_series",
-        "os_big_data",
-        "sm_descriptive",
-        "cg_project_mgmt"
+        "biz_hr",
+        "mfg_quality",
+        "dc_sql",
+        "dq_confidentiality"
       ],
       "coveredSkills": [
         "cg_report_writing",
-        "dc_spreadsheets",
+        "cg_project_mgmt",
         "dq_quality_audit",
         "sm_time_series",
-        "os_big_data",
-        "sm_descriptive",
-        "cg_project_mgmt"
+        "dc_sql",
+        "dq_confidentiality"
       ],
-      "coverage": 0.3
+      "coverage": 0.296
+    },
+    {
+      "sector": "Recruitment / Staffing",
+      "postings": 300,
+      "topSkills": [
+        "biz_hr",
+        "biz_sales",
+        "dc_sql",
+        "biz_accounts",
+        "cg_report_writing",
+        "cg_project_mgmt",
+        "dq_quality_audit",
+        "mfg_production",
+        "dc_spreadsheets",
+        "biz_supply_chain",
+        "sm_time_series",
+        "it_basics"
+      ],
+      "coveredSkills": [
+        "dc_sql",
+        "cg_report_writing",
+        "cg_project_mgmt",
+        "dq_quality_audit",
+        "dc_spreadsheets",
+        "sm_time_series",
+        "it_basics"
+      ],
+      "coverage": 0.298
     },
     {
       "sector": "Electricals / Switchgears",
@@ -1259,33 +1282,6 @@
       "coverage": 0.303
     },
     {
-      "sector": "Consumer Electronics / Appliances / Durables",
-      "postings": 34,
-      "topSkills": [
-        "biz_sales",
-        "mfg_production",
-        "cg_report_writing",
-        "biz_accounts",
-        "biz_supply_chain",
-        "cg_project_mgmt",
-        "dq_quality_audit",
-        "sm_time_series",
-        "biz_hr",
-        "mfg_quality",
-        "dc_sql",
-        "dq_confidentiality"
-      ],
-      "coveredSkills": [
-        "cg_report_writing",
-        "cg_project_mgmt",
-        "dq_quality_audit",
-        "sm_time_series",
-        "dc_sql",
-        "dq_confidentiality"
-      ],
-      "coverage": 0.306
-    },
-    {
       "sector": "Publishing",
       "postings": 12,
       "topSkills": [
@@ -1304,7 +1300,7 @@
     },
     {
       "sector": "Oil and Gas / Energy / Power / Infrastructure",
-      "postings": 55,
+      "postings": 56,
       "topSkills": [
         "mfg_production",
         "cg_project_mgmt",
@@ -1312,33 +1308,33 @@
         "biz_sales",
         "biz_hr",
         "biz_supply_chain",
-        "biz_accounts",
         "cg_report_writing",
-        "dq_quality_audit",
         "mfg_quality",
-        "dc_spreadsheets",
-        "ss_quality_assurance"
+        "biz_accounts",
+        "dq_quality_audit",
+        "ss_quality_assurance",
+        "dc_spreadsheets"
       ],
       "coveredSkills": [
         "cg_project_mgmt",
         "cg_report_writing",
         "dq_quality_audit",
-        "dc_spreadsheets",
-        "ss_quality_assurance"
+        "ss_quality_assurance",
+        "dc_spreadsheets"
       ],
-      "coverage": 0.318
+      "coverage": 0.324
     },
     {
       "sector": "Insurance",
-      "postings": 49,
+      "postings": 55,
       "topSkills": [
         "biz_sales",
         "biz_hr",
         "cg_report_writing",
         "dq_quality_audit",
         "biz_accounts",
-        "dc_spreadsheets",
         "dc_sql",
+        "dc_spreadsheets",
         "it_basics",
         "med_clinical",
         "mfg_quality",
@@ -1348,8 +1344,8 @@
       "coveredSkills": [
         "cg_report_writing",
         "dq_quality_audit",
-        "dc_spreadsheets",
         "dc_sql",
+        "dc_spreadsheets",
         "it_basics",
         "cg_project_mgmt"
       ],
@@ -1446,7 +1442,7 @@
     },
     {
       "sector": "Travel / Hotels / Restaurants / Airlines / Railways",
-      "postings": 142,
+      "postings": 147,
       "topSkills": [
         "biz_sales",
         "cg_report_writing",
@@ -1469,16 +1465,16 @@
         "dc_spreadsheets",
         "dc_sql"
       ],
-      "coverage": 0.352
+      "coverage": 0.35
     },
     {
       "sector": "Construction / Engineering / Cement / Metals",
-      "postings": 189,
+      "postings": 194,
       "topSkills": [
         "cg_project_mgmt",
         "mfg_production",
-        "eng_design",
         "biz_sales",
+        "eng_design",
         "biz_hr",
         "cg_report_writing",
         "biz_accounts",
@@ -1495,11 +1491,11 @@
         "ss_quality_assurance",
         "it_basics"
       ],
-      "coverage": 0.358
+      "coverage": 0.356
     },
     {
       "sector": "Strategy / Management Consulting Firms",
-      "postings": 69,
+      "postings": 70,
       "topSkills": [
         "biz_hr",
         "biz_sales",
@@ -1522,7 +1518,7 @@
         "dc_sql",
         "dc_spreadsheets"
       ],
-      "coverage": 0.367
+      "coverage": 0.366
     },
     {
       "sector": "Other",
@@ -1620,37 +1616,8 @@
       "coverage": 0.375
     },
     {
-      "sector": "Advertising / PR / MR / Event Management",
-      "postings": 93,
-      "topSkills": [
-        "biz_sales",
-        "biz_accounts",
-        "biz_hr",
-        "cg_report_writing",
-        "dc_sql",
-        "mfg_production",
-        "it_basics",
-        "dq_quality_audit",
-        "sm_descriptive",
-        "cg_project_mgmt",
-        "dc_spreadsheets",
-        "dc_data_entry"
-      ],
-      "coveredSkills": [
-        "cg_report_writing",
-        "dc_sql",
-        "it_basics",
-        "dq_quality_audit",
-        "sm_descriptive",
-        "cg_project_mgmt",
-        "dc_spreadsheets",
-        "dc_data_entry"
-      ],
-      "coverage": 0.378
-    },
-    {
       "sector": "Media / Entertainment / Internet",
-      "postings": 106,
+      "postings": 107,
       "topSkills": [
         "biz_sales",
         "mfg_production",
@@ -1674,17 +1641,46 @@
         "dc_spreadsheets",
         "ss_quality_assurance"
       ],
-      "coverage": 0.383
+      "coverage": 0.38
     },
     {
-      "sector": "Telecom/ISP",
-      "postings": 36,
+      "sector": "Advertising / PR / MR / Event Management",
+      "postings": 97,
       "topSkills": [
         "biz_sales",
         "biz_accounts",
         "biz_hr",
+        "cg_report_writing",
+        "dc_sql",
+        "mfg_production",
+        "it_basics",
         "cg_project_mgmt",
+        "dq_quality_audit",
         "sm_descriptive",
+        "dc_spreadsheets",
+        "dc_data_entry"
+      ],
+      "coveredSkills": [
+        "cg_report_writing",
+        "dc_sql",
+        "it_basics",
+        "cg_project_mgmt",
+        "dq_quality_audit",
+        "sm_descriptive",
+        "dc_spreadsheets",
+        "dc_data_entry"
+      ],
+      "coverage": 0.382
+    },
+    {
+      "sector": "Telecom/ISP",
+      "postings": 38,
+      "topSkills": [
+        "biz_sales",
+        "biz_accounts",
+        "biz_hr",
+        "sm_descriptive",
+        "cg_project_mgmt",
         "biz_supply_chain",
         "dc_sql",
         "dc_spreadsheets",
@@ -1694,26 +1690,26 @@
         "mfg_quality"
       ],
       "coveredSkills": [
-        "cg_project_mgmt",
         "sm_descriptive",
+        "cg_project_mgmt",
         "dc_sql",
         "dc_spreadsheets",
         "it_dashboards",
         "dq_quality_audit"
       ],
-      "coverage": 0.394
+      "coverage": 0.386
     },
     {
       "sector": "Real Estate / Property",
-      "postings": 56,
+      "postings": 59,
       "topSkills": [
         "biz_sales",
-        "cg_report_writing",
         "biz_hr",
+        "cg_report_writing",
         "biz_accounts",
         "cg_project_mgmt",
-        "dc_data_entry",
         "dc_sql",
+        "dc_data_entry",
         "dq_quality_audit",
         "mfg_production",
         "it_basics",
@@ -1723,41 +1719,13 @@
       "coveredSkills": [
         "cg_report_writing",
         "cg_project_mgmt",
-        "dc_data_entry",
         "dc_sql",
+        "dc_data_entry",
         "dq_quality_audit",
         "it_basics",
         "dc_spreadsheets"
       ],
-      "coverage": 0.41
-    },
-    {
-      "sector": "Accounting / Finance",
-      "postings": 71,
-      "topSkills": [
-        "biz_accounts",
-        "dq_quality_audit",
-        "mfg_production",
-        "biz_sales",
-        "biz_hr",
-        "cg_report_writing",
-        "it_basics",
-        "dc_spreadsheets",
-        "cg_project_mgmt",
-        "biz_supply_chain",
-        "dc_data_entry",
-        "dc_sql"
-      ],
-      "coveredSkills": [
-        "dq_quality_audit",
-        "cg_report_writing",
-        "it_basics",
-        "dc_spreadsheets",
-        "cg_project_mgmt",
-        "dc_data_entry",
-        "dc_sql"
-      ],
-      "coverage": 0.423
+      "coverage": 0.406
     },
     {
       "sector": "Security / Law Enforcement",
@@ -1787,6 +1755,34 @@
       "coverage": 0.423
     },
     {
+      "sector": "Accounting / Finance",
+      "postings": 73,
+      "topSkills": [
+        "biz_accounts",
+        "dq_quality_audit",
+        "mfg_production",
+        "biz_sales",
+        "biz_hr",
+        "cg_report_writing",
+        "it_basics",
+        "dc_spreadsheets",
+        "cg_project_mgmt",
+        "biz_supply_chain",
+        "dc_data_entry",
+        "dc_sql"
+      ],
+      "coveredSkills": [
+        "dq_quality_audit",
+        "cg_report_writing",
+        "it_basics",
+        "dc_spreadsheets",
+        "cg_project_mgmt",
+        "dc_data_entry",
+        "dc_sql"
+      ],
+      "coverage": 0.424
+    },
+    {
       "sector": "Iron and Steel",
       "postings": 5,
       "topSkills": [
@@ -1804,27 +1800,8 @@
       "coverage": 0.444
     },
     {
-      "sector": "Fresher / Trainee / Entry Level",
-      "postings": 6,
-      "topSkills": [
-        "biz_accounts",
-        "dc_data_entry",
-        "dq_quality_audit",
-        "mfg_production",
-        "biz_supply_chain",
-        "it_basics",
-        "mfg_cnc"
-      ],
-      "coveredSkills": [
-        "dc_data_entry",
-        "dq_quality_audit",
-        "it_basics"
-      ],
-      "coverage": 0.454
-    },
-    {
       "sector": "Banking / Financial Services / Broking",
-      "postings": 425,
+      "postings": 442,
       "topSkills": [
         "biz_sales",
         "cg_report_writing",
@@ -1848,7 +1825,26 @@
         "it_basics",
         "sm_descriptive"
       ],
-      "coverage": 0.458
+      "coverage": 0.459
+    },
+    {
+      "sector": "Fresher / Trainee / Entry Level",
+      "postings": 7,
+      "topSkills": [
+        "biz_accounts",
+        "dq_quality_audit",
+        "dc_data_entry",
+        "mfg_production",
+        "biz_supply_chain",
+        "it_basics",
+        "mfg_cnc"
+      ],
+      "coveredSkills": [
+        "dq_quality_audit",
+        "dc_data_entry",
+        "it_basics"
+      ],
+      "coverage": 0.462
     },
     {
       "sector": "Office Equipment / Automation",
@@ -1896,7 +1892,7 @@
     },
     {
       "sector": "IT-Software / Software Services",
-      "postings": 1909,
+      "postings": 1969,
       "topSkills": [
         "dc_sql",
         "biz_sales",
@@ -1919,18 +1915,18 @@
         "sm_descriptive",
         "it_python_basics"
       ],
-      "coverage": 0.52
+      "coverage": 0.518
     },
     {
       "sector": "Internet / Ecommerce",
-      "postings": 135,
+      "postings": 136,
       "topSkills": [
         "biz_sales",
         "cg_report_writing",
         "dc_sql",
         "biz_accounts",
-        "biz_hr",
         "it_basics",
+        "biz_hr",
         "cg_project_mgmt",
         "dc_spreadsheets",
         "sm_descriptive",
@@ -1952,36 +1948,36 @@
     },
     {
       "sector": "Architecture / Interior Design",
-      "postings": 13,
+      "postings": 15,
       "topSkills": [
         "dc_sql",
         "biz_hr",
+        "eng_design",
         "biz_sales",
         "cg_project_mgmt",
-        "eng_design",
+        "sm_variance",
         "biz_supply_chain",
         "cg_report_writing",
-        "dq_dissemination",
-        "sm_variance"
+        "dq_dissemination"
       ],
       "coveredSkills": [
         "dc_sql",
         "cg_project_mgmt",
+        "sm_variance",
         "cg_report_writing",
-        "dq_dissemination",
-        "sm_variance"
+        "dq_dissemination"
       ],
-      "coverage": 0.562
+      "coverage": 0.526
     },
     {
       "sector": "NGO / Social Services / Regulators / Industry Associations",
-      "postings": 28,
+      "postings": 29,
       "topSkills": [
         "biz_sales",
         "biz_hr",
         "cg_training_delivery",
-        "cg_report_writing",
         "it_basics",
+        "cg_report_writing",
         "dc_data_entry",
         "cg_project_mgmt",
         "dc_spreadsheets",
@@ -1992,30 +1988,15 @@
       ],
       "coveredSkills": [
         "cg_training_delivery",
-        "cg_report_writing",
         "it_basics",
+        "cg_report_writing",
         "dc_data_entry",
         "cg_project_mgmt",
         "dc_spreadsheets",
         "dc_sql",
         "cg_user_engagement"
       ],
-      "coverage": 0.575
-    },
-    {
-      "sector": "Wellness / Fitness / Sports / Beauty",
-      "postings": 5,
-      "topSkills": [
-        "cg_report_writing",
-        "biz_hr",
-        "biz_sales",
-        "cg_training_delivery"
-      ],
-      "coveredSkills": [
-        "cg_report_writing",
-        "cg_training_delivery"
-      ],
-      "coverage": 0.6
+      "coverage": 0.595
     },
     {
       "sector": "Tyres",
@@ -2057,8 +2038,34 @@
       "coverage": 0.625
     },
     {
+      "sector": "Education / Teaching / Training",
+      "postings": 741,
+      "topSkills": [
+        "cg_training_delivery",
+        "eng_design",
+        "biz_hr",
+        "biz_sales",
+        "mfg_production",
+        "biz_supply_chain",
+        "biz_accounts",
+        "cg_report_writing",
+        "dc_sql",
+        "med_clinical",
+        "os_nss",
+        "sm_time_series"
+      ],
+      "coveredSkills": [
+        "cg_training_delivery",
+        "cg_report_writing",
+        "dc_sql",
+        "os_nss",
+        "sm_time_series"
+      ],
+      "coverage": 0.664
+    },
+    {
       "sector": "Data Science & AI",
-      "postings": 3401,
+      "postings": 3411,
       "topSkills": [
         "dc_sql",
         "it_python_basics",
@@ -2082,37 +2089,26 @@
         "cg_report_writing",
         "it_dashboards"
       ],
-      "coverage": 0.664
-    },
-    {
-      "sector": "Education / Teaching / Training",
-      "postings": 737,
-      "topSkills": [
-        "cg_training_delivery",
-        "eng_design",
-        "biz_hr",
-        "biz_sales",
-        "mfg_production",
-        "biz_supply_chain",
-        "biz_accounts",
-        "cg_report_writing",
-        "dc_sql",
-        "med_clinical",
-        "os_nss",
-        "sm_time_series"
-      ],
-      "coveredSkills": [
-        "cg_training_delivery",
-        "cg_report_writing",
-        "dc_sql",
-        "os_nss",
-        "sm_time_series"
-      ],
       "coverage": 0.665
     },
     {
+      "sector": "Wellness / Fitness / Sports / Beauty",
+      "postings": 6,
+      "topSkills": [
+        "cg_report_writing",
+        "cg_training_delivery",
+        "biz_hr",
+        "biz_sales"
+      ],
+      "coveredSkills": [
+        "cg_report_writing",
+        "cg_training_delivery"
+      ],
+      "coverage": 0.666
+    },
+    {
       "sector": "Software Engineering",
-      "postings": 3092,
+      "postings": 3104,
       "topSkills": [
         "dc_sql",
         "cg_project_mgmt",
@@ -2180,7 +2176,7 @@
     },
     {
       "sector": "Government / Defence",
-      "postings": 1,
+      "postings": 2,
       "topSkills": [
         "cg_training_delivery"
       ],
@@ -2193,8 +2189,8 @@
   "uncoveredSkills": [
     {
       "skillId": "biz_sales",
-      "demand": 2107,
-      "share": 0.158,
+      "demand": 2167,
+      "share": 0.16,
       "sectors": [
         "Data Science & AI",
         "Software Engineering",
@@ -2206,13 +2202,13 @@
         "BPO / Call Centre / ITES",
         "Construction / Engineering / Cement / Metals",
         "Pharma / Biotech / Clinical Research",
-        "Automobile / Auto Anciliary / Auto Components",
         "Travel / Hotels / Restaurants / Airlines / Railways",
+        "Automobile / Auto Anciliary / Auto Components",
         "Internet / Ecommerce",
         "BFSI",
         "Medical / Healthcare / Hospitals",
-        "Industrial Products / Heavy Machinery",
         "Media / Entertainment / Internet",
+        "Industrial Products / Heavy Machinery",
         "Services & Miscellaneous",
         "Advertising / PR / MR / Event Management",
         "Other",
@@ -2220,35 +2216,35 @@
         "Strategy / Management Consulting Firms",
         "FMCG / Foods / Beverage",
         "Retail / Wholesale",
-        "IT-Hardware & Networking",
         "Real Estate / Property",
+        "IT-Hardware & Networking",
         "Oil and Gas / Energy / Power / Infrastructure",
         "Insurance",
         "Telecom/ISP",
         "Consumer Electronics / Appliances / Durables",
         "Telecom/ISP /",
         "Electricals / Switchgears",
+        "Courier / Transportation / Freight / Warehousing",
         "Chemicals / PetroChemical / Plastic / Rubber",
         "KPO / Research / Analytics",
-        "Courier / Transportation / Freight / Warehousing",
         "NGO / Social Services / Regulators / Industry Associations",
         "Manufacturing & Auto",
         "Textiles / Garments / Accessories",
-        "Printing / Packaging",
         "Architecture / Interior Design",
+        "Printing / Packaging",
         "Security / Law Enforcement",
+        "Semiconductors / Electronics",
         "Export / Import",
         "Publishing",
-        "Semiconductors / Electronics",
         "Wellness / Fitness / Sports",
-        "Logistics & Supply Chain",
         "Ceramics / Sanitary ware",
+        "Logistics & Supply Chain",
         "Shipping / Marine",
         "Gems / Jewellery",
         "Heat Ventilation / Air Conditioning",
+        "Wellness / Fitness / Sports / Beauty",
         "Facility Management",
         "Iron and Steel",
-        "Wellness / Fitness / Sports / Beauty",
         "Agriculture / Dairy",
         "Food Processing",
         "Office Equipment / Automation",
@@ -2267,8 +2263,8 @@
     },
     {
       "skillId": "biz_hr",
-      "demand": 1517,
-      "share": 0.114,
+      "demand": 1570,
+      "share": 0.116,
       "sectors": [
         "Data Science & AI",
         "Software Engineering",
@@ -2280,13 +2276,13 @@
         "BPO / Call Centre / ITES",
         "Construction / Engineering / Cement / Metals",
         "Pharma / Biotech / Clinical Research",
-        "Automobile / Auto Anciliary / Auto Components",
         "Travel / Hotels / Restaurants / Airlines / Railways",
+        "Automobile / Auto Anciliary / Auto Components",
         "Internet / Ecommerce",
         "BFSI",
         "Medical / Healthcare / Hospitals",
-        "Industrial Products / Heavy Machinery",
         "Media / Entertainment / Internet",
+        "Industrial Products / Heavy Machinery",
         "Services & Miscellaneous",
         "Advertising / PR / MR / Event Management",
         "Other",
@@ -2294,34 +2290,34 @@
         "Strategy / Management Consulting Firms",
         "FMCG / Foods / Beverage",
         "Retail / Wholesale",
-        "IT-Hardware & Networking",
         "Real Estate / Property",
+        "IT-Hardware & Networking",
         "Oil and Gas / Energy / Power / Infrastructure",
         "Insurance",
         "Telecom/ISP",
         "Consumer Electronics / Appliances / Durables",
         "Telecom/ISP /",
         "Electricals / Switchgears",
+        "Courier / Transportation / Freight / Warehousing",
         "Chemicals / PetroChemical / Plastic / Rubber",
         "KPO / Research / Analytics",
-        "Courier / Transportation / Freight / Warehousing",
         "NGO / Social Services / Regulators / Industry Associations",
         "Manufacturing & Auto",
         "Textiles / Garments / Accessories",
-        "Printing / Packaging",
         "Architecture / Interior Design",
+        "Printing / Packaging",
         "Security / Law Enforcement",
+        "Semiconductors / Electronics",
         "Export / Import",
         "Publishing",
-        "Semiconductors / Electronics",
         "Wellness / Fitness / Sports",
-        "Logistics & Supply Chain",
         "Ceramics / Sanitary ware",
+        "Logistics & Supply Chain",
         "Shipping / Marine",
         "Gems / Jewellery",
         "Heat Ventilation / Air Conditioning",
-        "Facility Management",
         "Wellness / Fitness / Sports / Beauty",
+        "Facility Management",
         "Legal",
         "Fertilizers / Pesticides",
         "Medical Devices / Equipments"
@@ -2334,8 +2330,8 @@
     },
     {
       "skillId": "mfg_production",
-      "demand": 1371,
-      "share": 0.103,
+      "demand": 1381,
+      "share": 0.102,
       "sectors": [
         "Data Science & AI",
         "Software Engineering",
@@ -2347,13 +2343,13 @@
         "BPO / Call Centre / ITES",
         "Construction / Engineering / Cement / Metals",
         "Pharma / Biotech / Clinical Research",
-        "Automobile / Auto Anciliary / Auto Components",
         "Travel / Hotels / Restaurants / Airlines / Railways",
+        "Automobile / Auto Anciliary / Auto Components",
         "Internet / Ecommerce",
         "BFSI",
         "Medical / Healthcare / Hospitals",
-        "Industrial Products / Heavy Machinery",
         "Media / Entertainment / Internet",
+        "Industrial Products / Heavy Machinery",
         "Services & Miscellaneous",
         "Advertising / PR / MR / Event Management",
         "Other",
@@ -2361,25 +2357,25 @@
         "Strategy / Management Consulting Firms",
         "FMCG / Foods / Beverage",
         "Retail / Wholesale",
-        "IT-Hardware & Networking",
         "Real Estate / Property",
+        "IT-Hardware & Networking",
         "Oil and Gas / Energy / Power / Infrastructure",
         "Consumer Electronics / Appliances / Durables",
         "Telecom/ISP /",
         "Electricals / Switchgears",
+        "Courier / Transportation / Freight / Warehousing",
         "Chemicals / PetroChemical / Plastic / Rubber",
         "KPO / Research / Analytics",
-        "Courier / Transportation / Freight / Warehousing",
         "Manufacturing & Auto",
         "Textiles / Garments / Accessories",
         "Printing / Packaging",
         "Security / Law Enforcement",
-        "Export / Import",
         "Semiconductors / Electronics",
+        "Export / Import",
         "Ceramics / Sanitary ware",
         "Shipping / Marine",
-        "Gems / Jewellery",
         "Fresher / Trainee / Entry Level",
+        "Gems / Jewellery",
         "Heat Ventilation / Air Conditioning",
         "Facility Management",
         "Iron and Steel",
@@ -2398,7 +2394,7 @@
     {
       "skillId": "cloud_aws",
       "demand": 1046,
-      "share": 0.079,
+      "share": 0.077,
       "sectors": [
         "Data Science & AI",
         "Software Engineering",
@@ -2421,7 +2417,7 @@
     {
       "skillId": "cloud_azure",
       "demand": 921,
-      "share": 0.069,
+      "share": 0.068,
       "sectors": [
         "Data Science & AI",
         "Software Engineering",
@@ -2440,7 +2436,7 @@
     {
       "skillId": "aiml_ml",
       "demand": 898,
-      "share": 0.067,
+      "share": 0.066,
       "sectors": [
         "Data Science & AI",
         "Software Engineering",
@@ -2458,8 +2454,8 @@
     },
     {
       "skillId": "biz_supply_chain",
-      "demand": 839,
-      "share": 0.063,
+      "demand": 843,
+      "share": 0.062,
       "sectors": [
         "Data Science & AI",
         "Software Engineering",
@@ -2471,29 +2467,29 @@
         "BPO / Call Centre / ITES",
         "Construction / Engineering / Cement / Metals",
         "Pharma / Biotech / Clinical Research",
-        "Automobile / Auto Anciliary / Auto Components",
         "Travel / Hotels / Restaurants / Airlines / Railways",
+        "Automobile / Auto Anciliary / Auto Components",
         "Internet / Ecommerce",
         "BFSI",
         "Medical / Healthcare / Hospitals",
-        "Industrial Products / Heavy Machinery",
         "Media / Entertainment / Internet",
+        "Industrial Products / Heavy Machinery",
         "Services & Miscellaneous",
         "Other",
         "Accounting / Finance",
         "Strategy / Management Consulting Firms",
         "FMCG / Foods / Beverage",
         "Retail / Wholesale",
-        "IT-Hardware & Networking",
         "Real Estate / Property",
+        "IT-Hardware & Networking",
         "Oil and Gas / Energy / Power / Infrastructure",
         "Telecom/ISP",
         "Consumer Electronics / Appliances / Durables",
         "Telecom/ISP /",
         "Electricals / Switchgears",
+        "Courier / Transportation / Freight / Warehousing",
         "Chemicals / PetroChemical / Plastic / Rubber",
         "KPO / Research / Analytics",
-        "Courier / Transportation / Freight / Warehousing",
         "Manufacturing & Auto",
         "Textiles / Garments / Accessories",
         "Architecture / Interior Design",
@@ -2513,7 +2509,7 @@
     },
     {
       "skillId": "biz_accounts",
-      "demand": 773,
+      "demand": 788,
       "share": 0.058,
       "sectors": [
         "Data Science & AI",
@@ -2526,13 +2522,13 @@
         "BPO / Call Centre / ITES",
         "Construction / Engineering / Cement / Metals",
         "Pharma / Biotech / Clinical Research",
-        "Automobile / Auto Anciliary / Auto Components",
         "Travel / Hotels / Restaurants / Airlines / Railways",
+        "Automobile / Auto Anciliary / Auto Components",
         "Internet / Ecommerce",
         "BFSI",
         "Medical / Healthcare / Hospitals",
-        "Industrial Products / Heavy Machinery",
         "Media / Entertainment / Internet",
+        "Industrial Products / Heavy Machinery",
         "Services & Miscellaneous",
         "Advertising / PR / MR / Event Management",
         "Other",
@@ -2540,25 +2536,25 @@
         "Strategy / Management Consulting Firms",
         "FMCG / Foods / Beverage",
         "Retail / Wholesale",
-        "IT-Hardware & Networking",
         "Real Estate / Property",
+        "IT-Hardware & Networking",
         "Oil and Gas / Energy / Power / Infrastructure",
         "Insurance",
         "Telecom/ISP",
         "Consumer Electronics / Appliances / Durables",
         "Telecom/ISP /",
         "Electricals / Switchgears",
+        "Courier / Transportation / Freight / Warehousing",
         "Chemicals / PetroChemical / Plastic / Rubber",
         "KPO / Research / Analytics",
-        "Courier / Transportation / Freight / Warehousing",
         "NGO / Social Services / Regulators / Industry Associations",
         "Textiles / Garments / Accessories",
         "Printing / Packaging",
         "Security / Law Enforcement",
         "Export / Import",
         "Ceramics / Sanitary ware",
-        "Gems / Jewellery",
         "Fresher / Trainee / Entry Level",
+        "Gems / Jewellery",
         "Facility Management",
         "Legal",
         "Food Processing",
@@ -2572,8 +2568,8 @@
     },
     {
       "skillId": "devops_docker",
-      "demand": 753,
-      "share": 0.057,
+      "demand": 755,
+      "share": 0.056,
       "sectors": [
         "Data Science & AI",
         "Software Engineering",
@@ -2594,8 +2590,8 @@
     },
     {
       "skillId": "cloud_gcp",
-      "demand": 475,
-      "share": 0.036,
+      "demand": 476,
+      "share": 0.035,
       "sectors": [
         "Data Science & AI",
         "Software Engineering",
@@ -2612,7 +2608,7 @@
     },
     {
       "skillId": "med_clinical",
-      "demand": 451,
+      "demand": 462,
       "share": 0.034,
       "sectors": [
         "Data Science & AI",
@@ -2629,8 +2625,8 @@
         "Internet / Ecommerce",
         "BFSI",
         "Medical / Healthcare / Hospitals",
-        "Industrial Products / Heavy Machinery",
         "Media / Entertainment / Internet",
+        "Industrial Products / Heavy Machinery",
         "Other",
         "Strategy / Management Consulting Firms",
         "FMCG / Foods / Beverage",
@@ -2638,8 +2634,8 @@
         "Real Estate / Property",
         "Insurance",
         "Telecom/ISP",
-        "KPO / Research / Analytics",
         "Courier / Transportation / Freight / Warehousing",
+        "KPO / Research / Analytics",
         "NGO / Social Services / Regulators / Industry Associations",
         "Security / Law Enforcement",
         "Wellness / Fitness / Sports",
@@ -2655,7 +2651,7 @@
     },
     {
       "skillId": "eng_design",
-      "demand": 445,
+      "demand": 451,
       "share": 0.033,
       "sectors": [
         "Data Science & AI",
@@ -2688,8 +2684,8 @@
     },
     {
       "skillId": "mfg_quality",
-      "demand": 298,
-      "share": 0.022,
+      "demand": 309,
+      "share": 0.023,
       "sectors": [
         "Data Science & AI",
         "Software Engineering",
@@ -2701,8 +2697,8 @@
         "BPO / Call Centre / ITES",
         "Construction / Engineering / Cement / Metals",
         "Pharma / Biotech / Clinical Research",
-        "Automobile / Auto Anciliary / Auto Components",
         "Travel / Hotels / Restaurants / Airlines / Railways",
+        "Automobile / Auto Anciliary / Auto Components",
         "Medical / Healthcare / Hospitals",
         "Industrial Products / Heavy Machinery",
         "Other",
@@ -2717,9 +2713,9 @@
         "Consumer Electronics / Appliances / Durables",
         "Telecom/ISP /",
         "Electricals / Switchgears",
+        "Courier / Transportation / Freight / Warehousing",
         "Chemicals / PetroChemical / Plastic / Rubber",
         "KPO / Research / Analytics",
-        "Courier / Transportation / Freight / Warehousing",
         "NGO / Social Services / Regulators / Industry Associations",
         "Textiles / Garments / Accessories",
         "Printing / Packaging",
@@ -2750,7 +2746,7 @@
     },
     {
       "skillId": "aiml_nlp",
-      "demand": 229,
+      "demand": 230,
       "share": 0.017,
       "sectors": [
         "Data Science & AI",
@@ -2767,7 +2763,7 @@
     {
       "skillId": "aiml_genai",
       "demand": 140,
-      "share": 0.011,
+      "share": 0.01,
       "sectors": [
         "Data Science & AI",
         "Software Engineering",
@@ -2803,7 +2799,7 @@
     },
     {
       "skillId": "mfg_cnc",
-      "demand": 96,
+      "demand": 98,
       "share": 0.007,
       "sectors": [
         "Software Engineering",
@@ -2827,7 +2823,7 @@
     },
     {
       "skillId": "med_icd",
-      "demand": 80,
+      "demand": 87,
       "share": 0.006,
       "sectors": [
         "Data Science & AI",
@@ -2848,8 +2844,8 @@
     },
     {
       "skillId": "mfg_plc",
-      "demand": 46,
-      "share": 0.003,
+      "demand": 49,
+      "share": 0.004,
       "sectors": [
         "Data Science & AI",
         "Software Engineering",
@@ -2926,21 +2922,21 @@
       "skillId": "biz_sales",
       "sector": "Data Science & AI",
       "title": "Add content for \"biz_sales\"",
-      "detail": "2107 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
+      "detail": "2167 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
     },
     {
       "type": "add-program",
       "skillId": "biz_hr",
       "sector": "Data Science & AI",
       "title": "Add content for \"biz_hr\"",
-      "detail": "1517 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
+      "detail": "1570 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
     },
     {
       "type": "add-program",
       "skillId": "mfg_production",
       "sector": "Data Science & AI",
       "title": "Add content for \"mfg_production\"",
-      "detail": "1371 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
+      "detail": "1381 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
     },
     {
       "type": "add-program",
@@ -2968,14 +2964,14 @@
       "skillId": "biz_supply_chain",
       "sector": "Data Science & AI",
       "title": "Add content for \"biz_supply_chain\"",
-      "detail": "839 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
+      "detail": "843 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
     },
     {
       "type": "add-program",
       "skillId": "biz_accounts",
       "sector": "Data Science & AI",
       "title": "Add content for \"biz_accounts\"",
-      "detail": "773 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
+      "detail": "788 posting(s) demand this skill (notably in Data Science & AI, Software Engineering) but no current program teaches it. Prioritise a module or bridge course."
     },
     {
       "type": "revise-program",
@@ -3005,7 +3001,7 @@
       "type": "revise-program",
       "sector": "Automobile / Auto Anciliary / Auto Components",
       "title": "Revise programs serving \"Automobile / Auto Anciliary / Auto Components\"",
-      "detail": "Only 15% of top demand mass is covered. Missing: mfg_production, biz_sales, eng_design, mfg_quality, biz_hr, biz_supply_chain. Update existing curricula before adding new programs."
+      "detail": "Only 15% of top demand mass is covered. Missing: mfg_production, biz_sales, eng_design, biz_hr, mfg_quality, biz_supply_chain. Update existing curricula before adding new programs."
     }
   ]
 }

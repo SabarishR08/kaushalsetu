@@ -6,7 +6,9 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { DemandChart, SectorCoverageChart } from "./charts";
-import { CitySkillChart, type CitySkillRow } from "./city-charts";
+import { DistrictMap } from "./district-map";
+import { DistrictDemandChart, DistrictSkillChart, type DistrictSkillRow } from "./district-charts";
+import { ALL_DISTRICTS } from "@/lib/geo/districts";
 import { getDepartmentData } from "@/lib/dept-data";
 
 export const dynamic = "force-dynamic";
@@ -52,14 +54,21 @@ export default async function DepartmentPage() {
   const topDemand = demand.overall.slice(0, 10);
   const weakest = [...alignment.sectorCoverage].sort((a, b) => a.coverage - b.coverage).slice(0, 5);
 
-  // City × top-skill pivot for the grouped chart. Clusters with meaningful
-  // volume only; multi-city postings credit every listed cluster, so city
-  // counts sum to more than the total by design.
-  const cityList = demand.cities.filter((c) => c.city !== "Unattributed" && c.postings >= 5);
-  const cityPivot: CitySkillRow[] = demand.overall.slice(0, 8).map((s) => {
-    const row: CitySkillRow = { skill: name(s.skillId) };
-    for (const c of cityList) {
-      row[c.city] = c.topSkills.find((t) => t.skillId === s.skillId)?.demand ?? 0;
+  // District layer: choropleth over all 36 districts — zero-demand districts
+  // are the "skill deserts" and must appear on the map. Multi-district
+  // postings credit every listed district, so counts sum above the total.
+  const districtList = demand.districts.filter((d) => d.district !== "Unattributed");
+  const mapData = districtList.map((d) => ({
+    district: d.district,
+    postings: d.postings,
+    topSkills: d.topSkills.slice(0, 3).map((s) => name(s.skillId)),
+  }));
+  const zeroCount = ALL_DISTRICTS.filter((n) => !districtList.some((d) => d.district === n)).length;
+  const topDistricts = districtList.filter((d) => d.postings >= 20).slice(0, 4);
+  const districtPivot: DistrictSkillRow[] = demand.overall.slice(0, 8).map((s) => {
+    const row: DistrictSkillRow = { skill: name(s.skillId) };
+    for (const d of topDistricts) {
+      row[d.district] = d.topSkills.find((t) => t.skillId === s.skillId)?.demand ?? 0;
     }
     return row;
   });
@@ -82,7 +91,7 @@ export default async function DepartmentPage() {
               Department Dashboard — Skilling Alignment
             </h1>
             <p className="text-sm text-muted-foreground mt-0.5">
-              Live sensing of 1,000 real Maharashtra postings → automated gap detection → 30-hr bridge recommendations.
+              Live sensing of {demand.meta.postings.toLocaleString("en-IN")} real Maharashtra postings → automated gap detection → recommendations.
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-2">
@@ -179,30 +188,28 @@ export default async function DepartmentPage() {
         </Card>
       </div>
 
-      {/* City-wise demand */}
+      {/* District-level demand: choropleth + bars */}
       <Card className="mb-6">
         <CardHeader className="pb-2">
-          <CardTitle className="text-base">Skill demand by city cluster</CardTitle>
+          <CardTitle className="text-base">District-level demand heatmap (all 36 districts)</CardTitle>
           <p className="text-xs text-muted-foreground">
-            Postings attribute to every Maharashtra city they list — multi-city listings count in each, so city counts sum above the total
+            Postings attribute to every district they list, so counts sum above the total · {zeroCount} districts show zero demand in this corpus — the skill deserts
           </p>
         </CardHeader>
         <CardContent>
-          <div className="h-80">
-            <CitySkillChart data={cityPivot} cities={cityList.map((c) => c.city)} />
-          </div>
-          <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {cityList.map((c) => (
-              <div key={c.city} className="rounded-lg border p-3">
-                <div className="flex items-baseline justify-between">
-                  <span className="text-sm font-medium">{c.city}</span>
-                  <span className="text-lg font-bold">{c.postings}</span>
-                </div>
-                <p className="mt-1 text-xs text-muted-foreground">
-                  Top: {c.topSkills.slice(0, 3).map((s) => name(s.skillId)).join(", ")}
-                </p>
-              </div>
-            ))}
+          <DistrictMap data={mapData} />
+          <div className="mt-6 grid gap-6 lg:grid-cols-2">
+            <div className="h-72">
+              <DistrictDemandChart
+                data={[...districtList]
+                  .sort((a, b) => b.postings - a.postings)
+                  .slice(0, 12)
+                  .map((d) => ({ name: d.district, postings: d.postings }))}
+              />
+            </div>
+            <div className="h-72">
+              <DistrictSkillChart data={districtPivot} districts={topDistricts.map((d) => d.district)} />
+            </div>
           </div>
         </CardContent>
       </Card>
