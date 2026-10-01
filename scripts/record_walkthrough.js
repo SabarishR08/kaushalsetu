@@ -183,10 +183,52 @@ async function runCleanWalkthrough() {
       }
     });
 
+    // The /path chapter requires an onboarded learner (localStorage-backed).
+    // Bootstrap one through the app's own API so the chapter films a real
+    // roadmap instead of an onboarding redirect — deterministically.
+    const ensureDemoLearner = async () => {
+      try {
+        const start = await page.request.post(`${CONFIG.baseUrl}/api/onboarding/start`, { data: { name: 'Demo Learner' } });
+        if (!start.ok()) {
+          audit.failures.push(`Learner bootstrap failed: /api/onboarding/start -> HTTP ${start.status()}`);
+          return;
+        }
+        const { learnerId } = await start.json();
+        const gen = await page.request.post(`${CONFIG.baseUrl}/api/path/generate`, { data: { learnerId, scenario: 'balanced', goalSkillId: 'it_python_basics' } });
+        if (!gen.ok()) {
+          audit.failures.push(`Path generate failed: /api/path/generate -> HTTP ${gen.status()}`);
+          return;
+        }
+        await page.addInitScript((id) => window.localStorage.setItem('statsetu.learnerId', id), learnerId);
+        console.log(`[Studio] Demo learner seeded (${learnerId}) with a balanced path.`);
+      } catch (e) {
+        audit.failures.push(`Learner bootstrap threw: ${e.message}`);
+      }
+    };
+    await ensureDemoLearner();
+
     const expectPage = async (marker, chapter) => {
       audit.chapter = chapter;
       try {
-        await page.getByText(marker, { exact: false }).first().waitFor({ state: 'visible', timeout: 20000 });
+        // Wait for any VISIBLE element whose own text node contains the
+        // marker. Checking text nodes (not subtree textContent) avoids
+        // ancestor false-positives, and offsetParent catches CSS-hidden
+        // nodes (the screen-only report h1 is print:hidden under print
+        // emulation — .first() would grab it and false-fail the sentinel).
+        await page.waitForFunction(
+          (m) => {
+            const els = document.querySelectorAll('*');
+            for (const el of els) {
+              const own = Array.from(el.childNodes).some(
+                (n) => n.nodeType === 3 && n.textContent && n.textContent.includes(m),
+              );
+              if (own && el.offsetParent !== null) return true;
+            }
+            return false;
+          },
+          marker,
+          { timeout: 20000 },
+        );
       } catch {
         audit.failures.push(`Marker "${marker}" not visible on ${page.url()} (chapter "${chapter}")`);
       }
@@ -205,7 +247,7 @@ async function runCleanWalkthrough() {
     // ========================================================================
     // CHAPTER 1: LANDING & HERO SHOWCASE (/)
     // ========================================================================
-    console.log('[Walkthrough] 1/9: Landing Page & Hero Section');
+    console.log('[Walkthrough] 1/10: Landing Page & Hero Section');
     await page.goto(`${CONFIG.baseUrl}/`, { waitUntil: 'networkidle' });
     await page.waitForTimeout(800);
     await expectPage('KaushalSetu', 'chapter 1 /');
@@ -230,7 +272,7 @@ async function runCleanWalkthrough() {
     // ========================================================================
     // CHAPTER 2: STATE POLICY & MACRO ALIGNMENT COCKPIT (/department)
     // ========================================================================
-    console.log('[Walkthrough] 2/9: State Administration Cockpit');
+    console.log('[Walkthrough] 2/10: State Administration Cockpit');
     await page.waitForTimeout(600);
     await expectPage('Real Postings Active', 'chapter 2 /department');
     await expectPage('District-level demand heatmap', 'chapter 2 /department');
@@ -344,7 +386,7 @@ async function runCleanWalkthrough() {
     // ========================================================================
     // CHAPTER 3: 36-DISTRICT GIS TWIN & INDUSTRIAL CLUSTERS (/districts)
     // ========================================================================
-    console.log('[Walkthrough] 3/9: 36-District GIS Twin & Industrial Clusters');
+    console.log('[Walkthrough] 3/10: 36-District GIS Twin & Industrial Clusters');
     await page.waitForTimeout(600);
     await expectPage('GIS', 'chapter 3 /districts');
 
@@ -383,7 +425,7 @@ async function runCleanWalkthrough() {
     // ========================================================================
     // CHAPTER 4: AUTONOMOUS CURRICULUM-DELTA-DIFF STUDIO (/curriculum-diff)
     // ========================================================================
-    console.log('[Walkthrough] 4/9: Autonomous Curriculum-Delta-Diff Studio');
+    console.log('[Walkthrough] 4/10: Autonomous Curriculum-Delta-Diff Studio');
     await page.waitForTimeout(600);
     await expectPage('Curriculum', 'chapter 4 /curriculum-diff');
 
@@ -423,7 +465,7 @@ async function runCleanWalkthrough() {
     // ========================================================================
     // CHAPTER 5: LIVE POSTINGS TELEMETRY FEED (/telemetry)
     // ========================================================================
-    console.log('[Walkthrough] 5/9: Live Postings Telemetry Feed');
+    console.log('[Walkthrough] 5/10: Live Postings Telemetry Feed');
     await page.waitForTimeout(600);
     await expectPage('authentic vacancies', 'chapter 5 /telemetry');
 
@@ -459,9 +501,9 @@ async function runCleanWalkthrough() {
     // ========================================================================
     // CHAPTER 6: MARATHI AI VOICE ROJGAR SAHAYAK (/voice-sahayak)
     // ========================================================================
-    console.log('[Walkthrough] 6/9: Marathi AI Voice Rojgar Sahayak');
+    console.log('[Walkthrough] 6/10: Marathi AI Voice Rojgar Sahayak');
     await page.waitForTimeout(600);
-    await expectPage('Rojgar', 'chapter 6 /voice-sahayak');
+    await expectPage('Career Mentor', 'chapter 6 /voice-sahayak');
 
     // Click Marathi query preset 1 (Pune Auto)
     const puneQuery = page.locator('button:has-text("पुणे / ऑटोमोबाईल")').first();
@@ -498,7 +540,7 @@ async function runCleanWalkthrough() {
     // ========================================================================
     // CHAPTER 7: VERIFIABLE DIGITAL KAUSHAL PASSPORT (/passport)
     // ========================================================================
-    console.log('[Walkthrough] 7/9: Verifiable Digital Kaushal Passport');
+    console.log('[Walkthrough] 7/10: Verifiable Digital Kaushal Passport');
     await page.waitForTimeout(600);
     await expectPage('Kaushal Passport', 'chapter 7 /passport');
 
@@ -520,9 +562,9 @@ async function runCleanWalkthrough() {
     // ========================================================================
     // CHAPTER 8: WHAT-IF SKILLING SIMULATOR & SKILL DAG (/path)
     // ========================================================================
-    console.log('[Walkthrough] 8/9: What-If Skilling Simulator & DAG');
+    console.log('[Walkthrough] 8/10: What-If Skilling Simulator & DAG');
     await page.waitForTimeout(700);
-    await expectPage('What-If', 'chapter 8 /path');
+    await expectPage('roadmap', 'chapter 8 /path');
 
     // Smooth scroll through learning roadmap phases and competency metrics
     await smoothScroll(page, 550, 14, 30);
@@ -535,7 +577,7 @@ async function runCleanWalkthrough() {
     // ========================================================================
     // CHAPTER 9: SECRETARIAT EXECUTIVE POLICY BRIEFING (/department/report)
     // ========================================================================
-    console.log('[Walkthrough] 9/9: Secretariat Executive Policy Memo');
+    console.log('[Walkthrough] 9/10: Secretariat Executive Policy Memo');
     await page.waitForTimeout(700);
     await expectPage('Skilling Alignment Report', 'chapter 9 /department/report');
 
@@ -545,6 +587,24 @@ async function runCleanWalkthrough() {
     await smoothScroll(page, 650, 14, 30);
     await page.waitForTimeout(700);
     await smoothScroll(page, -1300, 18, 25);
+
+    // ========================================================================
+    // CHAPTER 10: PRINTABLE EXECUTIVE BRIEF (/department/report, print media)
+    // The report prints straight to PDF for secretariat files: screen chrome
+      // hides (print:hidden) and an official print-only letterhead appears.
+    // Emulate print media on camera so the paper-ready rendering is the shot.
+    // ========================================================================
+    console.log('[Walkthrough] 10/10: Printable Executive Brief (print preview)');
+    await page.emulateMedia({ media: 'print' });
+    await expectPage('Skilling Alignment Report', 'chapter 10 /department/report (print)');
+    await page.waitForTimeout(800);
+    await smoothScroll(page, 650, 14, 30);
+    await page.waitForTimeout(700);
+    await smoothScroll(page, 650, 14, 30);
+    await page.waitForTimeout(700);
+    await smoothScroll(page, -1300, 18, 25);
+    await page.emulateMedia({ media: 'screen' });
+    await page.waitForTimeout(400);
 
     // Return to landing page for clean final presentation shot
     await page.goto(`${CONFIG.baseUrl}/`, { waitUntil: 'networkidle' });
