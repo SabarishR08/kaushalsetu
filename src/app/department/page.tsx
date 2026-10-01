@@ -195,44 +195,70 @@ export default async function DepartmentPage() {
 
       {/* KPI row */}
       <div className="mb-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <Card>
-          <CardHeader className="pb-2">
-            <CardTitle className="text-sm font-medium">Postings analysed</CardTitle>
+        <Card className="relative overflow-hidden group">
+          <div className="absolute top-0 right-0 w-24 h-24 bg-orange-500/10 rounded-full blur-2xl group-hover:bg-orange-500/20 transition-all pointer-events-none" />
+          <CardHeader className="pb-1">
+            <div className="flex items-center justify-between">
+              <CardTitle className="text-xs uppercase tracking-wider font-semibold text-muted-foreground">Postings Analysed</CardTitle>
+              <Activity className="h-4 w-4 text-orange-400" />
+            </div>
           </CardHeader>
           <CardContent>
-            <div className="text-3xl font-bold">{demand.meta.postings}</div>
-            <p className="text-xs text-muted-foreground">
+            <div className="text-3xl font-extrabold tracking-tight text-white">{demand.meta.postings.toLocaleString("en-IN")}</div>
+            <p className="text-xs text-muted-foreground mt-1 flex items-center gap-1.5 font-mono">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
               {demand.meta.tagger} tagger · {demand.meta.sectors} sectors
             </p>
           </CardContent>
         </Card>
-        <Card>
-          <CardHeader className="pb-2">
-            <CardTitle className="text-sm font-medium">Programs in catalog</CardTitle>
+
+        <Card className="relative overflow-hidden group">
+          <div className="absolute top-0 right-0 w-24 h-24 bg-cyan-500/10 rounded-full blur-2xl group-hover:bg-cyan-500/20 transition-all pointer-events-none" />
+          <CardHeader className="pb-1">
+            <div className="flex items-center justify-between">
+              <CardTitle className="text-xs uppercase tracking-wider font-semibold text-muted-foreground">Programs in Catalog</CardTitle>
+              <GraduationCap className="h-4 w-4 text-cyan-400" />
+            </div>
           </CardHeader>
           <CardContent>
-            <div className="text-3xl font-bold">{alignment.meta.programs}</div>
-            <p className="text-xs text-muted-foreground">course/program supply tagged on the same skill graph</p>
+            <div className="text-3xl font-extrabold tracking-tight text-white">{alignment.meta.programs}</div>
+            <p className="text-xs text-muted-foreground mt-1">
+              Active vocational courses mapped to skill DAG
+            </p>
           </CardContent>
         </Card>
-        <Card>
-          <CardHeader className="pb-2">
-            <CardTitle className="text-sm font-medium">Uncovered in-demand skills</CardTitle>
+
+        <Card className="relative overflow-hidden group">
+          <div className="absolute top-0 right-0 w-24 h-24 bg-rose-500/10 rounded-full blur-2xl group-hover:bg-rose-500/20 transition-all pointer-events-none" />
+          <CardHeader className="pb-1">
+            <div className="flex items-center justify-between">
+              <CardTitle className="text-xs uppercase tracking-wider font-semibold text-muted-foreground">Uncovered Skills</CardTitle>
+              <AlertTriangle className="h-4 w-4 text-rose-400" />
+            </div>
           </CardHeader>
           <CardContent>
-            <div className="text-3xl font-bold text-red-500">{alignment.uncoveredSkills.length}</div>
-            <p className="text-xs text-muted-foreground">demanded in postings, taught by no program</p>
+            <div className="text-3xl font-extrabold tracking-tight text-rose-400">{alignment.uncoveredSkills.length}</div>
+            <p className="text-xs text-rose-300/80 mt-1">
+              High market demand · 0% institutional coverage
+            </p>
           </CardContent>
         </Card>
-        <Card>
-          <CardHeader className="pb-2">
-            <CardTitle className="text-sm font-medium">Weakest sector coverage</CardTitle>
+
+        <Card className="relative overflow-hidden group">
+          <div className="absolute top-0 right-0 w-24 h-24 bg-amber-500/10 rounded-full blur-2xl group-hover:bg-amber-500/20 transition-all pointer-events-none" />
+          <CardHeader className="pb-1">
+            <div className="flex items-center justify-between">
+              <CardTitle className="text-xs uppercase tracking-wider font-semibold text-muted-foreground">Lowest Sector Coverage</CardTitle>
+              <Target className="h-4 w-4 text-amber-400" />
+            </div>
           </CardHeader>
           <CardContent>
-            <div className={`text-3xl font-bold ${coverageClass(weakest[0]?.coverage ?? 1)}`}>
+            <div className={`text-3xl font-extrabold tracking-tight ${coverageClass(weakest[0]?.coverage ?? 1)}`}>
               {weakest[0] ? pct(weakest[0].coverage) : "—"}
             </div>
-            <p className="text-xs text-muted-foreground">{weakest[0]?.sector ?? "—"}</p>
+            <p className="text-xs text-muted-foreground mt-1 truncate">
+              {weakest[0]?.sector ?? "—"}
+            </p>
           </CardContent>
         </Card>
       </div>

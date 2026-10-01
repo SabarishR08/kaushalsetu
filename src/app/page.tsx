@@ -146,10 +146,11 @@ export default function LandingPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Feature 1 */}
-            <Link href="/department" className="group">
-              <div className="h-full p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-orange-500/40 hover:bg-white/[0.04] transition-all duration-300 flex flex-col justify-between">
+            <Link href="/department" className="group block">
+              <div className="glass-card-interactive h-full p-6 flex flex-col justify-between relative overflow-hidden group-hover:border-orange-500/40">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 rounded-full blur-3xl group-hover:bg-orange-500/20 transition-all pointer-events-none" />
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 mb-4 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-2xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 mb-4 group-hover:scale-110 group-hover:border-orange-500/50 transition-all duration-300 shadow-[0_0_20px_rgba(249,115,22,0.15)]">
                     <Building2 className="h-6 w-6" />
                   </div>
                   <h3 className="text-lg font-bold text-white group-hover:text-orange-300 transition-colors">
@@ -159,17 +160,19 @@ export default function LandingPage() {
                     Live sector-by-sector talent supply-demand equilibrium, gap matrices, and automated program revision recommendations across 11 industrial domains.
                   </p>
                 </div>
-                <div className="mt-4 pt-3 border-t border-white/5 text-xs text-orange-400 flex items-center gap-1 font-medium">
-                  Inspect State KPIs <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
+                <div className="mt-5 pt-3 border-t border-white/5 text-xs text-orange-400 flex items-center gap-1.5 font-medium">
+                  <span>Inspect State KPIs</span>
+                  <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1.5 transition-transform duration-300" />
                 </div>
               </div>
             </Link>
 
             {/* Feature 2 */}
-            <Link href="/districts" className="group">
-              <div className="h-full p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-orange-500/40 hover:bg-white/[0.04] transition-all duration-300 flex flex-col justify-between">
+            <Link href="/districts" className="group block">
+              <div className="glass-card-interactive h-full p-6 flex flex-col justify-between relative overflow-hidden group-hover:border-cyan-500/40">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-3xl group-hover:bg-cyan-500/20 transition-all pointer-events-none" />
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-4 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-4 group-hover:scale-110 group-hover:border-cyan-500/50 transition-all duration-300 shadow-[0_0_20px_rgba(6,182,212,0.15)]">
                     <MapPin className="h-6 w-6" />
                   </div>
                   <h3 className="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors">
@@ -179,17 +182,19 @@ export default function LandingPage() {
                     Geospatial labor digital twin mapping Pune-Chakan EV, Aurangabad Pharma, and Nagpur MIHAN to flag "Skill Deserts" before factories starve for talent.
                   </p>
                 </div>
-                <div className="mt-4 pt-3 border-t border-white/5 text-xs text-cyan-400 flex items-center gap-1 font-medium">
-                  Launch GIS Twin <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
+                <div className="mt-5 pt-3 border-t border-white/5 text-xs text-cyan-400 flex items-center gap-1.5 font-medium">
+                  <span>Launch GIS Twin</span>
+                  <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1.5 transition-transform duration-300" />
                 </div>
               </div>
             </Link>
 
             {/* Feature 3 */}
-            <Link href="/curriculum-diff" className="group">
-              <div className="h-full p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-orange-500/40 hover:bg-white/[0.04] transition-all duration-300 flex flex-col justify-between">
+            <Link href="/curriculum-diff" className="group block">
+              <div className="glass-card-interactive h-full p-6 flex flex-col justify-between relative overflow-hidden group-hover:border-amber-500/40">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl group-hover:bg-amber-500/20 transition-all pointer-events-none" />
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-4 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-4 group-hover:scale-110 group-hover:border-amber-500/50 transition-all duration-300 shadow-[0_0_20px_rgba(245,158,11,0.15)]">
                     <Sparkles className="h-6 w-6" />
                   </div>
                   <h3 className="text-lg font-bold text-white group-hover:text-amber-300 transition-colors">
@@ -199,17 +204,19 @@ export default function LandingPage() {
                     Solves the 3-year syllabus lag: isolates the exact 15% missing skills and synthesizes accredited 30-hour bridge courses with bilingual lesson plans in Marathi & English.
                   </p>
                 </div>
-                <div className="mt-4 pt-3 border-t border-white/5 text-xs text-amber-400 flex items-center gap-1 font-medium">
-                  Synthesize Bridge Course <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
+                <div className="mt-5 pt-3 border-t border-white/5 text-xs text-amber-400 flex items-center gap-1.5 font-medium">
+                  <span>Synthesize Bridge Course</span>
+                  <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1.5 transition-transform duration-300" />
                 </div>
               </div>
             </Link>
 
             {/* Feature 4 */}
-            <Link href="/telemetry" className="group">
-              <div className="h-full p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-orange-500/40 hover:bg-white/[0.04] transition-all duration-300 flex flex-col justify-between">
+            <Link href="/telemetry" className="group block">
+              <div className="glass-card-interactive h-full p-6 flex flex-col justify-between relative overflow-hidden group-hover:border-emerald-500/40">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-3xl group-hover:bg-emerald-500/20 transition-all pointer-events-none" />
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-4 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-4 group-hover:scale-110 group-hover:border-emerald-500/50 transition-all duration-300 shadow-[0_0_20px_rgba(16,185,129,0.15)]">
                     <Activity className="h-6 w-6" />
                   </div>
                   <h3 className="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors">
@@ -219,17 +226,19 @@ export default function LandingPage() {
                     Search and inspect authentic Maharashtra job vacancies from Naukri across Tata Motors, Infosys, Tech Mahindra, L&T, and Bosch India.
                   </p>
                 </div>
-                <div className="mt-4 pt-3 border-t border-white/5 text-xs text-emerald-400 flex items-center gap-1 font-medium">
-                  Search 13,511 Postings <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
+                <div className="mt-5 pt-3 border-t border-white/5 text-xs text-emerald-400 flex items-center gap-1.5 font-medium">
+                  <span>Search 13,511 Postings</span>
+                  <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1.5 transition-transform duration-300" />
                 </div>
               </div>
             </Link>
 
             {/* Feature 5 */}
-            <Link href="/voice-sahayak" className="group">
-              <div className="h-full p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-orange-500/40 hover:bg-white/[0.04] transition-all duration-300 flex flex-col justify-between">
+            <Link href="/voice-sahayak" className="group block">
+              <div className="glass-card-interactive h-full p-6 flex flex-col justify-between relative overflow-hidden group-hover:border-rose-500/40">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-rose-500/10 rounded-full blur-3xl group-hover:bg-rose-500/20 transition-all pointer-events-none" />
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-400 mb-4 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-2xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-400 mb-4 group-hover:scale-110 group-hover:border-rose-500/50 transition-all duration-300 shadow-[0_0_20px_rgba(244,63,94,0.15)]">
                     <Mic className="h-6 w-6" />
                   </div>
                   <h3 className="text-lg font-bold text-white group-hover:text-rose-300 transition-colors">
@@ -239,17 +248,19 @@ export default function LandingPage() {
                     Rural youth can speak in colloquial Marathi to get instant vocational recommendations, nearest Government ITIs, zero-fee admission paths, and starting salaries.
                   </p>
                 </div>
-                <div className="mt-4 pt-3 border-t border-white/5 text-xs text-rose-400 flex items-center gap-1 font-medium">
-                  Speak in Marathi <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
+                <div className="mt-5 pt-3 border-t border-white/5 text-xs text-rose-400 flex items-center gap-1.5 font-medium">
+                  <span>Speak in Marathi</span>
+                  <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1.5 transition-transform duration-300" />
                 </div>
               </div>
             </Link>
 
             {/* Feature 6 */}
-            <Link href="/passport" className="group">
-              <div className="h-full p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-orange-500/40 hover:bg-white/[0.04] transition-all duration-300 flex flex-col justify-between">
+            <Link href="/passport" className="group block">
+              <div className="glass-card-interactive h-full p-6 flex flex-col justify-between relative overflow-hidden group-hover:border-purple-500/40">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/10 rounded-full blur-3xl group-hover:bg-purple-500/20 transition-all pointer-events-none" />
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-4 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-4 group-hover:scale-110 group-hover:border-purple-500/50 transition-all duration-300 shadow-[0_0_20px_rgba(168,85,247,0.15)]">
                     <ShieldCheck className="h-6 w-6" />
                   </div>
                   <h3 className="text-lg font-bold text-white group-hover:text-purple-300 transition-colors">
@@ -259,8 +270,9 @@ export default function LandingPage() {
                     W3C Verifiable Credentials with instant QR validation for factory recruiters, cryptographically signed and exportable directly to DigiLocker.
                   </p>
                 </div>
-                <div className="mt-4 pt-3 border-t border-white/5 text-xs text-purple-400 flex items-center gap-1 font-medium">
-                  Verify Credentials <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
+                <div className="mt-5 pt-3 border-t border-white/5 text-xs text-purple-400 flex items-center gap-1.5 font-medium">
+                  <span>Verify Credentials</span>
+                  <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1.5 transition-transform duration-300" />
                 </div>
               </div>
             </Link>
