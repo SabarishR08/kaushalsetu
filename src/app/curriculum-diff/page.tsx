@@ -647,6 +647,7 @@ export default function CurriculumDiffPage() {
   const [selectedCourseId, setSelectedCourseId] = useState<string>("cts-machinist");
   const [isMarathi, setIsMarathi] = useState<boolean>(false);
   const [isGenerating, setIsGenerating] = useState<boolean>(false);
+  const [aiSynthesizedPlan, setAiSynthesizedPlan] = useState<string | null>(null);
 
   const selectedCourse = COURSES.find((c) => c.id === selectedCourseId) || COURSES[0];
   const diffData = PRECOMPUTED_DIFFS[selectedCourseId] || PRECOMPUTED_DIFFS["cts-machinist"];
@@ -654,9 +655,33 @@ export default function CurriculumDiffPage() {
   const handleSimulateDiff = (courseId: string) => {
     setIsGenerating(true);
     setSelectedCourseId(courseId);
+    setAiSynthesizedPlan(null);
     setTimeout(() => {
       setIsGenerating(false);
     }, 400);
+  };
+
+  const handleAiLiveSynthesis = async () => {
+    setIsGenerating(true);
+    try {
+      const res = await fetch("/api/explain", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          learnerId: "state-admin",
+          subject: "course",
+          id: selectedCourse.id,
+        }),
+      });
+      if (res.ok) {
+        const data = await res.json();
+        setAiSynthesizedPlan(data?.explanation?.prose || null);
+      }
+    } catch {
+      // Keep precomputed fallback active
+    } finally {
+      setIsGenerating(false);
+    }
   };
 
   return (
@@ -682,6 +707,16 @@ export default function CurriculumDiffPage() {
           </div>
 
           <div className="flex items-center gap-3">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={handleAiLiveSynthesis}
+              disabled={isGenerating}
+              className="border-white/10 text-orange-400 hover:bg-orange-500/10 text-xs h-9 bg-black/40"
+            >
+              <Sparkles className="mr-1.5 h-4 w-4" />
+              {isGenerating ? "Synthesizing AI Delta..." : "AI Synthesize Bridge"}
+            </Button>
             <Button
               variant="outline"
               size="sm"
@@ -785,6 +820,15 @@ export default function CurriculumDiffPage() {
             </CardHeader>
 
             <CardContent className="pt-4 space-y-4">
+              {aiSynthesizedPlan && (
+                <div className="p-3.5 rounded-xl bg-orange-950/40 border border-orange-500/30 text-xs text-orange-200 leading-relaxed font-mono">
+                  <div className="flex items-center gap-1.5 text-orange-400 font-bold mb-1 uppercase tracking-wider text-[10px]">
+                    <Sparkles className="h-3.5 w-3.5" /> Live LLM & Skill-DAG Dynamic Synthesis:
+                  </div>
+                  {aiSynthesizedPlan}
+                </div>
+              )}
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {diffData.deltaSkills.map((delta) => (
                   <div key={delta} className="p-2.5 rounded-lg bg-orange-950/30 border border-orange-500/20 text-xs text-orange-200 flex items-start gap-2">
